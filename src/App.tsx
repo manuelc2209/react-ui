@@ -5,7 +5,7 @@ export const App: React.FC = () => {
   const [disabled, setDisabled] = useState(false);
 
   const handleOnClick = () => {
-    setDisabled(true);
+    //setDisabled(true);
   };
 
   return (
