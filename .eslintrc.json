@@ -1,25 +1,36 @@
 {
-    "env": {
-        "browser": true,
-        "es2021": true
-    },
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["@typescript-eslint", "prettier", "jest"],
     "extends": [
         "eslint:recommended",
-        "plugin:react/recommended",
-        "plugin:@typescript-eslint/recommended"
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@shopify/typescript",
+        "plugin:@shopify/react",
+        "plugin:@shopify/prettier",
+        "plugin:@shopify/typescript",
+        "plugin:@shopify/typescript-type-checking",
+        "prettier"
     ],
-    "parser": "@typescript-eslint/parser",
     "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "ecmaVersion": 13,
-        "sourceType": "module"
+        "project": "tsconfig.json"
     },
-    "plugins": [
-        "react",
-        "@typescript-eslint"
-    ],
     "rules": {
+        "@typescript-eslint/no-unnecessary-condition": "off",
+        "no-console": 1,
+        "prettier/prettier": 2,
+        "indent": [
+            "error",
+            4,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "jest/no-disabled-tests": "warn",
+        "jest/no-focused-tests": "error",
+        "jest/no-identical-title": "error",
+        "jest/prefer-to-have-length": "warn",
+        "jest/valid-expect": "error"
     }
 }
