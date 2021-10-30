@@ -9,16 +9,14 @@ export const App: React.FC = () => {
   };
 
   return (
-    <div>
-      <Login
-        nameLabel="Username:"
-        nicknamePlaceholder="Please insert a valid Nickname here:"
-        passwordLabel="Password:"
-        passwordPlaceholder="Please insert a valid password here:"
-        validatePassword={true}
-        onClick={handleOnClick}
-        disabled={disabled}
-      ></Login>
-    </div>
+    <Login
+      nameLabel="Username:"
+      nicknamePlaceholder="Please insert a valid Nickname here:"
+      passwordLabel="Password:"
+      passwordPlaceholder="Please insert a valid password here:"
+      validatePassword={true}
+      onClick={handleOnClick}
+      disabled={disabled}
+    ></Login>
   );
 };
