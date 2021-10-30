@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useLayoutEffect, useState } from 'react';
 import styled from 'styled-components';
 import { fontStyle, lightgrey1 } from '../../../GlobalStyles';
 
@@ -19,10 +19,13 @@ interface StyledContainerProps {
     disabled?: boolean;
 }
 
+interface StyledPasswordProps {
+    hasMargin?: boolean;
+}
+
 interface StyledInputProps {
     placeholder?: string;
     disabled?: boolean;
-    hasMargin?: boolean;
     onBlur?: (event: React.FocusEvent<HTMLInputElement>) => void;
 }
 
@@ -40,10 +43,17 @@ const setMargin = ({ hasMargin }: { hasMargin?: boolean }) => hasMargin && 'marg
 const StyledInput = styled.input<StyledInputProps>`
     border-radius: 5px;
     border: 1px solid ${lightgrey1};
-    ${setMargin}
 `;
 
 const StyledLabel = styled.span``;
+
+const StyledPassword = styled.div<StyledPasswordProps>`
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 28px;
+    ${setMargin}
+`;
 
 const StyledDisplay = styled.span<StyledDisplayProps>`
     background-color: ${(props: StyledDisplayProps) => props.backgroundColor};
@@ -69,8 +79,8 @@ const StyledContainer = styled.div<StyledContainerProps>`
 
     ${StyledInput},
     ${StyledButton},
-  ${StyledDisplay},
-  ${StyledLabel} {
+    ${StyledDisplay},
+    ${StyledLabel} {
         cursor: ${setCursor};
         user-select: none;
         ${fontStyle};
@@ -102,13 +112,13 @@ export const Login: React.FC<LoginProps> = ({
     const handleValidation = (event: React.FocusEvent<HTMLInputElement>) => {
         if (strongRegex.test(event.target.value)) {
             setBackgroundColor('#0F9D58');
-            setDisplayWidth('50%');
+            setDisplayWidth('100%');
         } else if (mediumRegex.test(event.target.value)) {
             setBackgroundColor('#F4B400');
-            setDisplayWidth('30%');
+            setDisplayWidth('50%');
         } else {
             setBackgroundColor('#DB4437');
-            setDisplayWidth('15%');
+            setDisplayWidth('25%');
         }
     };
 
@@ -124,15 +134,17 @@ export const Login: React.FC<LoginProps> = ({
                 <StyledContainer>
                     <StyledLabel>{passwordLabel}</StyledLabel>
                     <StyledInputContainer>
-                        <StyledInput
-                            placeholder={passwordPlaceholder}
-                            disabled={disabled}
-                            onChange={(event: React.FocusEvent<HTMLInputElement>) =>
-                                validatePassword && handleValidation && handleValidation(event)
-                            }
-                            type={displayPassword ? 'text' : 'password'}
-                            hasMargin={true}
-                        ></StyledInput>
+                        <StyledPassword hasMargin={true}>
+                            <StyledInput
+                                placeholder={passwordPlaceholder}
+                                disabled={disabled}
+                                onChange={(event: React.FocusEvent<HTMLInputElement>) =>
+                                    validatePassword && handleValidation && handleValidation(event)
+                                }
+                                type={displayPassword ? 'text' : 'password'}
+                            ></StyledInput>
+                            <StyledDisplay backgroundColor={backgroundColor} displayWidth={displayWidth} />
+                        </StyledPassword>
                         <StyledButton
                             onMouseDown={() => setDisplayPassword && setDisplayPassword(true)}
                             onMouseUp={() => setDisplayPassword && setDisplayPassword(false)}
@@ -141,7 +153,6 @@ export const Login: React.FC<LoginProps> = ({
                             Display Password
                         </StyledButton>
                     </StyledInputContainer>
-                    <StyledDisplay backgroundColor={backgroundColor} displayWidth={displayWidth} />
                 </StyledContainer>
             )}
             <StyledButton onClick={() => onClick && onClick()} disabled={disabled}>

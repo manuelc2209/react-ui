@@ -3,11 +3,11 @@ import styled from 'styled-components';
 import { fontStyle, lightgrey1 } from '../../GlobalStyles';
 
 interface StyledButtonProps {
+    disabled?: boolean;
+    className?: string;
     onClick?: () => void;
     onMouseUp?: () => void;
     onMouseDown?: () => void;
-    disabled?: boolean;
-    className?: string;
 }
 
 const StyledButton = styled.button<StyledButtonProps>`
