@@ -1,6 +1,6 @@
-import React, { useLayoutEffect, useState } from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
-import { fontStyle, lightgrey1, setCursor } from '../../../GlobalStyles';
+import { fontStyle, setCursor } from '../../../GlobalStyles';
 
 import { Button } from '../../Button';
 import { Input } from '../../Input';
@@ -145,11 +145,8 @@ export const Login: React.FC<LoginProps> = ({
                                 setValue && setValue(event.target.value)
                             }
                             type={displayPassword ? 'text' : 'password'}
-                        ></Input>
-                        <StyledDisplay
-                            backgroundColor={backgroundColor}
-                            displayWidth={displayWidth}
                         />
+                        <StyledDisplay backgroundColor={backgroundColor} displayWidth={displayWidth} />
                     </StyledPassword>
                     <StyledButtonVisible
                         label="Display Password"
