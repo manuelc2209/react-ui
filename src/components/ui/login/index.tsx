@@ -1,8 +1,9 @@
 import React, { useLayoutEffect, useState } from 'react';
 import styled from 'styled-components';
-import { fontStyle, lightgrey1 } from '../../../GlobalStyles';
+import { fontStyle, lightgrey1, setCursor } from '../../../GlobalStyles';
 
 import { Button } from '../../Button';
+import { Input } from '../../Input';
 import { mediumRegex, strongRegex } from './utils';
 
 interface LoginProps {
@@ -12,6 +13,7 @@ interface LoginProps {
     nameLabel?: string;
     passwordLabel?: string;
     validatePassword?: boolean;
+    doubleValidation?: boolean;
     onClick?: () => void;
 }
 
@@ -19,9 +21,7 @@ interface StyledContainerProps {
     disabled?: boolean;
 }
 
-interface StyledPasswordProps {
-    hasMargin?: boolean;
-}
+interface StyledPasswordProps {}
 
 interface StyledInputProps {
     placeholder?: string;
@@ -34,35 +34,36 @@ interface StyledDisplayProps {
     displayWidth?: string;
 }
 
-const setCursor = ({ disabled }: { disabled?: boolean }) => {
-    return disabled ? 'not-allowed' : 'default';
-};
-
-const setMargin = ({ hasMargin }: { hasMargin?: boolean }) => hasMargin && 'margin-right: 5px';
-
-const StyledInput = styled.input<StyledInputProps>`
-    border-radius: 5px;
-    border: 1px solid ${lightgrey1};
-`;
-
 const StyledLabel = styled.span``;
+
+const StyledPasswordContainer = styled.div`
+    display: flex;
+    height: 47px;
+    margin-bottom: 20px;
+`;
 
 const StyledPassword = styled.div<StyledPasswordProps>`
     flex: 1;
     display: flex;
     flex-direction: column;
     height: 28px;
-    ${setMargin}
 `;
 
 const StyledDisplay = styled.span<StyledDisplayProps>`
     background-color: ${(props: StyledDisplayProps) => props.backgroundColor};
     width: ${(props: StyledDisplayProps) => props.displayWidth};
-    padding-top: 1px;
+    padding-top: 2px;
     height: 2px;
 `;
 
 const StyledButton = styled(Button)``;
+
+const StyledButtonVisible = styled(Button)`
+    display: flex;
+    flex-direction: column;
+    align-self: self-end;
+    justify-content: center;
+`;
 
 const StyledContainer = styled.div<StyledContainerProps>`
     display: flex;
@@ -72,13 +73,10 @@ const StyledContainer = styled.div<StyledContainerProps>`
         margin-bottom: 20px;
     }
 
-    ${StyledInput},
     ${StyledLabel} {
         height: 22px;
     }
 
-    ${StyledInput},
-    ${StyledButton},
     ${StyledDisplay},
     ${StyledLabel} {
         cursor: ${setCursor};
@@ -90,10 +88,6 @@ const StyledContainer = styled.div<StyledContainerProps>`
 const StyledInputContainer = styled.div`
     display: flex;
     flex-direction: row;
-
-    ${StyledInput} {
-        flex: 1;
-    }
 `;
 
 export const Login: React.FC<LoginProps> = ({
@@ -102,12 +96,15 @@ export const Login: React.FC<LoginProps> = ({
     nicknamePlaceholder,
     passwordPlaceholder,
     validatePassword,
+    doubleValidation,
     disabled,
     onClick
 }) => {
     const [backgroundColor, setBackgroundColor] = useState('');
-    const [displayWidth, setDisplayWidth] = useState('');
     const [displayPassword, setDisplayPassword] = useState(false);
+    const [validationValid, setValidationValid] = useState(false);
+    const [displayWidth, setDisplayWidth] = useState('');
+    const [value, setValue] = useState('');
 
     const handleValidation = (event: React.FocusEvent<HTMLInputElement>) => {
         if (strongRegex.test(event.target.value)) {
@@ -122,42 +119,62 @@ export const Login: React.FC<LoginProps> = ({
         }
     };
 
+    const crossValidation = (event: React.FocusEvent<HTMLInputElement>) => {
+        setValidationValid(event.target.value === value);
+    };
+
     return (
         <StyledContainer disabled={disabled}>
             {Boolean(nameLabel) && (
                 <StyledContainer>
                     <StyledLabel>{nameLabel}</StyledLabel>
-                    <StyledInput placeholder={nicknamePlaceholder} disabled={disabled}></StyledInput>
+                    <Input placeholder={nicknamePlaceholder} disabled={disabled}></Input>
                 </StyledContainer>
             )}
             {Boolean(passwordLabel) && (
-                <StyledContainer>
-                    <StyledLabel>{passwordLabel}</StyledLabel>
-                    <StyledInputContainer>
-                        <StyledPassword hasMargin={true}>
-                            <StyledInput
-                                placeholder={passwordPlaceholder}
-                                disabled={disabled}
-                                onChange={(event: React.FocusEvent<HTMLInputElement>) =>
-                                    validatePassword && handleValidation && handleValidation(event)
-                                }
-                                type={displayPassword ? 'text' : 'password'}
-                            ></StyledInput>
-                            <StyledDisplay backgroundColor={backgroundColor} displayWidth={displayWidth} />
-                        </StyledPassword>
-                        <StyledButton
-                            onMouseDown={() => setDisplayPassword && setDisplayPassword(true)}
-                            onMouseUp={() => setDisplayPassword && setDisplayPassword(false)}
+                <StyledPasswordContainer>
+                    <StyledPassword>
+                        <Input
+                            label={passwordLabel}
+                            placeholder={passwordPlaceholder}
                             disabled={disabled}
-                        >
-                            Display Password
-                        </StyledButton>
-                    </StyledInputContainer>
-                </StyledContainer>
+                            onChange={(event: React.FocusEvent<HTMLInputElement>) =>
+                                validatePassword && handleValidation && handleValidation(event)
+                            }
+                            onBlur={(event: React.FocusEvent<HTMLInputElement>) =>
+                                setValue && setValue(event.target.value)
+                            }
+                            type={displayPassword ? 'text' : 'password'}
+                        ></Input>
+                        <StyledDisplay
+                            id="123"
+                            backgroundColor={backgroundColor}
+                            displayWidth={displayWidth}
+                        />
+                    </StyledPassword>
+                    <StyledButtonVisible
+                        label="Display Password"
+                        onMouseDown={() => setDisplayPassword && setDisplayPassword(true)}
+                        onMouseUp={() => setDisplayPassword && setDisplayPassword(false)}
+                        disabled={disabled}
+                    />
+                </StyledPasswordContainer>
             )}
-            <StyledButton onClick={() => onClick && onClick()} disabled={disabled}>
-                Submit
-            </StyledButton>
+            {Boolean(passwordLabel) && Boolean(doubleValidation) && (
+                <Input
+                    placeholder={`Please repeat your ${passwordLabel}`}
+                    disabled={disabled}
+                    onBlur={(event: React.FocusEvent<HTMLInputElement>) =>
+                        validatePassword && crossValidation && crossValidation(event)
+                    }
+                    type={'password'}
+                ></Input>
+            )}
+            <StyledButton
+                label="Submit"
+                onClick={() => !disabled && onClick && onClick()}
+                disabled={!validationValid}
+            />
         </StyledContainer>
     );
 };

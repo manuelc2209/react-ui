@@ -5,9 +5,9 @@ import { Button } from './components/Button';
 import { Login } from './components/ui/login';
 
 const StyledContainer = styled.div`
-  > * {
-    margin: 15px;
-  }
+    > * {
+        margin: 15px;
+    }
 `;
 
 export const App: React.FC = () => {
@@ -22,7 +22,7 @@ export const App: React.FC = () => {
 
     return (
         <StyledContainer>
-            <Button onClick={() => setLogin && setLogin(!login)}>Login</Button>
+            <Button label="Login" onClick={() => setLogin && setLogin(!login)} />
             {login && (
                 <Login
                     nameLabel="Username:"
@@ -30,6 +30,7 @@ export const App: React.FC = () => {
                     passwordLabel="Password:"
                     passwordPlaceholder="Please insert a valid password here:"
                     validatePassword={true}
+                    doubleValidation={true}
                     onClick={handleOnClick}
                     disabled={disabled}
                 ></Login>
