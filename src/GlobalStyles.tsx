@@ -10,3 +10,7 @@ export const fontStyle = css`
 `;
 
 export const lightgrey1 = '#c5c5c5';
+
+export const setCursor = ({ disabled }: { disabled?: boolean }) => {
+    return disabled ? 'not-allowed' : 'default';
+};

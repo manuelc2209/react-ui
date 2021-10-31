@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders snapshot correctly 1`] = `
+<div
+  className="sc-dkPtRN bBQSkf"
+>
+  <input
+    className="sc-bdvvtL dvIApN"
+    onBlur={[Function]}
+    onChange={[Function]}
+  />
+</div>
+`;

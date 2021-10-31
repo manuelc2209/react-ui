@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import { fontStyle, lightgrey1 } from '../../GlobalStyles';
+import { fontStyle, lightgrey1, setCursor } from '../../GlobalStyles';
 
 interface StyledButtonProps {
+    label?: string;
     disabled?: boolean;
     className?: string;
     onClick?: () => void;
@@ -16,6 +17,7 @@ const StyledButton = styled.button<StyledButtonProps>`
     border: 1px solid ${lightgrey1};
     background-color: lightblue;
     border-radius: 7px;
+    cursor: ${setCursor};
 
     :hover {
         background-color: #a8c1f6;
@@ -25,13 +27,17 @@ const StyledButton = styled.button<StyledButtonProps>`
         background-color: #7ca1e7;
     }
 
-    ${fontStyle}
+    :disabled {
+        background-color: grey;
+    }
+
+    ${fontStyle};
 `;
 
 export const Button: React.FC<StyledButtonProps> = ({
+    label,
     disabled,
     className,
-    children,
     onClick,
     onMouseUp,
     onMouseDown
@@ -44,7 +50,7 @@ export const Button: React.FC<StyledButtonProps> = ({
             onMouseDown={() => onMouseDown && onMouseDown()}
             onMouseUp={() => onMouseUp && onMouseUp()}
         >
-            {children}
+            {label}
         </StyledButton>
     );
 };
