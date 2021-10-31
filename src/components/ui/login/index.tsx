@@ -147,7 +147,6 @@ export const Login: React.FC<LoginProps> = ({
                             type={displayPassword ? 'text' : 'password'}
                         ></Input>
                         <StyledDisplay
-                            id="123"
                             backgroundColor={backgroundColor}
                             displayWidth={displayWidth}
                         />
