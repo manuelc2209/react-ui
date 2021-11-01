@@ -21,14 +21,6 @@ interface StyledContainerProps {
     disabled?: boolean;
 }
 
-interface StyledPasswordProps {}
-
-interface StyledInputProps {
-    placeholder?: string;
-    disabled?: boolean;
-    onBlur?: (event: React.FocusEvent<HTMLInputElement>) => void;
-}
-
 interface StyledDisplayProps {
     backgroundColor?: string;
     displayWidth?: string;
@@ -42,11 +34,12 @@ const StyledPasswordContainer = styled.div`
     margin-bottom: 20px;
 `;
 
-const StyledPassword = styled.div<StyledPasswordProps>`
+const StyledPassword = styled.div`
     flex: 1;
     display: flex;
     flex-direction: column;
     height: 28px;
+    margin-right: 5px;
 `;
 
 const StyledDisplay = styled.span<StyledDisplayProps>`
@@ -83,11 +76,6 @@ const StyledContainer = styled.div<StyledContainerProps>`
         user-select: none;
         ${fontStyle};
     }
-`;
-
-const StyledInputContainer = styled.div`
-    display: flex;
-    flex-direction: row;
 `;
 
 export const Login: React.FC<LoginProps> = ({
