@@ -16,7 +16,7 @@ export const App: React.FC = () => {
 
     const handleOnClick = () => {
         setDisabled(true);
-        //Fake login hammertime while api is not rdy
+        // Fake timeout to simmulate a request handler while api is not ready
         setTimeout(() => setDisabled(false), 2500);
     };
 
