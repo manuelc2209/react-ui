@@ -28,4 +28,5 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 <br>
 <br>
-author: [Manuel Correia](www.github.com/manuelc2209) - [LinkedIn](www.linkedin.com/in/manuel-correia2209)
+
+Author: [Manuel Correia](www.github.com/manuelc2209) - [LinkedIn](www.linkedin.com/in/manuel-correia2209)
