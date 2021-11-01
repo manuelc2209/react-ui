@@ -26,6 +26,6 @@ Your app is ready to be deployed!
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 
-
-
+<br>
+<br>
 author: [Manuel Correia](https://github.com/manuelc2209) - [LinkedIn](https://www.linkedin.com/in/manuel-correia2209/)
