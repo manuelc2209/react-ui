@@ -30,4 +30,4 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 
 
-made by [Manuel Correia](https://github.com/manuelc2209) - [LinkedIn](https://www.linkedin.com/in/manuel-correia2209/)
+author: [Manuel Correia](https://github.com/manuelc2209) - [LinkedIn](https://www.linkedin.com/in/manuel-correia2209/)
