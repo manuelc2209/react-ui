@@ -1,3 +1,6 @@
+This is just to demo a very simple structure of React + Ts & Styled Components, nothing too complex, just to structure some code for later usage.
+
+
 ## Available Scripts
 
 In the project directory, you can run:
