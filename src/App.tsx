@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import './index.css';
 
 import { Button } from './components/Button';
 import { Header } from './components/Header';
 import { Login } from './components/ui/login';
 import { Register } from './components/ui/register';
 
-const StyledContainer = styled.div`
+const StyledContainer = styled.div``;
+
+const StyledContent = styled.div`
     > * {
         margin: 15px;
     }
@@ -55,19 +58,29 @@ export const App: React.FC = () => {
                     </>
                 )}
             </StyledHeader>
-            {register && (
-                <Register
-                    nameLabel="Username:"
-                    nicknamePlaceholder="Please insert a valid Nickname here:"
-                    passwordLabel="Password:"
-                    passwordPlaceholder="Please insert a valid password here:"
-                    validatePassword={true}
-                    doubleValidation={true}
-                    onClick={handleOnClick}
-                    disabled={disabled}
-                ></Register>
-            )}
-            {login && <Login>Login</Login>}
+            <StyledContent>
+                {register && (
+                    <Register
+                        nameLabel="Username:"
+                        nicknamePlaceholder="Please insert a valid Nickname here:"
+                        passwordLabel="Password:"
+                        passwordPlaceholder="Please insert a valid password here:"
+                        validatePassword={true}
+                        doubleValidation={true}
+                        onClick={handleOnClick}
+                        disabled={disabled}
+                    ></Register>
+                )}
+                {login && (
+                    <Login
+                        nameLabel="Username:"
+                        nicknamePlaceholder="Please type in your Nickname here:"
+                        passwordLabel="Password:"
+                        passwordPlaceholder="Please type in your password here:"
+                        disabled={disabled}
+                    ></Login>
+                )}
+            </StyledContent>
         </StyledContainer>
     );
 };

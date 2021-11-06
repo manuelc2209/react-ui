@@ -2,10 +2,10 @@
 
 exports[`renders snapshot correctly 1`] = `
 <div
-  className="sc-iqseJM bTzYNj"
+  className="sc-ksdxgE"
 >
   <div
-    className="sc-gsDKAQ erSsuP sc-crHmcD iqduZT"
+    className="sc-gsDKAQ erSsuP sc-fotOHu dxhPsD"
   >
     <button
       className="sc-bdvvtL kKijdc"
@@ -26,5 +26,8 @@ exports[`renders snapshot correctly 1`] = `
       Sign up
     </button>
   </div>
+  <div
+    className="sc-hBUSln jhzVbU"
+  />
 </div>
 `;
