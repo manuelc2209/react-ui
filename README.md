@@ -1,5 +1,6 @@
 # react-login
 ![build](https://github.com/manuelc2209/react-login/actions/workflows/main.yml/badge.svg)
+![codeQL](https://github.com/manuelc2209/react-login/actions/workflows/codeql-analysis.yml/badge.svg)
 
 
 This is just to demo a very simple structure of React + Ts & Styled Components, nothing too complex, just to structure some code for later usage.
