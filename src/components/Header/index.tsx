@@ -2,8 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Color from 'color';
 import validateColor from 'validate-color';
-
-import { STYLE_DEFAULT_COLOR } from '../GlobalStyles';
+import { STYLE_DEFAULT_COLOR } from '../../GlobalStyles';
 
 interface HeaderProps {
     backgroundColor?: string;
