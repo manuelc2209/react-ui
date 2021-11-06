@@ -5,7 +5,7 @@ exports[`renders snapshot correctly 1`] = `
   className="sc-jrQzAO ckA-Dkj"
 >
   <button
-    className="sc-bdvvtL dDJWEF sc-furwcr"
+    className="sc-bdvvtL cvcdfr sc-furwcr"
     disabled={true}
     onClick={[Function]}
     onMouseDown={[Function]}

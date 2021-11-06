@@ -25,20 +25,20 @@ const StyledButton = styled.button<StyledButtonProps>`
     width: auto;
     height: ${(props) => props.buttonSize}px;
     border: 1px solid ${lightgrey1};
-    background-color: lightblue;
+    background-color: #6aa4b8;
     border-radius: 7px;
     cursor: ${setCursor};
 
     :hover {
-        background-color: #a8c1f6;
+        background-color: #6b86c2;
     }
 
     :active {
-        background-color: #7ca1e7;
+        background-color: #4a6291;
     }
 
     :disabled {
-        background-color: grey;
+        background-color: #9e9e9e;
     }
 
     ${fontStyle};

@@ -9,6 +9,8 @@ export const fontStyle = css`
     line-height: 1;
 `;
 
+export const STYLE_DEFAULT_COLOR = '#566f95';
+
 export const lightgrey1 = '#c5c5c5';
 
 export const setCursor = ({ disabled }: { disabled?: boolean }) => {

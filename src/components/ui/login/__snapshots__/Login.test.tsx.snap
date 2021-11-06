@@ -1,7 +1,43 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders snapshot correctly 1`] = `
-<div>
-  Login
+<div
+  className="sc-eCImPb"
+>
+  <div
+    className="sc-iCfMLu igChiH"
+  >
+    <span
+      className="sc-jRQBWg"
+    />
+    <div
+      className="sc-hKwDye lgrjjs"
+    >
+      <input
+        className="sc-gsDKAQ dUUKnI"
+        onBlur={[Function]}
+        onChange={[Function]}
+      />
+    </div>
+  </div>
+  <div
+    className="sc-hKwDye lgrjjs"
+  >
+    <input
+      className="sc-gsDKAQ dUUKnI"
+      onBlur={[Function]}
+      onChange={[Function]}
+      type="password"
+    />
+  </div>
+  <button
+    className="sc-bdvvtL kKijdc sc-gKclnd"
+    onClick={[Function]}
+    onMouseDown={[Function]}
+    onMouseUp={[Function]}
+    size="small"
+  >
+    Submit
+  </button>
 </div>
 `;
