@@ -5,11 +5,12 @@ exports[`renders snapshot correctly 1`] = `
   className="sc-jrQzAO ckA-Dkj"
 >
   <button
-    className="sc-bdvvtL cYYqpk sc-furwcr"
+    className="sc-bdvvtL dDJWEF sc-furwcr"
     disabled={true}
     onClick={[Function]}
     onMouseDown={[Function]}
     onMouseUp={[Function]}
+    size="small"
   >
     Submit
   </button>
