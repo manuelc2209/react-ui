@@ -8,7 +8,6 @@ interface InputProps {
     disabled?: boolean;
     className?: string;
     placeholder?: string;
-    onBlur?: (event: React.FocusEvent<HTMLInputElement>) => void;
     onChange?: (event: React.FocusEvent<HTMLInputElement>) => void;
 }
 
@@ -48,22 +47,13 @@ const StyledContainer = styled.div<StyledContainerProps>`
     }
 `;
 
-export const Input: React.FC<InputProps> = ({
-    type,
-    label,
-    disabled,
-    className,
-    placeholder,
-    onBlur,
-    onChange
-}) => {
+export const Input: React.FC<InputProps> = ({ type, label, disabled, className, placeholder, onChange }) => {
     return (
         <StyledContainer className={className}>
             {label && <StyledLabel>{label}</StyledLabel>}
             <StyledInput
                 placeholder={placeholder}
                 disabled={disabled}
-                onBlur={(event: React.FocusEvent<HTMLInputElement>) => onBlur && onBlur(event)}
                 onChange={(event: React.FocusEvent<HTMLInputElement>) => onChange && onChange(event)}
                 type={type}
             ></StyledInput>

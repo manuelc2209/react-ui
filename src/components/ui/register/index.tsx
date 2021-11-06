@@ -30,7 +30,7 @@ const StyledLabel = styled.span``;
 
 const StyledPasswordContainer = styled.div`
     display: flex;
-    height: 47px;
+    height: 50px;
     margin-bottom: 20px;
 `;
 
@@ -95,6 +95,7 @@ export const Register: React.FC<RegisterProps> = ({
     const [value, setValue] = useState('');
 
     const handleValidation = (event: React.FocusEvent<HTMLInputElement>) => {
+        setValue(event.target.value);
         if (strongRegex.test(event.target.value)) {
             setBackgroundColor('#0F9D58');
             setDisplayWidth('100%');
@@ -108,6 +109,9 @@ export const Register: React.FC<RegisterProps> = ({
     };
 
     const crossValidation = (event: React.FocusEvent<HTMLInputElement>) => {
+        if (!value) {
+            return;
+        }
         setValidationValid(event.target.value === value);
     };
 
@@ -129,9 +133,6 @@ export const Register: React.FC<RegisterProps> = ({
                             onChange={(event: React.FocusEvent<HTMLInputElement>) =>
                                 validatePassword && handleValidation && handleValidation(event)
                             }
-                            onBlur={(event: React.FocusEvent<HTMLInputElement>) =>
-                                setValue && setValue(event.target.value)
-                            }
                             type={displayPassword ? 'text' : 'password'}
                         />
                         <StyledDisplay backgroundColor={backgroundColor} displayWidth={displayWidth} />
@@ -142,7 +143,7 @@ export const Register: React.FC<RegisterProps> = ({
                         mouseEvents={true}
                         onMouseDown={() => setDisplayPassword && setDisplayPassword(true)}
                         onMouseUp={() => setDisplayPassword && setDisplayPassword(false)}
-                        disabled={disabled}
+                        disabled={!value || disabled}
                     />
                 </StyledPasswordContainer>
             )}
@@ -150,7 +151,7 @@ export const Register: React.FC<RegisterProps> = ({
                 <Input
                     placeholder={`Please repeat your ${passwordLabel}`}
                     disabled={disabled}
-                    onBlur={(event: React.FocusEvent<HTMLInputElement>) =>
+                    onChange={(event: React.FocusEvent<HTMLInputElement>) =>
                         validatePassword && crossValidation && crossValidation(event)
                     }
                     type={'password'}
