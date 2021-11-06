@@ -20,6 +20,7 @@
         "webpack": "4.28.3"
     },
     "scripts": {
+        "postinstall": "husky install",
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
@@ -57,14 +58,5 @@
         "@types/react-test-renderer": "^17.0.1",
         "@types/styled-components": "^5.1.15",
         "husky": "^7.0.4"
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": [
-                "precommit-msg",
-                "lint",
-                "test:nowatch"
-            ]
-        }
     }
 }
