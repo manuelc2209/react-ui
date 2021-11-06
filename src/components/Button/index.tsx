@@ -2,18 +2,28 @@ import React from 'react';
 import styled from 'styled-components';
 import { fontStyle, lightgrey1, setCursor } from '../../GlobalStyles';
 
-interface StyledButtonProps {
+type buttonSize = 'small' | 'medium' | 'large';
+
+interface ButtonProps {
+    size?: buttonSize;
     label?: string;
     disabled?: boolean;
     className?: string;
+    mouseEvents?: boolean; // flag to specify if onMouseUp & onMouseDown should trigger callbacks
     onClick?: () => void;
     onMouseUp?: () => void;
     onMouseDown?: () => void;
 }
 
+interface StyledButtonProps {
+    size?: buttonSize;
+    disabled?: boolean;
+    buttonSize?: number;
+}
+
 const StyledButton = styled.button<StyledButtonProps>`
     width: auto;
-    height: 25px;
+    height: ${(props) => props.buttonSize}px;
     border: 1px solid ${lightgrey1};
     background-color: lightblue;
     border-radius: 7px;
@@ -34,21 +44,38 @@ const StyledButton = styled.button<StyledButtonProps>`
     ${fontStyle};
 `;
 
-export const Button: React.FC<StyledButtonProps> = ({
+function getSizeInPx(size: string): number {
+    switch (size) {
+        case 'large':
+            return 26;
+        case 'medium':
+            return 22;
+        default:
+            return 18;
+    }
+}
+
+export const Button: React.FC<ButtonProps> = ({
+    size = 'small',
     label,
     disabled,
     className,
+    mouseEvents,
     onClick,
     onMouseUp,
     onMouseDown
 }) => {
+    const buttonSize = getSizeInPx(size);
+
     return (
         <StyledButton
+            size={size}
+            buttonSize={buttonSize}
             disabled={disabled}
             className={className}
             onClick={() => onClick && onClick()}
-            onMouseDown={() => onMouseDown && onMouseDown()}
-            onMouseUp={() => onMouseUp && onMouseUp()}
+            onMouseDown={() => mouseEvents && onMouseDown && onMouseDown()}
+            onMouseUp={() => mouseEvents && onMouseUp && onMouseUp()}
         >
             {label}
         </StyledButton>

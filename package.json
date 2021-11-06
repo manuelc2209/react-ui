@@ -1,38 +1,57 @@
 {
-    "name": "react-ts",
-    "version": "0.1.0",
-    "private": true,
-    "dependencies": {
-        "@testing-library/jest-dom": "^5.14.1",
-        "@types/jest": "24.0.11",
-        "@types/node": "11.11.4",
-        "@types/react": "^17.0.33",
-        "@types/react-dom": "16.8.2",
-        "eslint": "5.12.0",
-        "react": "^16.8.4",
-        "react-dom": "^16.8.4",
-        "react-scripts": "2.1.8",
-        "react-test-renderer": "^17.0.2",
-        "styled-components": "^5.3.3",
-        "typescript": "^4.4.4"
-    },
-    "scripts": {
-        "start": "react-scripts start",
-        "build": "react-scripts build",
-        "test": "react-scripts test",
-        "eject": "react-scripts eject"
-    },
-    "eslintConfig": {
-        "extends": "react-app"
-    },
-    "browserslist": [
-        ">0.2%",
-        "not dead",
-        "not ie <= 11",
-        "not op_mini all"
-    ],
-    "devDependencies": {
-        "@types/react-test-renderer": "^17.0.1",
-        "@types/styled-components": "^5.1.15"
-    }
+  "name": "react-ts",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.14.1",
+    "@types/jest": "24.0.11",
+    "@types/node": "11.11.4",
+    "@types/react": "^17.0.33",
+    "@types/react-dom": "16.8.2",
+    "eslint": "5.12.0",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "react-scripts": "2.1.8",
+    "react-test-renderer": "^17.0.2",
+    "storybook": "^6.3.12",
+    "styled-components": "^5.3.3",
+    "typescript": "^4.4.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public"
+  },
+  "eslintConfig": {
+    "extends": "react-app",
+    "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
+    ]
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "@storybook/addon-actions": "^6.3.12",
+    "@storybook/addon-essentials": "^6.3.12",
+    "@storybook/addon-links": "^6.3.12",
+    "@storybook/node-logger": "^6.3.12",
+    "@storybook/preset-create-react-app": "^3.2.0",
+    "@storybook/react": "^6.3.12",
+    "@types/react-test-renderer": "^17.0.1",
+    "@types/styled-components": "^5.1.15"
+  }
 }
