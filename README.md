@@ -19,7 +19,7 @@ You will also see any lint errors in the console.
 
 ### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
+Launches the test runner in the interactive watch mode.
 
 ### `yarn test:nowatch`
 
@@ -38,6 +38,14 @@ The build is minified and the filenames include the hashes.
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+<br>
+<br>
+
+##### `Pre-commit rules`
+Pre-commit runs tests and this validates if the current snapshot of that component matches the previously saved snapshot
+<br>
+If there are changes to the component that are valid don't forget to run yarn test -u to update those snapshots.
 
 
 <br>
