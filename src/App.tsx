@@ -22,6 +22,11 @@ export const App: React.FC = () => {
         setTimeout(() => setDisabled(false), 2500);
     };
 
+    const handleLogin = () => {
+        setRegister(false);
+        setLogin(!login);
+    };
+
     const handleRegister = () => {
         setRegister(!register);
         setLogin(false);
@@ -30,10 +35,10 @@ export const App: React.FC = () => {
     return (
         <StyledContainer>
             {login ? (
-                <Button label="Log out" onClick={() => setLogin && setLogin(!login)} />
+                <Button label="Log out" onClick={() => handleLogin && handleLogin()} />
             ) : (
                 <>
-                    <Button label="Log in" onClick={() => setLogin && setLogin(!login)} />
+                    <Button label="Log in" onClick={() => handleLogin && handleLogin()} />
                     <Button label="Sign up" onClick={() => handleRegister && handleRegister()} />
                 </>
             )}
