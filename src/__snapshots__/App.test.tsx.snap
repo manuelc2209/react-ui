@@ -2,25 +2,29 @@
 
 exports[`renders snapshot correctly 1`] = `
 <div
-  className="sc-kDTinF cxnYHY"
+  className="sc-iqseJM bTzYNj"
 >
-  <button
-    className="sc-bdvvtL eftdCC"
-    onClick={[Function]}
-    onMouseDown={[Function]}
-    onMouseUp={[Function]}
-    size="small"
+  <div
+    className="sc-gsDKAQ erSsuP sc-crHmcD iqduZT"
   >
-    Log in
-  </button>
-  <button
-    className="sc-bdvvtL eftdCC"
-    onClick={[Function]}
-    onMouseDown={[Function]}
-    onMouseUp={[Function]}
-    size="small"
-  >
-    Sign up
-  </button>
+    <button
+      className="sc-bdvvtL kKijdc"
+      onClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseUp={[Function]}
+      size="small"
+    >
+      Log in
+    </button>
+    <button
+      className="sc-bdvvtL kKijdc"
+      onClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseUp={[Function]}
+      size="small"
+    >
+      Sign up
+    </button>
+  </div>
 </div>
 `;

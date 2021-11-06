@@ -2,10 +2,21 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 
 import { Button } from './components/Button';
+import { Header } from './components/Header';
 import { Login } from './components/ui/login';
 import { Register } from './components/ui/register';
 
 const StyledContainer = styled.div`
+    > * {
+        margin: 15px;
+    }
+`;
+
+const StyledHeader = styled(Header)`
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
     > * {
         margin: 15px;
     }
@@ -34,14 +45,16 @@ export const App: React.FC = () => {
 
     return (
         <StyledContainer>
-            {login ? (
-                <Button label="Log out" onClick={() => handleLogin && handleLogin()} />
-            ) : (
-                <>
-                    <Button label="Log in" onClick={() => handleLogin && handleLogin()} />
-                    <Button label="Sign up" onClick={() => handleRegister && handleRegister()} />
-                </>
-            )}
+            <StyledHeader>
+                {login ? (
+                    <Button label="Log out" onClick={() => handleLogin && handleLogin()} />
+                ) : (
+                    <>
+                        <Button label="Log in" onClick={() => handleLogin && handleLogin()} />
+                        <Button label="Sign up" onClick={() => handleRegister && handleRegister()} />
+                    </>
+                )}
+            </StyledHeader>
             {register && (
                 <Register
                     nameLabel="Username:"
