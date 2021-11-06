@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import { Button } from './components/Button';
 import { Login } from './components/ui/login';
+import { Register } from './components/ui/register';
 
 const StyledContainer = styled.div`
     > * {
@@ -13,6 +14,7 @@ const StyledContainer = styled.div`
 export const App: React.FC = () => {
     const [disabled, setDisabled] = useState(false);
     const [login, setLogin] = useState(false);
+    const [register, setRegister] = useState(false);
 
     const handleOnClick = () => {
         setDisabled(true);
@@ -20,11 +22,23 @@ export const App: React.FC = () => {
         setTimeout(() => setDisabled(false), 2500);
     };
 
+    const handleRegister = () => {
+        setRegister(!register);
+        setLogin(false);
+    };
+
     return (
         <StyledContainer>
-            <Button label="Login" onClick={() => setLogin && setLogin(!login)} />
-            {login && (
-                <Login
+            {login ? (
+                <Button label="Log out" onClick={() => setLogin && setLogin(!login)} />
+            ) : (
+                <>
+                    <Button label="Log in" onClick={() => setLogin && setLogin(!login)} />
+                    <Button label="Sign up" onClick={() => handleRegister && handleRegister()} />
+                </>
+            )}
+            {register && (
+                <Register
                     nameLabel="Username:"
                     nicknamePlaceholder="Please insert a valid Nickname here:"
                     passwordLabel="Password:"
@@ -33,8 +47,9 @@ export const App: React.FC = () => {
                     doubleValidation={true}
                     onClick={handleOnClick}
                     disabled={disabled}
-                ></Login>
+                ></Register>
             )}
+            {login && <Login>Login</Login>}
         </StyledContainer>
     );
 };
