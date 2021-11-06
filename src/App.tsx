@@ -6,13 +6,16 @@ import { Button } from './components/Button';
 import { Header } from './components/Header';
 import { Login } from './components/ui/login';
 import { Register } from './components/ui/register';
+import { COLOR_PRIMARY_2 } from './GlobalStyles';
 
-const StyledContainer = styled.div``;
+const StyledContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+`;
 
 const StyledContent = styled.div`
-    > * {
-        margin: 15px;
-    }
+    padding: 15px;
+    background: ${COLOR_PRIMARY_2};
 `;
 
 const StyledHeader = styled(Header)`
@@ -58,29 +61,32 @@ export const App: React.FC = () => {
                     </>
                 )}
             </StyledHeader>
-            <StyledContent>
-                {register && (
-                    <Register
-                        nameLabel="Username:"
-                        nicknamePlaceholder="Please insert a valid Nickname here:"
-                        passwordLabel="Password:"
-                        passwordPlaceholder="Please insert a valid password here:"
-                        validatePassword={true}
-                        doubleValidation={true}
-                        onClick={handleOnClick}
-                        disabled={disabled}
-                    ></Register>
-                )}
-                {login && (
-                    <Login
-                        nameLabel="Username:"
-                        nicknamePlaceholder="Please type in your Nickname here:"
-                        passwordLabel="Password:"
-                        passwordPlaceholder="Please type in your password here:"
-                        disabled={disabled}
-                    ></Login>
-                )}
-            </StyledContent>
+            {(register || login) && (
+                <StyledContent>
+                    {register && (
+                        <Register
+                            nameLabel="Username:"
+                            nicknamePlaceholder="Please insert a valid Nickname here:"
+                            passwordLabel="Password:"
+                            passwordPlaceholder="Please insert a valid password here:"
+                            validatePassword={true}
+                            doubleValidation={true}
+                            onClick={handleOnClick}
+                            disabled={disabled}
+                        ></Register>
+                    )}
+                    {login && (
+                        <Login
+                            nameLabel="Username:"
+                            nicknamePlaceholder="Please type in your Nickname here:"
+                            passwordLabel="Password:"
+                            passwordPlaceholder="Please type in your password here:"
+                            onClick={handleOnClick}
+                            disabled={disabled}
+                        ></Login>
+                    )}
+                </StyledContent>
+            )}
         </StyledContainer>
     );
 };

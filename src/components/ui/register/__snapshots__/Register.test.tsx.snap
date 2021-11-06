@@ -2,17 +2,22 @@
 
 exports[`renders snapshot correctly 1`] = `
 <div
-  className="sc-jrQzAO ckA-Dkj"
+  className="sc-kDTinF ZqIuj"
 >
   <button
-    className="sc-bdvvtL cvcdfr sc-furwcr"
+    className="sc-gsDKAQ cAawDM sc-pVTFL"
     disabled={true}
     onClick={[Function]}
     onMouseDown={[Function]}
     onMouseUp={[Function]}
     size="small"
   >
-    Submit
+    <span
+      className="sc-bdvvtL jvqAQd"
+      disabled={true}
+    >
+      Submit
+    </span>
   </button>
 </div>
 `;

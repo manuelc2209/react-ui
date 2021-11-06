@@ -6,7 +6,6 @@ exports[`renders snapshot correctly 1`] = `
 >
   <input
     className="sc-bdvvtL dvIApN"
-    onBlur={[Function]}
     onChange={[Function]}
   />
 </div>

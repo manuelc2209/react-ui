@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { fontStyle, lightgrey1, setCursor } from '../../GlobalStyles';
+import { buttonLabelStyle, COLOR_PRIMARY_1, fontStyle, lightgrey1, setCursor } from '../../GlobalStyles';
 
 type buttonSize = 'small' | 'medium' | 'large';
 
@@ -21,13 +21,26 @@ interface StyledButtonProps {
     buttonSize?: number;
 }
 
+interface StyledLabelProps {
+    disabled?: boolean;
+}
+
+const StyledLabel = styled.span<StyledLabelProps>`
+    ${buttonLabelStyle}
+`;
+
 const StyledButton = styled.button<StyledButtonProps>`
     width: auto;
+    padding: 7px 7px;
     height: ${(props) => props.buttonSize}px;
     border: 1px solid ${lightgrey1};
-    background-color: #6aa4b8;
-    border-radius: 7px;
+    background-color: ${COLOR_PRIMARY_1};
+    border-radius: 4px;
     cursor: ${setCursor};
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     :hover {
         background-color: #6b86c2;
@@ -47,11 +60,11 @@ const StyledButton = styled.button<StyledButtonProps>`
 function getSizeInPx(size: string): number {
     switch (size) {
         case 'large':
-            return 26;
+            return 30;
         case 'medium':
-            return 22;
+            return 26;
         default:
-            return 18;
+            return 22;
     }
 }
 
@@ -77,7 +90,7 @@ export const Button: React.FC<ButtonProps> = ({
             onMouseDown={() => mouseEvents && onMouseDown && onMouseDown()}
             onMouseUp={() => mouseEvents && onMouseUp && onMouseUp()}
         >
-            {label}
+            <StyledLabel disabled={disabled}>{label}</StyledLabel>
         </StyledButton>
     );
 };

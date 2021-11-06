@@ -2,42 +2,44 @@
 
 exports[`renders snapshot correctly 1`] = `
 <div
-  className="sc-eCImPb"
+  className="sc-jRQBWg"
 >
   <div
-    className="sc-iCfMLu igChiH"
+    className="sc-furwcr jagnNY"
   >
     <span
-      className="sc-jRQBWg"
+      className="sc-gKclnd"
     />
     <div
-      className="sc-hKwDye lgrjjs"
+      className="sc-eCImPb jkgHCk"
     >
       <input
-        className="sc-gsDKAQ dUUKnI"
-        onBlur={[Function]}
+        className="sc-dkPtRN bkDfqQ"
         onChange={[Function]}
       />
     </div>
   </div>
   <div
-    className="sc-hKwDye lgrjjs"
+    className="sc-eCImPb jkgHCk"
   >
     <input
-      className="sc-gsDKAQ dUUKnI"
-      onBlur={[Function]}
+      className="sc-dkPtRN bkDfqQ"
       onChange={[Function]}
       type="password"
     />
   </div>
   <button
-    className="sc-bdvvtL kKijdc sc-gKclnd"
+    className="sc-gsDKAQ fImbrD sc-iCfMLu"
     onClick={[Function]}
     onMouseDown={[Function]}
     onMouseUp={[Function]}
     size="small"
   >
-    Submit
+    <span
+      className="sc-bdvvtL jvqAQd"
+    >
+      Submit
+    </span>
   </button>
 </div>
 `;

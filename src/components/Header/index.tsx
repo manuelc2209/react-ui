@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Color from 'color';
 import validateColor from 'validate-color';
-import { STYLE_DEFAULT_COLOR } from '../../GlobalStyles';
+import { COLOR_PRIMARY } from '../../GlobalStyles';
 
 interface HeaderProps {
     backgroundColor?: string;
@@ -14,7 +14,7 @@ interface StyledHeaderProps {
 }
 
 const setColor = ({ backgroundColor }: { backgroundColor?: string }) => {
-    return backgroundColor ? backgroundColor : STYLE_DEFAULT_COLOR;
+    return backgroundColor ? backgroundColor : COLOR_PRIMARY;
 };
 
 const StyledHeader = styled.div<StyledHeaderProps>`
