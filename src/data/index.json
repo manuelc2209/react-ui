@@ -21,14 +21,14 @@
     },
     "skills": [
         { "skillLevel": 50, "label": "Css", "logo": "" },
-        { "skillLevel": 80, "label": "React", "logo": "" },
+        { "skillLevel": 90, "label": "React", "logo": "" },
         { "skillLevel": 50, "label": "Vue", "logo": "" },
-        { "skillLevel": 80, "label": "Angular", "logo": "" },
-        { "skillLevel": 80, "label": "Styled-Components", "logo": "" },
-        { "skillLevel": 70, "label": "TypeScript", "logo": "" },
-        { "skillLevel": 70, "label": "Scss", "logo": "" },
+        { "skillLevel": 90, "label": "Angular", "logo": "" },
+        { "skillLevel": 90, "label": "Styled-Components", "logo": "" },
+        { "skillLevel": 75, "label": "TypeScript", "logo": "" },
+        { "skillLevel": 60, "label": "Scss", "logo": "" },
         { "skillLevel": 80, "label": "Jest", "logo": "" },
-        { "skillLevel": 70, "label": "React-testing", "logo": "" },
+        { "skillLevel": 85, "label": "React-testing", "logo": "" },
         { "skillLevel": 80, "label": "Git", "logo": "" }
     ]
 }
