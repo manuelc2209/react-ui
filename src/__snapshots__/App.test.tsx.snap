@@ -2,13 +2,13 @@
 
 exports[`renders snapshot correctly 1`] = `
 <div
-  className="sc-hBUSln hpsNsL"
+  className="sc-bBHxTw dandf"
 >
   <div
-    className="sc-dkPtRN bRyejr sc-fFeiMQ hSkUZU"
+    className="sc-dkPtRN gfNMps sc-giYglK iexyzi"
   >
     <button
-      className="sc-gsDKAQ fImbrD"
+      className="sc-gsDKAQ hTByPO"
       onClick={[Function]}
       onMouseDown={[Function]}
       onMouseUp={[Function]}
@@ -21,7 +21,7 @@ exports[`renders snapshot correctly 1`] = `
       </span>
     </button>
     <button
-      className="sc-gsDKAQ fImbrD"
+      className="sc-gsDKAQ hTByPO"
       onClick={[Function]}
       onMouseDown={[Function]}
       onMouseUp={[Function]}
@@ -33,6 +33,80 @@ exports[`renders snapshot correctly 1`] = `
         Sign up
       </span>
     </button>
+  </div>
+  <div
+    className="sc-llYSUQ iZExnr"
+  >
+    <div
+      className="sc-iJKOTD UkVQW"
+    >
+      <div
+        className="sc-dlVxhl kwtuhb"
+      >
+        <img
+          className="sc-fFeiMQ dnCDxp"
+          src="https://www.dovercourt.org/wp-content/uploads/2019/11/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.jpg"
+        />
+        <span
+          className="sc-hBUSln cqsCMO"
+        >
+          Who am I?
+        </span>
+        <div
+          className="sc-ieecCq"
+        >
+          <span
+            className="sc-fotOHu cUymGj"
+          >
+            I'm a Front-End Developer for 
+            <a
+              className="sc-bkkeKt"
+              href="https://www.cleverti.com/"
+            >
+              Cleverti
+            </a>
+          </span>
+        </div>
+        <div
+          className="sc-hGPBjI hXWnZR"
+        >
+          <span
+            className="sc-fotOHu cUymGj"
+          >
+            Social links - Feel free to visit them:
+          </span>
+          <div
+            className="sc-dJjYzT hXbsxv"
+          >
+            <a
+              className="sc-bkkeKt"
+              href="https://github.com/manuelc2209/react-login"
+            >
+              GitHub
+            </a>
+            <a
+              className="sc-bkkeKt"
+              href="https://www.linkedin.com/in/manuel-correia2209/"
+            >
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="sc-iJKOTD UkVQW"
+    >
+      <div
+        className="sc-fKVqWL jcCydc"
+      >
+        <span
+          className="sc-kfPuZi hMmAof"
+        >
+          Skills
+        </span>
+      </div>
+    </div>
   </div>
 </div>
 `;

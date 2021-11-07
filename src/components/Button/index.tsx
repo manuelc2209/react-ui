@@ -1,6 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
-import { buttonLabelStyle, COLOR_PRIMARY_1, fontStyle, lightgrey1, setCursor } from '../../GlobalStyles';
+import {
+    buttonLabelStyle,
+    COLOR_PRIMARY_1,
+    COLOR_PRIMARY_2,
+    COLOR_PRIMARY_3,
+    fontStyle,
+    lightgrey1,
+    setCursor
+} from '../../GlobalStyles';
 
 type buttonSize = 'small' | 'medium' | 'large';
 
@@ -43,11 +51,11 @@ const StyledButton = styled.button<StyledButtonProps>`
     justify-content: center;
 
     :hover {
-        background-color: #6b86c2;
+        background-color: ${COLOR_PRIMARY_2};
     }
 
     :active {
-        background-color: #4a6291;
+        background-color: ${COLOR_PRIMARY_3};
     }
 
     :disabled {

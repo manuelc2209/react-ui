@@ -14,11 +14,13 @@ interface RegisterProps {
     passwordLabel?: string;
     validatePassword?: boolean;
     doubleValidation?: boolean;
+    className?: string;
     onClick?: () => void;
 }
 
 interface StyledContainerProps {
     disabled?: boolean;
+    className?: string;
 }
 
 interface StyledDisplayProps {
@@ -86,6 +88,7 @@ export const Register: React.FC<RegisterProps> = ({
     validatePassword,
     doubleValidation,
     disabled,
+    className,
     onClick
 }) => {
     const [backgroundColor, setBackgroundColor] = useState('');
@@ -116,11 +119,10 @@ export const Register: React.FC<RegisterProps> = ({
     };
 
     return (
-        <StyledContainer disabled={disabled}>
+        <StyledContainer disabled={disabled} className={className}>
             {Boolean(nameLabel) && (
                 <StyledContainer>
-                    <StyledLabel>{nameLabel}</StyledLabel>
-                    <Input placeholder={nicknamePlaceholder} disabled={disabled}></Input>
+                    <Input label={nameLabel} placeholder={nicknamePlaceholder} disabled={disabled}></Input>
                 </StyledContainer>
             )}
             {Boolean(passwordLabel) && (
@@ -149,6 +151,7 @@ export const Register: React.FC<RegisterProps> = ({
             )}
             {Boolean(passwordLabel) && Boolean(doubleValidation) && (
                 <Input
+                    label={`Repeat ${passwordLabel}`}
                     placeholder={`Please repeat your ${passwordLabel}`}
                     disabled={disabled}
                     onChange={(event: React.FocusEvent<HTMLInputElement>) =>

@@ -2,7 +2,7 @@
 
 exports[`renders snapshot correctly 1`] = `
 <button
-  className="sc-gsDKAQ fImbrD"
+  className="sc-gsDKAQ hTByPO"
   onClick={[Function]}
   onMouseDown={[Function]}
   onMouseUp={[Function]}

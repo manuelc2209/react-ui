@@ -10,6 +10,7 @@ interface LoginProps {
     disabled?: boolean;
     nameLabel?: string;
     passwordLabel?: string;
+    className?: string;
     onClick?: () => void;
 }
 
@@ -17,7 +18,11 @@ interface StyledContainerProps {
     disabled?: boolean;
 }
 
-const StyledWrapper = styled.div``;
+interface StyledWrapperProps {
+    className?: string;
+}
+
+const StyledWrapper = styled.div<StyledWrapperProps>``;
 
 const StyledLabel = styled.span``;
 
@@ -48,13 +53,13 @@ export const Login: React.FC<LoginProps> = ({
     disabled,
     passwordLabel,
     passwordPlaceholder,
+    className,
     onClick
 }) => {
     return (
-        <StyledWrapper>
+        <StyledWrapper className={className}>
             <StyledContainer>
-                <StyledLabel>{nameLabel}</StyledLabel>
-                <Input placeholder={nicknamePlaceholder} disabled={disabled}></Input>
+                <Input label={nameLabel} placeholder={nicknamePlaceholder} disabled={disabled}></Input>
             </StyledContainer>
             <Input
                 label={passwordLabel}

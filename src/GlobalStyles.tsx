@@ -3,7 +3,6 @@ import { css } from 'styled-components';
 export const fontStyle = css`
     font-size: 14px;
     font-weight: 500;
-    color: #111;
     font-family: 'Helvetica Neue', sans-serif;
     letter-spacing: -1px;
     line-height: 1;
@@ -15,9 +14,10 @@ export const buttonLabelStyle = css`
     font-family: 'Helvetica Neue', sans-serif;
 `;
 
-export const COLOR_PRIMARY = '#566f95';
-export const COLOR_PRIMARY_1 = '#6b85aa';
-export const COLOR_PRIMARY_2 = '#708cb3';
+export const COLOR_PRIMARY = '#151515';
+export const COLOR_PRIMARY_1 = 'black';
+export const COLOR_PRIMARY_2 = '#3c3c3c';
+export const COLOR_PRIMARY_3 = '#202020';
 
 export const lightgrey1 = '#c5c5c5';
 

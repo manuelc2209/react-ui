@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { fontStyle, lightgrey1, setCursor } from '../../GlobalStyles';
+import { COLOR_PRIMARY_1, fontStyle, lightgrey1, setCursor } from '../../GlobalStyles';
 
 interface InputProps {
     type?: string;
@@ -33,6 +33,14 @@ const StyledLabel = styled.span<StyledLabelProps>``;
 const StyledContainer = styled.div<StyledContainerProps>`
     display: flex;
     flex-direction: column;
+
+    ${StyledInput} {
+        color: ${COLOR_PRIMARY_1};
+    }
+
+    ${StyledLabel} {
+        color: white;
+    }
 
     ${StyledInput},
     ${StyledLabel} {
