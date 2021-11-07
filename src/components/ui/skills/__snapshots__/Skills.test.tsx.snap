@@ -2,12 +2,12 @@
 
 exports[`renders snapshot correctly 1`] = `
 <div
-  className="sc-gsDKAQ gIsnIj"
+  className="sc-dkPtRN fWmzBJ"
 >
   <span
-    className="sc-bdvvtL kSsYqy"
+    className="sc-gsDKAQ dRuQov"
   >
-    Skills
+    My skills:
   </span>
 </div>
 `;

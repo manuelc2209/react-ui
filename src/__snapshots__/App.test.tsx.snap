@@ -2,10 +2,10 @@
 
 exports[`renders snapshot correctly 1`] = `
 <div
-  className="sc-bBHxTw dandf"
+  className="sc-iwjdpV dJHqPa"
 >
   <div
-    className="sc-dkPtRN gfNMps sc-giYglK iexyzi"
+    className="sc-dkPtRN gfNMps sc-ezbkAF gLzQDw"
   >
     <button
       className="sc-gsDKAQ hTByPO"
@@ -35,10 +35,10 @@ exports[`renders snapshot correctly 1`] = `
     </button>
   </div>
   <div
-    className="sc-llYSUQ iZExnr"
+    className="sc-iJKOTD cPZRQm"
   >
     <div
-      className="sc-iJKOTD UkVQW"
+      className="sc-giYglK gfyBui"
     >
       <div
         className="sc-dlVxhl kwtuhb"
@@ -95,16 +95,136 @@ exports[`renders snapshot correctly 1`] = `
       </div>
     </div>
     <div
-      className="sc-iJKOTD UkVQW"
+      className="sc-giYglK gfyBui"
     >
       <div
-        className="sc-fKVqWL jcCydc"
+        className="sc-bBHxTw bVxhXq"
       >
         <span
-          className="sc-kfPuZi hMmAof"
+          className="sc-fKVqWL iovYBB"
         >
-          Skills
+          My skills:
         </span>
+        <div
+          className="sc-kfPuZi epdpIz"
+        >
+          <span
+            className="sc-fKVqWL iovYBB"
+          />
+          <span
+            className="sc-fKVqWL iovYBB"
+          >
+            Css
+          </span>
+        </div>
+        <div
+          className="sc-kfPuZi epdpIz"
+        >
+          <span
+            className="sc-fKVqWL iovYBB"
+          />
+          <span
+            className="sc-fKVqWL iovYBB"
+          >
+            Vue
+          </span>
+        </div>
+        <div
+          className="sc-kfPuZi dJApNv"
+        >
+          <span
+            className="sc-fKVqWL iovYBB"
+          />
+          <span
+            className="sc-fKVqWL iovYBB"
+          >
+            TypeScript
+          </span>
+        </div>
+        <div
+          className="sc-kfPuZi dJApNv"
+        >
+          <span
+            className="sc-fKVqWL iovYBB"
+          />
+          <span
+            className="sc-fKVqWL iovYBB"
+          >
+            Scss
+          </span>
+        </div>
+        <div
+          className="sc-kfPuZi dJApNv"
+        >
+          <span
+            className="sc-fKVqWL iovYBB"
+          />
+          <span
+            className="sc-fKVqWL iovYBB"
+          >
+            React-testing
+          </span>
+        </div>
+        <div
+          className="sc-kfPuZi BOsuH"
+        >
+          <span
+            className="sc-fKVqWL iovYBB"
+          />
+          <span
+            className="sc-fKVqWL iovYBB"
+          >
+            React
+          </span>
+        </div>
+        <div
+          className="sc-kfPuZi BOsuH"
+        >
+          <span
+            className="sc-fKVqWL iovYBB"
+          />
+          <span
+            className="sc-fKVqWL iovYBB"
+          >
+            Angular
+          </span>
+        </div>
+        <div
+          className="sc-kfPuZi BOsuH"
+        >
+          <span
+            className="sc-fKVqWL iovYBB"
+          />
+          <span
+            className="sc-fKVqWL iovYBB"
+          >
+            Styled-Components
+          </span>
+        </div>
+        <div
+          className="sc-kfPuZi BOsuH"
+        >
+          <span
+            className="sc-fKVqWL iovYBB"
+          />
+          <span
+            className="sc-fKVqWL iovYBB"
+          >
+            Jest
+          </span>
+        </div>
+        <div
+          className="sc-kfPuZi BOsuH"
+        >
+          <span
+            className="sc-fKVqWL iovYBB"
+          />
+          <span
+            className="sc-fKVqWL iovYBB"
+          >
+            Git
+          </span>
+        </div>
       </div>
     </div>
   </div>
