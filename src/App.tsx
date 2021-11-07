@@ -6,19 +6,51 @@ import { Button } from './components/Button';
 import { Header } from './components/Header';
 import { Login } from './components/ui/login';
 import { Register } from './components/ui/register';
-import { COLOR_PRIMARY_2 } from './GlobalStyles';
+import { COLOR_PRIMARY_1, COLOR_PRIMARY_2 } from './GlobalStyles';
+import { Portefolio } from './components/ui/portefolio';
+import { Skills } from './components/ui/skills';
 
 const StyledContainer = styled.div`
+    height: inherit;
     display: flex;
     flex-direction: column;
 `;
 
+const StyledRegister = styled(Register)``;
+const StyledLogin = styled(Login)``;
+
 const StyledContent = styled.div`
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
     padding: 15px;
-    background: ${COLOR_PRIMARY_2};
+    background: ${COLOR_PRIMARY_1};
+
+    ${StyledRegister},
+    ${StyledLogin} {
+        width: 70%;
+        margin: auto;
+    }
+
+    @media (max-width: 450px) {
+        flex-direction: column;
+    }
+`;
+
+const StyledColumn = styled.div`
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    @media (max-width: 450px) {
+        width: 100%;
+    }
 `;
 
 const StyledHeader = styled(Header)`
+    border-bottom: 1px solid ${COLOR_PRIMARY_2};
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -27,6 +59,42 @@ const StyledHeader = styled(Header)`
         margin: 15px;
     }
 `;
+
+const mockedData = {
+    img:
+        'https://www.dovercourt.org/wp-content/uploads/2019/11/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.jpg',
+    headline: 'Who am I?',
+    label: "I'm a Front-End Developer for ",
+    link: 'https://www.cleverti.com/',
+    linkLabel: 'Cleverti'
+};
+
+const socialLinks = {
+    data: [
+        {
+            link: 'https://github.com/manuelc2209/react-login',
+            linkLabel: 'GitHub'
+        },
+        {
+            link: 'https://www.linkedin.com/in/manuel-correia2209/',
+            linkLabel: 'LinkedIn'
+        }
+    ],
+    label: 'Social links - Feel free to visit them:'
+};
+
+const skillsData = [
+    { skillLevel: 50, label: 'Css', logo: '' },
+    { skillLevel: 70, label: 'React', logo: '' },
+    { skillLevel: 70, label: 'Vue', logo: '' },
+    { skillLevel: 70, label: 'Angular', logo: '' },
+    { skillLevel: 70, label: 'React', logo: '' },
+    { skillLevel: 70, label: 'React', logo: '' },
+    { skillLevel: 70, label: 'React', logo: '' },
+    { skillLevel: 70, label: 'React', logo: '' },
+    { skillLevel: 70, label: 'React', logo: '' },
+    { skillLevel: 70, label: 'React', logo: '' }
+];
 
 export const App: React.FC = () => {
     const [disabled, setDisabled] = useState(false);
@@ -61,10 +129,10 @@ export const App: React.FC = () => {
                     </>
                 )}
             </StyledHeader>
-            {(register || login) && (
+            {register || login ? (
                 <StyledContent>
                     {register && (
-                        <Register
+                        <StyledRegister
                             nameLabel="Username:"
                             nicknamePlaceholder="Please insert a valid Nickname here:"
                             passwordLabel="Password:"
@@ -73,18 +141,34 @@ export const App: React.FC = () => {
                             doubleValidation={true}
                             onClick={handleOnClick}
                             disabled={disabled}
-                        ></Register>
+                        ></StyledRegister>
                     )}
                     {login && (
-                        <Login
+                        <StyledLogin
                             nameLabel="Username:"
                             nicknamePlaceholder="Please type in your Nickname here:"
                             passwordLabel="Password:"
                             passwordPlaceholder="Please type in your password here:"
                             onClick={handleOnClick}
                             disabled={disabled}
-                        ></Login>
+                        ></StyledLogin>
                     )}
+                </StyledContent>
+            ) : (
+                <StyledContent>
+                    <StyledColumn>
+                        <Portefolio
+                            label={mockedData.label}
+                            img={mockedData.img}
+                            headline={mockedData.headline}
+                            link={mockedData.link}
+                            linkLabel={mockedData.linkLabel}
+                            socialLinks={socialLinks}
+                        />
+                    </StyledColumn>
+                    <StyledColumn>
+                        <Skills />
+                    </StyledColumn>
                 </StyledContent>
             )}
         </StyledContainer>

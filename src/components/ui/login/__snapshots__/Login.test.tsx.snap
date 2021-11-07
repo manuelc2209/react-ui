@@ -5,13 +5,10 @@ exports[`renders snapshot correctly 1`] = `
   className="sc-jRQBWg"
 >
   <div
-    className="sc-furwcr jagnNY"
+    className="sc-furwcr hVXIJU"
   >
-    <span
-      className="sc-gKclnd"
-    />
     <div
-      className="sc-eCImPb jkgHCk"
+      className="sc-eCImPb dhJAKo"
     >
       <input
         className="sc-dkPtRN bkDfqQ"
@@ -20,7 +17,7 @@ exports[`renders snapshot correctly 1`] = `
     </div>
   </div>
   <div
-    className="sc-eCImPb jkgHCk"
+    className="sc-eCImPb dhJAKo"
   >
     <input
       className="sc-dkPtRN bkDfqQ"
@@ -29,7 +26,7 @@ exports[`renders snapshot correctly 1`] = `
     />
   </div>
   <button
-    className="sc-gsDKAQ fImbrD sc-iCfMLu"
+    className="sc-gsDKAQ hTByPO sc-iCfMLu"
     onClick={[Function]}
     onMouseDown={[Function]}
     onMouseUp={[Function]}
