@@ -1,0 +1,34 @@
+{
+    "profile": {
+        "label": "I'm a Front-End Developer for ",
+        "headline": "Who am I?",
+        "img": "https://www.dovercourt.org/wp-content/uploads/2019/11/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.jpg",
+        "link": "https://www.cleverti.com/",
+        "linkLabel": "Cleverti"
+    },
+    "socialLinks": {
+        "data": [
+            {
+                "link": "https://github.com/manuelc2209/react-login",
+                "linkLabel": "GitHub"
+            },
+            {
+                "link": "https://www.linkedin.com/in/manuel-correia2209/",
+                "linkLabel": "LinkedIn"
+            }
+        ],
+        "label": "Social links - Feel free to visit them:"
+    },
+    "skills": [
+        { "skillLevel": 50, "label": "Css", "logo": "" },
+        { "skillLevel": 80, "label": "React", "logo": "" },
+        { "skillLevel": 50, "label": "Vue", "logo": "" },
+        { "skillLevel": 80, "label": "Angular", "logo": "" },
+        { "skillLevel": 80, "label": "Styled-Components", "logo": "" },
+        { "skillLevel": 70, "label": "TypeScript", "logo": "" },
+        { "skillLevel": 70, "label": "Scss", "logo": "" },
+        { "skillLevel": 80, "label": "Jest", "logo": "" },
+        { "skillLevel": 70, "label": "React-testing", "logo": "" },
+        { "skillLevel": 80, "label": "Git", "logo": "" }
+    ]
+}

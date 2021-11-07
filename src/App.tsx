@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import './index.css';
+import { profile, socialLinks, skills } from './data/index.json';
 
 import { Button } from './components/Button';
 import { Header } from './components/Header';
@@ -59,42 +60,6 @@ const StyledHeader = styled(Header)`
         margin: 15px;
     }
 `;
-
-const mockedData = {
-    img:
-        'https://www.dovercourt.org/wp-content/uploads/2019/11/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.jpg',
-    headline: 'Who am I?',
-    label: "I'm a Front-End Developer for ",
-    link: 'https://www.cleverti.com/',
-    linkLabel: 'Cleverti'
-};
-
-const socialLinks = {
-    data: [
-        {
-            link: 'https://github.com/manuelc2209/react-login',
-            linkLabel: 'GitHub'
-        },
-        {
-            link: 'https://www.linkedin.com/in/manuel-correia2209/',
-            linkLabel: 'LinkedIn'
-        }
-    ],
-    label: 'Social links - Feel free to visit them:'
-};
-
-const skillsData = [
-    { skillLevel: 50, label: 'Css', logo: '' },
-    { skillLevel: 70, label: 'React', logo: '' },
-    { skillLevel: 70, label: 'Vue', logo: '' },
-    { skillLevel: 70, label: 'Angular', logo: '' },
-    { skillLevel: 70, label: 'React', logo: '' },
-    { skillLevel: 70, label: 'React', logo: '' },
-    { skillLevel: 70, label: 'React', logo: '' },
-    { skillLevel: 70, label: 'React', logo: '' },
-    { skillLevel: 70, label: 'React', logo: '' },
-    { skillLevel: 70, label: 'React', logo: '' }
-];
 
 export const App: React.FC = () => {
     const [disabled, setDisabled] = useState(false);
@@ -158,16 +123,16 @@ export const App: React.FC = () => {
                 <StyledContent>
                     <StyledColumn>
                         <Portefolio
-                            label={mockedData.label}
-                            img={mockedData.img}
-                            headline={mockedData.headline}
-                            link={mockedData.link}
-                            linkLabel={mockedData.linkLabel}
+                            label={profile.label}
+                            img={profile.img}
+                            headline={profile.headline}
+                            link={profile.link}
+                            linkLabel={profile.linkLabel}
                             socialLinks={socialLinks}
                         />
                     </StyledColumn>
                     <StyledColumn>
-                        <Skills />
+                        <Skills skills={skills} />
                     </StyledColumn>
                 </StyledContent>
             )}
