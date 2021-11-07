@@ -98,7 +98,7 @@ exports[`renders snapshot correctly 1`] = `
       className="sc-giYglK gfyBui"
     >
       <div
-        className="sc-bBHxTw bVxhXq"
+        className="sc-bBHxTw ikQeRl"
       >
         <span
           className="sc-fKVqWL iovYBB"
@@ -106,7 +106,8 @@ exports[`renders snapshot correctly 1`] = `
           My skills:
         </span>
         <div
-          className="sc-kfPuZi epdpIz"
+          className="sc-kfPuZi ehJajD"
+          title="90"
         >
           <span
             className="sc-fKVqWL iovYBB"
@@ -114,11 +115,12 @@ exports[`renders snapshot correctly 1`] = `
           <span
             className="sc-fKVqWL iovYBB"
           >
-            Css
+            React
           </span>
         </div>
         <div
-          className="sc-kfPuZi epdpIz"
+          className="sc-kfPuZi ehJajD"
+          title="90"
         >
           <span
             className="sc-fKVqWL iovYBB"
@@ -126,11 +128,12 @@ exports[`renders snapshot correctly 1`] = `
           <span
             className="sc-fKVqWL iovYBB"
           >
-            Vue
+            Angular
           </span>
         </div>
         <div
-          className="sc-kfPuZi dJApNv"
+          className="sc-kfPuZi ehJajD"
+          title="90"
         >
           <span
             className="sc-fKVqWL iovYBB"
@@ -138,23 +141,12 @@ exports[`renders snapshot correctly 1`] = `
           <span
             className="sc-fKVqWL iovYBB"
           >
-            TypeScript
+            Styled-Components
           </span>
         </div>
         <div
-          className="sc-kfPuZi dJApNv"
-        >
-          <span
-            className="sc-fKVqWL iovYBB"
-          />
-          <span
-            className="sc-fKVqWL iovYBB"
-          >
-            Scss
-          </span>
-        </div>
-        <div
-          className="sc-kfPuZi dJApNv"
+          className="sc-kfPuZi dhtdeX"
+          title="85"
         >
           <span
             className="sc-fKVqWL iovYBB"
@@ -167,42 +159,7 @@ exports[`renders snapshot correctly 1`] = `
         </div>
         <div
           className="sc-kfPuZi BOsuH"
-        >
-          <span
-            className="sc-fKVqWL iovYBB"
-          />
-          <span
-            className="sc-fKVqWL iovYBB"
-          >
-            React
-          </span>
-        </div>
-        <div
-          className="sc-kfPuZi BOsuH"
-        >
-          <span
-            className="sc-fKVqWL iovYBB"
-          />
-          <span
-            className="sc-fKVqWL iovYBB"
-          >
-            Angular
-          </span>
-        </div>
-        <div
-          className="sc-kfPuZi BOsuH"
-        >
-          <span
-            className="sc-fKVqWL iovYBB"
-          />
-          <span
-            className="sc-fKVqWL iovYBB"
-          >
-            Styled-Components
-          </span>
-        </div>
-        <div
-          className="sc-kfPuZi BOsuH"
+          title="80"
         >
           <span
             className="sc-fKVqWL iovYBB"
@@ -215,6 +172,7 @@ exports[`renders snapshot correctly 1`] = `
         </div>
         <div
           className="sc-kfPuZi BOsuH"
+          title="80"
         >
           <span
             className="sc-fKVqWL iovYBB"
@@ -223,6 +181,58 @@ exports[`renders snapshot correctly 1`] = `
             className="sc-fKVqWL iovYBB"
           >
             Git
+          </span>
+        </div>
+        <div
+          className="sc-kfPuZi drPwqX"
+          title="75"
+        >
+          <span
+            className="sc-fKVqWL iovYBB"
+          />
+          <span
+            className="sc-fKVqWL iovYBB"
+          >
+            TypeScript
+          </span>
+        </div>
+        <div
+          className="sc-kfPuZi jDvaYP"
+          title="60"
+        >
+          <span
+            className="sc-fKVqWL iovYBB"
+          />
+          <span
+            className="sc-fKVqWL iovYBB"
+          >
+            Scss
+          </span>
+        </div>
+        <div
+          className="sc-kfPuZi epdpIz"
+          title="50"
+        >
+          <span
+            className="sc-fKVqWL iovYBB"
+          />
+          <span
+            className="sc-fKVqWL iovYBB"
+          >
+            Css
+          </span>
+        </div>
+        <div
+          className="sc-kfPuZi epdpIz"
+          title="50"
+        >
+          <span
+            className="sc-fKVqWL iovYBB"
+          />
+          <span
+            className="sc-fKVqWL iovYBB"
+          >
+            Vue
           </span>
         </div>
       </div>

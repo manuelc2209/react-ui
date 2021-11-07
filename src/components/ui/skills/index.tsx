@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { COLOR_PRIMARY_2 } from '../../../GlobalStyles';
 
 type skillData = {
     skillLevel: number;
@@ -38,19 +39,24 @@ const StyledWrapper = styled.div`
     }
 
     ${StyledSkillContainer} {
+        border: 1px solid ${COLOR_PRIMARY_2};
         margin: 20px;
     }
 `;
 
 export const Skills: React.FC<SkillsProps> = ({ skills }) => {
-    const filteredSkills = skills && skills.sort((item, acc) => item.skillLevel - acc.skillLevel);
+    const filteredSkills = skills && skills.sort((item, acc) => acc.skillLevel - item.skillLevel);
 
     return (
         <StyledWrapper>
             <StyledLabel>My skills:</StyledLabel>
             {filteredSkills &&
                 filteredSkills.map((skill) => (
-                    <StyledSkillContainer percentage={skill.skillLevel} key={skill.label}>
+                    <StyledSkillContainer
+                        percentage={skill.skillLevel}
+                        key={skill.label}
+                        title={`${skill.skillLevel}`}
+                    >
                         <StyledLabel key={skill.skillLevel} />
                         <StyledLabel key={skill.label}>{skill.label}</StyledLabel>
                     </StyledSkillContainer>
