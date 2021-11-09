@@ -39,6 +39,8 @@ const StyledWrapper = styled.div`
     }
 
     ${StyledSkillContainer} {
+        border-radius: 15px;
+        padding: 5px;
         border: 1px solid ${COLOR_PRIMARY_2};
         margin: 20px;
     }
