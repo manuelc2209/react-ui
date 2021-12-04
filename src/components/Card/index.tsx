@@ -1,34 +1,64 @@
 import React from 'react';
 import styled from 'styled-components';
-import Color from 'color';
-import validateColor from 'validate-color';
-import { COLOR_PRIMARY } from '../../GlobalStyles';
+import { COLOR_PRIMARY_1 } from '../../GlobalStyles';
 
 interface CardProps {
+    title?: string;
+    subtitle?: string;
+    image?: string;
     backgroundColor?: string;
     className?: string;
 }
 
-interface StyledHeaderProps {
-    backgroundColor?: string;
+interface StyledBodyWrapperProps {
+    hasImage?: string;
 }
 
-const setColor = ({ backgroundColor }: { backgroundColor?: string }) => {
-    return backgroundColor ? backgroundColor : COLOR_PRIMARY;
+const calcMargin = ({ hasImage }: StyledBodyWrapperProps) => {
+    return hasImage ? 'margin-top: 5px;' : '';
 };
 
-const StyledCard = styled.div<StyledHeaderProps>`
+const StyledCard = styled.div`
     display: flex;
-    background: ${setColor};
+    flex-direction: column;
+    padding: 14px;
+    border: 1px solid ${COLOR_PRIMARY_1};
+    border-radius: 7px;
+    height: 195px;
 `;
 
-export const Card: React.FC<CardProps> = ({ backgroundColor, className, children }) => {
-    const parsedColor = validateColor(backgroundColor as string);
-    const bgHex = (parsedColor && Color(backgroundColor).hex()) || '';
+const StyledImageWrapper = styled.div``;
 
+const StyledBodyWrapper = styled.div<StyledBodyWrapperProps>`
+    display: flex;
+    flex-direction: column;
+    ${calcMargin}
+`;
+
+const StyledImage = styled.img`
+    width: 100%;
+    height: 150px;
+    border-radius: 7px;
+    object-fit: cover;
+`;
+const StyledTitle = styled.span`
+    font-size: 18px;
+    font-weight: 600;
+`;
+const StyledSubtitle = styled.span`
+    font-size: 14px;
+    font-weight: 400;
+`;
+
+export const Card: React.FC<CardProps> = ({ title, subtitle, image, className }) => {
+    const hasImage = image;
     return (
-        <StyledCard backgroundColor={bgHex} className={className}>
-            {children}
+        <StyledCard className={className}>
+            <StyledImageWrapper>{hasImage && <StyledImage src={image} />}</StyledImageWrapper>
+            <StyledBodyWrapper hasImage={hasImage}>
+                {title && <StyledTitle>{title}</StyledTitle>}
+                {subtitle && <StyledSubtitle>{subtitle}</StyledSubtitle>}
+            </StyledBodyWrapper>
         </StyledCard>
     );
 };

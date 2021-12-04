@@ -8,6 +8,7 @@ html {
 body {
     margin: 0;
     height: inherit;
+    font-family: monospace;
 }
 
 #root {

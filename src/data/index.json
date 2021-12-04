@@ -4,20 +4,19 @@
         "headline": "Who am I?",
         "img": "https://www.dovercourt.org/wp-content/uploads/2019/11/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.jpg",
         "link": "https://www.cleverti.com/",
-        "linkLabel": "Cleverti"
-    },
-    "socialLinks": {
-        "data": [
+        "linkLabel": "Cleverti",
+        "cards": [
             {
-                "link": "https://github.com/manuelc2209/react-login",
-                "linkLabel": "GitHub"
+                "title": "LinkedIn",
+                "subtitle": "subtitle1",
+                "image": "https://woodinvillechamber.org/wp-content/uploads/2017/11/Linked-In-Logo-614x461.jpg"
             },
             {
-                "link": "https://www.linkedin.com/in/manuel-correia2209/",
-                "linkLabel": "LinkedIn"
+                "title": "Github",
+                "subtitle": "subtitle2",
+                "image": "https://hermes.digitalinnovation.one/articles/cover/7b4fbb1d-f57a-4420-9209-ee976b171bdf.jpg"
             }
-        ],
-        "label": "Social links - Feel free to visit them:"
+        ]
     },
     "skills": [
         { "skillLevel": 50, "label": "Css", "logo": "" },
