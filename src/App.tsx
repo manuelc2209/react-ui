@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import './index.css';
-import { profile, socialLinks, skills } from './data/index.json';
+import { profile, skills } from './data/index.json';
 
 import { Button } from './components/Button';
 import { Header } from './components/Header';
 import { Login } from './components/ui/login';
 import { Register } from './components/ui/register';
-import { COLOR_PRIMARY_1, COLOR_PRIMARY_2 } from './GlobalStyles';
+import { COLOR_PRIMARY_2 } from './GlobalStyles';
 import { Portefolio } from './components/ui/portefolio';
 import { Skills } from './components/ui/skills';
 
@@ -24,8 +24,10 @@ const StyledContent = styled.div`
     display: flex;
     flex-direction: row;
     height: 100vh;
-    padding: 15px;
-    background: ${COLOR_PRIMARY_1};
+    background-image: url('https://64.media.tumblr.com/2df67fe7bdbba84c88cdbbdf84fd2743/tumblr_nqgvxz92HC1s85u2fo1_500.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     ${StyledRegister},
     ${StyledLogin} {
@@ -36,6 +38,12 @@ const StyledContent = styled.div`
     @media (max-width: 450px) {
         flex-direction: column;
     }
+`;
+
+const StyledOverlay = styled.div`
+    display: flex;
+    flex: 1;
+    background-color: #20202085;
 `;
 
 const StyledColumn = styled.div`
@@ -96,44 +104,48 @@ export const App: React.FC = () => {
             </StyledHeader>
             {register || login ? (
                 <StyledContent>
-                    {register && (
-                        <StyledRegister
-                            nameLabel="Username:"
-                            nicknamePlaceholder="Please insert a valid Nickname here:"
-                            passwordLabel="Password:"
-                            passwordPlaceholder="Please insert a valid password here:"
-                            validatePassword={true}
-                            doubleValidation={true}
-                            onClick={handleOnClick}
-                            disabled={disabled}
-                        ></StyledRegister>
-                    )}
-                    {login && (
-                        <StyledLogin
-                            nameLabel="Username:"
-                            nicknamePlaceholder="Please type in your Nickname here:"
-                            passwordLabel="Password:"
-                            passwordPlaceholder="Please type in your password here:"
-                            onClick={handleOnClick}
-                            disabled={disabled}
-                        ></StyledLogin>
-                    )}
+                    <StyledOverlay>
+                        {register && (
+                            <StyledRegister
+                                nameLabel="Username:"
+                                nicknamePlaceholder="Please insert a valid Nickname here:"
+                                passwordLabel="Password:"
+                                passwordPlaceholder="Please insert a valid password here:"
+                                validatePassword={true}
+                                doubleValidation={true}
+                                onClick={handleOnClick}
+                                disabled={disabled}
+                            ></StyledRegister>
+                        )}
+                        {login && (
+                            <StyledLogin
+                                nameLabel="Username:"
+                                nicknamePlaceholder="Please type in your Nickname here:"
+                                passwordLabel="Password:"
+                                passwordPlaceholder="Please type in your password here:"
+                                onClick={handleOnClick}
+                                disabled={disabled}
+                            ></StyledLogin>
+                        )}
+                    </StyledOverlay>
                 </StyledContent>
             ) : (
                 <StyledContent>
-                    <StyledColumn>
-                        <Portefolio
-                            label={profile.label}
-                            img={profile.img}
-                            headline={profile.headline}
-                            link={profile.link}
-                            linkLabel={profile.linkLabel}
-                            socialLinks={socialLinks}
-                        />
-                    </StyledColumn>
-                    <StyledColumn>
-                        <Skills skills={skills} />
-                    </StyledColumn>
+                    <StyledOverlay>
+                        <StyledColumn>
+                            <Portefolio
+                                label={profile.label}
+                                img={profile.img}
+                                headline={profile.headline}
+                                link={profile.link}
+                                linkLabel={profile.linkLabel}
+                                cards={profile.cards}
+                            />
+                        </StyledColumn>
+                        <StyledColumn>
+                            <Skills skills={skills} />
+                        </StyledColumn>
+                    </StyledOverlay>
                 </StyledContent>
             )}
         </StyledContainer>

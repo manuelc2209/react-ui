@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
+import { Card } from '../../Card';
 
 interface pubLinksData {
     link?: string;
@@ -18,6 +19,7 @@ interface PortefolioProps {
     link?: string;
     linkLabel?: string;
     socialLinks?: pubLinks;
+    cards?: Array<{ title?: string; subtitle?: string; image?: string }>;
 }
 
 const alignCenter = css`
@@ -47,7 +49,24 @@ const StyledImage = styled.img`
 
 const StyledLink = styled.a``;
 
-const StyledTextContainer = styled.div``;
+const StyledTextContainer = styled.div`
+    margin-bottom: 50px;
+`;
+
+const StyledCardContainer = styled.div`
+    display: flex;
+    justify-content: space-around;
+
+    @media only screen and (max-width: 1325px) {
+        flex-direction: column;
+    }
+`;
+
+const StyledCard = styled(Card)`
+    background: #3d3d3d;
+    width: auto;
+    margin: 5px;
+`;
 
 const StyledLinkContainer = styled.div`
     display: flex;
@@ -87,7 +106,8 @@ export const Portefolio: React.FC<PortefolioProps> = ({
     label,
     link,
     linkLabel,
-    socialLinks
+    socialLinks,
+    cards
 }) => {
     return (
         <StyledWrapper>
@@ -103,18 +123,17 @@ export const Portefolio: React.FC<PortefolioProps> = ({
                       )
                     : label && <StyledLabel>{label}</StyledLabel>}
             </StyledTextContainer>
-            {socialLinks && (
-                <StyledSocialSection>
-                    <StyledLabel>{socialLinks.label}</StyledLabel>
-                    <StyledLinkContainer>
-                        {socialLinks &&
-                            socialLinks!.data!.map((item) => (
-                                <StyledLink href={item.link} key={item.link}>
-                                    {item.linkLabel}
-                                </StyledLink>
-                            ))}
-                    </StyledLinkContainer>
-                </StyledSocialSection>
+            {cards && (
+                <StyledCardContainer>
+                    {cards.map((card, i) => (
+                        <StyledCard
+                            key={`card-${i}`}
+                            title={card.title}
+                            subtitle={card.subtitle}
+                            image={card.image}
+                        />
+                    ))}
+                </StyledCardContainer>
             )}
         </StyledWrapper>
     );
