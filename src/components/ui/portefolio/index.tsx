@@ -12,6 +12,13 @@ interface pubLinks {
     data?: pubLinksData[];
 }
 
+interface CardType {
+    title?: string;
+    subtitle?: string;
+    image?: string;
+    href?: string;
+}
+
 interface PortefolioProps {
     img?: string;
     headline?: string;
@@ -19,7 +26,7 @@ interface PortefolioProps {
     link?: string;
     linkLabel?: string;
     socialLinks?: pubLinks;
-    cards?: Array<{ title?: string; subtitle?: string; image?: string }>;
+    cards?: Array<CardType>;
 }
 
 const alignCenter = css`
@@ -100,15 +107,7 @@ const StyledWrapper = styled.div`
     }
 `;
 
-export const Portefolio: React.FC<PortefolioProps> = ({
-    img,
-    headline,
-    label,
-    link,
-    linkLabel,
-    socialLinks,
-    cards
-}) => {
+export const Portefolio: React.FC<PortefolioProps> = ({ img, headline, label, link, linkLabel, cards }) => {
     return (
         <StyledWrapper>
             {img && <StyledImage src={img}></StyledImage>}
@@ -131,6 +130,7 @@ export const Portefolio: React.FC<PortefolioProps> = ({
                             title={card.title}
                             subtitle={card.subtitle}
                             image={card.image}
+                            href={card.href}
                         />
                     ))}
                 </StyledCardContainer>

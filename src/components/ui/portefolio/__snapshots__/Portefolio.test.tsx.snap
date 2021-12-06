@@ -2,10 +2,10 @@
 
 exports[`renders snapshot correctly 1`] = `
 <div
-  className="sc-bqiRlB bnfmXN"
+  className="sc-ksdxgE lfiuxb"
 >
   <div
-    className="sc-jrQzAO gGZTLC"
+    className="sc-kDTinF fNdLbZ"
   />
 </div>
 `;

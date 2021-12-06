@@ -23,7 +23,6 @@ const StyledLogin = styled(Login)``;
 const StyledContent = styled.div`
     display: flex;
     flex-direction: row;
-    height: 100vh;
     background-image: url('https://64.media.tumblr.com/2df67fe7bdbba84c88cdbbdf84fd2743/tumblr_nqgvxz92HC1s85u2fo1_500.gif');
     background-position: center;
     background-repeat: no-repeat;
@@ -38,12 +37,20 @@ const StyledContent = styled.div`
     @media (max-width: 450px) {
         flex-direction: column;
     }
+
+    @media (min-width: 900px) {
+        height: 100vh;
+    }
 `;
 
 const StyledOverlay = styled.div`
     display: flex;
     flex: 1;
     background-color: #20202085;
+
+    @media (max-width: 900px) {
+        flex-direction: column;
+    }
 `;
 
 const StyledColumn = styled.div`
@@ -54,6 +61,10 @@ const StyledColumn = styled.div`
     flex: 1;
 
     @media (max-width: 450px) {
+        width: 100%;
+    }
+
+    @media (max-width: 900px) {
         width: 100%;
     }
 `;
