@@ -6,7 +6,7 @@ interface CardProps {
     title?: string;
     subtitle?: string;
     image?: string;
-    backgroundColor?: string;
+    href?: string;
     className?: string;
 }
 
@@ -35,26 +35,37 @@ const StyledBodyWrapper = styled.div<StyledBodyWrapperProps>`
     ${calcMargin}
 `;
 
+const StyledLink = styled.a``;
+
 const StyledImage = styled.img`
-    width: 100%;
+    width: 250px;
     height: 150px;
     border-radius: 7px;
     object-fit: cover;
+
+    @media only screen and (max-width: 1325px) {
+        width: 100%;
+    }
 `;
+
 const StyledTitle = styled.span`
     font-size: 18px;
     font-weight: 600;
 `;
+
 const StyledSubtitle = styled.span`
     font-size: 14px;
     font-weight: 400;
 `;
 
-export const Card: React.FC<CardProps> = ({ title, subtitle, image, className }) => {
+export const Card: React.FC<CardProps> = ({ title, subtitle, image, href, className }) => {
     const hasImage = image;
+    const hasHref = href;
     return (
         <StyledCard className={className}>
-            <StyledImageWrapper>{hasImage && <StyledImage src={image} />}</StyledImageWrapper>
+            <StyledLink href={hasHref} target="_blank">
+                <StyledImageWrapper>{hasImage && <StyledImage src={image} />}</StyledImageWrapper>
+            </StyledLink>
             <StyledBodyWrapper hasImage={hasImage}>
                 {title && <StyledTitle>{title}</StyledTitle>}
                 {subtitle && <StyledSubtitle>{subtitle}</StyledSubtitle>}

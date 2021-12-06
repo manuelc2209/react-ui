@@ -4,9 +4,14 @@ exports[`renders snapshot correctly 1`] = `
 <div
   className="sc-bdvvtL cPOHbT"
 >
-  <div
-    className="sc-gsDKAQ"
-  />
+  <a
+    className="sc-hKwDye"
+    target="_blank"
+  >
+    <div
+      className="sc-gsDKAQ"
+    />
+  </a>
   <div
     className="sc-dkPtRN iPzDkv"
   />

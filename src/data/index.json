@@ -9,12 +9,14 @@
             {
                 "title": "LinkedIn",
                 "subtitle": "subtitle1",
-                "image": "https://woodinvillechamber.org/wp-content/uploads/2017/11/Linked-In-Logo-614x461.jpg"
+                "image": "https://hermes.digitalinnovation.one/articles/cover/669b63fe-912d-484c-b313-95a46a8ee25e.png",
+                "href": "https://github.com/manuelc2209/react-ui"
             },
             {
                 "title": "Github",
                 "subtitle": "subtitle2",
-                "image": "https://hermes.digitalinnovation.one/articles/cover/7b4fbb1d-f57a-4420-9209-ee976b171bdf.jpg"
+                "image": "https://hermes.digitalinnovation.one/articles/cover/7b4fbb1d-f57a-4420-9209-ee976b171bdf.jpg",
+                "href": "https://www.linkedin.com/in/manuel-correia2209/"
             }
         ]
     },
