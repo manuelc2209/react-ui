@@ -85,7 +85,7 @@ exports[`renders snapshot correctly 1`] = `
                   className="sc-fotOHu"
                 >
                   <img
-                    className="sc-ieecCq cTfcQU"
+                    className="sc-ieecCq HyLfc"
                     src="https://hermes.digitalinnovation.one/articles/cover/669b63fe-912d-484c-b313-95a46a8ee25e.png"
                   />
                 </div>
@@ -117,7 +117,7 @@ exports[`renders snapshot correctly 1`] = `
                   className="sc-fotOHu"
                 >
                   <img
-                    className="sc-ieecCq cTfcQU"
+                    className="sc-ieecCq HyLfc"
                     src="https://hermes.digitalinnovation.one/articles/cover/7b4fbb1d-f57a-4420-9209-ee976b171bdf.jpg"
                   />
                 </div>
