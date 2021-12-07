@@ -103,7 +103,7 @@ const StyledWrapper = styled.div`
     }
 
     @media (max-width: 600px) {
-        padding: 10px;
+        padding: 20px 10px;
     }
 `;
 

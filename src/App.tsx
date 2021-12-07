@@ -10,6 +10,8 @@ import { Register } from './components/ui/register';
 import { COLOR_PRIMARY_2 } from './GlobalStyles';
 import { Portefolio } from './components/ui/portefolio';
 import { Skills } from './components/ui/skills';
+import { Routes, Route } from 'react-router';
+import { useNavigate } from 'react-router-dom';
 
 const StyledContainer = styled.div`
     height: inherit;
@@ -84,6 +86,7 @@ export const App: React.FC = () => {
     const [disabled, setDisabled] = useState(false);
     const [login, setLogin] = useState(false);
     const [register, setRegister] = useState(false);
+    let navigate = useNavigate();
 
     const handleOnClick = () => {
         setDisabled(true);
@@ -92,16 +95,20 @@ export const App: React.FC = () => {
     };
 
     const handleLogin = () => {
-        setRegister(false);
         setLogin(!login);
+        navigate(!login ? '/login' : '/');
+        setRegister(false);
     };
 
     const handleRegister = () => {
         setRegister(!register);
+        navigate(register ? '/register' : '/');
         setLogin(false);
     };
 
-    return (
+    // REFACTOR THIS INTO UI
+
+    const App = (
         <StyledContainer>
             <StyledHeader>
                 {login ? (
@@ -113,52 +120,73 @@ export const App: React.FC = () => {
                     </>
                 )}
             </StyledHeader>
-            {register || login ? (
-                <StyledContent>
-                    <StyledOverlay>
-                        {register && (
-                            <StyledRegister
-                                nameLabel="Username:"
-                                nicknamePlaceholder="Please insert a valid Nickname here:"
-                                passwordLabel="Password:"
-                                passwordPlaceholder="Please insert a valid password here:"
-                                validatePassword={true}
-                                doubleValidation={true}
-                                onClick={handleOnClick}
-                                disabled={disabled}
-                            ></StyledRegister>
-                        )}
-                        {login && (
-                            <StyledLogin
-                                nameLabel="Username:"
-                                nicknamePlaceholder="Please type in your Nickname here:"
-                                passwordLabel="Password:"
-                                passwordPlaceholder="Please type in your password here:"
-                                onClick={handleOnClick}
-                                disabled={disabled}
-                            ></StyledLogin>
-                        )}
-                    </StyledOverlay>
-                </StyledContent>
-            ) : (
-                <StyledContent>
-                    <StyledOverlay>
-                        <StyledColumn>
-                            <Portefolio
-                                label={profile.label}
-                                img={profile.img}
-                                headline={profile.headline}
-                                link={profile.link}
-                                linkLabel={profile.linkLabel}
-                                cards={profile.cards}
-                            />
-                        </StyledColumn>
-                        <StyledColumn>
-                            <Skills skills={skills} />
-                        </StyledColumn>
-                    </StyledOverlay>
-                </StyledContent>
-            )}
+            <StyledContent>
+                <StyledOverlay>
+                    <StyledColumn>
+                        <Portefolio
+                            label={profile.label}
+                            img={profile.img}
+                            headline={profile.headline}
+                            link={profile.link}
+                            linkLabel={profile.linkLabel}
+                            cards={profile.cards}
+                        />
+                    </StyledColumn>
+                    <StyledColumn>
+                        <Skills skills={skills} />
+                    </StyledColumn>
+                </StyledOverlay>
+            </StyledContent>
         </StyledContainer>
+    );
+
+    const Login = (
+        <StyledContainer>
+            <StyledHeader>
+                <Button label="Go Back" onClick={() => handleLogin && handleLogin()} />
+            </StyledHeader>
+            <StyledContent>
+                <StyledOverlay>
+                    <StyledLogin
+                        nameLabel="Username:"
+                        nicknamePlaceholder="Please type in your Nickname here:"
+                        passwordLabel="Password:"
+                        passwordPlaceholder="Please type in your password here:"
+                        onClick={handleOnClick}
+                        disabled={disabled}
+                    ></StyledLogin>
+                </StyledOverlay>
+            </StyledContent>
+        </StyledContainer>
+    );
+
+    const Register = (
+        <StyledContainer>
+            <StyledHeader>
+                <Button label="Go Back" onClick={() => handleRegister && handleRegister()} />
+            </StyledHeader>
+            <StyledContent>
+                <StyledOverlay>
+                    <StyledRegister
+                        nameLabel="Username:"
+                        nicknamePlaceholder="Please insert a valid Nickname here:"
+                        passwordLabel="Password:"
+                        passwordPlaceholder="Please insert a valid password here:"
+                        validatePassword={true}
+                        doubleValidation={true}
+                        onClick={handleOnClick}
+                        disabled={disabled}
+                    ></StyledRegister>
+                </StyledOverlay>
+            </StyledContent>
+        </StyledContainer>
+    );
+
+    return (
+        <Routes>
+            <Route path="/" element={App} />
+            <Route path="register" element={Register} />
+            <Route path="login" element={Login} />
+        </Routes>
     );
 };
