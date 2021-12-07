@@ -44,7 +44,7 @@ exports[`renders snapshot correctly 1`] = `
         className="sc-jcFjpl ebdIlM"
       >
         <div
-          className="sc-ezbkAF lfbdoz"
+          className="sc-ezbkAF eaBuId"
         >
           <img
             className="sc-fKVqWL dSeITg"
@@ -78,7 +78,7 @@ exports[`renders snapshot correctly 1`] = `
             >
               <a
                 className="sc-bkkeKt"
-                href="https://github.com/manuelc2209/react-ui"
+                href="https://www.linkedin.com/in/manuel-correia2209/"
                 target="_blank"
               >
                 <div
@@ -110,7 +110,7 @@ exports[`renders snapshot correctly 1`] = `
             >
               <a
                 className="sc-bkkeKt"
-                href="https://www.linkedin.com/in/manuel-correia2209/"
+                href="https://github.com/manuelc2209/react-ui"
                 target="_blank"
               >
                 <div
