@@ -1,0 +1,130 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders snapshot correctly 1`] = `
+<div
+  className="sc-jJoQJp cbKpxQ"
+>
+  <div
+    className="sc-pVTFL jvgrHT sc-jcFjpl NIgNM"
+  >
+    <button
+      className="sc-gsDKAQ hTByPO"
+      onClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseUp={[Function]}
+      size="small"
+    >
+      <span
+        className="sc-bdvvtL jvqAQd"
+      >
+        Go back
+      </span>
+    </button>
+  </div>
+  <div
+    className="sc-cCcXHH mvRgQ"
+  >
+    <div
+      className="sc-cidDSM kDJmsM"
+    >
+      <div
+        className="sc-hGPBjI hOLmWg sc-hiCibw"
+        disabled={false}
+      >
+        <div
+          className="sc-hGPBjI hOLmWg"
+        >
+          <div
+            className="sc-iqseJM jIljjx"
+          >
+            <span
+              className="sc-kDTinF"
+            >
+              Test
+            </span>
+            <input
+              className="sc-jrQzAO eGrRgi"
+              disabled={false}
+              onChange={[Function]}
+              placeholder="Nickname Placeholder"
+            />
+          </div>
+        </div>
+        <div
+          className="sc-fotOHu fpfbUY"
+        >
+          <div
+            className="sc-fFeiMQ gdSowf"
+          >
+            <div
+              className="sc-iqseJM jIljjx"
+            >
+              <span
+                className="sc-kDTinF"
+              >
+                PwLabel
+              </span>
+              <input
+                className="sc-jrQzAO eGrRgi"
+                disabled={false}
+                onChange={[Function]}
+                placeholder="Pw Placeholder"
+                type="password"
+              />
+            </div>
+            <span
+              className="sc-bkkeKt dskASR"
+            />
+          </div>
+          <button
+            className="sc-gsDKAQ hDLjCu sc-dJjYzT jXkYNx"
+            disabled={true}
+            onClick={[Function]}
+            onMouseDown={[Function]}
+            onMouseUp={[Function]}
+            size="large"
+          >
+            <span
+              className="sc-bdvvtL jvqAQd"
+              disabled={true}
+            >
+              Display Password
+            </span>
+          </button>
+        </div>
+        <div
+          className="sc-iqseJM jIljjx"
+        >
+          <span
+            className="sc-kDTinF"
+          >
+            Repeat PwLabel
+          </span>
+          <input
+            className="sc-jrQzAO eGrRgi"
+            disabled={false}
+            onChange={[Function]}
+            placeholder="Please repeat your PwLabel"
+            type="password"
+          />
+        </div>
+        <button
+          className="sc-gsDKAQ joOHgp sc-ieecCq"
+          disabled={true}
+          onClick={[Function]}
+          onMouseDown={[Function]}
+          onMouseUp={[Function]}
+          size="small"
+        >
+          <span
+            className="sc-bdvvtL jvqAQd"
+            disabled={true}
+          >
+            Submit
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

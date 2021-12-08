@@ -38,14 +38,10 @@ const StyledBodyWrapper = styled.div<StyledBodyWrapperProps>`
 const StyledLink = styled.a``;
 
 const StyledImage = styled.img`
-    width: 250px;
+    width: 100%;
     height: 150px;
     border-radius: 7px;
     object-fit: cover;
-
-    @media only screen and (max-width: 1325px) {
-        width: 100%;
-    }
 `;
 
 const StyledTitle = styled.span`

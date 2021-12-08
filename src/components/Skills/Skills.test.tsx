@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import renderer from 'react-test-renderer';
-import { Register } from '.';
+import { Skills } from '..';
 
 it('renders snapshot correctly', () => {
-    const tree = renderer.create(<Register />).toJSON();
+    const tree = renderer.create(<Skills />).toJSON();
     expect(tree).toMatchSnapshot();
 });
 
 it('renders without crashing', () => {
     const div = document.createElement('div');
-    ReactDOM.render(<Register />, div);
+    ReactDOM.render(<Skills />, div);
     ReactDOM.unmountComponentAtNode(div);
 });

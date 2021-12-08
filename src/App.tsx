@@ -5,13 +5,14 @@ import { profile, skills } from './data/index.json';
 
 import { Button } from './components/Button';
 import { Header } from './components/Header';
-import { Login } from './components/ui/login';
-import { Register } from './components/ui/register';
+import { Login } from './components/Login';
+import { Register } from './components/Register';
 import { COLOR_PRIMARY_2 } from './GlobalStyles';
-import { Portefolio } from './components/ui/portefolio';
-import { Skills } from './components/ui/skills';
+import { Portefolio } from './components/Portefolio';
+import { Skills } from './components/Skills';
 import { Routes, Route } from 'react-router';
 import { useNavigate } from 'react-router-dom';
+import { RegisterUI } from './components/ui/register';
 
 const StyledContainer = styled.div`
     height: inherit;
@@ -160,27 +161,24 @@ export const App: React.FC = () => {
         </StyledContainer>
     );
 
-    const Register = (
-        <StyledContainer>
-            <StyledHeader>
-                <Button label="Go Back" onClick={() => handleRegister && handleRegister()} />
-            </StyledHeader>
-            <StyledContent>
-                <StyledOverlay>
-                    <StyledRegister
-                        nameLabel="Username:"
-                        nicknamePlaceholder="Please insert a valid Nickname here:"
-                        passwordLabel="Password:"
-                        passwordPlaceholder="Please insert a valid password here:"
-                        validatePassword={true}
-                        doubleValidation={true}
-                        onClick={handleOnClick}
-                        disabled={disabled}
-                    ></StyledRegister>
-                </StyledOverlay>
-            </StyledContent>
-        </StyledContainer>
-    );
+    const buttonProps = {
+        label: 'Go back',
+        disabled: true,
+        onClick: () => handleRegister()
+    };
+
+    const formProps = {
+        name: 'Test',
+        disabled: false,
+        validatePassword: true,
+        doubleValidation: true,
+        passwordLabel: 'PwLabel',
+        nicknamePlaceholder: 'Nickname Placeholder',
+        passwordPlaceholder: 'Pw Placeholder',
+        onClick: () => handleOnClick()
+    };
+
+    const Register = <RegisterUI buttonProperties={buttonProps} formProperties={formProps}></RegisterUI>;
 
     return (
         <Routes>

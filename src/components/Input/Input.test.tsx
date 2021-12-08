@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import renderer from 'react-test-renderer';
-import { Input } from '.';
+import { Input } from '..';
 
 it('renders snapshot correctly', () => {
     const tree = renderer.create(<Input />).toJSON();

@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { COLOR_PRIMARY_2 } from '../../../GlobalStyles';
+
+import { COLOR_PRIMARY_2 } from '../../GlobalStyles';
 
 type skillData = {
     skillLevel: number;
