@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import { Card } from '../../Card';
+import { Card } from '../Card';
 
 interface pubLinksData {
     link?: string;
