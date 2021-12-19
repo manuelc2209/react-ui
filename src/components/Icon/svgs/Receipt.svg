@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>52. Receipt</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="52.-Receipt" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M78.8,54.8 L95.1269107,54.8 C96.715508,54.8 98,53.5122574 98,51.9237464 L98,4.87625365 C98,3.29206408 96.7136741,2 95.1269107,2 L4.87308931,2 C3.28449202,2 2,3.28774262 2,4.87625365 L2,51.9237464 C2,53.5079359 3.2863259,54.8 4.87308931,54.8 L21.2,54.8 L21.2,21.2 L78.8,21.2 L78.8,54.8 L78.8,54.8 Z" id="Layer-1" stroke="#222F3E" stroke-width="4"></path>
+        <path d="M78.8,35.6 L81.2093595,35.6 C85.1734569,35.6 88.4,32.3764502 88.4,28.4 C88.4,24.4316411 85.1806406,21.2 81.2093595,21.2 L18.7906405,21.2 C14.8265431,21.2 11.6,24.4235498 11.6,28.4 C11.6,32.3683589 14.8193594,35.6 18.7906405,35.6 L21.2,35.6 L21.2,21.2 L78.8,21.2 L78.8,35.6 L78.8,35.6 Z" id="Layer-2" stroke="#222F3E" stroke-width="4"></path>
+        <polygon id="Layer-3" stroke="#222F3E" stroke-width="4" points="78.8 21.2 78.8 98 69.2623438 88.5795313 59.5085938 98 50 88.5795313 40.2790625 98 30.8914063 88.5795313 21.2 98 21.2 21.2"></polygon>
+        <path d="M30.8,35.6 L56.72,35.6" id="Layer-4" stroke="#222F3E" stroke-width="4"></path>
+        <path d="M30.8,45.2 L51.92,45.2" id="Layer-5" stroke="#222F3E" stroke-width="4"></path>
+        <path d="M30.8,54.8 L56.72,54.8" id="Layer-6" stroke="#222F3E" stroke-width="4"></path>
+        <path d="M30.8,64.4 L51.92,64.4" id="Layer-7" stroke="#222F3E" stroke-width="4"></path>
+    </g>
+</svg>

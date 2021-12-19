@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>52. Note</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="52.-Note" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g transform="translate(2.000000, 2.000000)" stroke="#222F3E" stroke-width="4">
+            <polygon id="Layer-1" transform="translate(48.000000, 47.889530) scale(1, -1) translate(-48.000000, -47.889530) " points="76.8 2.84217094e-14 0 2.84217094e-14 0 95.7790597 96 95.7790597 96 18.9790597 76.8 18.9790597"></polygon>
+            <polygon id="Layer-2" transform="translate(86.900000, 86.900000) scale(1, -1) translate(-86.900000, -86.900000) " points="76.8 76.8 97 97 76.8 97"></polygon>
+            <path d="M96,26.88 L0,26.88" id="Layer-3"></path>
+        </g>
+    </g>
+</svg>

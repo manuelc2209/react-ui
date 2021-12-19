@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>30. Sound level 0%</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="30.-Sound-level-0%" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g transform="translate(2.000000, 2.000000)" stroke="#222F3E" stroke-width="4">
+            <path d="M15,33 L41.1547359,10.9416772 C43.2784166,9.17209479 45,9.96819655 45,12.728427 L45,83.0157762 C45,85.7721532 43.2793189,86.5728602 41.1547359,84.802526 L15,63 L2.99942248,63 C1.34288718,63 0,61.6526814 0,59.9999809 L0,36.0000191 C0,34.3431543 1.34435073,33 2.99942248,33 L15,33 Z" id="Layer-1"></path>
+            <path d="M69,85.1369725 C84.5904175,80.0307768 95.8510697,65.363628 95.8510697,48.0664131 C95.8510697,38.1922499 92.1815283,29.1751539 86.131767,22.3044466" id="Layer-2"></path>
+            <path d="M63,71.4633961 C73.3361812,68.7887497 80.9700853,59.3994824 80.9700853,48.2272212 C80.9700853,42.2002784 78.7485221,36.6922096 75.0796046,32.4772236" id="Layer-3"></path>
+            <path d="M56,58 C56.7092383,58 57.4012316,57.9261654 58.0687127,57.7857633 C62.5989154,56.8328525 66,52.8136092 66,48 C66,46.1642034 65.5053194,44.4439456 64.641985,42.9652536" id="Layer-4"></path>
+            <path d="M95.501341,0.498658982 L0.4881588,95.5118412" id="Layer-5"></path>
+        </g>
+    </g>
+</svg>

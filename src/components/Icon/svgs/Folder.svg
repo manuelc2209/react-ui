@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>11. Folder</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="11.-Folder" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g transform="translate(2.000000, 7.000000)" stroke="#222F3E" stroke-width="4">
+            <path d="M93.1269107,9.6 C94.7136741,9.6 96,10.8848109 96,12.4704839 L96,83.5295161 C96,85.1148406 94.715508,86.4 93.1269107,86.4 L2.87308931,86.4 C1.2863259,86.4 0,85.1151891 0,83.5295161 L0,2.88031654 C0,1.28956164 1.28288444,0 2.87822427,0 L20.9830257,0 C22.5726251,0 24.4471836,1.13894463 25.1782567,2.56001295 L28.8,9.6 L93.1269107,9.6 Z" id="Layer-1"></path>
+            <path d="M96,12.4704839 C96,10.8848109 94.7136741,9.6 93.1269107,9.6 L28.8,9.6 L25.1782567,2.56001295 C24.4471836,1.13894463 22.5726251,0 20.9830257,0 L2.87822427,0 C1.28288444,0 0,1.28956164 0,2.88031654 L0,9.6 L0,24 L96,24 L96,12.4704839 Z" id="Layer-2"></path>
+        </g>
+    </g>
+</svg>

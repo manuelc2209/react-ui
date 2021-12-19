@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>39. Calendar</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="39.-Calendar" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <rect id="Layer-1" stroke="#222F3E" stroke-width="4" x="2" y="2" width="96" height="96" rx="3"></rect>
+        <rect id="Layer-2" stroke="#222F3E" stroke-width="4" x="11.6" y="30.8" width="19.2" height="19.2"></rect>
+        <rect id="Layer-3" stroke="#222F3E" stroke-width="4" x="30.8" y="30.8" width="19.2" height="19.2"></rect>
+        <rect id="Layer-4" stroke="#222F3E" stroke-width="4" x="50" y="30.8" width="19.2" height="19.2"></rect>
+        <rect id="Layer-5" stroke="#222F3E" stroke-width="4" x="69.2" y="30.8" width="19.2" height="19.2"></rect>
+        <rect id="Layer-6" stroke="#222F3E" stroke-width="4" x="69.2" y="50" width="19.2" height="19.2"></rect>
+        <rect id="Layer-7" stroke="#222F3E" stroke-width="4" x="50" y="50" width="19.2" height="19.2"></rect>
+        <rect id="Layer-8" stroke="#222F3E" stroke-width="4" x="30.8" y="50" width="19.2" height="19.2"></rect>
+        <rect id="Layer-9" stroke="#222F3E" stroke-width="4" x="11.6" y="50" width="19.2" height="19.2"></rect>
+        <rect id="Layer-10" stroke="#222F3E" stroke-width="4" x="11.6" y="69.2" width="19.2" height="19.2"></rect>
+        <rect id="Layer-11" stroke="#222F3E" stroke-width="4" x="30.8" y="69.2" width="19.2" height="19.2"></rect>
+        <rect id="Layer-12" stroke="#222F3E" stroke-width="4" x="50" y="69.2" width="19.2" height="19.2"></rect>
+        <path d="M21.2,2 L30.8,2 L30.8,6.8 C30.8,9.4509668 28.6455726,11.6 26,11.6 L26,11.6 C23.3490332,11.6 21.2,9.44557261 21.2,6.8 L21.2,2 Z" id="Layer-13" stroke="#222F3E" stroke-width="4"></path>
+        <path d="M69.2,2 L78.8,2 L78.8,6.8 C78.8,9.4509668 76.6455726,11.6 74,11.6 L74,11.6 C71.3490332,11.6 69.2,9.44557261 69.2,6.8 L69.2,2 Z" id="Layer-14" stroke="#222F3E" stroke-width="4"></path>
+    </g>
+</svg>

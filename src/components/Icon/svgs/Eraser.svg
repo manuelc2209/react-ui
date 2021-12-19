@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>79. Eraser</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="79.-Eraser" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g transform="translate(2.000000, 2.000000)" stroke="#222F3E" stroke-width="4">
+            <polygon id="Layer-1" points="32.50239 31.1112594 64.9384809 63.5473503 38.7493408 89.7364904 6.31324996 57.3003995"></polygon>
+            <path d="M6.46942373,57.3003995 L38.9055146,89.7364904 L34.9771436,93.6648614 C32.8075642,95.8344408 29.2933668,95.8378265 27.1200737,93.6645335 L2.54138059,69.0858404 C0.371620115,66.9160799 0.375887983,63.3939352 2.54105272,61.2287705 L6.46942373,57.3003995 L6.46942373,57.3003995 Z" id="Layer-2"></path>
+            <path d="M60.7223593,2.62098944 C63.0674459,0.275902759 66.8645136,0.270833654 69.2089667,2.61528682 L93.1641528,26.5704728 C95.50609,28.9124101 95.5030579,32.7124725 93.1584501,35.0570803 L64.6681801,63.5473503 L32.2320892,31.1112594 L60.7223593,2.62098944 L60.7223593,2.62098944 Z" id="Layer-3"></path>
+        </g>
+    </g>
+</svg>

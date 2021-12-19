@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>53. Cube</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="53.-Cube" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g transform="translate(2.000000, 2.000000)" stroke="#222F3E" stroke-width="4">
+            <rect id="Layer-1" x="0" y="25.0434783" width="70.9565217" height="70.9565217"></rect>
+            <rect id="Layer-2" x="25.0434783" y="0" width="70.9565217" height="70.9565217"></rect>
+            <path d="M70.7269565,96 L96,70.7269565" id="Layer-3"></path>
+            <path d="M0,96 L25.2730435,70.7269565" id="Layer-4"></path>
+            <path d="M0,25.2730435 L25.2730435,0" id="Layer-5"></path>
+            <path d="M70.7269565,25.2730435 L96,0" id="Layer-6"></path>
+        </g>
+    </g>
+</svg>

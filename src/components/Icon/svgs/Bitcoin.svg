@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>26. Bitcoin</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="26.-Bitcoin" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <rect id="Layer-1" stroke="#222F3E" stroke-width="4" x="2" y="2" width="96" height="96" rx="23"></rect>
+        <path d="M54.8095463,26.989648 C52.4907058,26.8571429 51.4306643,26.8571429 49.6418445,26.8571429 L38.1138942,26.8571429 L38.1138942,72.5714286 L50.8343911,72.5714286 C52.4244532,72.5714286 53.6832523,72.5714286 55.339567,72.4389234 C62.1635836,72.0414079 68.0600639,67.7349896 68.0600639,60.447205 C68.0600639,54.2194617 64.6149294,49.515528 57.4596498,48.4554865 C62.9586147,47.5942029 66.3374966,43.552795 66.3374966,37.7888199 C66.3374966,31.4285714 61.6998155,27.4534161 54.8095463,26.989648 Z" id="Layer-2" stroke="#222F3E" stroke-width="4"></path>
+        <path d="M57.8281808,48.6476191 L38.5492806,48.647619" id="Layer-3" stroke="#222F3E" stroke-width="4"></path>
+        <path d="M42.8281799,20.3116883 L42.8281799,26.5454545" id="Layer-4" stroke="#222F3E" stroke-width="4"></path>
+        <path d="M51.8281799,20.3116883 L51.8281799,26.5454545" id="Layer-5" stroke="#222F3E" stroke-width="4"></path>
+        <path d="M42.2567513,73.4545455 L42.2567513,79.6883117" id="Layer-6" stroke="#222F3E" stroke-width="4"></path>
+        <path d="M51.2567513,73.4545455 L51.2567513,79.6883117" id="Layer-7" stroke="#222F3E" stroke-width="4"></path>
+    </g>
+</svg>

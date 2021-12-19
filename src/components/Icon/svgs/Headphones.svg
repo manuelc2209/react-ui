@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>33. Headphones</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="33.-Headphones" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g transform="translate(2.000000, 12.000000)" stroke="#222F3E" stroke-width="4">
+            <path d="M20.1263004,40 C20.5712575,38.2747715 22.13996,37 24,37 C26.209139,37 28,38.7964248 28,41.0000255 L28,72.9999745 C28,75.2091276 26.2046438,77 24,77 C22.5204593,77 21.2285359,76.1942195 20.5365647,75 L10.356176,75 C4.63661793,75 0,70.9679736 0,66.0093637 L0,48.9906363 C0,44.025245 4.62672594,40 10.356176,40 L20.1263004,40 Z" id="Layer-1"></path>
+            <path d="M75.8734995,40 L86.9950036,40 C91.9683258,40 96,44.0320264 96,48.9906363 L96,66.0093637 C96,70.974755 91.9694111,75 86.9950036,75 L75.4638808,75 C74.771256,76.1956033 73.4775468,77 72,77 C69.790861,77 68,75.2035752 68,72.9999745 L68,41.0000255 C68,38.7908724 69.7953562,37 72,37 C73.8631643,37 75.4288051,38.2778069 75.8734995,40 Z" id="Layer-2"></path>
+            <path d="M8,40 C8,17.90861 25.90861,0 48,0 C70.09139,0 88,17.90861 88,40" id="Layer-3"></path>
+        </g>
+    </g>
+</svg>

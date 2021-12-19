@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>20. USD</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="20.-USD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <rect id="Layer-1" stroke="#222F3E" stroke-width="4" x="2" y="2" width="96" height="96" rx="23"></rect>
+        <path d="M60.6327917,50 L39.5490265,50 C33.72296,50 29,45.2799197 29,39.4545455 L29,39.4545455 L29,39.4545455 C29,33.6304517 33.726191,28.9090909 39.5490265,28.9090909 L60.6327917,28.9090909 C66.4588581,28.9090909 71.1818182,33.6291712 71.1818182,39.4545455 L71.1818182,39.4545455" id="Layer-2" stroke="#222F3E" stroke-width="4"></path>
+        <path d="M39.5490265,50 L60.6327917,50 C66.4588581,50 71.1818182,54.7200803 71.1818182,60.5454545 L71.1818182,60.5454545 C71.1818182,66.3695483 66.4556272,71.0909091 60.6327917,71.0909091 L39.5490265,71.0909091 C33.72296,71.0909091 29,66.3708288 29,60.5454545 L29,60.5454545 L29,60.5454545" id="Layer-3" stroke="#222F3E" stroke-width="4"></path>
+        <path d="M50.3545455,21 L50.3545455,79" id="Layer-4" stroke="#222F3E" stroke-width="4"></path>
+    </g>
+</svg>

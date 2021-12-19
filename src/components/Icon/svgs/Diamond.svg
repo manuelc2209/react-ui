@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>29. Diamond</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="29.-Diamond" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <polygon id="Layer-1" stroke="#222F3E" stroke-width="4" points="11.4331321 5 87.7530578 5 97.1577608 33.5148515 2.10825583 33.5148515"></polygon>
+        <polygon id="Layer-2" stroke="#222F3E" stroke-width="4" points="2.10825583 33.5148515 97.1577608 33.5148515 49.6330083 95.2970297"></polygon>
+        <polygon id="Layer-3" stroke="#222F3E" stroke-width="4" points="2.10825583 33.5148515 30.796684 33.5148515 49.6330083 95.2970297"></polygon>
+        <polygon id="Layer-4" stroke="#222F3E" stroke-width="4" points="97.1577608 33.5148515 68.4693326 33.5148515 49.6330083 95.2970297"></polygon>
+        <polygon id="Layer-5" stroke="#222F3E" stroke-width="4" points="11.6132063 5 30.553491 33.5148515 49.51234 5 68.7162385 33.5148515 87.4486024 5"></polygon>
+    </g>
+</svg>

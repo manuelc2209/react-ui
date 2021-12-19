@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>80. Sun</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="80.-Sun" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g transform="translate(2.000000, 2.000000)" stroke="#222F3E" stroke-width="4">
+            <path d="M48,9.74185501 L48,0 M65.923869,14.1931198 L70.4940307,5.59157234 M79.8011758,26.6001045 L87.7753698,21.012406 M86.3378676,44.0187629 L96,42.8315294 M84.1160527,62.508983 L93.2041719,66.0001516 M73.5796584,77.9029448 L80.0934397,85.1425539 M57.2293622,86.5475197 L59.5843977,96 M38.7706378,86.5475197 L36.4156023,96 M22.4203416,77.9029448 L15.9065603,85.1425539 M11.8839473,62.508983 L2.79582815,66.0001516 M9.66213241,44.0187629 L2.13162821e-14,42.8315294 M16.1988242,26.6001045 L8.2246302,21.012406 M30.076131,14.1931198 L25.5059693,5.59157234" id="Layer-1"></path>
+            <circle id="Layer-2" cx="48" cy="48" r="20"></circle>
+        </g>
+    </g>
+</svg>

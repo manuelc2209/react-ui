@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>70. Pointer</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="70.-Pointer" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g transform="translate(19.000000, 2.000000)" stroke="#222F3E" stroke-width="4">
+            <path d="M2.0160113,17.9525344 C7.00747198,3.26799171 21.1057726,4.45968095e-13 30.8160113,2.27373675e-13 C40.52625,9.09494702e-15 54.1815319,3.27253273 59.6160113,17.9525344 C70.245,46.6643134 30.8160113,96 30.8160113,96 C30.8160113,96 -8.1975,48 2.0160113,17.9525344 Z" id="Layer-1"></path>
+            <circle id="Layer-2" cx="30.72" cy="30.72" r="13.44"></circle>
+        </g>
+    </g>
+</svg>

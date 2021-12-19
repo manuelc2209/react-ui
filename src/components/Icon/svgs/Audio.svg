@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>24. Audio</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="24.-Audio" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g transform="translate(7.000000, 2.000000)" stroke="#222F3E" stroke-width="4">
+            <polygon id="Layer-1" points="84.0670051 0.398583164 84.0670051 25.5492442 24.7255897 35.4816121 24.7255897 10.3732126"></polygon>
+            <ellipse id="Layer-2" cx="71.7042102" cy="76.2721649" rx="12.3627949" ry="9.7814433"></ellipse>
+            <ellipse id="Layer-3" cx="12.3627949" cy="86.0536082" rx="12.3627949" ry="9.7814433"></ellipse>
+            <path d="M24.7255897,35.6999827 L24.7255897,86.0554477" id="Layer-4"></path>
+            <path d="M84.0670051,26.4098969 L84.0670051,76.2804118" id="Layer-5"></path>
+        </g>
+    </g>
+</svg>
