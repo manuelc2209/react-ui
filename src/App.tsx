@@ -14,6 +14,7 @@ import { Routes, Route } from 'react-router';
 import { useNavigate } from 'react-router-dom';
 import { RegisterUI } from './components/ui/register';
 import { LoginUI } from './components/ui/login';
+import { DashboardUI } from './components';
 
 const StyledContainer = styled.div`
     height: inherit;
@@ -81,10 +82,20 @@ export const App: React.FC = () => {
     const [register, setRegister] = useState(false);
     let navigate = useNavigate();
 
+    function resetState() {
+        setRegister(false);
+        setLogin(false);
+    }
+
     const handleOnClick = () => {
         setDisabled(true);
         // Fake timeout to simmulate a request while api is not ready
         setTimeout(() => setDisabled(false), 2500);
+    };
+
+    const handleDashboard = () => {
+        resetState();
+        navigate('/dashboard');
     };
 
     const handleLogin = () => {
@@ -114,6 +125,7 @@ export const App: React.FC = () => {
                     <>
                         <Button label="Log in" onClick={() => handleLogin && handleLogin()} />
                         <Button label="Sign up" onClick={() => handleRegister && handleRegister()} />
+                        <Button label="Dashboard" onClick={() => handleDashboard && handleDashboard()} />
                     </>
                 )}
             </StyledHeader>
@@ -173,12 +185,15 @@ export const App: React.FC = () => {
     };
 
     const Register = <RegisterUI buttonProperties={buttonProps} formProperties={formProps}></RegisterUI>;
+    const Dashboard = <DashboardUI />;
 
     return (
         <Routes>
             <Route path="/" element={App} />
             <Route path="register" element={Register} />
             <Route path="login" element={Login} />
+            <Route path="dashboard" element={Dashboard} />
+            <Route path="*" element={App} />
         </Routes>
     );
 };

@@ -86,7 +86,7 @@ export const RegisterUI: React.FC<RegisterUIProps> = ({ formProperties, buttonPr
         <StyledContainer>
             <StyledHeader>
                 <Button
-                    label={buttonProperties.label || 'Button Label'}
+                    label={buttonProperties.label}
                     onClick={() => buttonProperties.onClick && buttonProperties.onClick()}
                 />
             </StyledHeader>
