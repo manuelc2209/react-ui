@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>12. Trash</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="12.-Trash" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g transform="translate(10.000000, 2.000000)" stroke="#222F3E" stroke-width="4">
+            <path d="M79.8499985,10 L69.9254443,88.3238112 L69.8598342,88.3238112 C69.9033452,88.4828664 69.9254443,88.6433288 69.9254443,88.8050331 C69.9254443,92.791606 56.4937875,96.0233618 39.9249992,96.0233618 C23.356211,96.0233618 9.92455421,92.791606 9.92455421,88.8050331 C9.92455421,88.6433288 9.94665325,88.4828664 9.99016429,88.3238112 L9.92455421,88.3238112 L0,10" id="Layer-1"></path>
+            <ellipse id="Layer-2" cx="40" cy="10" rx="40" ry="10"></ellipse>
+        </g>
+    </g>
+</svg>

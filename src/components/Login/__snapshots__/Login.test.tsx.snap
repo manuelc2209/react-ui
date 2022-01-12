@@ -2,31 +2,31 @@
 
 exports[`renders snapshot correctly 1`] = `
 <div
-  className="sc-crHmcD"
+  className="sc-egiyK"
 >
   <div
-    className="sc-ksdxgE jgiOCB"
+    className="sc-hBUSln jCHsmZ"
   >
     <div
-      className="sc-iqseJM jIljjx"
+      className="sc-crHmcD bpGfaf"
     >
       <input
-        className="sc-jrQzAO eGrRgi"
+        className="sc-kDTinF cJFIgF"
         onChange={[Function]}
       />
     </div>
   </div>
   <div
-    className="sc-iqseJM jIljjx"
+    className="sc-crHmcD bpGfaf"
   >
     <input
-      className="sc-jrQzAO eGrRgi"
+      className="sc-kDTinF cJFIgF"
       onChange={[Function]}
       type="password"
     />
   </div>
   <button
-    className="sc-gsDKAQ hTByPO sc-bqiRlB"
+    className="sc-gsDKAQ hTByPO sc-ksdxgE"
     onClick={[Function]}
     onMouseDown={[Function]}
     onMouseUp={[Function]}

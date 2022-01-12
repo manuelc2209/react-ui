@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>60. Battery 100%</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="60.-Battery-100%" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g transform="translate(19.000000, 2.000000)" stroke="#222F3E" stroke-width="4">
+            <rect id="Layer-1" x="0" y="10" width="62" height="86" rx="3"></rect>
+            <path d="M19,9.7734375 L19,3.99310226 C19,1.78777278 20.7842933,0 22.990053,0 L39.009947,0 C41.2135924,0 43,1.78732987 43,3.99310226 L43,9.7734375" id="Layer-2"></path>
+            <rect id="Layer-3" x="15" y="24" width="32" height="8"></rect>
+            <rect id="Layer-4" x="15" y="75" width="32" height="8"></rect>
+            <rect id="Layer-5" x="15" y="58" width="32" height="8"></rect>
+            <rect id="Layer-6" x="15" y="41" width="32" height="8"></rect>
+        </g>
+    </g>
+</svg>

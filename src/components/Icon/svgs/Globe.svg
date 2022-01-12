@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>43. Globe</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="43.-Globe" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <circle id="Layer-1" stroke="#222F3E" stroke-width="4" cx="50" cy="50" r="48"></circle>
+        <path d="M50,2 L50,98" id="Layer-2" stroke="#222F3E" stroke-width="4"></path>
+        <path d="M98,50 L2,50" id="Layer-3" stroke="#222F3E" stroke-width="4"></path>
+        <path d="M50,2 C50,2 74.1434192,20.5422687 74.1434192,50 C74.1434192,79.4577313 50,98 50,98" id="Layer-4" stroke="#222F3E" stroke-width="4"></path>
+        <path d="M50.1434192,2 C50.1434192,2 26,20.5422687 26,50 C26,79.4577313 50.1434192,98 50.1434192,98" id="Layer-5" stroke="#222F3E" stroke-width="4"></path>
+        <path d="M16.4,83.0279716 C23.8528065,76.4675429 35.3718224,69.2 49.8302321,69.2 C64.5100604,69.2 76.1597767,76.6918401 83.6,83.328848" id="Layer-6" stroke="#222F3E" stroke-width="4"></path>
+        <path d="M16.4,16.7008764 C23.8528065,23.2613052 35.3718224,30.528848 49.8302321,30.528848 C64.5100604,30.528848 76.1597767,23.037008 83.6,16.4" id="Layer-7" stroke="#222F3E" stroke-width="4"></path>
+    </g>
+</svg>

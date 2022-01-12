@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>15. Cash</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="15.-Cash" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <rect id="Layer-1" stroke="#222F3E" stroke-width="4" x="2" y="15" width="96" height="57.6"></rect>
+        <rect id="Layer-2" stroke="#222F3E" stroke-width="4" x="6" y="73" width="88" height="6"></rect>
+        <rect id="Layer-3" stroke="#222F3E" stroke-width="4" x="10" y="79" width="80" height="6"></rect>
+        <ellipse id="Layer-4" stroke="#222F3E" stroke-width="4" cx="49.5176471" cy="44.237023" rx="15.4352941" ry="21.237023"></ellipse>
+        <path d="M19.25,65.474046 L80.75,65.474046 C80.75,59.609604 85.3390813,54.8555345 91,54.8555345 L91,33.6185115 C85.3390813,33.6185115 80.75,28.864442 80.75,23 L19.25,23 C19.25,28.864442 14.6609187,33.6185115 9,33.6185115 L9,54.8555345 C14.6609187,54.8555345 19.25,59.609604 19.25,65.474046 L19.25,65.474046 Z" id="Layer-5" stroke="#222F3E" stroke-width="4"></path>
+        <ellipse id="Layer-6" stroke="#222F3E" stroke-width="4" cx="23.4705882" cy="44.237023" rx="2.89411765" ry="3.03386043"></ellipse>
+        <ellipse id="Layer-7" stroke="#222F3E" stroke-width="4" cx="74.6" cy="44.237023" rx="2.89411765" ry="3.03386043"></ellipse>
+    </g>
+</svg>

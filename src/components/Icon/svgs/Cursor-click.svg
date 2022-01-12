@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>7. Cursor (click)</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="7.-Cursor-(click)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g transform="translate(4.000000, 2.000000)" stroke="#222F3E" stroke-width="4">
+            <polygon id="Layer-1" points="70.6619535 72.6817392 91.2330097 65.4240214 35.9450639 35.2485108 52.0633676 95.8041348 64.1336798 77.7450915 78.5849446 96.1073449 85.1132183 91.0439927"></polygon>
+            <path d="M0,32.2111239 L20.0924173,32.2111239 M12.4236747,6.42224784 L25.0682427,21.9864669 M40.5540248,0 L36.0342144,19.5141066 M63,17.8284035 L44.9410549,26.6078412 M12.4236747,58 L25.0682427,42.435781" id="Layer-2"></path>
+        </g>
+    </g>
+</svg>

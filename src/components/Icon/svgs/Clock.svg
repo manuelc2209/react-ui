@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>49. Clock</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="49.-Clock" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g transform="translate(2.000000, 1.000000)" stroke="#222F3E" stroke-width="4">
+            <path d="M60.0047728,31.5864667 L60.0047728,51.3884469" id="Layer-2" transform="translate(60.004773, 41.487457) rotate(45.000000) translate(-60.004773, -41.487457) "></path>
+            <path d="M92,53 C92,28.699471 72.300529,9 48,9 C23.699471,9 4,28.699471 4,53 C4,77.300529 23.699471,97 48,97 C72.300529,97 92,77.300529 92,53 Z" id="Layer-3"></path>
+            <path d="M47.9450549,57.9009901 C50.6761334,57.9009901 52.8901099,55.684578 52.8901099,52.950495 C52.8901099,50.2164121 50.6761334,48 47.9450549,48 C45.2139765,48 43,50.2164121 43,52.950495 C43,55.684578 45.2139765,57.9009901 47.9450549,57.9009901 L47.9450549,57.9009901 Z" id="Layer-4"></path>
+            <path d="M5.17009358,25.3050865 C-0.390031193,19.7449618 -0.390031193,10.7302184 5.17009358,5.17009358 C10.7302184,-0.390031193 19.7449618,-0.390031193 25.3050865,5.17009358 L5.17009358,25.3050865 Z" id="Layer-5" transform="translate(13.152543, 13.152543) rotate(4.000000) translate(-13.152543, -13.152543) "></path>
+            <path d="M75.1700936,25.3050865 C69.6099688,19.7449618 69.6099688,10.7302184 75.1700936,5.17009358 C80.7302184,-0.390031193 89.7449618,-0.390031193 95.3050865,5.17009358 L75.1700936,25.3050865 Z" id="Layer-6" transform="translate(83.152543, 13.152543) scale(-1, 1) rotate(4.000000) translate(-83.152543, -13.152543) "></path>
+        </g>
+    </g>
+</svg>

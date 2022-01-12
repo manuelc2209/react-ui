@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>18. Credit card</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="18.-Credit-card" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <rect id="Layer-1" stroke="#222F3E" stroke-width="4" x="2" y="16" width="96" height="68" rx="6"></rect>
+        <path d="M72.56,56.5055549 C74.2288024,55.188062 76.3471083,54.4 78.6523077,54.4 C84.0358095,54.4 88.4,58.6980664 88.4,64 C88.4,69.3019336 84.0358095,73.6 78.6523077,73.6 C76.3471083,73.6 74.2288024,72.811938 72.56,71.4944451 C70.8911976,72.811938 68.7728917,73.6 66.4676923,73.6 C61.0841905,73.6 56.72,69.3019336 56.72,64 C56.72,58.6980664 61.0841905,54.4 66.4676923,54.4 C68.7728917,54.4 70.8911976,55.188062 72.56,56.5055549 L72.56,56.5055549 Z" id="Layer-2" stroke="#222F3E" stroke-width="4"></path>
+        <path d="M12,43 L28,43" id="Layer-3" stroke="#222F3E" stroke-width="4"></path>
+        <path d="M34,43 L50,43" id="Layer-4" stroke="#222F3E" stroke-width="4"></path>
+        <path d="M56,43 L72,43" id="Layer-5" stroke="#222F3E" stroke-width="4"></path>
+        <path d="M11.6,71.68 L23.12,71.68" id="Layer-6" stroke="#222F3E" stroke-width="4"></path>
+        <path d="M28.88,71.68 L40.4,71.68" id="Layer-7" stroke="#222F3E" stroke-width="4"></path>
+        <path d="M11.6,62.08 L40.4,62.08" id="Layer-8" stroke="#222F3E" stroke-width="4"></path>
+        <path d="M11.6,27.52 L20.24,27.52" id="Layer-9" stroke="#222F3E" stroke-width="4"></path>
+    </g>
+</svg>

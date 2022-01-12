@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>8. Safe</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="8.-Safe" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <rect id="Layer-1" stroke="#222F3E" stroke-width="4" x="2" y="2" width="96" height="96" rx="3"></rect>
+        <ellipse id="Layer-2" stroke="#222F3E" stroke-width="4" cx="50.0800705" cy="50.5202698" rx="16.6147005" ry="16.7808475"></ellipse>
+        <path d="M61.6057896,62.1612461 L39.6755039,40.0116575" id="Layer-3" stroke="#222F3E" stroke-width="4"></path>
+        <path d="M39.6755039,62.1612461 L61.6057896,40.0116575" id="Layer-4" stroke="#222F3E" stroke-width="4"></path>
+        <polygon id="Layer-5" stroke="#222F3E" stroke-width="4" points="88 19 98 19 98 79 88 79 88 88 12 88 12 12 88 12"></polygon>
+    </g>
+</svg>

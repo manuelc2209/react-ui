@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>14. Stock</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="14.-Stock" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3,88.997152 C3,87.3418707 4.35010672,86 6,86 L19.2,86 C20.8568542,86 22.2,87.3416228 22.2,88.997152 L22.2,98 L3,98 L3,88.997152 Z" id="Layer-1" stroke="#222F3E" stroke-width="4"></path>
+        <path d="M22,72.9964905 C22,71.3415745 23.3501067,70 25,70 L38.2,70 C39.8568542,70 41.2,71.3504982 41.2,72.9964905 L41.2,98 L22,98 L22,72.9964905 Z" id="Layer-2" stroke="#222F3E" stroke-width="4"></path>
+        <path d="M41,37.0010118 C41,35.3435988 42.3501067,34 44,34 L57.2,34 C58.8568542,34 60.2,35.336731 60.2,37.0010118 L60.2,98 L41,98 L41,37.0010118 Z" id="Layer-3" stroke="#222F3E" stroke-width="4"></path>
+        <path d="M60,23.9948589 C60,22.340844 61.3501067,21 63,21 L76.2,21 C77.8568542,21 79.2,22.3364792 79.2,23.9948589 L79.2,98 L60,98 L60,23.9948589 Z" id="Layer-4" stroke="#222F3E" stroke-width="4"></path>
+        <path d="M79,5.00494794 C79,3.34536102 80.3501067,2 82,2 L95.2,2 C96.8568542,2 98.2,3.33876028 98.2,5.00494794 L98.2,98 L79,98 L79,5.00494794 Z" id="Layer-5" stroke="#222F3E" stroke-width="4"></path>
+    </g>
+</svg>

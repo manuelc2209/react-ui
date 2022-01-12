@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>32. Cup</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="32.-Cup" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M78.8,28.1258618 C80.7191879,26.9063012 82.9963643,26.2 85.4387982,26.2 L88.2324548,26.2 C93.537228,26.2 97.8375965,30.4995312 97.8375965,35.8007297 L97.8375964,54.8905203 C97.8375964,60.1928569 93.5464946,64.49125 88.2324547,64.49125 L85.4387982,64.49125 C82.8313727,64.49125 80.4119321,63.6869293 78.4153673,62.3121865 C78.6685259,60.7119984 78.8,59.0713463 78.8,57.4 L78.8,28.1258618 L78.8,28.1258618 Z" id="Layer-1" stroke="#222F3E" stroke-width="4"></path>
+        <path d="M61,85.5834181 L61,94 L18,94 L18,84.6554037 C8.4542521,79.321183 2,69.1161752 2,57.4 L2,16.6 L78.8,16.6 L78.8,57.4 C78.8,69.8344287 71.5228869,80.5699253 61,85.5834181 Z" id="Layer-2" stroke="#222F3E" stroke-width="4"></path>
+        <rect id="Layer-3" stroke="#222F3E" stroke-width="4" x="2" y="7" width="76.8" height="9.6"></rect>
+    </g>
+</svg>
