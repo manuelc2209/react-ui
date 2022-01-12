@@ -2,7 +2,7 @@
 
 exports[`renders snapshot correctly 1`] = `
 <button
-  className="sc-gsDKAQ hTByPO"
+  className="sc-gsDKAQ hscPjs"
   onClick={[Function]}
   onMouseDown={[Function]}
   onMouseUp={[Function]}
@@ -10,6 +10,8 @@ exports[`renders snapshot correctly 1`] = `
 >
   <span
     className="sc-bdvvtL jvqAQd"
-  />
+  >
+    Button Label
+  </span>
 </button>
 `;

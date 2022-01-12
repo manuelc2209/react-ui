@@ -8,7 +8,7 @@ exports[`renders snapshot correctly 1`] = `
     className="sc-pVTFL jvgrHT sc-caiLqq kMGFda"
   >
     <button
-      className="sc-gsDKAQ hTByPO"
+      className="sc-gsDKAQ hscPjs"
       onClick={[Function]}
       onMouseDown={[Function]}
       onMouseUp={[Function]}
@@ -77,7 +77,7 @@ exports[`renders snapshot correctly 1`] = `
             />
           </div>
           <button
-            className="sc-gsDKAQ hDLjCu sc-hGPBjI gZSpxY"
+            className="sc-gsDKAQ fohseQ sc-hGPBjI gZSpxY"
             disabled={true}
             onClick={[Function]}
             onMouseDown={[Function]}
@@ -109,7 +109,7 @@ exports[`renders snapshot correctly 1`] = `
           />
         </div>
         <button
-          className="sc-gsDKAQ joOHgp sc-dJjYzT"
+          className="sc-gsDKAQ bvVKrP sc-dJjYzT"
           disabled={true}
           onClick={[Function]}
           onMouseDown={[Function]}

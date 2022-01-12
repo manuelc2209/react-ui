@@ -26,7 +26,7 @@ exports[`renders snapshot correctly 1`] = `
     />
   </div>
   <button
-    className="sc-gsDKAQ hTByPO sc-ksdxgE"
+    className="sc-gsDKAQ hscPjs sc-ksdxgE"
     onClick={[Function]}
     onMouseDown={[Function]}
     onMouseUp={[Function]}
