@@ -1,0 +1,45 @@
+name: CI/CD
+
+on:
+  push:
+    branches: [ master ]
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [16.x]
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Install dependencies
+      run: yarn install
+
+    - name: Run the tests
+      run: yarn test
+      
+    - name: Build project
+      run: yarn build
+
+    - name: Configure AWS credentials
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        role-to-assume: arn:aws:iam::639172013776:role/github
+        aws-region: eu-west-1
+
+    - name: Deploy static site to S3 bucket
+      run: aws s3 sync ./public/ s3://gh-prd-react-ui-cdn-origin --delete
