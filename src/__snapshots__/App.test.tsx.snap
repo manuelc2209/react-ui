@@ -48,7 +48,7 @@ exports[`renders snapshot correctly 1`] = `
         >
           <img
             className="sc-fKVqWL dSeITg"
-            src="https://www.dovercourt.org/wp-content/uploads/2019/11/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.jpg"
+            src="https://avatars.githubusercontent.com/u/20400660?v=4"
           />
           <span
             className="sc-dlVxhl gGpvla"

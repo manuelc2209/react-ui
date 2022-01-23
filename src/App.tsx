@@ -91,20 +91,24 @@ export const App: React.FC = () => {
 
     const handleOnClick = () => {
         setDisabled(true);
-        // Fake timeout to simmulate a request handler while api is not ready
+        // Fake timeout to simmulate a request while api is not ready
         setTimeout(() => setDisabled(false), 2500);
     };
 
     const handleLogin = () => {
-        setLogin(!login);
-        navigate(!login ? '/login' : '/');
+        setLogin(true);
+        navigate(login ? '/' : '/login');
+    };
+
+    const handleBack = () => {
+        setLogin(false);
         setRegister(false);
+        navigate('/');
     };
 
     const handleRegister = () => {
-        setRegister(!register);
-        navigate(register ? '/register' : '/');
-        setLogin(false);
+        setRegister(true);
+        navigate(register ? '/' : '/register');
     };
 
     // REFACTOR THIS INTO UI
@@ -113,7 +117,7 @@ export const App: React.FC = () => {
         <StyledContainer>
             <StyledHeader>
                 {login ? (
-                    <Button label="Log out" onClick={() => handleLogin && handleLogin()} />
+                    <Button label="Log out" onClick={() => handleBack && handleBack()} />
                 ) : (
                     <>
                         <Button label="Log in" onClick={() => handleLogin && handleLogin()} />
@@ -144,7 +148,7 @@ export const App: React.FC = () => {
     const Login = (
         <StyledContainer>
             <StyledHeader>
-                <Button label="Go Back" onClick={() => handleLogin && handleLogin()} />
+                <Button label="Go Back" onClick={() => handleBack && handleBack()} />
             </StyledHeader>
             <StyledContent>
                 <StyledOverlay>
@@ -164,7 +168,7 @@ export const App: React.FC = () => {
     const buttonProps = {
         label: 'Go back',
         disabled: true,
-        onClick: () => handleRegister()
+        onClick: () => handleBack()
     };
 
     const formProps = {
