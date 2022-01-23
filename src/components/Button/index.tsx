@@ -39,7 +39,8 @@ const StyledLabel = styled.span<StyledLabelProps>`
 
 const StyledButton = styled.button<StyledButtonProps>`
     width: auto;
-    padding: 7px 7px;
+    padding: 10px;
+    box-sizing: border-box;
     height: ${(props) => props.buttonSize}px;
     border: 1px solid ${lightgrey1};
     background-color: ${COLOR_PRIMARY_1};
@@ -70,15 +71,15 @@ function getSizeInPx(size: string): number {
         case 'large':
             return 30;
         case 'medium':
-            return 26;
+            return 28;
         default:
-            return 22;
+            return 26;
     }
 }
 
 export const Button: React.FC<ButtonProps> = ({
     size = 'small',
-    label,
+    label = 'Button Label',
     disabled,
     className,
     mouseEvents,
