@@ -26,6 +26,7 @@ interface StyledLabelProps {
 const StyledInput = styled.input<StyledInputProps>`
     border-radius: 5px;
     border: 1px solid ${lightgrey1};
+    padding: 0 10px;
 `;
 
 const StyledLabel = styled.span<StyledLabelProps>``;
@@ -44,7 +45,7 @@ const StyledContainer = styled.div<StyledContainerProps>`
 
     ${StyledInput},
     ${StyledLabel} {
-        height: 22px;
+        height: 28px;
     }
 
     ${StyledInput},

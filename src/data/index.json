@@ -8,13 +8,13 @@
         "cards": [
             {
                 "title": "LinkedIn",
-                "subtitle": "subtitle1",
+                "subtitle": "",
                 "image": "https://hermes.digitalinnovation.one/articles/cover/669b63fe-912d-484c-b313-95a46a8ee25e.png",
                 "href": "https://www.linkedin.com/in/manuel-correia2209/"
             },
             {
                 "title": "Github",
-                "subtitle": "subtitle2",
+                "subtitle": "",
                 "image": "https://hermes.digitalinnovation.one/articles/cover/7b4fbb1d-f57a-4420-9209-ee976b171bdf.jpg",
                 "href": "https://github.com/manuelc2209/react-ui"
             }

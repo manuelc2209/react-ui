@@ -2,10 +2,10 @@
 
 exports[`renders snapshot correctly 1`] = `
 <div
-  className="sc-crHmcD bpGfaf"
+  className="sc-crHmcD ZigBd"
 >
   <input
-    className="sc-kDTinF cJFIgF"
+    className="sc-kDTinF jwmmwC"
     onChange={[Function]}
   />
 </div>

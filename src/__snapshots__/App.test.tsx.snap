@@ -2,10 +2,10 @@
 
 exports[`renders snapshot correctly 1`] = `
 <div
-  className="sc-iUKqMP bPqxoX"
+  className="sc-dPiLbb kGdXyd"
 >
   <div
-    className="sc-dkPtRN gfNMps sc-bBHHxi kALAEc"
+    className="sc-dkPtRN gfNMps sc-khQegj eOeCWr"
   >
     <button
       className="sc-gsDKAQ hscPjs"
@@ -35,35 +35,35 @@ exports[`renders snapshot correctly 1`] = `
     </button>
   </div>
   <div
-    className="sc-cTAqQK gqXsxm"
+    className="sc-bBHHxi idZYgH"
   >
     <div
-      className="sc-jObWnj dGmuFI"
+      className="sc-cNKqjZ FMTLj"
     >
       <div
-        className="sc-dPiLbb gzlWyQ"
+        className="sc-AjmGg fYIobP"
       >
         <div
-          className="sc-ezbkAF eaBuId"
+          className="sc-fFeiMQ gQWHeJ"
         >
           <img
-            className="sc-fKVqWL dSeITg"
+            className="sc-iqseJM kkkTSY"
             src="https://avatars.githubusercontent.com/u/20400660?v=4"
           />
           <span
-            className="sc-dlVxhl gGpvla"
+            className="sc-jrQzAO difIYl"
           >
             Who am I?
           </span>
           <div
-            className="sc-iwjdpV gNAHRV"
+            className="sc-egiyK jyElyK"
           >
             <span
-              className="sc-kfPuZi hMmAof"
+              className="sc-kDTinF igOoDy"
             >
               I'm a Front-End Developer for 
               <a
-                className="sc-bBHxTw"
+                className="sc-crHmcD"
                 href="https://www.cleverti.com/"
               >
                 Cleverti
@@ -71,212 +71,204 @@ exports[`renders snapshot correctly 1`] = `
             </span>
           </div>
           <div
-            className="sc-cxpSdN cMZapS"
+            className="sc-bqiRlB iHGBjO"
           >
             <div
-              className="sc-hBUSln bvuraX sc-llYSUQ URPYk"
+              className="sc-hKwDye DRitN sc-ksdxgE bLqflE"
             >
               <a
-                className="sc-bkkeKt"
+                className="sc-gKclnd"
                 href="https://www.linkedin.com/in/manuel-correia2209/"
                 target="_blank"
               >
                 <div
-                  className="sc-fotOHu"
+                  className="sc-eCImPb"
                 >
                   <img
-                    className="sc-ieecCq HyLfc"
+                    className="sc-iCfMLu cuCkrc"
                     src="https://hermes.digitalinnovation.one/articles/cover/669b63fe-912d-484c-b313-95a46a8ee25e.png"
                   />
                 </div>
               </a>
               <div
-                className="sc-fFeiMQ gfbLiE"
+                className="sc-jRQBWg IYuFz"
               >
                 <span
-                  className="sc-dJjYzT gJZvtk"
+                  className="sc-furwcr gdsZAQ"
                 >
                   LinkedIn
                 </span>
-                <span
-                  className="sc-hGPBjI ezhJJP"
-                >
-                  subtitle1
-                </span>
+                
               </div>
             </div>
             <div
-              className="sc-hBUSln bvuraX sc-llYSUQ URPYk"
+              className="sc-hKwDye DRitN sc-ksdxgE bLqflE"
             >
               <a
-                className="sc-bkkeKt"
+                className="sc-gKclnd"
                 href="https://github.com/manuelc2209/react-ui"
                 target="_blank"
               >
                 <div
-                  className="sc-fotOHu"
+                  className="sc-eCImPb"
                 >
                   <img
-                    className="sc-ieecCq HyLfc"
+                    className="sc-iCfMLu cuCkrc"
                     src="https://hermes.digitalinnovation.one/articles/cover/7b4fbb1d-f57a-4420-9209-ee976b171bdf.jpg"
                   />
                 </div>
               </a>
               <div
-                className="sc-fFeiMQ gfbLiE"
+                className="sc-jRQBWg IYuFz"
               >
                 <span
-                  className="sc-dJjYzT gJZvtk"
+                  className="sc-furwcr gdsZAQ"
                 >
                   Github
                 </span>
-                <span
-                  className="sc-hGPBjI ezhJJP"
-                >
-                  subtitle2
-                </span>
+                
               </div>
             </div>
           </div>
         </div>
       </div>
       <div
-        className="sc-dPiLbb gzlWyQ"
+        className="sc-AjmGg fYIobP"
       >
         <div
-          className="sc-ikJyIC iIvXwd"
+          className="sc-dJjYzT gNjLwS"
         >
           <span
-            className="sc-kLwhqv hokgzL"
+            className="sc-ieecCq fsVZs"
           >
             My skills:
           </span>
           <div
-            className="sc-bYoBSM vEBAQ"
+            className="sc-bkkeKt etJLKY"
             title="90"
           >
             <span
-              className="sc-kLwhqv hokgzL"
+              className="sc-ieecCq fsVZs"
             />
             <span
-              className="sc-kLwhqv hokgzL"
+              className="sc-ieecCq fsVZs"
             >
               React
             </span>
           </div>
           <div
-            className="sc-bYoBSM vEBAQ"
+            className="sc-bkkeKt etJLKY"
             title="90"
           >
             <span
-              className="sc-kLwhqv hokgzL"
+              className="sc-ieecCq fsVZs"
             />
             <span
-              className="sc-kLwhqv hokgzL"
+              className="sc-ieecCq fsVZs"
             >
               Angular
             </span>
           </div>
           <div
-            className="sc-bYoBSM vEBAQ"
+            className="sc-bkkeKt etJLKY"
             title="90"
           >
             <span
-              className="sc-kLwhqv hokgzL"
+              className="sc-ieecCq fsVZs"
             />
             <span
-              className="sc-kLwhqv hokgzL"
+              className="sc-ieecCq fsVZs"
             >
               Styled-Components
             </span>
           </div>
           <div
-            className="sc-bYoBSM crJyrU"
+            className="sc-bkkeKt dlnDWc"
             title="85"
           >
             <span
-              className="sc-kLwhqv hokgzL"
+              className="sc-ieecCq fsVZs"
             />
             <span
-              className="sc-kLwhqv hokgzL"
+              className="sc-ieecCq fsVZs"
             >
               React-testing
             </span>
           </div>
           <div
-            className="sc-bYoBSM jvPfqY"
+            className="sc-bkkeKt fpmUuc"
             title="80"
           >
             <span
-              className="sc-kLwhqv hokgzL"
+              className="sc-ieecCq fsVZs"
             />
             <span
-              className="sc-kLwhqv hokgzL"
+              className="sc-ieecCq fsVZs"
             >
               Jest
             </span>
           </div>
           <div
-            className="sc-bYoBSM jvPfqY"
+            className="sc-bkkeKt fpmUuc"
             title="80"
           >
             <span
-              className="sc-kLwhqv hokgzL"
+              className="sc-ieecCq fsVZs"
             />
             <span
-              className="sc-kLwhqv hokgzL"
+              className="sc-ieecCq fsVZs"
             >
               Git
             </span>
           </div>
           <div
-            className="sc-bYoBSM jqrJlw"
+            className="sc-bkkeKt fDQIrE"
             title="75"
           >
             <span
-              className="sc-kLwhqv hokgzL"
+              className="sc-ieecCq fsVZs"
             />
             <span
-              className="sc-kLwhqv hokgzL"
+              className="sc-ieecCq fsVZs"
             >
               TypeScript
             </span>
           </div>
           <div
-            className="sc-bYoBSM kOWHQQ"
+            className="sc-bkkeKt kntbqI"
             title="60"
           >
             <span
-              className="sc-kLwhqv hokgzL"
+              className="sc-ieecCq fsVZs"
             />
             <span
-              className="sc-kLwhqv hokgzL"
+              className="sc-ieecCq fsVZs"
             >
               Scss
             </span>
           </div>
           <div
-            className="sc-bYoBSM CYQZM"
+            className="sc-bkkeKt eBebjU"
             title="50"
           >
             <span
-              className="sc-kLwhqv hokgzL"
+              className="sc-ieecCq fsVZs"
             />
             <span
-              className="sc-kLwhqv hokgzL"
+              className="sc-ieecCq fsVZs"
             >
               Css
             </span>
           </div>
           <div
-            className="sc-bYoBSM CYQZM"
+            className="sc-bkkeKt eBebjU"
             title="50"
           >
             <span
-              className="sc-kLwhqv hokgzL"
+              className="sc-ieecCq fsVZs"
             />
             <span
-              className="sc-kLwhqv hokgzL"
+              className="sc-ieecCq fsVZs"
             >
               Vue
             </span>

@@ -22,6 +22,7 @@ interface FormProps {
     passwordLabel?: string;
     nicknamePlaceholder?: string;
     passwordPlaceholder?: string;
+    repeatPasswordPlaceholder?: string;
     onClick?: () => void;
 }
 
@@ -42,9 +43,11 @@ const StyledContent = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
 
-    ${StyledRegister},
-    ${StyledLogin} {
-        width: 70%;
+    ${StyledRegister} {
+        background: #3d3c3c9b;
+        border-radius: 7px;
+        padding: 150px 150px;
+        width: 40%;
         margin: auto;
     }
 
@@ -97,6 +100,9 @@ export const RegisterUI: React.FC<RegisterUIProps> = ({ formProperties, buttonPr
                         passwordLabel={formProperties.passwordLabel || 'Password:'}
                         passwordPlaceholder={
                             formProperties.passwordPlaceholder || 'Please insert a valid password here:'
+                        }
+                        repeatPasswordLabel={
+                            formProperties.repeatPasswordPlaceholder || 'Please repeat your password here'
                         }
                         validatePassword={formProperties.validatePassword}
                         doubleValidation={formProperties.doubleValidation}
