@@ -13,15 +13,13 @@ import { Skills } from './components/Skills';
 import { Routes, Route } from 'react-router';
 import { useNavigate } from 'react-router-dom';
 import { RegisterUI } from './components/ui/register';
+import { LoginUI } from './components/ui/login';
 
 const StyledContainer = styled.div`
     height: inherit;
     display: flex;
     flex-direction: column;
 `;
-
-const StyledRegister = styled(Register)``;
-const StyledLogin = styled(Login)``;
 
 const StyledContent = styled.div`
     display: flex;
@@ -30,12 +28,6 @@ const StyledContent = styled.div`
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
-    ${StyledRegister},
-    ${StyledLogin} {
-        width: 70%;
-        margin: auto;
-    }
 
     @media (max-width: 450px) {
         flex-direction: column;
@@ -145,25 +137,22 @@ export const App: React.FC = () => {
         </StyledContainer>
     );
 
-    const Login = (
-        <StyledContainer>
-            <StyledHeader>
-                <Button label="Go Back" onClick={() => handleBack && handleBack()} />
-            </StyledHeader>
-            <StyledContent>
-                <StyledOverlay>
-                    <StyledLogin
-                        nameLabel="Username:"
-                        nicknamePlaceholder="Please type in your Nickname here:"
-                        passwordLabel="Password:"
-                        passwordPlaceholder="Please type in your password here:"
-                        onClick={handleOnClick}
-                        disabled={disabled}
-                    ></StyledLogin>
-                </StyledOverlay>
-            </StyledContent>
-        </StyledContainer>
-    );
+    const loginButtonProps = {
+        label: 'Go back',
+        disabled: true,
+        onClick: () => handleBack()
+    };
+
+    const loginFormProps = {
+        nameLabel: 'Username:',
+        nicknamePlaceholder: 'Please type in your Nickname here:',
+        passwordLabel: 'Password:',
+        passwordPlaceholder: 'Please type in your password here:',
+        disabled: false,
+        onClick: () => handleOnClick()
+    };
+
+    const Login = <LoginUI buttonProperties={loginButtonProps} formProperties={loginFormProps}></LoginUI>;
 
     const buttonProps = {
         label: 'Go back',
@@ -172,13 +161,14 @@ export const App: React.FC = () => {
     };
 
     const formProps = {
-        name: 'Test',
+        name: 'Username',
         disabled: false,
         validatePassword: true,
         doubleValidation: true,
-        passwordLabel: 'PwLabel',
-        nicknamePlaceholder: 'Nickname Placeholder',
-        passwordPlaceholder: 'Pw Placeholder',
+        passwordLabel: 'Password:',
+        nicknamePlaceholder: 'Username Placeholder',
+        passwordPlaceholder: 'Password Placeholder',
+        repeatPasswordPlaceholder: 'Repeat your password here',
         onClick: () => handleOnClick()
     };
 

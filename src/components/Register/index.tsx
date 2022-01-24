@@ -9,6 +9,7 @@ import { strongRegex, mediumRegex } from './utils';
 interface RegisterProps {
     nicknamePlaceholder?: string;
     passwordPlaceholder?: string;
+    repeatPasswordLabel?: string;
     disabled?: boolean;
     nameLabel?: string;
     passwordLabel?: string;
@@ -32,7 +33,6 @@ const StyledLabel = styled.span``;
 
 const StyledPasswordContainer = styled.div`
     display: flex;
-    height: 50px;
     margin-bottom: 20px;
 `;
 
@@ -40,11 +40,11 @@ const StyledPassword = styled.div`
     flex: 1;
     display: flex;
     flex-direction: column;
-    height: 28px;
     margin-right: 5px;
 `;
 
 const StyledDisplay = styled.span<StyledDisplayProps>`
+    border-radius: 7px;
     background-color: ${(props: StyledDisplayProps) => props.backgroundColor};
     width: ${(props: StyledDisplayProps) => props.displayWidth};
     padding-top: 2px;
@@ -58,6 +58,7 @@ const StyledButtonVisible = styled(Button)`
     flex-direction: column;
     align-self: self-end;
     justify-content: center;
+    margin-bottom: 4px;
 `;
 
 const StyledContainer = styled.div<StyledContainerProps>`
@@ -83,6 +84,7 @@ const StyledContainer = styled.div<StyledContainerProps>`
 export const Register: React.FC<RegisterProps> = ({
     nameLabel,
     passwordLabel,
+    repeatPasswordLabel,
     nicknamePlaceholder,
     passwordPlaceholder,
     validatePassword,
@@ -91,7 +93,7 @@ export const Register: React.FC<RegisterProps> = ({
     className,
     onClick
 }) => {
-    const [backgroundColor, setBackgroundColor] = useState('');
+    const [validationColor, setValidationColor] = useState('');
     const [displayPassword, setDisplayPassword] = useState(false);
     const [validationValid, setValidationValid] = useState(false);
     const [displayWidth, setDisplayWidth] = useState('');
@@ -99,14 +101,15 @@ export const Register: React.FC<RegisterProps> = ({
 
     const handleValidation = (event: React.FocusEvent<HTMLInputElement>) => {
         setValue(event.target.value);
+        console.log(event.target.value);
         if (strongRegex.test(event.target.value)) {
-            setBackgroundColor('#0F9D58');
+            setValidationColor('#0F9D58');
             setDisplayWidth('100%');
         } else if (mediumRegex.test(event.target.value)) {
-            setBackgroundColor('#F4B400');
+            setValidationColor('#F4B400');
             setDisplayWidth('50%');
         } else {
-            setBackgroundColor('#DB4437');
+            setValidationColor('#DB4437');
             setDisplayWidth('25%');
         }
     };
@@ -117,6 +120,9 @@ export const Register: React.FC<RegisterProps> = ({
         }
         setValidationValid(event.target.value === value);
     };
+
+    const titleDisplay =
+        'We Recommend a minimum 8 characters, at least one uppercase letter, one lowercase letter, one number and one special character';
 
     return (
         <StyledContainer disabled={disabled} className={className}>
@@ -137,7 +143,11 @@ export const Register: React.FC<RegisterProps> = ({
                             }
                             type={displayPassword ? 'text' : 'password'}
                         />
-                        <StyledDisplay backgroundColor={backgroundColor} displayWidth={displayWidth} />
+                        <StyledDisplay
+                            title={titleDisplay}
+                            backgroundColor={validationColor}
+                            displayWidth={displayWidth}
+                        />
                     </StyledPassword>
                     <StyledButtonVisible
                         label="Display Password"
@@ -152,7 +162,7 @@ export const Register: React.FC<RegisterProps> = ({
             {Boolean(passwordLabel) && Boolean(doubleValidation) && (
                 <Input
                     label={`Repeat ${passwordLabel}`}
-                    placeholder={`Please repeat your ${passwordLabel}`}
+                    placeholder={repeatPasswordLabel}
                     disabled={disabled}
                     onChange={(event: React.FocusEvent<HTMLInputElement>) =>
                         validatePassword && crossValidation && crossValidation(event)

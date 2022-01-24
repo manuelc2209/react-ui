@@ -31,6 +31,7 @@ const StyledButton = styled(Button)``;
 const StyledContainer = styled.div<StyledContainerProps>`
     display: flex;
     flex-direction: column;
+    width: 100%;
 
     :not(:last-child) {
         margin-bottom: 20px;
