@@ -1,8 +1,8 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
+import styled from 'styled-components';
 
 import { Card } from '../components/Card';
-import styled from 'styled-components';
 
 export default {
     title: 'component/Card',
@@ -34,8 +34,7 @@ Secondary.args = {
 
 export const ImageOnly = Template.bind({});
 ImageOnly.args = {
-    image:
-        'https://i.ytimg.com/vi/HVrmuR6xGc0/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB5rSDtHMHh_J12HeAXt9RfoCFkSg'
+    image: 'https://i.ytimg.com/vi/HVrmuR6xGc0/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB5rSDtHMHh_J12HeAXt9RfoCFkSg'
 };
 
 export const TextOnly = Template.bind({});

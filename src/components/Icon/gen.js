@@ -1,4 +1,10 @@
-const fs = require('fs');
+/* eslint-disable id-length */
+/* eslint-disable indent */
+/* eslint-disable consistent-return */
+/* eslint-disable no-param-reassign */
+/* eslint-disable no-warning-comments */
+/* eslint-disable @shopify/prefer-early-return */
+import { readdir, readFile, writeFile } from 'fs';
 
 let file = `import React from 'react';
 import styled from 'styled-components';\n
@@ -9,8 +15,8 @@ import styled from 'styled-components';\n
 const buildList = [];
 
 function parseName(fileName) {
-    let newName = fileName.replace(/.svg/, '');
-    let name = newName.replace(/-([a-z])/g, function (g) {
+    const newName = fileName.replace(/.svg/, '');
+    let name = newName.replace(/-([a-z])/g, (g) => {
         return g[1].toUpperCase();
     });
     if (name.includes('-')) {
@@ -22,8 +28,8 @@ function parseName(fileName) {
 
 function parseData(data) {
     const buildSvg = [];
-    let newData = data.split('\n');
-    newData.forEach((entry, i) => {
+    const newData = data.split('\n');
+    newData.forEach((entry) => {
         // Todo - Improve this logic also
         if (
             !entry.includes('?xml') &&
@@ -55,15 +61,15 @@ function fileData(fileName, data) {
         return (${newData.trim()}\n)};\n\n`;
 }
 
-function readFiles(dirname, onFileContent, onError) {
+function readFiles(dirname, onFileContent) {
     return new Promise((resolve, reject) => {
-        fs.readdir(dirname, function (err, filenames) {
+        readdir(dirname, (err, filenames) => {
             if (err) {
                 reject(err);
                 return;
             }
-            filenames.forEach(function (filename, index) {
-                fs.readFile(dirname + `/${filename}`, 'utf-8', function (err, content) {
+            filenames.forEach((filename, index) => {
+                readFile(`${dirname}/${filename}`, 'utf-8', (content) => {
                     if (err) {
                         reject(err, content);
                         return;
@@ -133,7 +139,7 @@ export const Icon: React.FC<IconProps> = ({
 `;
 
         const saveFile = (fileName, code) => {
-            fs.writeFile(fileName, code, (error) => {
+            writeFile(fileName, code, (error) => {
                 if (error) {
                     console.log(error);
                 }

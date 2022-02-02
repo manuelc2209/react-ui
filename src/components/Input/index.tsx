@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+
 import { COLOR_PRIMARY_1, fontStyle, lightgrey1, setCursor } from '../../GlobalStyles';
 
 interface InputProps {
@@ -56,7 +57,14 @@ const StyledContainer = styled.div<StyledContainerProps>`
     }
 `;
 
-export const Input: React.FC<InputProps> = ({ type, label, disabled, className, placeholder, onChange }) => {
+export const Input: React.FC<InputProps> = ({
+    type,
+    label,
+    disabled,
+    className,
+    placeholder,
+    onChange
+}: InputProps) => {
     return (
         <StyledContainer className={className}>
             {label && <StyledLabel>{label}</StyledLabel>}
@@ -65,7 +73,7 @@ export const Input: React.FC<InputProps> = ({ type, label, disabled, className, 
                 disabled={disabled}
                 onChange={(event: React.FocusEvent<HTMLInputElement>) => onChange && onChange(event)}
                 type={type}
-            ></StyledInput>
+            />
         </StyledContainer>
     );
 };

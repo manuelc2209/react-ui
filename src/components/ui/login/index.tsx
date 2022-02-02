@@ -100,7 +100,7 @@ export const LoginUI: React.FC<LoginUIProps> = ({ formProperties, buttonProperti
                         }
                         onClick={formProperties.onClick}
                         disabled={formProperties.disabled}
-                    ></StyledLogin>
+                    />
                 </StyledOverlay>
             </StyledContent>
         </StyledContainer>

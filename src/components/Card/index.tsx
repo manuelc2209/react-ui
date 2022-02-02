@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+
 import { COLOR_PRIMARY_1 } from '../../GlobalStyles';
 
 interface CardProps {
@@ -54,7 +55,7 @@ const StyledSubtitle = styled.span`
     font-weight: 400;
 `;
 
-export const Card: React.FC<CardProps> = ({ title, subtitle, image, href, className }) => {
+export const Card: React.FC<CardProps> = ({ title, subtitle, image, href, className }: CardProps) => {
     const hasImage = image;
     const hasHref = href;
     return (

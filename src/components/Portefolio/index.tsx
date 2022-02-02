@@ -1,15 +1,16 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
+
 import { Card } from '../Card';
 
-interface pubLinksData {
+interface PubLinksData {
     link?: string;
     linkLabel?: string;
 }
 
-interface pubLinks {
+interface PubLinks {
     label?: string;
-    data?: pubLinksData[];
+    data?: PubLinksData[];
 }
 
 interface CardType {
@@ -25,8 +26,7 @@ interface PortefolioProps {
     label?: string;
     link?: string;
     linkLabel?: string;
-    socialLinks?: pubLinks;
-    cards?: Array<CardType>;
+    cards?: CardType[];
 }
 
 const alignCenter = css`
@@ -107,10 +107,17 @@ const StyledWrapper = styled.div`
     }
 `;
 
-export const Portefolio: React.FC<PortefolioProps> = ({ img, headline, label, link, linkLabel, cards }) => {
+export const Portefolio: React.FC<PortefolioProps> = ({
+    img,
+    headline,
+    label,
+    link,
+    linkLabel,
+    cards
+}: PortefolioProps) => {
     return (
         <StyledWrapper>
-            {img && <StyledImage src={img}></StyledImage>}
+            {img && <StyledImage src={img} />}
             {headline && <StyledHeadline>{headline}</StyledHeadline>}
             <StyledTextContainer>
                 {link && linkLabel
@@ -126,7 +133,7 @@ export const Portefolio: React.FC<PortefolioProps> = ({ img, headline, label, li
                 <StyledCardContainer>
                     {cards.map((card, i) => (
                         <StyledCard
-                            key={`card-${i}`}
+                            key={`card-${card.title}`}
                             title={card.title}
                             subtitle={card.subtitle}
                             image={card.image}

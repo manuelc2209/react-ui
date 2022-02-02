@@ -2,11 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 import Color from 'color';
 import validateColor from 'validate-color';
+
 import { COLOR_PRIMARY } from '../../GlobalStyles';
 
 interface HeaderProps {
     backgroundColor?: string;
     className?: string;
+    children?: any;
 }
 
 interface StyledHeaderProps {
@@ -24,7 +26,7 @@ const StyledHeader = styled.div<StyledHeaderProps>`
     background: ${setColor};
 `;
 
-export const Header: React.FC<HeaderProps> = ({ backgroundColor, className, children }) => {
+export const Header: React.FC<HeaderProps> = ({ backgroundColor, className, children }: HeaderProps) => {
     const parsedColor = validateColor(backgroundColor as string);
     const bgHex = (parsedColor && Color(backgroundColor).hex()) || '';
 

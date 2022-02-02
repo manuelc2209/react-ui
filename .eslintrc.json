@@ -21,7 +21,7 @@
         "no-console": 1,
         "prettier/prettier": 2,
         "indent": [
-            "error",
+            "warn",
             4,
             {
                 "SwitchCase": 1

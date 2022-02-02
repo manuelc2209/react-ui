@@ -108,7 +108,7 @@ export const RegisterUI: React.FC<RegisterUIProps> = ({ formProperties, buttonPr
                         doubleValidation={formProperties.doubleValidation}
                         onClick={formProperties.onClick}
                         disabled={formProperties.disabled}
-                    ></StyledRegister>
+                    />
                 </StyledOverlay>
             </StyledContent>
         </StyledContainer>
