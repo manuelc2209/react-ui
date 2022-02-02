@@ -1,20 +1,12 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import './index.css';
-import { profile, skills } from './data/index.json';
-
-import { Button } from './components/Button';
-import { Header } from './components/Header';
-import { Login } from './components/Login';
-import { Register } from './components/Register';
-import { COLOR_PRIMARY_2 } from './GlobalStyles';
-import { Portefolio } from './components/Portefolio';
-import { Skills } from './components/Skills';
 import { Routes, Route } from 'react-router';
 import { useNavigate } from 'react-router-dom';
-import { RegisterUI } from './components/ui/register';
-import { LoginUI } from './components/ui/login';
-import { DashboardUI } from './components';
+
+import data from './data/index.json';
+import { COLOR_PRIMARY_2 } from './GlobalStyles';
+import { Button, DashboardUI, Header, LoginUI, Portefolio, RegisterUI, Skills } from './components';
 
 const StyledContainer = styled.div`
     height: inherit;
@@ -80,7 +72,8 @@ export const App: React.FC = () => {
     const [disabled, setDisabled] = useState(false);
     const [login, setLogin] = useState(false);
     const [register, setRegister] = useState(false);
-    let navigate = useNavigate();
+    const navigate = useNavigate();
+    const { profile, skills } = data;
 
     function resetState() {
         setRegister(false);
@@ -164,7 +157,7 @@ export const App: React.FC = () => {
         onClick: () => handleOnClick()
     };
 
-    const Login = <LoginUI buttonProperties={loginButtonProps} formProperties={loginFormProps}></LoginUI>;
+    const Login = <LoginUI buttonProperties={loginButtonProps} formProperties={loginFormProps} />;
 
     const buttonProps = {
         label: 'Go back',
@@ -184,7 +177,7 @@ export const App: React.FC = () => {
         onClick: () => handleOnClick()
     };
 
-    const Register = <RegisterUI buttonProperties={buttonProps} formProperties={formProps}></RegisterUI>;
+    const Register = <RegisterUI buttonProperties={buttonProps} formProperties={formProps} />;
     const Dashboard = <DashboardUI />;
 
     return (

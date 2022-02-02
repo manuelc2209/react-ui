@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { fontStyle, setCursor } from '../../GlobalStyles';
 
+import { fontStyle, setCursor } from '../../GlobalStyles';
 import { Button } from '../Button';
 import { Input } from '../Input';
+
 import { strongRegex, mediumRegex } from './utils';
 
 interface RegisterProps {
@@ -92,7 +93,7 @@ export const Register: React.FC<RegisterProps> = ({
     disabled,
     className,
     onClick
-}) => {
+}: RegisterProps) => {
     const [validationColor, setValidationColor] = useState('');
     const [displayPassword, setDisplayPassword] = useState(false);
     const [validationValid, setValidationValid] = useState(false);
@@ -101,7 +102,6 @@ export const Register: React.FC<RegisterProps> = ({
 
     const handleValidation = (event: React.FocusEvent<HTMLInputElement>) => {
         setValue(event.target.value);
-        console.log(event.target.value);
         if (strongRegex.test(event.target.value)) {
             setValidationColor('#0F9D58');
             setDisplayWidth('100%');
@@ -128,7 +128,7 @@ export const Register: React.FC<RegisterProps> = ({
         <StyledContainer disabled={disabled} className={className}>
             {Boolean(nameLabel) && (
                 <StyledContainer>
-                    <Input label={nameLabel} placeholder={nicknamePlaceholder} disabled={disabled}></Input>
+                    <Input label={nameLabel} placeholder={nicknamePlaceholder} disabled={disabled} />
                 </StyledContainer>
             )}
             {Boolean(passwordLabel) && (
@@ -152,7 +152,7 @@ export const Register: React.FC<RegisterProps> = ({
                     <StyledButtonVisible
                         label="Display Password"
                         size="large"
-                        mouseEvents={true}
+                        mouseEvents
                         onMouseDown={() => setDisplayPassword && setDisplayPassword(true)}
                         onMouseUp={() => setDisplayPassword && setDisplayPassword(false)}
                         disabled={!value || disabled}
@@ -167,8 +167,8 @@ export const Register: React.FC<RegisterProps> = ({
                     onChange={(event: React.FocusEvent<HTMLInputElement>) =>
                         validatePassword && crossValidation && crossValidation(event)
                     }
-                    type={'password'}
-                ></Input>
+                    type="password"
+                />
             )}
             <StyledButton
                 label="Submit"

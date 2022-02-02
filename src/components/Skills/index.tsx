@@ -3,14 +3,14 @@ import styled from 'styled-components';
 
 import { COLOR_PRIMARY_2 } from '../../GlobalStyles';
 
-type skillData = {
+interface SkillData {
     skillLevel: number;
     label: string;
     logo: string;
-};
+}
 
 interface SkillsProps {
-    skills?: skillData[];
+    skills?: SkillData[];
 }
 
 interface StyledSkillContainerProps {
@@ -47,7 +47,7 @@ const StyledWrapper = styled.div`
     }
 `;
 
-export const Skills: React.FC<SkillsProps> = ({ skills }) => {
+export const Skills: React.FC<SkillsProps> = ({ skills }: SkillsProps) => {
     const filteredSkills = skills && skills.sort((item, acc) => acc.skillLevel - item.skillLevel);
 
     return (

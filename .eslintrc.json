@@ -20,13 +20,6 @@
         "@typescript-eslint/no-unnecessary-condition": "off",
         "no-console": 1,
         "prettier/prettier": 2,
-        "indent": [
-            "error",
-            4,
-            {
-                "SwitchCase": 1
-            }
-        ],
         "jest/no-disabled-tests": "warn",
         "jest/no-focused-tests": "error",
         "jest/no-identical-title": "error",
