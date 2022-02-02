@@ -2,8 +2,7 @@
 
 html {
     width: 100%;
-    height: 100%;
-    font-size: 16px;
+    height: 100vh;
 }
 
 body {
@@ -13,5 +12,16 @@ body {
 }
 
 #root {
-    height: 100vh;
+    height: inherit;
+}
+
+table,
+th,
+td {
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border-width: 0;
 }

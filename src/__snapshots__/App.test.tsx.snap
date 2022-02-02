@@ -2,10 +2,10 @@
 
 exports[`renders snapshot correctly 1`] = `
 <div
-  className="sc-dPiLbb kGdXyd"
+  className="sc-fWCJzd fHclbG"
 >
   <div
-    className="sc-dkPtRN gfNMps sc-khQegj eOeCWr"
+    className="sc-dkPtRN jLkVMt sc-ZOtfp kreiEK"
   >
     <button
       className="sc-gsDKAQ hscPjs"
@@ -33,15 +33,28 @@ exports[`renders snapshot correctly 1`] = `
         Sign up
       </span>
     </button>
+    <button
+      className="sc-gsDKAQ hscPjs"
+      onClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseUp={[Function]}
+      size="small"
+    >
+      <span
+        className="sc-bdvvtL jvqAQd"
+      >
+        Dashboard
+      </span>
+    </button>
   </div>
   <div
-    className="sc-bBHHxi idZYgH"
+    className="sc-dvQaRk pkAIR"
   >
     <div
-      className="sc-cNKqjZ FMTLj"
+      className="sc-TBWPX imXLWd"
     >
       <div
-        className="sc-AjmGg fYIobP"
+        className="sc-jIkXHa jJfhVM"
       >
         <div
           className="sc-fFeiMQ gQWHeJ"
@@ -133,7 +146,7 @@ exports[`renders snapshot correctly 1`] = `
         </div>
       </div>
       <div
-        className="sc-AjmGg fYIobP"
+        className="sc-jIkXHa jJfhVM"
       >
         <div
           className="sc-dJjYzT gNjLwS"

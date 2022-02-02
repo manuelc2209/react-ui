@@ -20,6 +20,7 @@ const setColor = ({ backgroundColor }: { backgroundColor?: string }) => {
 const StyledHeader = styled.div<StyledHeaderProps>`
     display: flex;
     height: 50px;
+    padding: 0 16px;
     background: ${setColor};
 `;
 
