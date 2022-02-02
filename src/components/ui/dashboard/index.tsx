@@ -1,11 +1,18 @@
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable @typescript-eslint/naming-convention */
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styled, { css } from 'styled-components';
-import { Button, Header } from '../..';
-import { lightgrey1 } from '../../../GlobalStyles';
 import Select, { Theme } from 'react-select';
 
-type CurrencyType = { value: string; label: string; symbol: string };
+import { Button, Header } from '../..';
+import { lightgrey1 } from '../../../GlobalStyles';
+
+interface CurrencyType {
+    value: string;
+    label: string;
+    symbol: string;
+}
 type OrderType =
     | 'market_cap_desc'
     | 'gecko_desc'
@@ -185,6 +192,27 @@ const StyledSidebar = styled.div`
     }
 `;
 
+const StyledFooter = styled.div`
+    background: #101010;
+    display: flex;
+    justify-content: space-evenly;
+    > * {
+        color: white;
+        padding: 20px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        user-select: none;
+        :hover {
+            background: #3f3f3fac;
+        }
+    }
+`;
+
+const StyledButtonFooter = styled(Button)``;
+
 const StyledContent = styled.div`
     height: inherit;
     width: 100%;
@@ -263,7 +291,7 @@ const StyledImage = styled.img`
 const StyledTbody = styled.tbody``;
 
 export const DashboardUI: React.FC = () => {
-    let navigate = useNavigate();
+    const navigate = useNavigate();
     const [data, setData] = useState<[]>();
     const [currency, setCurrency] = useState<CurrencyType>(options[0] as CurrencyType);
     const [page, setPage] = useState(1);
@@ -276,6 +304,11 @@ export const DashboardUI: React.FC = () => {
             setLoading(true);
             setCurrency(selectedOption as CurrencyType);
         }
+    }
+
+    function handlePageChange(addCount?: boolean) {
+        setPage(addCount ? page + 1 : page - 1);
+        setLoading(true);
     }
 
     async function fetchCurrencies(url: string) {
@@ -291,14 +324,14 @@ export const DashboardUI: React.FC = () => {
         const currencyLowerCase = currency.value;
         const url = `https://api.coingecko.com/api/v3/coins/markets?vs_currency=${currencyLowerCase}&order=${order}&per_page=${itemsPerPage}&page=${page}&sparkline=false`;
 
+        // eslint-disable-next-line promise/catch-or-return
         fetchCurrencies(url).then((coins) => {
             setTimeout(() => {
-                console.log(coins);
                 setData(coins);
                 setLoading(false);
             }, 1000);
         });
-    }, [currency, page, itemsPerPage]);
+    }, [currency, page, itemsPerPage, order]);
 
     return (
         <StyledContainer>
@@ -338,11 +371,10 @@ export const DashboardUI: React.FC = () => {
                                     </thead>
                                     <StyledTbody>
                                         {data.map((coins: CoinType) => (
-                                            <StyledCurrency isLoading={loading}>
+                                            <StyledCurrency isLoading={loading} key={coins.id}>
                                                 <StyledTdLeft>
                                                     <StyledImage src={coins.image} />
-                                                    <StyledSpan>{coins.name}</StyledSpan>
-                                                    {`-`}
+                                                    <StyledSpan>{coins.name}</StyledSpan>-
                                                     <StyledSpan>{coins.symbol.toUpperCase()}</StyledSpan>
                                                 </StyledTdLeft>
                                                 <StyledTd>
@@ -369,6 +401,14 @@ export const DashboardUI: React.FC = () => {
                     </StyledSubBody>
                 </StyledContent>
             </StyledBody>
+            <StyledFooter>
+                <StyledButtonFooter
+                    label="Previous Page"
+                    onClick={() => handlePageChange()}
+                    disabled={page === 1}
+                />
+                <StyledButtonFooter label="Next Page" onClick={() => handlePageChange(true)} />
+            </StyledFooter>
         </StyledContainer>
     );
 };

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+
 import { fontStyle, setCursor } from '../../GlobalStyles';
 import { Button } from '../Button';
 import { Input } from '../Input';
@@ -56,18 +57,18 @@ export const Login: React.FC<LoginProps> = ({
     passwordPlaceholder,
     className,
     onClick
-}) => {
+}: LoginProps) => {
     return (
         <StyledWrapper className={className}>
             <StyledContainer>
-                <Input label={nameLabel} placeholder={nicknamePlaceholder} disabled={disabled}></Input>
+                <Input label={nameLabel} placeholder={nicknamePlaceholder} disabled={disabled} />
             </StyledContainer>
             <Input
                 label={passwordLabel}
                 placeholder={passwordPlaceholder}
                 disabled={disabled}
-                type={'password'}
-            ></Input>
+                type="password"
+            />
             <StyledButton
                 label="Submit"
                 onClick={() => !disabled && onClick && onClick()}

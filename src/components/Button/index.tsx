@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+
 import {
     buttonLabelStyle,
     COLOR_PRIMARY_1,
@@ -10,21 +11,21 @@ import {
     setCursor
 } from '../../GlobalStyles';
 
-type buttonSize = 'small' | 'medium' | 'large';
+type ButtonSize = 'small' | 'medium' | 'large';
 
 interface ButtonProps {
-    size?: buttonSize;
+    size?: ButtonSize;
     label?: string;
     disabled?: boolean;
     className?: string;
-    mouseEvents?: boolean; // flag to specify if onMouseUp & onMouseDown should trigger callbacks
+    mouseEvents?: boolean;
     onClick?: () => void;
     onMouseUp?: () => void;
     onMouseDown?: () => void;
 }
 
 interface StyledButtonProps {
-    size?: buttonSize;
+    size?: ButtonSize;
     disabled?: boolean;
     buttonSize?: number;
 }
@@ -86,7 +87,7 @@ export const Button: React.FC<ButtonProps> = ({
     onClick,
     onMouseUp,
     onMouseDown
-}) => {
+}: ButtonProps) => {
     const buttonSize = getSizeInPx(size);
 
     return (
