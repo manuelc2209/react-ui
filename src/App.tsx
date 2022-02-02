@@ -5,16 +5,10 @@ import { profile, skills } from './data/index.json';
 
 import { Button } from './components/Button';
 import { Header } from './components/Header';
-import { Login } from './components/Login';
-import { Register } from './components/Register';
 import { COLOR_PRIMARY_2 } from './GlobalStyles';
-import { Portefolio } from './components/Portefolio';
-import { Skills } from './components/Skills';
 import { Routes, Route } from 'react-router';
 import { useNavigate } from 'react-router-dom';
-import { RegisterUI } from './components/ui/register';
-import { LoginUI } from './components/ui/login';
-import { DashboardUI } from './components';
+import { DashboardUI, LoginUI, Portefolio, RegisterUI, Skills } from './components';
 
 const StyledContainer = styled.div`
     height: inherit;

@@ -2,10 +2,10 @@
 
 exports[`renders snapshot correctly 1`] = `
 <div
-  className="sc-fWCJzd fHclbG"
+  className="sc-TBWPX hFQhIt"
 >
   <div
-    className="sc-dkPtRN jLkVMt sc-ZOtfp kreiEK"
+    className="sc-dkPtRN jLkVMt sc-hmjpVf biIncS"
   >
     <button
       className="sc-gsDKAQ hscPjs"
@@ -48,35 +48,35 @@ exports[`renders snapshot correctly 1`] = `
     </button>
   </div>
   <div
-    className="sc-dvQaRk pkAIR"
+    className="sc-jIkXHa eSqELT"
   >
     <div
-      className="sc-TBWPX imXLWd"
+      className="sc-ZOtfp kDqcBX"
     >
       <div
-        className="sc-jIkXHa jJfhVM"
+        className="sc-jOxtWs cWSSnY"
       >
         <div
-          className="sc-fFeiMQ gQWHeJ"
+          className="sc-bYoBSM iigalN"
         >
           <img
-            className="sc-iqseJM kkkTSY"
+            className="sc-bBHxTw eTnbDu"
             src="https://avatars.githubusercontent.com/u/20400660?v=4"
           />
           <span
-            className="sc-jrQzAO difIYl"
+            className="sc-kfPuZi kqAQmf"
           >
             Who am I?
           </span>
           <div
-            className="sc-egiyK jyElyK"
+            className="sc-cxpSdN jRxpLR"
           >
             <span
-              className="sc-kDTinF igOoDy"
+              className="sc-fKVqWL iovYBB"
             >
               I'm a Front-End Developer for 
               <a
-                className="sc-crHmcD"
+                className="sc-iwjdpV"
                 href="https://www.cleverti.com/"
               >
                 Cleverti
@@ -84,10 +84,10 @@ exports[`renders snapshot correctly 1`] = `
             </span>
           </div>
           <div
-            className="sc-bqiRlB iHGBjO"
+            className="sc-llYSUQ fUPHeK"
           >
             <div
-              className="sc-hKwDye DRitN sc-ksdxgE bLqflE"
+              className="sc-hKwDye DRitN sc-iJKOTD ipZwDx"
             >
               <a
                 className="sc-gKclnd"
@@ -115,7 +115,7 @@ exports[`renders snapshot correctly 1`] = `
               </div>
             </div>
             <div
-              className="sc-hKwDye DRitN sc-ksdxgE bLqflE"
+              className="sc-hKwDye DRitN sc-iJKOTD ipZwDx"
             >
               <a
                 className="sc-gKclnd"
@@ -146,142 +146,142 @@ exports[`renders snapshot correctly 1`] = `
         </div>
       </div>
       <div
-        className="sc-jIkXHa jJfhVM"
+        className="sc-jOxtWs cWSSnY"
       >
         <div
-          className="sc-dJjYzT gNjLwS"
+          className="sc-jJoQJp lfquEV"
         >
           <span
-            className="sc-ieecCq fsVZs"
+            className="sc-ikJyIC hFggZb"
           >
             My skills:
           </span>
           <div
-            className="sc-bkkeKt etJLKY"
+            className="sc-kLwhqv fPCRZj"
             title="90"
           >
             <span
-              className="sc-ieecCq fsVZs"
+              className="sc-ikJyIC hFggZb"
             />
             <span
-              className="sc-ieecCq fsVZs"
+              className="sc-ikJyIC hFggZb"
             >
               React
             </span>
           </div>
           <div
-            className="sc-bkkeKt etJLKY"
+            className="sc-kLwhqv fPCRZj"
             title="90"
           >
             <span
-              className="sc-ieecCq fsVZs"
+              className="sc-ikJyIC hFggZb"
             />
             <span
-              className="sc-ieecCq fsVZs"
+              className="sc-ikJyIC hFggZb"
             >
               Angular
             </span>
           </div>
           <div
-            className="sc-bkkeKt etJLKY"
+            className="sc-kLwhqv fPCRZj"
             title="90"
           >
             <span
-              className="sc-ieecCq fsVZs"
+              className="sc-ikJyIC hFggZb"
             />
             <span
-              className="sc-ieecCq fsVZs"
+              className="sc-ikJyIC hFggZb"
             >
               Styled-Components
             </span>
           </div>
           <div
-            className="sc-bkkeKt dlnDWc"
+            className="sc-kLwhqv llaIHb"
             title="85"
           >
             <span
-              className="sc-ieecCq fsVZs"
+              className="sc-ikJyIC hFggZb"
             />
             <span
-              className="sc-ieecCq fsVZs"
+              className="sc-ikJyIC hFggZb"
             >
               React-testing
             </span>
           </div>
           <div
-            className="sc-bkkeKt fpmUuc"
+            className="sc-kLwhqv itCVJP"
             title="80"
           >
             <span
-              className="sc-ieecCq fsVZs"
+              className="sc-ikJyIC hFggZb"
             />
             <span
-              className="sc-ieecCq fsVZs"
+              className="sc-ikJyIC hFggZb"
             >
               Jest
             </span>
           </div>
           <div
-            className="sc-bkkeKt fpmUuc"
+            className="sc-kLwhqv itCVJP"
             title="80"
           >
             <span
-              className="sc-ieecCq fsVZs"
+              className="sc-ikJyIC hFggZb"
             />
             <span
-              className="sc-ieecCq fsVZs"
+              className="sc-ikJyIC hFggZb"
             >
               Git
             </span>
           </div>
           <div
-            className="sc-bkkeKt fDQIrE"
+            className="sc-kLwhqv deRlfb"
             title="75"
           >
             <span
-              className="sc-ieecCq fsVZs"
+              className="sc-ikJyIC hFggZb"
             />
             <span
-              className="sc-ieecCq fsVZs"
+              className="sc-ikJyIC hFggZb"
             >
               TypeScript
             </span>
           </div>
           <div
-            className="sc-bkkeKt kntbqI"
+            className="sc-kLwhqv dVRDH"
             title="60"
           >
             <span
-              className="sc-ieecCq fsVZs"
+              className="sc-ikJyIC hFggZb"
             />
             <span
-              className="sc-ieecCq fsVZs"
+              className="sc-ikJyIC hFggZb"
             >
               Scss
             </span>
           </div>
           <div
-            className="sc-bkkeKt eBebjU"
+            className="sc-kLwhqv juUxnb"
             title="50"
           >
             <span
-              className="sc-ieecCq fsVZs"
+              className="sc-ikJyIC hFggZb"
             />
             <span
-              className="sc-ieecCq fsVZs"
+              className="sc-ikJyIC hFggZb"
             >
               Css
             </span>
           </div>
           <div
-            className="sc-bkkeKt eBebjU"
+            className="sc-kLwhqv juUxnb"
             title="50"
           >
             <span
-              className="sc-ieecCq fsVZs"
+              className="sc-ikJyIC hFggZb"
             />
             <span
-              className="sc-ieecCq fsVZs"
+              className="sc-ikJyIC hFggZb"
             >
               Vue
             </span>

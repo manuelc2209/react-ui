@@ -25,7 +25,6 @@ interface PortefolioProps {
     label?: string;
     link?: string;
     linkLabel?: string;
-    socialLinks?: pubLinks;
     cards?: Array<CardType>;
 }
 

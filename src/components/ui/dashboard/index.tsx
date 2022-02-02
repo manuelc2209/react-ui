@@ -185,6 +185,27 @@ const StyledSidebar = styled.div`
     }
 `;
 
+const StyledFooter = styled.div`
+    background: #101010;
+    display: flex;
+    justify-content: space-evenly;
+
+    > * {
+        color: white;
+        padding: 20px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        user-select: none;
+
+        :hover {
+            background: #3f3f3fac;
+        }
+    }
+`;
+
 const StyledContent = styled.div`
     height: inherit;
     width: 100%;
@@ -262,6 +283,8 @@ const StyledImage = styled.img`
 
 const StyledTbody = styled.tbody``;
 
+const StyledButtonFooter = styled(Button)``;
+
 export const DashboardUI: React.FC = () => {
     let navigate = useNavigate();
     const [data, setData] = useState<[]>();
@@ -276,6 +299,11 @@ export const DashboardUI: React.FC = () => {
             setLoading(true);
             setCurrency(selectedOption as CurrencyType);
         }
+    }
+
+    function handlePageChange(addCount?: boolean) {
+        setPage(addCount ? page + 1 : page - 1);
+        setLoading(true);
     }
 
     async function fetchCurrencies(url: string) {
@@ -293,7 +321,6 @@ export const DashboardUI: React.FC = () => {
 
         fetchCurrencies(url).then((coins) => {
             setTimeout(() => {
-                console.log(coins);
                 setData(coins);
                 setLoading(false);
             }, 1000);
@@ -369,6 +396,14 @@ export const DashboardUI: React.FC = () => {
                     </StyledSubBody>
                 </StyledContent>
             </StyledBody>
+            <StyledFooter>
+                <StyledButtonFooter
+                    label="Previous Page"
+                    onClick={() => handlePageChange()}
+                    disabled={page === 1}
+                />
+                <StyledButtonFooter label="Next Page" onClick={() => handlePageChange(true)} />
+            </StyledFooter>
         </StyledContainer>
     );
 };
