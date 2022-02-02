@@ -44,15 +44,23 @@ const StyledContent = styled.div`
     background-size: cover;
 
     ${StyledRegister} {
+        box-sizing: border-box;
         background: #3d3c3c9b;
         border-radius: 7px;
-        padding: 150px 150px;
+        padding: 150px;
         width: 40%;
         margin: auto;
     }
 
     @media (max-width: 450px) {
         flex-direction: column;
+        flex: 1;
+
+        ${StyledRegister} {
+            width: 100%;
+            padding: 25px;
+            margin: 60px 0px;
+        }
     }
 
     @media (min-width: 900px) {

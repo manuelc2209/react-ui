@@ -24,6 +24,7 @@ const StyledContent = styled.div`
 
     @media (max-width: 450px) {
         flex-direction: column;
+        flex: 1;
     }
 
     @media (min-width: 900px) {
