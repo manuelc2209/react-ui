@@ -41,15 +41,23 @@ const StyledContent = styled.div`
 
     /* REMOVE THIS AFTER UI IS MADE IN APP.TSX */
     ${StyledLogin} {
+        box-sizing: border-box;
         background: #3d3c3c9b;
         border-radius: 7px;
-        padding: 150px 150px;
+        padding: 150px;
         width: 40%;
         margin: auto;
     }
 
     @media (max-width: 450px) {
         flex-direction: column;
+        flex: 1;
+
+        ${StyledLogin} {
+            padding: 25px;
+            width: 100%;
+            margin: 60px 0px;
+        }
     }
 
     @media (min-width: 900px) {

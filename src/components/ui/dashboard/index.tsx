@@ -168,6 +168,7 @@ const StyledBody = styled.div`
     display: flex;
     width: 100%;
     height: 100%;
+    padding-bottom: 60px;
 `;
 
 const StyledSidebar = styled.div`
@@ -196,6 +197,12 @@ const StyledFooter = styled.div`
     background: #101010;
     display: flex;
     justify-content: space-evenly;
+    height: 60px;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
     > * {
         color: white;
         padding: 20px;
@@ -217,13 +224,22 @@ const StyledContent = styled.div`
     height: inherit;
     width: 100%;
     background: #474747;
+
+    @media (max-width: 550px) {
+        width: calc(100% - 18%);
+    }
 `;
 
 const StyledSubBody = styled.div`
-    padding: 20px 20px 0px 20px;
+    padding: 20px 20px 20px 20px;
     box-sizing: border-box;
     width: 100%;
     height: 100%;
+
+    @media (max-width: 550px) {
+        display: block;
+        overflow-x: auto;
+    }
 `;
 
 const StyledSubHeader = styled.table`
