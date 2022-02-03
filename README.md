@@ -2,9 +2,14 @@
 ![build](https://github.com/manuelc2209/react-login/actions/workflows/main.yml/badge.svg)
 ![codeQL](https://github.com/manuelc2209/react-login/actions/workflows/codeql-analysis.yml/badge.svg)
 
+<br/>
 
-This is just to demo a very simple structure of React + Ts & Styled Components, nothing too complex, just to structure some code for later usage.
+##### This is my sandbox playground working with React, i have some small features that i develop when i have some free time,
 
+##### Feel free to see it deployed on: [react-ui.manuelcorreia.org](https://react-ui.manuelcorreia.org)
+##### Everytime a new feature gets merged to master, it will be available on the link above. 💎
+
+<br/>
 
 ## Available Scripts
 
