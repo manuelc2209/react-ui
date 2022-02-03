@@ -13,21 +13,27 @@ interface CurrencyType {
     label: string;
     symbol: string;
 }
-type OrderType =
-    | 'market_cap_desc'
-    | 'gecko_desc'
-    | 'gecko_asc'
-    | 'market_cap_asc'
-    | 'market_cap_desc'
-    | 'volume_asc'
-    | 'volume_desc'
-    | 'id_asc'
-    | 'id_desc';
 
-const options = [
+interface SortType {
+    value: string;
+    label: string;
+}
+
+const currencyOptions = [
     { value: 'usd', label: 'USD $', symbol: '$' },
     { value: 'eur', label: 'EUR €', symbol: '€' },
     { value: 'gbp', label: 'GBP £', symbol: '£' }
+];
+
+const sortingOptions = [
+    { value: 'gecko_desc', label: 'Gecko Desc' },
+    { value: 'gecko_asc', label: 'Gecko Asc' },
+    { value: 'market_cap_asc', label: 'Market Cap Asc' },
+    { value: 'market_cap_desc', label: 'Market Cap Desc' },
+    { value: 'volume_asc', label: 'Volume Asc' },
+    { value: 'volume_desc', label: 'Volume Desc' },
+    { value: 'id_asc', label: 'ID Asc' },
+    { value: 'id_desc', label: 'ID Desc' }
 ];
 
 interface CoinType {
@@ -51,7 +57,7 @@ interface CoinType {
     max_supply: number;
     ath: number;
     ath_change_percentage: number;
-    ath_date: string;
+    ath_date: Date;
     atl: number;
     atl_change_percentage: number;
     atl_date: string;
@@ -84,7 +90,7 @@ const customStyles = {
         ...base,
         background: '#000000',
         borderRadius: state.isFocused ? '3px 3px 0 0' : 3,
-        borderColor: '#c5c5c5',
+        borderColor: '#d8d8d8',
         boxShadow: null,
         height: '20px',
         '&:hover': {
@@ -112,11 +118,11 @@ const customStyles = {
     }),
     option: (base: any, state: { isFocused: boolean; isSelected: boolean }) => ({
         ...base,
-        background: state.isSelected ? '#000000' : '#555555',
+        background: state.isSelected ? '#000000' : '#8d8d8d',
         padding: 10,
         cursor: state.isSelected ? 'default' : 'pointer',
         '&:hover': {
-            background: '#bbbbbb'
+            background: '#d4d4d4'
         }
     }),
     singleValue: (base: any) => ({
@@ -156,7 +162,8 @@ const StyledHeaderRight = styled.div`
     display: flex;
     align-self: center;
     align-items: center;
-    width: 400px;
+    width: 100%;
+    column-gap: 10px;
 `;
 
 const StyledContentLeft = styled.div`
@@ -309,17 +316,31 @@ const StyledTbody = styled.tbody``;
 export const DashboardUI: React.FC = () => {
     const navigate = useNavigate();
     const [data, setData] = useState<[]>();
-    const [currency, setCurrency] = useState<CurrencyType>(options[0] as CurrencyType);
+    const [currency, setCurrency] = useState<CurrencyType>(currencyOptions[0]);
     const [page, setPage] = useState(1);
     const [loading, setLoading] = useState(false);
     const [itemsPerPage, setItemsPerPage] = useState(20);
-    const [order, setOrder] = useState<OrderType>('market_cap_desc');
+    const [order, setOrder] = useState<SortType>(sortingOptions[0]);
 
     function handleCurrencyChange(selectedOption: any) {
         if (selectedOption !== currency) {
             setLoading(true);
             setCurrency(selectedOption as CurrencyType);
         }
+    }
+
+    function handleSorting(selectedOption: any) {
+        if (selectedOption !== order) {
+            setLoading(true);
+            setOrder(selectedOption as SortType);
+        }
+    }
+
+    function days_passed(date: Date) {
+        const current = new Date(date.getTime());
+        const previous = new Date(date.getFullYear(), 0, 1);
+
+        return Math.ceil((Number(current) - Number(previous) + 1) / 86400000);
     }
 
     function handlePageChange(addCount?: boolean) {
@@ -337,8 +358,11 @@ export const DashboardUI: React.FC = () => {
         if (!currency) {
             return;
         }
+
         const currencyLowerCase = currency.value;
-        const url = `https://api.coingecko.com/api/v3/coins/markets?vs_currency=${currencyLowerCase}&order=${order}&per_page=${itemsPerPage}&page=${page}&sparkline=false`;
+        const orderType = order.value;
+
+        const url = `https://api.coingecko.com/api/v3/coins/markets?vs_currency=${currencyLowerCase}&order=${orderType}&per_page=${itemsPerPage}&page=${page}&sparkline=false`;
 
         // eslint-disable-next-line promise/catch-or-return
         fetchCurrencies(url).then((coins) => {
@@ -357,9 +381,15 @@ export const DashboardUI: React.FC = () => {
                 </StyledContentLeft>
                 <StyledHeaderRight>
                     <Select
+                        value={order}
+                        onChange={(val: any) => handleSorting(val)}
+                        options={sortingOptions}
+                        styles={customStyles}
+                    />
+                    <Select
                         value={currency}
                         onChange={(val: any) => handleCurrencyChange(val)}
-                        options={options as any}
+                        options={currencyOptions}
                         styles={customStyles}
                     />
                     <StyledButton label="Back" onClick={() => navigate('/')} />
@@ -373,57 +403,60 @@ export const DashboardUI: React.FC = () => {
                 </StyledSidebar>
                 <StyledContent>
                     <StyledSubBody>
-                        <StyledSubHeader>
-                            {data ? (
-                                <>
-                                    <thead>
-                                        <StyledHeadTr>
-                                            <th>Name</th>
-                                            <th>Price</th>
-                                            <th>Change</th>
-                                            <th>24(h) Volume</th>
-                                            <th>Total Supply</th>
-                                        </StyledHeadTr>
-                                    </thead>
-                                    <StyledTbody>
-                                        {data.map((coins: CoinType) => (
-                                            <StyledCurrency isLoading={loading} key={coins.id}>
-                                                <StyledTdLeft>
-                                                    <StyledImage src={coins.image} />
-                                                    <StyledSpan>{coins.name}</StyledSpan>-
-                                                    <StyledSpan>{coins.symbol.toUpperCase()}</StyledSpan>
-                                                </StyledTdLeft>
-                                                <StyledTd>
-                                                    {coins.current_price}
-                                                    {currency.symbol}
-                                                </StyledTd>
-                                                <StyledPriceTd
-                                                    isNegative={
-                                                        Math.sign(coins.price_change_percentage_24h) === -1
-                                                    }
-                                                >
-                                                    {`${coins.price_change_percentage_24h.toFixed(2)}%`}
-                                                </StyledPriceTd>
-                                                <StyledTd>{coins.market_cap_change_24h}</StyledTd>
-                                                <StyledTd>{coins.total_volume}</StyledTd>
-                                            </StyledCurrency>
-                                        ))}
-                                    </StyledTbody>
-                                </>
-                            ) : (
-                                <StyledLoading>Loading</StyledLoading>
-                            )}
-                        </StyledSubHeader>
+                        {data ? (
+                            <StyledSubHeader>
+                                <thead>
+                                    <StyledHeadTr>
+                                        <th title="Rank By Market Cap">Rank</th>
+                                        <th>Name</th>
+                                        <th>Price</th>
+                                        <th>Change</th>
+                                        <th>24(h) Volume</th>
+                                        <th>Days Since ATH</th>
+                                    </StyledHeadTr>
+                                </thead>
+                                <StyledTbody>
+                                    {data.map((coins: CoinType) => (
+                                        <StyledCurrency isLoading={loading} key={coins.id}>
+                                            <StyledTd>{coins.market_cap_rank}</StyledTd>
+                                            <StyledTdLeft>
+                                                <StyledImage src={coins.image} />
+                                                <StyledSpan>{coins.name}</StyledSpan>-
+                                                <StyledSpan>{coins.symbol.toUpperCase()}</StyledSpan>
+                                            </StyledTdLeft>
+                                            <StyledTd>
+                                                {coins.current_price}
+                                                {currency.symbol}
+                                            </StyledTd>
+                                            <StyledPriceTd
+                                                isNegative={
+                                                    Math.sign(coins.price_change_percentage_24h) === -1
+                                                }
+                                            >
+                                                {`${coins?.price_change_percentage_24h?.toFixed(2)}%`}
+                                            </StyledPriceTd>
+                                            <StyledTd>
+                                                {`${coins?.market_cap_change_percentage_24h?.toFixed(2)}%`}
+                                            </StyledTd>
+                                            <StyledTd>{days_passed(new Date(coins.ath_date))}</StyledTd>
+                                        </StyledCurrency>
+                                    ))}
+                                </StyledTbody>
+                            </StyledSubHeader>
+                        ) : (
+                            <StyledLoading>Loading</StyledLoading>
+                        )}
                     </StyledSubBody>
                 </StyledContent>
             </StyledBody>
             <StyledFooter>
                 <StyledButtonFooter
                     label="Previous Page"
+                    size="small"
                     onClick={() => handlePageChange()}
                     disabled={page === 1}
                 />
-                <StyledButtonFooter label="Next Page" onClick={() => handlePageChange(true)} />
+                <StyledButtonFooter label="Next Page" size="small" onClick={() => handlePageChange(true)} />
             </StyledFooter>
         </StyledContainer>
     );
