@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styled, { css } from 'styled-components';
-import Select, { Theme } from 'react-select';
+import Select from 'react-select';
 
 import { Button, Header } from '../..';
 import { lightgrey1 } from '../../../GlobalStyles';
@@ -143,7 +143,7 @@ const StyledText = styled.span`
 
 const StyledButton = styled(Button)`
     align-self: center;
-    margin: 15px;
+    margin: 10px;
 `;
 
 const StyledHeader = styled(Header)`
@@ -168,7 +168,7 @@ const StyledHeaderRight = styled.div`
 
 const StyledContentLeft = styled.div`
     align-self: center;
-    width: 100%;
+    min-width: 100px;
 `;
 
 const StyledBody = styled.div`
@@ -180,9 +180,10 @@ const StyledBody = styled.div`
 
 const StyledSidebar = styled.div`
     width: 18%;
-    height: inherit;
+    height: 100%;
     background: #101010;
-    height: auto;
+    position: fixed;
+    top: 46px;
 
     > * {
         color: white;
@@ -231,17 +232,16 @@ const StyledContent = styled.div`
     height: inherit;
     width: 100%;
     background: #474747;
-
-    @media (max-width: 550px) {
-        width: calc(100% - 18%);
-    }
 `;
 
 const StyledSubBody = styled.div`
-    padding: 20px 20px 20px 20px;
+    padding: 20px 20px 70px 20px;
     box-sizing: border-box;
-    width: 100%;
+    width: calc(82%);
     height: 100%;
+    top: 47px;
+    left: 18%;
+    position: relative;
 
     @media (max-width: 550px) {
         display: block;

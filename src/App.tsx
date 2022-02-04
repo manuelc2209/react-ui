@@ -21,6 +21,8 @@ const StyledContent = styled.div`
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    top: 47px;
 
     @media (max-width: 450px) {
         flex-direction: column;
@@ -28,7 +30,7 @@ const StyledContent = styled.div`
     }
 
     @media (min-width: 900px) {
-        height: 100vh;
+        height: calc(100vh - 47px);
     }
 `;
 
@@ -65,7 +67,7 @@ const StyledHeader = styled(Header)`
     justify-content: flex-end;
 
     > * {
-        margin: 15px;
+        margin: 10px;
     }
 `;
 
