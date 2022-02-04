@@ -168,7 +168,7 @@ const StyledHeaderRight = styled.div`
 
 const StyledContentLeft = styled.div`
     align-self: center;
-    width: 100%;
+    min-width: 100px;
 `;
 
 const StyledBody = styled.div`
