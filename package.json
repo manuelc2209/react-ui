@@ -1,7 +1,14 @@
 {
-    "name": "react-ts",
-    "version": "0.1.0",
-    "private": true,
+    "name": "react-ui",
+    "website": "https://react-ui.manuelcorreia.org/",
+    "version": "1.0.0",
+    "private": false,
+    "author": "Manuel Correia",
+    "license": "MIT",
+    "repository": {
+        "url": "https://github.com/manuelc2209/react-ui",
+        "type": "git"
+    },
     "dependencies": {
         "@babel/plugin-syntax-typescript": "^7.16.7",
         "@testing-library/jest-dom": "^5.16.1",
