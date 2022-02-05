@@ -8,6 +8,8 @@ import Select from 'react-select';
 import { Button, Header } from '../..';
 import { lightgrey1 } from '../../../GlobalStyles';
 
+const PADDING_TOP = '60px';
+
 interface CurrencyType {
     value: string;
     label: string;
@@ -183,7 +185,7 @@ const StyledSidebar = styled.div`
     height: 100%;
     background: #101010;
     position: fixed;
-    top: 46px;
+    top: ${PADDING_TOP};
 
     > * {
         color: white;
@@ -239,7 +241,7 @@ const StyledSubBody = styled.div`
     box-sizing: border-box;
     width: calc(82%);
     height: 100%;
-    top: 47px;
+    top: ${PADDING_TOP};
     left: 18%;
     position: relative;
 
@@ -319,19 +321,20 @@ export const DashboardUI: React.FC = () => {
     const [currency, setCurrency] = useState<CurrencyType>(currencyOptions[0]);
     const [page, setPage] = useState(1);
     const [loading, setLoading] = useState(false);
+    const [contentLoading, setContentLoading] = useState(false);
     const [itemsPerPage, setItemsPerPage] = useState(20);
     const [order, setOrder] = useState<SortType>(sortingOptions[0]);
 
     function handleCurrencyChange(selectedOption: any) {
         if (selectedOption !== currency) {
-            setLoading(true);
+            setContentLoading(true);
             setCurrency(selectedOption as CurrencyType);
         }
     }
 
     function handleSorting(selectedOption: any) {
         if (selectedOption !== order) {
-            setLoading(true);
+            setContentLoading(true);
             setOrder(selectedOption as SortType);
         }
     }
@@ -345,7 +348,7 @@ export const DashboardUI: React.FC = () => {
 
     function handlePageChange(addCount?: boolean) {
         setPage(addCount ? page + 1 : page - 1);
-        setLoading(true);
+        setContentLoading(true);
     }
 
     async function fetchCurrencies(url: string) {
@@ -368,10 +371,14 @@ export const DashboardUI: React.FC = () => {
         fetchCurrencies(url).then((coins) => {
             setTimeout(() => {
                 setData(coins);
-                setLoading(false);
+                setContentLoading(false);
             }, 1000);
         });
     }, [currency, page, itemsPerPage, order]);
+
+    useEffect(() => {
+        setLoading(!data);
+    }, [data]);
 
     return (
         <StyledContainer>
@@ -385,25 +392,29 @@ export const DashboardUI: React.FC = () => {
                         onChange={(val: any) => handleSorting(val)}
                         options={sortingOptions}
                         styles={customStyles}
+                        isDisabled={contentLoading || loading}
                     />
                     <Select
                         value={currency}
                         onChange={(val: any) => handleCurrencyChange(val)}
                         options={currencyOptions}
                         styles={customStyles}
+                        isDisabled={contentLoading || loading}
                     />
-                    <StyledButton label="Back" onClick={() => navigate('/')} />
+                    <StyledButton size="large" label="Back" onClick={() => navigate('/')} />
                 </StyledHeaderRight>
             </StyledHeader>
             <StyledBody>
                 <StyledSidebar>
-                    <div onClick={() => navigate('/dashboard')}>Home</div>
-                    <div onClick={() => navigate('/wallet')}>Wallet</div>
-                    <div onClick={() => navigate('/settings')}>Settings</div>
+                    <div onClick={() => !contentLoading && navigate('/dashboard')}>Home</div>
+                    <div onClick={() => !contentLoading && navigate('/wallet')}>Wallet</div>
+                    <div onClick={() => !contentLoading && navigate('/settings')}>Settings</div>
                 </StyledSidebar>
                 <StyledContent>
                     <StyledSubBody>
-                        {data ? (
+                        {loading ? (
+                            <StyledLoading>Loading</StyledLoading>
+                        ) : (
                             <StyledSubHeader>
                                 <thead>
                                     <StyledHeadTr>
@@ -416,35 +427,36 @@ export const DashboardUI: React.FC = () => {
                                     </StyledHeadTr>
                                 </thead>
                                 <StyledTbody>
-                                    {data.map((coins: CoinType) => (
-                                        <StyledCurrency isLoading={loading} key={coins.id}>
-                                            <StyledTd>{coins.market_cap_rank}</StyledTd>
-                                            <StyledTdLeft>
-                                                <StyledImage src={coins.image} />
-                                                <StyledSpan>{coins.name}</StyledSpan>-
-                                                <StyledSpan>{coins.symbol.toUpperCase()}</StyledSpan>
-                                            </StyledTdLeft>
-                                            <StyledTd>
-                                                {coins.current_price}
-                                                {currency.symbol}
-                                            </StyledTd>
-                                            <StyledPriceTd
-                                                isNegative={
-                                                    Math.sign(coins.price_change_percentage_24h) === -1
-                                                }
-                                            >
-                                                {`${coins?.price_change_percentage_24h?.toFixed(2)}%`}
-                                            </StyledPriceTd>
-                                            <StyledTd>
-                                                {`${coins?.market_cap_change_percentage_24h?.toFixed(2)}%`}
-                                            </StyledTd>
-                                            <StyledTd>{days_passed(new Date(coins.ath_date))}</StyledTd>
-                                        </StyledCurrency>
-                                    ))}
+                                    {data &&
+                                        data.map((coins: CoinType) => (
+                                            <StyledCurrency isLoading={contentLoading} key={coins.id}>
+                                                <StyledTd>{coins.market_cap_rank}</StyledTd>
+                                                <StyledTdLeft>
+                                                    <StyledImage src={coins.image} />
+                                                    <StyledSpan>{coins.name}</StyledSpan>-
+                                                    <StyledSpan>{coins.symbol.toUpperCase()}</StyledSpan>
+                                                </StyledTdLeft>
+                                                <StyledTd>
+                                                    {coins.current_price}
+                                                    {currency.symbol}
+                                                </StyledTd>
+                                                <StyledPriceTd
+                                                    isNegative={
+                                                        Math.sign(coins.price_change_percentage_24h) === -1
+                                                    }
+                                                >
+                                                    {`${coins?.price_change_percentage_24h?.toFixed(2)}%`}
+                                                </StyledPriceTd>
+                                                <StyledTd>
+                                                    {`${coins?.market_cap_change_percentage_24h?.toFixed(
+                                                        2
+                                                    )}%`}
+                                                </StyledTd>
+                                                <StyledTd>{days_passed(new Date(coins.ath_date))}</StyledTd>
+                                            </StyledCurrency>
+                                        ))}
                                 </StyledTbody>
                             </StyledSubHeader>
-                        ) : (
-                            <StyledLoading>Loading</StyledLoading>
                         )}
                     </StyledSubBody>
                 </StyledContent>
@@ -452,11 +464,16 @@ export const DashboardUI: React.FC = () => {
             <StyledFooter>
                 <StyledButtonFooter
                     label="Previous Page"
-                    size="small"
+                    size="large"
                     onClick={() => handlePageChange()}
-                    disabled={page === 1}
+                    disabled={(page === 1 && !contentLoading) || contentLoading || loading}
                 />
-                <StyledButtonFooter label="Next Page" size="small" onClick={() => handlePageChange(true)} />
+                <StyledButtonFooter
+                    disabled={contentLoading || loading}
+                    label="Next Page"
+                    size="large"
+                    onClick={() => handlePageChange(true)}
+                />
             </StyledFooter>
         </StyledContainer>
     );

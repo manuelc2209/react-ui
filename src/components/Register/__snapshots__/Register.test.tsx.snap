@@ -2,10 +2,10 @@
 
 exports[`renders snapshot correctly 1`] = `
 <div
-  className="sc-dlVxhl ibdHyQ"
+  className="sc-kfPuZi gQxLdo"
 >
   <button
-    className="sc-gsDKAQ bvVKrP sc-dJjYzT"
+    className="sc-gsDKAQ gAGESp sc-hGPBjI"
     disabled={true}
     onClick={[Function]}
     onMouseDown={[Function]}

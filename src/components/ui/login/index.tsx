@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Button, Header, Login, Register } from '../..';
+import { Button, Header, Login } from '../..';
 import { COLOR_PRIMARY_2 } from '../../../GlobalStyles';
 
 interface LoginUIProps {
@@ -38,25 +38,28 @@ const StyledContent = styled.div`
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100%;
 
     /* REMOVE THIS AFTER UI IS MADE IN APP.TSX */
     ${StyledLogin} {
         box-sizing: border-box;
         background: #3d3c3c9b;
         border-radius: 7px;
-        padding: 150px;
+        padding: 50px;
         width: 40%;
         margin: auto;
     }
 
-    @media (max-width: 450px) {
+    @media (max-width: 750px) {
         flex-direction: column;
         flex: 1;
 
         ${StyledLogin} {
             padding: 25px;
             width: 100%;
-            margin: 60px 0px;
+            margin: 100px 0px;
+            position: relative;
+            box-sizing: border-box;
         }
     }
 
@@ -77,9 +80,6 @@ const StyledOverlay = styled.div`
 
 const StyledHeader = styled(Header)`
     border-bottom: 1px solid ${COLOR_PRIMARY_2};
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
 
     > * {
         margin: 15px;
@@ -91,6 +91,7 @@ export const LoginUI: React.FC<LoginUIProps> = ({ formProperties, buttonProperti
         <StyledContainer>
             <StyledHeader>
                 <Button
+                    {...buttonProperties}
                     label="Go Back"
                     onClick={() => buttonProperties.onClick && buttonProperties.onClick()}
                 />

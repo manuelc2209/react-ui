@@ -70,7 +70,7 @@ const StyledButton = styled.button<StyledButtonProps>`
 function getSizeInPx(size: string): number {
     switch (size) {
         case 'large':
-            return 30;
+            return 36;
         case 'medium':
             return 28;
         default:
@@ -94,7 +94,7 @@ export const Button: React.FC<ButtonProps> = ({
         <StyledButton
             size={size}
             buttonSize={buttonSize}
-            disabled={disabled}
+            disabled={Boolean(disabled)}
             className={className}
             onClick={() => onClick && onClick()}
             onMouseDown={() => mouseEvents && onMouseDown && onMouseDown()}

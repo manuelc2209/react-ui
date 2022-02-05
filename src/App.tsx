@@ -65,6 +65,8 @@ const StyledHeader = styled(Header)`
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    height: 60px;
+    align-items: center;
 
     > * {
         margin: 10px;
@@ -116,12 +118,20 @@ export const App: React.FC = () => {
         <StyledContainer>
             <StyledHeader>
                 {login ? (
-                    <Button label="Log out" onClick={() => handleBack && handleBack()} />
+                    <Button size="large" label="Log out" onClick={() => handleBack && handleBack()} />
                 ) : (
                     <>
-                        <Button label="Log in" onClick={() => handleLogin && handleLogin()} />
-                        <Button label="Sign up" onClick={() => handleRegister && handleRegister()} />
-                        <Button label="Dashboard" onClick={() => handleDashboard && handleDashboard()} />
+                        <Button size="large" label="Log in" onClick={() => handleLogin && handleLogin()} />
+                        <Button
+                            size="large"
+                            label="Sign up"
+                            onClick={() => handleRegister && handleRegister()}
+                        />
+                        <Button
+                            size="large"
+                            label="Dashboard"
+                            onClick={() => handleDashboard && handleDashboard()}
+                        />
                     </>
                 )}
             </StyledHeader>
@@ -147,7 +157,8 @@ export const App: React.FC = () => {
 
     const loginButtonProps = {
         label: 'Go back',
-        disabled: true,
+        size: 'large',
+        disabled: false,
         onClick: () => handleBack()
     };
 
@@ -164,7 +175,8 @@ export const App: React.FC = () => {
 
     const buttonProps = {
         label: 'Go back',
-        disabled: true,
+        size: 'large',
+        disabled: false,
         onClick: () => handleBack()
     };
 
