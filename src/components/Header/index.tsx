@@ -26,6 +26,10 @@ const StyledHeader = styled.div<StyledHeaderProps>`
     flex: 1;
     background: ${setColor};
     z-index: 999;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 60px;
+    align-items: center;
 
     > * {
         padding: 0 16px;

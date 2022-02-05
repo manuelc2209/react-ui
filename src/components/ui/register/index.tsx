@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Button, Header, Login, Register } from '../..';
+import { Button, Header, Register } from '../..';
 import { COLOR_PRIMARY_2 } from '../../../GlobalStyles';
 
 interface RegisterUIProps {
@@ -33,7 +33,6 @@ const StyledContainer = styled.div`
 `;
 
 const StyledRegister = styled(Register)``;
-const StyledLogin = styled(Login)``;
 
 const StyledContent = styled.div`
     display: flex;
@@ -42,24 +41,27 @@ const StyledContent = styled.div`
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100%;
 
     ${StyledRegister} {
         box-sizing: border-box;
         background: #3d3c3c9b;
         border-radius: 7px;
-        padding: 150px;
+        padding: 50px;
         width: 40%;
         margin: auto;
     }
 
-    @media (max-width: 450px) {
+    @media (max-width: 750px) {
         flex-direction: column;
         flex: 1;
 
         ${StyledRegister} {
-            width: 100%;
             padding: 25px;
-            margin: 60px 0px;
+            width: 100%;
+            margin: 100px 0px;
+            position: relative;
+            box-sizing: border-box;
         }
     }
 
@@ -80,7 +82,6 @@ const StyledOverlay = styled.div`
 
 const StyledHeader = styled(Header)`
     border-bottom: 1px solid ${COLOR_PRIMARY_2};
-    display: flex;
     flex-direction: row;
     justify-content: flex-end;
 
@@ -94,6 +95,7 @@ export const RegisterUI: React.FC<RegisterUIProps> = ({ formProperties, buttonPr
         <StyledContainer>
             <StyledHeader>
                 <Button
+                    {...buttonProperties}
                     label={buttonProperties.label}
                     onClick={() => buttonProperties.onClick && buttonProperties.onClick()}
                 />

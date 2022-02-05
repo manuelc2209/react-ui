@@ -1,7 +1,7 @@
 import { css } from 'styled-components';
 
 export const fontStyle = css`
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     font-family: 'Helvetica Neue', sans-serif;
     letter-spacing: -1px;
@@ -22,5 +22,5 @@ export const COLOR_PRIMARY_3 = '#202020';
 export const lightgrey1 = '#c5c5c5';
 
 export const setCursor = ({ disabled }: { disabled?: boolean }) => {
-    return disabled ? 'not-allowed' : 'default';
+    return disabled ? 'not-allowed' : 'pointer';
 };

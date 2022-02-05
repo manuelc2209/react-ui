@@ -151,7 +151,7 @@ export const Register: React.FC<RegisterProps> = ({
                     </StyledPassword>
                     <StyledButtonVisible
                         label="Display Password"
-                        size="large"
+                        size="medium"
                         mouseEvents
                         onMouseDown={() => setDisplayPassword && setDisplayPassword(true)}
                         onMouseUp={() => setDisplayPassword && setDisplayPassword(false)}

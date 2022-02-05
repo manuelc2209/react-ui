@@ -49,6 +49,14 @@ const StyledContainer = styled.div<StyledContainerProps>`
     }
 `;
 
+const StyledText = styled.span`
+    display: block;
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 20px;
+`;
+
 export const Login: React.FC<LoginProps> = ({
     nameLabel,
     nicknamePlaceholder,
@@ -60,6 +68,7 @@ export const Login: React.FC<LoginProps> = ({
 }: LoginProps) => {
     return (
         <StyledWrapper className={className}>
+            <StyledText>Welcome back!</StyledText>
             <StyledContainer>
                 <Input label={nameLabel} placeholder={nicknamePlaceholder} disabled={disabled} />
             </StyledContainer>
