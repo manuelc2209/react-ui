@@ -20,10 +20,16 @@ const setColor = ({ backgroundColor }: { backgroundColor?: string }) => {
 };
 
 const StyledHeader = styled.div<StyledHeaderProps>`
+    position: fixed;
+    width: 100%;
     display: flex;
-    height: 50px;
-    padding: 0 16px;
+    flex: 1;
     background: ${setColor};
+    z-index: 999;
+
+    > * {
+        padding: 0 16px;
+    }
 `;
 
 export const Header: React.FC<HeaderProps> = ({ backgroundColor, className, children }: HeaderProps) => {
