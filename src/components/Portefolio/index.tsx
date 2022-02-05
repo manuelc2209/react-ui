@@ -50,8 +50,8 @@ const StyledImage = styled.img`
     width: 50%;
     height: 70%;
     border-radius: 50%;
-    border: 1px solid;
     margin: auto;
+    border: 1px solid black;
 `;
 
 const StyledLink = styled.a``;
