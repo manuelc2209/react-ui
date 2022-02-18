@@ -46,7 +46,7 @@ const StyledContainer = styled.div<StyledContainerProps>`
 
     ${StyledInput},
     ${StyledLabel} {
-        height: 28px;
+        height: 32px;
     }
 
     ${StyledInput},

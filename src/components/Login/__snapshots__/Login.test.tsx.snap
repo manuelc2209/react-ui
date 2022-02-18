@@ -13,7 +13,7 @@ exports[`renders snapshot correctly 1`] = `
     className="sc-hBUSln hXCTcq"
   >
     <div
-      className="sc-crHmcD fKVvbj"
+      className="sc-crHmcD kPueqM"
     >
       <input
         className="sc-kDTinF jwmmwC"
@@ -22,7 +22,7 @@ exports[`renders snapshot correctly 1`] = `
     </div>
   </div>
   <div
-    className="sc-crHmcD fKVvbj"
+    className="sc-crHmcD kPueqM"
   >
     <input
       className="sc-kDTinF jwmmwC"
@@ -30,19 +30,29 @@ exports[`renders snapshot correctly 1`] = `
       type="password"
     />
   </div>
-  <button
-    className="sc-gsDKAQ kxYzWu sc-ksdxgE"
-    disabled={false}
-    onClick={[Function]}
-    onMouseDown={[Function]}
-    onMouseUp={[Function]}
-    size="small"
+  <div
+    className="sc-fFeiMQ iBwUui"
   >
-    <span
-      className="sc-bdvvtL jvqAQd"
+    <button
+      className="sc-gsDKAQ dWwrqJ sc-ksdxgE"
+      disabled={false}
+      onClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseUp={[Function]}
+      size="large"
     >
-      Submit
-    </span>
-  </button>
+      <span
+        className="sc-bdvvtL jjtzJe"
+      >
+        Submit
+      </span>
+    </button>
+    <a
+      className="sc-bkkeKt hytXAr"
+      href="#"
+    >
+      Forgot Password?
+    </a>
+  </div>
 </div>
 `;

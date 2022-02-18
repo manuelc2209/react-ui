@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import {
     buttonLabelStyle,
@@ -12,9 +12,11 @@ import {
 } from '../../GlobalStyles';
 
 type ButtonSize = 'small' | 'medium' | 'large';
+type ButtonType = 'default' | 'border';
 
 interface ButtonProps {
     size?: ButtonSize;
+    buttonType?: ButtonType;
     label?: string;
     disabled?: boolean;
     className?: string;
@@ -28,6 +30,7 @@ interface StyledButtonProps {
     size?: ButtonSize;
     disabled?: boolean;
     buttonSize?: number;
+    buttonType?: ButtonType;
 }
 
 interface StyledLabelProps {
@@ -38,19 +41,31 @@ const StyledLabel = styled.span<StyledLabelProps>`
     ${buttonLabelStyle}
 `;
 
-const StyledButton = styled.button<StyledButtonProps>`
+const baseTheme = css`
+    border-radius: 4px;
     width: auto;
     padding: 10px;
     box-sizing: border-box;
-    height: ${(props) => props.buttonSize}px;
-    border: 1px solid ${lightgrey1};
-    background-color: ${COLOR_PRIMARY_1};
-    border-radius: 4px;
     cursor: ${setCursor};
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
+`;
+
+const disabledTheme = css`
+    ${baseTheme};
+    background-color: #c5c2c2;
+`;
+
+const defaultTheme = css`
+    ${baseTheme};
+    border: 1px solid ${lightgrey1};
+    background-color: ${COLOR_PRIMARY_1};
+
+    > * {
+        color: white;
+    }
 
     :hover {
         background-color: ${COLOR_PRIMARY_2};
@@ -59,10 +74,45 @@ const StyledButton = styled.button<StyledButtonProps>`
     :active {
         background-color: ${COLOR_PRIMARY_3};
     }
+`;
 
-    :disabled {
-        background-color: #9e9e9e;
+const borderTheme = css`
+    ${baseTheme};
+    border: 1px solid ${COLOR_PRIMARY_1};
+    background-color: transparent;
+
+    > * {
+        color: #5a5757;
     }
+
+    :hover {
+        > * {
+            color: #494747;
+        }
+    }
+
+    :active {
+        > * {
+            color: #161515;
+        }
+    }
+`;
+
+const setTheme = ({ buttonType, disabled }: { buttonType?: ButtonType; disabled?: boolean }) => {
+    if (disabled) {
+        return disabledTheme;
+    }
+
+    if (buttonType === 'border') {
+        return borderTheme;
+    }
+
+    return defaultTheme;
+};
+
+const StyledButton = styled.button<StyledButtonProps>`
+    height: ${(props) => props.buttonSize}px;
+    ${setTheme};
 
     ${fontStyle};
 `;
@@ -81,6 +131,7 @@ function getSizeInPx(size: string): number {
 export const Button: React.FC<ButtonProps> = ({
     size = 'small',
     label = 'Button Label',
+    buttonType = 'default',
     disabled,
     className,
     mouseEvents,
@@ -93,6 +144,7 @@ export const Button: React.FC<ButtonProps> = ({
     return (
         <StyledButton
             size={size}
+            buttonType={buttonType}
             buttonSize={buttonSize}
             disabled={Boolean(disabled)}
             className={className}

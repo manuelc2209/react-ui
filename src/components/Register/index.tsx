@@ -59,7 +59,7 @@ const StyledButtonVisible = styled(Button)`
     flex-direction: column;
     align-self: self-end;
     justify-content: center;
-    margin-bottom: 4px;
+    margin-bottom: 3px;
 `;
 
 const StyledContainer = styled.div<StyledContainerProps>`
@@ -151,7 +151,7 @@ export const Register: React.FC<RegisterProps> = ({
                     </StyledPassword>
                     <StyledButtonVisible
                         label="Display Password"
-                        size="medium"
+                        size="large"
                         mouseEvents
                         onMouseDown={() => setDisplayPassword && setDisplayPassword(true)}
                         onMouseUp={() => setDisplayPassword && setDisplayPassword(false)}
@@ -172,6 +172,7 @@ export const Register: React.FC<RegisterProps> = ({
             )}
             <StyledButton
                 label="Submit"
+                size="large"
                 onClick={() => !disabled && onClick && onClick()}
                 disabled={!validationValid}
             />
