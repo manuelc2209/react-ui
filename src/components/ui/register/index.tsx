@@ -66,7 +66,7 @@ const StyledContent = styled.div`
     }
 
     @media (min-width: 900px) {
-        height: 100vh;
+        top: 60px;
     }
 `;
 

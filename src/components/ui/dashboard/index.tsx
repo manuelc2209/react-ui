@@ -177,6 +177,7 @@ const StyledBody = styled.div`
 `;
 
 const StyledSidebar = styled.div`
+    top: 60px;
     width: 18%;
     height: 100%;
     background: #101010;
@@ -232,7 +233,8 @@ const StyledContent = styled.div`
 `;
 
 const StyledSubBody = styled.div`
-    padding: 20px;
+    padding: 20px 20px 80px 20px;
+    top: 60px;
     box-sizing: border-box;
     width: calc(82%);
     height: 100%;
