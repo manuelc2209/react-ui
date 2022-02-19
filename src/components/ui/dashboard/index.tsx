@@ -5,6 +5,7 @@ import Select from 'react-select';
 
 import { Button, Header } from '../..';
 import { lightgrey1 } from '../../../GlobalStyles';
+import { isMobileView } from '../../../hooks/mobileViewHook';
 
 interface CurrencyType {
     value: string;
@@ -24,8 +25,8 @@ const currencyOptions = [
 ];
 
 const sortingOptions = [
-    { value: 'gecko_desc', label: 'Gecko Desc' },
-    { value: 'gecko_asc', label: 'Gecko Asc' },
+    { value: 'gecko_desc', label: 'Rank Desc' },
+    { value: 'gecko_asc', label: 'Rank Asc' },
     { value: 'market_cap_asc', label: 'Market Cap Asc' },
     { value: 'market_cap_desc', label: 'Market Cap Desc' },
     { value: 'volume_asc', label: 'Volume Asc' },
@@ -69,6 +70,10 @@ interface StyledCurrencyProps {
 
 interface StyledPriceTdProps {
     isNegative?: boolean;
+}
+
+interface StyledHeaderRightProps {
+    isMobile?: boolean;
 }
 
 const loadingTheme = css`
@@ -145,6 +150,8 @@ const StyledButton = styled(Button)`
 `;
 
 const StyledHeader = styled(Header)`
+    justify-content: space-between;
+
     > * {
         :last-child {
             justify-content: flex-end;
@@ -156,12 +163,15 @@ const StyledHeadTr = styled.tr`
     height: 50px;
 `;
 
-const StyledHeaderRight = styled.div`
+const setOverflow = ({ isMobile }: { isMobile?: boolean }) => (isMobile ? 'auto' : 'inherit');
+
+const StyledHeaderRight = styled.div<StyledHeaderRightProps>`
     display: flex;
     align-self: center;
     align-items: center;
     width: 100%;
     column-gap: 10px;
+    overflow: ${setOverflow};
 `;
 
 const StyledContentLeft = styled.div`
@@ -311,6 +321,25 @@ const StyledImage = styled.img`
 
 const StyledTbody = styled.tbody``;
 
+const StyledSelect = styled(Select)``;
+
+const StyledHorizontalScroll = styled.div`
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    overflow-x: overlay;
+    width: 100%;
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    ${StyledSelect} {
+        min-width: 150px;
+        position: initial;
+    }
+`;
+
 export const DashboardUI: React.FC = () => {
     const navigate = useNavigate();
     const [data, setData] = useState<[]>();
@@ -320,6 +349,7 @@ export const DashboardUI: React.FC = () => {
     const [contentLoading, setContentLoading] = useState(false);
     const [itemsPerPage, setItemsPerPage] = useState(20);
     const [order, setOrder] = useState<SortType>(sortingOptions[0]);
+    const isMobile = isMobileView();
 
     function handleCurrencyChange(selectedOption: any) {
         if (selectedOption !== currency) {
@@ -382,22 +412,44 @@ export const DashboardUI: React.FC = () => {
                 <StyledContentLeft>
                     <StyledText>Dashboard</StyledText>
                 </StyledContentLeft>
-                <StyledHeaderRight>
-                    <Select
-                        value={order}
-                        onChange={(val: any) => handleSorting(val)}
-                        options={sortingOptions}
-                        styles={customStyles}
-                        isDisabled={contentLoading || loading}
-                    />
-                    <Select
-                        value={currency}
-                        onChange={(val: any) => handleCurrencyChange(val)}
-                        options={currencyOptions}
-                        styles={customStyles}
-                        isDisabled={contentLoading || loading}
-                    />
-                    <StyledButton size="large" label="Back" onClick={() => navigate('/')} />
+                <StyledHeaderRight isMobile={isMobile}>
+                    {isMobile ? (
+                        <StyledHorizontalScroll>
+                            <StyledSelect
+                                value={order}
+                                onChange={(val: any) => handleSorting(val)}
+                                options={sortingOptions}
+                                styles={customStyles}
+                                isDisabled={contentLoading || loading}
+                            />
+                            <StyledSelect
+                                value={currency}
+                                onChange={(val: any) => handleCurrencyChange(val)}
+                                options={currencyOptions}
+                                styles={customStyles}
+                                isDisabled={contentLoading || loading}
+                            />
+                            <StyledButton size="large" label="Back" onClick={() => navigate('/')} />
+                        </StyledHorizontalScroll>
+                    ) : (
+                        <>
+                            <Select
+                                value={order}
+                                onChange={(val: any) => handleSorting(val)}
+                                options={sortingOptions}
+                                styles={customStyles}
+                                isDisabled={contentLoading || loading}
+                            />
+                            <Select
+                                value={currency}
+                                onChange={(val: any) => handleCurrencyChange(val)}
+                                options={currencyOptions}
+                                styles={customStyles}
+                                isDisabled={contentLoading || loading}
+                            />
+                            <StyledButton size="large" label="Back" onClick={() => navigate('/')} />
+                        </>
+                    )}
                 </StyledHeaderRight>
             </StyledHeader>
             <StyledBody>
