@@ -23,7 +23,6 @@ const StyledHeader = styled.div<StyledHeaderProps>`
     position: relative;
     width: 100%;
     display: flex;
-    flex: 1;
     background: ${setColor};
     z-index: 999;
     flex-direction: row;

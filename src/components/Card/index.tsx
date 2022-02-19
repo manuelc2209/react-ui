@@ -7,6 +7,7 @@ interface CardProps {
     title?: string;
     subtitle?: string;
     image?: string;
+    newTab?: boolean;
     href?: string;
     className?: string;
 }
@@ -55,12 +56,12 @@ const StyledSubtitle = styled.span`
     font-weight: 400;
 `;
 
-export const Card: React.FC<CardProps> = ({ title, subtitle, image, href, className }: CardProps) => {
+export const Card: React.FC<CardProps> = ({ title, subtitle, image, href, newTab, className }: CardProps) => {
     const hasImage = image;
     const hasHref = href;
     return (
         <StyledCard className={className}>
-            <StyledLink href={hasHref} target="_blank">
+            <StyledLink href={hasHref} target={newTab ? '_blank' : '_self'}>
                 <StyledImageWrapper>{hasImage && <StyledImage src={image} />}</StyledImageWrapper>
             </StyledLink>
             <StyledBodyWrapper hasImage={hasImage}>

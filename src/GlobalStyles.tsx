@@ -9,7 +9,7 @@ export const fontStyle = css`
 `;
 
 export const buttonLabelStyle = css`
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 0;
     font-family: 'Helvetica Neue', sans-serif;
 `;

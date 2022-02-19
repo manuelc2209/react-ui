@@ -86,7 +86,7 @@ const StyledHeader = styled(Header)`
     justify-content: flex-end;
 
     > * {
-        margin: 15px;
+        margin: 10px;
     }
 `;
 

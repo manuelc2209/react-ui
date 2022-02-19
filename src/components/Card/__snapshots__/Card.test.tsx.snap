@@ -6,7 +6,7 @@ exports[`renders snapshot correctly 1`] = `
 >
   <a
     className="sc-jRQBWg"
-    target="_blank"
+    target="_self"
   >
     <div
       className="sc-hKwDye"
