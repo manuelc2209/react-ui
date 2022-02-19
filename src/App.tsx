@@ -31,6 +31,7 @@ const StyledContent = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    top: 60px;
 
     @media (max-width: 450px) {
         flex-direction: column;
@@ -38,7 +39,7 @@ const StyledContent = styled.div`
     }
 
     @media (min-width: 900px) {
-        height: 100%;
+        height: calc(100vh - 60px);
     }
 `;
 
