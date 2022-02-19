@@ -95,7 +95,7 @@ exports[`renders snapshot correctly 1`] = `
               <a
                 className="sc-jRQBWg"
                 href="https://www.linkedin.com/in/manuel-correia2209/"
-                target="_self"
+                target="_blank"
               >
                 <div
                   className="sc-hKwDye"
@@ -123,7 +123,7 @@ exports[`renders snapshot correctly 1`] = `
               <a
                 className="sc-jRQBWg"
                 href="https://github.com/manuelc2209/react-ui"
-                target="_self"
+                target="_blank"
               >
                 <div
                   className="sc-hKwDye"

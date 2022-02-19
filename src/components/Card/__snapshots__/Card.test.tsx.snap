@@ -5,8 +5,8 @@ exports[`renders snapshot correctly 1`] = `
   className="sc-dkPtRN eGWjTe"
 >
   <a
-    className="sc-jRQBWg"
-    target="_self"
+    href="/"
+    onClick={[Function]}
   >
     <div
       className="sc-hKwDye"
