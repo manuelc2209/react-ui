@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/click-events-have-key-events */
-/* eslint-disable @typescript-eslint/naming-convention */
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styled, { css } from 'styled-components';
@@ -234,7 +232,7 @@ const StyledContent = styled.div`
 `;
 
 const StyledSubBody = styled.div`
-    padding: 20px 20px 70px 20px;
+    padding: 20px;
     box-sizing: border-box;
     width: calc(82%);
     height: 100%;

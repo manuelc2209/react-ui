@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 import { COLOR_PRIMARY_1 } from '../../GlobalStyles';
@@ -61,9 +62,15 @@ export const Card: React.FC<CardProps> = ({ title, subtitle, image, href, newTab
     const hasHref = href;
     return (
         <StyledCard className={className}>
-            <StyledLink href={hasHref} target={newTab ? '_blank' : '_self'}>
-                <StyledImageWrapper>{hasImage && <StyledImage src={image} />}</StyledImageWrapper>
-            </StyledLink>
+            {newTab ? (
+                <StyledLink href={hasHref} target={newTab ? '_blank' : '_self'}>
+                    <StyledImageWrapper>{hasImage && <StyledImage src={image} />}</StyledImageWrapper>
+                </StyledLink>
+            ) : (
+                <Link to={href || '/'}>
+                    <StyledImageWrapper>{hasImage && <StyledImage src={image} />}</StyledImageWrapper>
+                </Link>
+            )}
             <StyledBodyWrapper hasImage={hasImage}>
                 {title && <StyledTitle>{title}</StyledTitle>}
                 {subtitle && <StyledSubtitle>{subtitle}</StyledSubtitle>}

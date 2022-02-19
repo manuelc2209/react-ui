@@ -138,6 +138,7 @@ export const Portefolio: React.FC<PortefolioProps> = ({
                             subtitle={card.subtitle}
                             image={card.image}
                             href={card.href}
+                            newTab
                         />
                     ))}
                 </StyledCardContainer>
