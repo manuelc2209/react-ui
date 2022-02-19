@@ -71,7 +71,15 @@ const StyledHeader = styled(Header)`
     }
 `;
 
-const projects = [{ title: 'Crypto Dashboard', image: '/images/dashboard.jpg', path: '/dashboard' }];
+const projects = [
+    { title: 'Crypto Dashboard', image: '/images/dashboard.jpg', path: '/dashboard', newTab: false },
+    {
+        title: 'Github Search',
+        image: '/images/github-search.jpg',
+        path: 'https://github-search.manuelcorreia.org/',
+        newTab: true
+    }
+];
 
 export const ProjectsUI: React.FC<ProjectsUIProps> = ({ buttonProperties }) => {
     return (
@@ -91,6 +99,7 @@ export const ProjectsUI: React.FC<ProjectsUIProps> = ({ buttonProperties }) => {
                             key={entry.title}
                             image={entry.image}
                             href={entry.path}
+                            newTab={entry.newTab}
                         />
                     ))}
                 </StyledOverlay>
