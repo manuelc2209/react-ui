@@ -10,7 +10,7 @@ exports[`renders snapshot correctly 1`] = `
   size="small"
 >
   <span
-    className="sc-bdvvtL jjtzJe"
+    className="sc-bdvvtL bBtbgR"
   >
     Button Label
   </span>

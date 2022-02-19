@@ -13,7 +13,7 @@ exports[`renders snapshot correctly 1`] = `
     size="large"
   >
     <span
-      className="sc-bdvvtL jjtzJe"
+      className="sc-bdvvtL bBtbgR"
       disabled={true}
     >
       Submit

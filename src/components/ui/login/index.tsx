@@ -86,7 +86,7 @@ const StyledHeader = styled(Header)`
     border-bottom: 1px solid ${COLOR_PRIMARY_2};
 
     > * {
-        margin: 15px;
+        margin: 10px;
     }
 `;
 

@@ -9,4 +9,4 @@ export { Portefolio } from './Portefolio';
 export { Skills } from './Skills';
 
 // UI Modules
-export { RegisterUI, DashboardUI, LoginUI } from './ui';
+export { RegisterUI, DashboardUI, LoginUI, ProjectsUI } from './ui';

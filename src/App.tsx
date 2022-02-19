@@ -6,7 +6,16 @@ import { useNavigate } from 'react-router-dom';
 
 import data from './data/index.json';
 import { COLOR_PRIMARY_2 } from './GlobalStyles';
-import { Button, DashboardUI, Header, LoginUI, Portefolio, RegisterUI, Skills } from './components';
+import {
+    Button,
+    DashboardUI,
+    Header,
+    LoginUI,
+    Portefolio,
+    RegisterUI,
+    ProjectsUI,
+    Skills
+} from './components';
 
 const StyledContainer = styled.div`
     height: inherit;
@@ -90,9 +99,9 @@ export const App: React.FC = () => {
         setTimeout(() => setDisabled(false), 2500);
     };
 
-    const handleDashboard = () => {
+    const handleProjects = () => {
         resetState();
-        navigate('/dashboard');
+        navigate('/projects');
     };
 
     const handleLogin = () => {
@@ -128,8 +137,8 @@ export const App: React.FC = () => {
                         />
                         <Button
                             size="large"
-                            label="Dashboard"
-                            onClick={() => handleDashboard && handleDashboard()}
+                            label="Projects"
+                            onClick={() => handleProjects && handleProjects()}
                         />
                     </>
                 )}
@@ -172,7 +181,7 @@ export const App: React.FC = () => {
 
     const Login = <LoginUI buttonProperties={loginButtonProps} formProperties={loginFormProps} />;
 
-    const buttonProps = {
+    const registerButtonProps = {
         label: 'Go back',
         size: 'large',
         disabled: false,
@@ -191,14 +200,24 @@ export const App: React.FC = () => {
         onClick: () => handleOnClick()
     };
 
-    const Register = <RegisterUI buttonProperties={buttonProps} formProperties={formProps} />;
+    const Register = <RegisterUI buttonProperties={registerButtonProps} formProperties={formProps} />;
     const Dashboard = <DashboardUI />;
+
+    const buttonProps = {
+        label: 'Go back',
+        size: 'large',
+        disabled: false,
+        onClick: () => handleBack()
+    };
+
+    const Projects = <ProjectsUI buttonProperties={buttonProps} />;
 
     return (
         <Routes>
             <Route path="/" element={App} />
             <Route path="register" element={Register} />
             <Route path="login" element={Login} />
+            <Route path="projects" element={Projects} />
             <Route path="dashboard" element={Dashboard} />
             <Route path="*" element={App} />
         </Routes>
