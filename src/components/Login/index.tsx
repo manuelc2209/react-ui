@@ -19,6 +19,9 @@ interface StyledContainerProps {
     disabled?: boolean;
 }
 
+interface StyledLinkProps {
+    disabled?: boolean;
+}
 interface StyledWrapperProps {
     className?: string;
 }
@@ -57,6 +60,19 @@ const StyledText = styled.span`
     margin-bottom: 20px;
 `;
 
+const StyledBottomContainer = styled.div`
+    margin-top: 20px;
+    display: flex;
+`;
+
+const StyledLink = styled.a<StyledLinkProps>`
+    display: flex;
+    color: white;
+    align-self: center;
+    width: 100%;
+    justify-content: flex-end;
+`;
+
 export const Login: React.FC<LoginProps> = ({
     nameLabel,
     nicknamePlaceholder,
@@ -78,11 +94,17 @@ export const Login: React.FC<LoginProps> = ({
                 disabled={disabled}
                 type="password"
             />
-            <StyledButton
-                label="Submit"
-                onClick={() => !disabled && onClick && onClick()}
-                disabled={disabled}
-            />
+            <StyledBottomContainer>
+                <StyledButton
+                    label="Submit"
+                    size="large"
+                    onClick={() => !disabled && onClick && onClick()}
+                    disabled={disabled}
+                />
+                <StyledLink disabled={disabled} href="#">
+                    Forgot Password?
+                </StyledLink>
+            </StyledBottomContainer>
         </StyledWrapper>
     );
 };

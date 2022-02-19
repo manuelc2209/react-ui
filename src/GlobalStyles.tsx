@@ -9,8 +9,8 @@ export const fontStyle = css`
 `;
 
 export const buttonLabelStyle = css`
-    color: white;
-    font-weight: 500;
+    font-weight: 600;
+    letter-spacing: 0;
     font-family: 'Helvetica Neue', sans-serif;
 `;
 

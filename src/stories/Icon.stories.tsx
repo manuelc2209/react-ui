@@ -1,7 +1,7 @@
 import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 
-import { Icon, IconList } from '../components/Icon';
+import { Icon, IconList } from '../components';
 
 export default {
     title: 'component/Icon',

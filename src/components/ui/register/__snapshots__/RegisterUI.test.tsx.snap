@@ -2,13 +2,13 @@
 
 exports[`renders snapshot correctly 1`] = `
 <div
-  className="sc-iUKqMP bPqxoX"
+  className="sc-cTAqQK JEEQx"
 >
   <div
-    className="sc-pVTFL bnVgXu sc-jObWnj jLMIoH"
+    className="sc-pVTFL fTBUkI sc-cNKqjZ hhScaQ"
   >
     <button
-      className="sc-gsDKAQ gAGESp"
+      className="sc-gsDKAQ iaEwku"
       disabled={true}
       onClick={[Function]}
       onMouseDown={[Function]}
@@ -16,7 +16,7 @@ exports[`renders snapshot correctly 1`] = `
       size="small"
     >
       <span
-        className="sc-bdvvtL jvqAQd"
+        className="sc-bdvvtL jjtzJe"
         disabled={true}
       >
         Go back
@@ -24,20 +24,20 @@ exports[`renders snapshot correctly 1`] = `
     </button>
   </div>
   <div
-    className="sc-efQSVx iFJvTH"
+    className="sc-dPiLbb cjviQd"
   >
     <div
-      className="sc-cTAqQK jMzFVl"
+      className="sc-bBHHxi jRXEDh"
     >
       <div
-        className="sc-kfPuZi gQxLdo sc-iAKWXU"
+        className="sc-bBHxTw ikbiBh sc-jObWnj"
         disabled={false}
       >
         <div
-          className="sc-kfPuZi gQxLdo"
+          className="sc-bBHxTw ikbiBh"
         >
           <div
-            className="sc-crHmcD fKVvbj"
+            className="sc-crHmcD kPueqM"
           >
             <span
               className="sc-iqseJM"
@@ -53,13 +53,13 @@ exports[`renders snapshot correctly 1`] = `
           </div>
         </div>
         <div
-          className="sc-bkkeKt BiEZy"
+          className="sc-dJjYzT jmUbCF"
         >
           <div
-            className="sc-ieecCq gSpfjF"
+            className="sc-hGPBjI hbMLfX"
           >
             <div
-              className="sc-crHmcD fKVvbj"
+              className="sc-crHmcD kPueqM"
             >
               <span
                 className="sc-iqseJM"
@@ -75,20 +75,20 @@ exports[`renders snapshot correctly 1`] = `
               />
             </div>
             <span
-              className="sc-dJjYzT kuXImn"
+              className="sc-dlVxhl bCZOYK"
               title="We Recommend a minimum 8 characters, at least one uppercase letter, one lowercase letter, one number and one special character"
             />
           </div>
           <button
-            className="sc-gsDKAQ hpCVLD sc-dlVxhl kiVvUX"
+            className="sc-gsDKAQ fnJyRH sc-fKVqWL kTJQzz"
             disabled={true}
             onClick={[Function]}
             onMouseDown={[Function]}
             onMouseUp={[Function]}
-            size="medium"
+            size="large"
           >
             <span
-              className="sc-bdvvtL jvqAQd"
+              className="sc-bdvvtL jjtzJe"
               disabled={true}
             >
               Display Password
@@ -96,7 +96,7 @@ exports[`renders snapshot correctly 1`] = `
           </button>
         </div>
         <div
-          className="sc-crHmcD fKVvbj"
+          className="sc-crHmcD kPueqM"
         >
           <span
             className="sc-iqseJM"
@@ -112,15 +112,15 @@ exports[`renders snapshot correctly 1`] = `
           />
         </div>
         <button
-          className="sc-gsDKAQ gAGESp sc-hGPBjI"
+          className="sc-gsDKAQ fnJyRH sc-kfPuZi"
           disabled={true}
           onClick={[Function]}
           onMouseDown={[Function]}
           onMouseUp={[Function]}
-          size="small"
+          size="large"
         >
           <span
-            className="sc-bdvvtL jvqAQd"
+            className="sc-bdvvtL jjtzJe"
             disabled={true}
           >
             Submit

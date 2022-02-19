@@ -8,8 +8,6 @@ import Select from 'react-select';
 import { Button, Header } from '../..';
 import { lightgrey1 } from '../../../GlobalStyles';
 
-const PADDING_TOP = '60px';
-
 interface CurrencyType {
     value: string;
     label: string;
@@ -185,7 +183,6 @@ const StyledSidebar = styled.div`
     height: 100%;
     background: #101010;
     position: fixed;
-    top: ${PADDING_TOP};
 
     > * {
         color: white;
@@ -241,7 +238,6 @@ const StyledSubBody = styled.div`
     box-sizing: border-box;
     width: calc(82%);
     height: 100%;
-    top: ${PADDING_TOP};
     left: 18%;
     position: relative;
 

@@ -2,7 +2,7 @@ import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import styled from 'styled-components';
 
-import { Card } from '../components/Card';
+import { Card } from '../components';
 
 export default {
     title: 'component/Card',

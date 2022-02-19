@@ -78,6 +78,10 @@ const StyledOverlay = styled.div`
     }
 `;
 
+const StyledLeftSideContent = styled.div`
+    background: #6d6d6dac;
+`;
+
 const StyledHeader = styled(Header)`
     border-bottom: 1px solid ${COLOR_PRIMARY_2};
 

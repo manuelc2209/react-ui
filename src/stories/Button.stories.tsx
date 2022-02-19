@@ -1,7 +1,7 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import { Button } from '../components/Button';
+import { Button } from '../components';
 
 export default {
     title: 'component/Button',
@@ -12,7 +12,14 @@ const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
-    label: 'Button'
+    label: 'Button',
+    buttonType: 'default'
+};
+
+export const Secondary = Template.bind({});
+Secondary.args = {
+    label: 'Button',
+    buttonType: 'border'
 };
 
 export const Disabled = Template.bind({});

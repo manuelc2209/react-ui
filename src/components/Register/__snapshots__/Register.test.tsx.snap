@@ -2,18 +2,18 @@
 
 exports[`renders snapshot correctly 1`] = `
 <div
-  className="sc-kfPuZi gQxLdo"
+  className="sc-bBHxTw ikbiBh"
 >
   <button
-    className="sc-gsDKAQ gAGESp sc-hGPBjI"
+    className="sc-gsDKAQ fnJyRH sc-kfPuZi"
     disabled={true}
     onClick={[Function]}
     onMouseDown={[Function]}
     onMouseUp={[Function]}
-    size="small"
+    size="large"
   >
     <span
-      className="sc-bdvvtL jvqAQd"
+      className="sc-bdvvtL jjtzJe"
       disabled={true}
     >
       Submit
