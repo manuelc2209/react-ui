@@ -8,7 +8,7 @@ function getWindowDimensions() {
     };
 }
 
-export default function WindowDimensions() {
+function WindowDimensions() {
     const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
 
     useEffect(() => {
@@ -27,18 +27,30 @@ export default function WindowDimensions() {
     }
 
     if (width > 600 && width < 768) {
-        return 'medium';
+        return 'small';
     }
 
     if (width > 768 && width < 1440) {
-        return 'large';
+        return 'medium';
     }
 
     if (width > 1440) {
-        return 'xl';
+        return 'large';
     }
 }
 
-export function isMobileView() {
+export function isMobileViewport() {
     return WindowDimensions() === 'mobile';
+}
+
+export function isSmallViewport() {
+    return WindowDimensions() === 'small';
+}
+
+export function isMediumViewport() {
+    return WindowDimensions() === 'medium';
+}
+
+export function isLargeViewport() {
+    return WindowDimensions() === 'large';
 }
