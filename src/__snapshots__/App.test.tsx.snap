@@ -87,10 +87,10 @@ exports[`renders snapshot correctly 1`] = `
             </span>
           </div>
           <div
-            className="sc-ezbkAF jOWQzN"
+            className="sc-ezbkAF eJRWTp"
           >
             <div
-              className="sc-dkPtRN eGWjTe sc-bYoBSM lbEZDW"
+              className="sc-dkPtRN eGWjTe sc-bYoBSM fUEvac"
             >
               <a
                 className="sc-jRQBWg"
@@ -118,7 +118,7 @@ exports[`renders snapshot correctly 1`] = `
               </div>
             </div>
             <div
-              className="sc-dkPtRN eGWjTe sc-bYoBSM lbEZDW"
+              className="sc-dkPtRN eGWjTe sc-bYoBSM fUEvac"
             >
               <a
                 className="sc-jRQBWg"

@@ -63,8 +63,18 @@ const StyledTextContainer = styled.div`
 const StyledCardContainer = styled.div`
     display: flex;
     justify-content: space-around;
+    gap: 20px;
 
-    @media only screen and (max-width: 1325px) {
+    @media (max-width: 600px) {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    @media only screen and (min-width: 600px) and (max-width: 900px) {
+        flex-direction: row;
+    }
+
+    @media only screen and (min-width: 900px) and (max-width: 1325px) {
         flex-direction: column;
     }
 `;
@@ -72,7 +82,8 @@ const StyledCardContainer = styled.div`
 const StyledCard = styled(Card)`
     background: #3d3d3d;
     width: auto;
-    margin: 5px;
+    width: 100%;
+    box-sizing: border-box;
 `;
 
 const StyledLinkContainer = styled.div`
