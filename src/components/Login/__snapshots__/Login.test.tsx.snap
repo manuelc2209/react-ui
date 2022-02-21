@@ -2,39 +2,39 @@
 
 exports[`renders snapshot correctly 1`] = `
 <div
-  className="sc-egiyK"
+  className="sc-crHmcD"
 >
   <span
-    className="sc-fotOHu btrKJz"
+    className="sc-hBUSln fWTEly"
   >
     Welcome back!
   </span>
   <div
-    className="sc-hBUSln hXCTcq"
+    className="sc-ksdxgE hserqW"
   >
     <div
-      className="sc-crHmcD kPueqM"
+      className="sc-iqseJM iQGhqy"
     >
       <input
-        className="sc-kDTinF jwmmwC"
+        className="sc-jrQzAO kMKPVx"
         onChange={[Function]}
       />
     </div>
   </div>
   <div
-    className="sc-crHmcD kPueqM"
+    className="sc-iqseJM iQGhqy"
   >
     <input
-      className="sc-kDTinF jwmmwC"
+      className="sc-jrQzAO kMKPVx"
       onChange={[Function]}
       type="password"
     />
   </div>
   <div
-    className="sc-fFeiMQ iBwUui"
+    className="sc-fotOHu iHqpxl"
   >
     <button
-      className="sc-gsDKAQ dWwrqJ sc-ksdxgE"
+      className="sc-gsDKAQ dWwrqJ sc-bqiRlB"
       disabled={false}
       onClick={[Function]}
       onMouseDown={[Function]}
@@ -48,7 +48,7 @@ exports[`renders snapshot correctly 1`] = `
       </span>
     </button>
     <a
-      className="sc-bkkeKt hytXAr"
+      className="sc-fFeiMQ cDAoKX"
       href="#"
     >
       Forgot Password?

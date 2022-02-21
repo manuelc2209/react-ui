@@ -2,10 +2,10 @@
 
 exports[`renders snapshot correctly 1`] = `
 <div
-  className="sc-cTAqQK JEEQx"
+  className="sc-efQSVx kFraAL"
 >
   <div
-    className="sc-pVTFL iMfJZz sc-cNKqjZ kamXpZ"
+    className="sc-pVTFL iMfJZz sc-bBHHxi bUcJYb"
   >
     <button
       className="sc-gsDKAQ iaEwku"
@@ -24,28 +24,28 @@ exports[`renders snapshot correctly 1`] = `
     </button>
   </div>
   <div
-    className="sc-dPiLbb rnYTA"
+    className="sc-jObWnj fpNgqB"
   >
     <div
-      className="sc-bBHHxi jRXEDh"
+      className="sc-dPiLbb diGwTh"
     >
       <div
-        className="sc-bBHxTw ikbiBh sc-jObWnj"
+        className="sc-fKVqWL fTaamn sc-cTAqQK"
         disabled={false}
       >
         <div
-          className="sc-bBHxTw ikbiBh"
+          className="sc-fKVqWL fTaamn"
         >
           <div
-            className="sc-crHmcD kPueqM"
+            className="sc-iqseJM iQGhqy"
           >
             <span
-              className="sc-iqseJM"
+              className="sc-kDTinF"
             >
               Test
             </span>
             <input
-              className="sc-kDTinF jwmmwC"
+              className="sc-jrQzAO kMKPVx"
               disabled={false}
               onChange={[Function]}
               placeholder="Nickname Placeholder"
@@ -53,21 +53,21 @@ exports[`renders snapshot correctly 1`] = `
           </div>
         </div>
         <div
-          className="sc-dJjYzT jmUbCF"
+          className="sc-ieecCq bFsCxi"
         >
           <div
-            className="sc-hGPBjI hbMLfX"
+            className="sc-dJjYzT eUBUne"
           >
             <div
-              className="sc-crHmcD kPueqM"
+              className="sc-iqseJM iQGhqy"
             >
               <span
-                className="sc-iqseJM"
+                className="sc-kDTinF"
               >
                 PwLabel
               </span>
               <input
-                className="sc-kDTinF jwmmwC"
+                className="sc-jrQzAO kMKPVx"
                 disabled={false}
                 onChange={[Function]}
                 placeholder="Pw Placeholder"
@@ -75,12 +75,12 @@ exports[`renders snapshot correctly 1`] = `
               />
             </div>
             <span
-              className="sc-dlVxhl bCZOYK"
+              className="sc-hGPBjI eZuxIy"
               title="We Recommend a minimum 8 characters, at least one uppercase letter, one lowercase letter, one number and one special character"
             />
           </div>
           <button
-            className="sc-gsDKAQ fnJyRH sc-fKVqWL kTJQzz"
+            className="sc-gsDKAQ fnJyRH sc-kfPuZi iogxcV"
             disabled={true}
             onClick={[Function]}
             onMouseDown={[Function]}
@@ -96,15 +96,15 @@ exports[`renders snapshot correctly 1`] = `
           </button>
         </div>
         <div
-          className="sc-crHmcD kPueqM"
+          className="sc-iqseJM iQGhqy"
         >
           <span
-            className="sc-iqseJM"
+            className="sc-kDTinF"
           >
             Repeat PwLabel
           </span>
           <input
-            className="sc-kDTinF jwmmwC"
+            className="sc-jrQzAO kMKPVx"
             disabled={false}
             onChange={[Function]}
             placeholder="Please repeat your password here"
@@ -112,7 +112,7 @@ exports[`renders snapshot correctly 1`] = `
           />
         </div>
         <button
-          className="sc-gsDKAQ fnJyRH sc-kfPuZi"
+          className="sc-gsDKAQ fnJyRH sc-dlVxhl"
           disabled={true}
           onClick={[Function]}
           onMouseDown={[Function]}

@@ -13,6 +13,12 @@ body {
 
 #root {
     height: inherit;
+
+    /* Global Size Standards */
+    --mobile: 600px;
+    --small: 768px;
+    --medium: 1024px;
+    --large: 1440px;
 }
 
 table,
