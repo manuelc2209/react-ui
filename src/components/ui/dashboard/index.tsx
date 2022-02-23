@@ -5,7 +5,7 @@ import Select from 'react-select';
 
 import { Button, Header } from '../..';
 import { lightgrey1 } from '../../../GlobalStyles';
-import { useViewport } from '../../../hooks';
+import { UseDebounce, useViewport } from '../../../hooks';
 
 interface CurrencyType {
     value: string;
@@ -350,7 +350,7 @@ export const DashboardUI: React.FC = () => {
     const [itemsPerPage, setItemsPerPage] = useState(20);
     const [order, setOrder] = useState<SortType>(sortingOptions[0]);
     const { isMobileViewport } = useViewport();
-    const isMobile = isMobileViewport();
+    const isMobile = UseDebounce(isMobileViewport(), 300);
 
     function handleCurrencyChange(selectedOption: any) {
         if (selectedOption !== currency) {
