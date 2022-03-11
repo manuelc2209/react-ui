@@ -1,17 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import Select from 'react-select';
 
 import { Button, Header } from '../..';
 import { lightgrey1 } from '../../../GlobalStyles';
 import { UseDebounce, useViewport } from '../../../hooks';
 
-interface CurrencyType {
-    value: string;
-    label: string;
-    symbol: string;
-}
+import { Table } from './Table';
+import { CurrencyType } from './shared';
 
 interface SortType {
     value: string;
@@ -35,58 +32,9 @@ const sortingOptions = [
     { value: 'id_desc', label: 'ID Desc' }
 ];
 
-interface CoinType {
-    id: string;
-    symbol: string;
-    name: string;
-    image: string;
-    current_price: number;
-    market_cap: number;
-    market_cap_rank: number;
-    fully_diluted_valuation: number;
-    total_volume: number;
-    high_24h: number;
-    low_24h: number;
-    price_change_24h: number;
-    price_change_percentage_24h: number;
-    market_cap_change_24h: number;
-    market_cap_change_percentage_24h: number;
-    circulating_supply: number;
-    total_supply: number;
-    max_supply: number;
-    ath: number;
-    ath_change_percentage: number;
-    ath_date: Date;
-    atl: number;
-    atl_change_percentage: number;
-    atl_date: string;
-    roi: null;
-    last_updated: string;
-}
-
-interface StyledCurrencyProps {
-    isLoading?: boolean;
-}
-
-interface StyledPriceTdProps {
-    isNegative?: boolean;
-}
-
 interface StyledHeaderRightProps {
     isMobile?: boolean;
 }
-
-const loadingTheme = css`
-    background-color: #ebebebca;
-    color: #222222cf;
-`;
-
-const defaultTheme = css`
-    background-color: white;
-`;
-
-const setTheme = ({ isLoading }: { isLoading?: boolean }) => (isLoading ? loadingTheme : defaultTheme);
-const setPriceChangeValue = ({ isNegative }: { isNegative?: boolean }) => (isNegative ? 'red' : 'green');
 
 const customStyles = {
     control: (base: any, state: { isFocused: any }) => ({
@@ -157,10 +105,6 @@ const StyledHeader = styled(Header)`
             justify-content: flex-end;
         }
     }
-`;
-
-const StyledHeadTr = styled.tr`
-    height: 50px;
 `;
 
 const setOverflow = ({ isMobile }: { isMobile?: boolean }) => (isMobile ? 'auto' : 'inherit');
@@ -257,27 +201,6 @@ const StyledSubBody = styled.div`
     }
 `;
 
-const StyledSubHeader = styled.table`
-    background-color: #dbdbdb;
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
-`;
-
-const StyledCurrency = styled.tr<StyledCurrencyProps>`
-    column-gap: 20px;
-    user-select: none;
-    cursor: pointer;
-    height: 60px;
-    padding: 24px;
-    align-items: center;
-    ${setTheme}
-
-    :hover {
-        background-color: #ebebeb;
-    }
-`;
-
 const StyledLoading = styled.div`
     display: flex;
     flex-direction: row;
@@ -288,38 +211,6 @@ const StyledLoading = styled.div`
     align-items: center;
     font-weight: 600;
 `;
-
-const StyledSpan = styled.span``;
-
-const StyledTdLeft = styled.td`
-    padding-left: 24px;
-    text-align: left;
-    display: flex;
-    align-items: center;
-    height: inherit;
-    column-gap: 14px;
-
-    ${StyledSpan} {
-        :last-child {
-            font-weight: 600;
-        }
-    }
-`;
-
-const StyledPriceTd = styled.td<StyledPriceTdProps>`
-    text-align: center;
-    color: ${setPriceChangeValue};
-`;
-
-const StyledTd = styled.td`
-    text-align: center;
-`;
-
-const StyledImage = styled.img`
-    width: 30px;
-`;
-
-const StyledTbody = styled.tbody``;
 
 const StyledSelect = styled(Select)``;
 
@@ -364,13 +255,6 @@ export const DashboardUI: React.FC = () => {
             setContentLoading(true);
             setOrder(selectedOption as SortType);
         }
-    }
-
-    function days_passed(date: Date) {
-        const current = new Date(date.getTime());
-        const previous = new Date(date.getFullYear(), 0, 1);
-
-        return Math.ceil((Number(current) - Number(previous) + 1) / 86400000);
     }
 
     function handlePageChange(addCount?: boolean) {
@@ -464,48 +348,7 @@ export const DashboardUI: React.FC = () => {
                         {loading ? (
                             <StyledLoading>Loading</StyledLoading>
                         ) : (
-                            <StyledSubHeader>
-                                <thead>
-                                    <StyledHeadTr>
-                                        <th title="Rank By Market Cap">Rank</th>
-                                        <th>Name</th>
-                                        <th>Price</th>
-                                        <th>Change</th>
-                                        <th>24(h) Volume</th>
-                                        <th>Days Since ATH</th>
-                                    </StyledHeadTr>
-                                </thead>
-                                <StyledTbody>
-                                    {data &&
-                                        data.map((coins: CoinType) => (
-                                            <StyledCurrency isLoading={contentLoading} key={coins.id}>
-                                                <StyledTd>{coins.market_cap_rank}</StyledTd>
-                                                <StyledTdLeft>
-                                                    <StyledImage src={coins.image} />
-                                                    <StyledSpan>{coins.name}</StyledSpan>-
-                                                    <StyledSpan>{coins.symbol.toUpperCase()}</StyledSpan>
-                                                </StyledTdLeft>
-                                                <StyledTd>
-                                                    {coins.current_price}
-                                                    {currency.symbol}
-                                                </StyledTd>
-                                                <StyledPriceTd
-                                                    isNegative={
-                                                        Math.sign(coins.price_change_percentage_24h) === -1
-                                                    }
-                                                >
-                                                    {`${coins?.price_change_percentage_24h?.toFixed(2)}%`}
-                                                </StyledPriceTd>
-                                                <StyledTd>
-                                                    {`${coins?.market_cap_change_percentage_24h?.toFixed(
-                                                        2
-                                                    )}%`}
-                                                </StyledTd>
-                                                <StyledTd>{days_passed(new Date(coins.ath_date))}</StyledTd>
-                                            </StyledCurrency>
-                                        ))}
-                                </StyledTbody>
-                            </StyledSubHeader>
+                            <Table data={data} contentLoading={contentLoading} currency={currency} />
                         )}
                     </StyledSubBody>
                 </StyledContent>

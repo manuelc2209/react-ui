@@ -37,10 +37,6 @@ const StyledContent = styled.div`
         flex-direction: column;
         flex: 1;
     }
-
-    @media (min-width: 900px) {
-        height: calc(100vh - 60px);
-    }
 `;
 
 const StyledOverlay = styled.div`
