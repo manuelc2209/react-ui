@@ -20,7 +20,6 @@ interface ButtonProps {
     label?: string;
     disabled?: boolean;
     className?: string;
-    mouseEvents?: boolean;
     onClick?: () => void;
     onMouseUp?: () => void;
     onMouseDown?: () => void;
@@ -134,7 +133,6 @@ export const Button: React.FC<ButtonProps> = ({
     buttonType = 'default',
     disabled,
     className,
-    mouseEvents,
     onClick,
     onMouseUp,
     onMouseDown
@@ -149,8 +147,8 @@ export const Button: React.FC<ButtonProps> = ({
             disabled={Boolean(disabled)}
             className={className}
             onClick={() => onClick && onClick()}
-            onMouseDown={() => mouseEvents && onMouseDown && onMouseDown()}
-            onMouseUp={() => mouseEvents && onMouseUp && onMouseUp()}
+            onMouseDown={() => onMouseDown && onMouseDown()}
+            onMouseUp={() => onMouseUp && onMouseUp()}
         >
             <StyledLabel disabled={disabled}>{label}</StyledLabel>
         </StyledButton>
