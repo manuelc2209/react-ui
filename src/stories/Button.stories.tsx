@@ -49,6 +49,5 @@ Large.args = {
 export const MouseCallbacks = Template.bind({});
 MouseCallbacks.args = {
     size: 'large',
-    label: 'Button',
-    mouseEvents: true
+    label: 'Button'
 };
