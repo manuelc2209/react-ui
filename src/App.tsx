@@ -32,8 +32,10 @@ const StyledContent = styled.div`
     background-size: cover;
     position: relative;
     top: 60px;
+    height: calc(100% - 60px);
 
     @media (max-width: 450px) {
+        height: inherit;
         flex-direction: column;
         flex: 1;
     }

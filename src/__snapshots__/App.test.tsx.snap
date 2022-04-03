@@ -2,10 +2,10 @@
 
 exports[`renders snapshot correctly 1`] = `
 <div
-  className="sc-dtMgUX iLGSUD"
+  className="sc-cZMNgc SzFdq"
 >
   <div
-    className="sc-pVTFL iMfJZz sc-fvxzrP kuraNw"
+    className="sc-pVTFL iMfJZz sc-fbyfCU dViMMh"
   >
     <button
       className="sc-gsDKAQ dWwrqJ"
@@ -51,13 +51,13 @@ exports[`renders snapshot correctly 1`] = `
     </button>
   </div>
   <div
-    className="sc-cZMNgc leZa-DN"
+    className="sc-jUosCB dkORCP"
   >
     <div
-      className="sc-jUosCB GavxC"
+      className="sc-jQrDum fKGaCF"
     >
       <div
-        className="sc-jQrDum hhBkds"
+        className="sc-fvxzrP gFEfml"
       >
         <div
           className="sc-ikJyIC iZCOcS"
@@ -149,7 +149,7 @@ exports[`renders snapshot correctly 1`] = `
         </div>
       </div>
       <div
-        className="sc-jQrDum hhBkds"
+        className="sc-fvxzrP gFEfml"
       >
         <div
           className="sc-gWXbKe cKNkHL"

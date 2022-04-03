@@ -6,6 +6,7 @@ export { Login } from './Login';
 export { Register } from './Register';
 export { Portefolio } from './Portefolio';
 export { Skills } from './Skills';
+export { Textarea } from './Textarea';
 
 // UI Modules
 export { RegisterUI, DashboardUI, LoginUI, ProjectsUI } from './ui';
