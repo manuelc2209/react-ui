@@ -24,7 +24,6 @@ interface FormProps {
 }
 
 const StyledContainer = styled.div`
-    height: inherit;
     display: flex;
     flex-direction: column;
 `;
