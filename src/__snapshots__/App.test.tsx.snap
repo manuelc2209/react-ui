@@ -5,7 +5,7 @@ exports[`renders snapshot correctly 1`] = `
   className="sc-cZMNgc SzFdq"
 >
   <div
-    className="sc-pVTFL iMfJZz sc-fbyfCU dViMMh"
+    className="sc-pVTFL iXbTqm sc-fbyfCU dViMMh"
   >
     <button
       className="sc-gsDKAQ dWwrqJ"
@@ -51,7 +51,7 @@ exports[`renders snapshot correctly 1`] = `
     </button>
   </div>
   <div
-    className="sc-jUosCB dkORCP"
+    className="sc-jUosCB htrdqT"
   >
     <div
       className="sc-jQrDum fKGaCF"
