@@ -127,15 +127,17 @@ const StyledBody = styled.div`
     display: flex;
     width: 100%;
     height: 100%;
-    padding-bottom: 60px;
+    background: #101010;
+    overflow: overlay;
 `;
 
 const StyledSidebar = styled.div`
-    top: 60px;
     width: 18%;
-    height: 100%;
+    top: 60px;
     background: #101010;
-    position: fixed;
+    position: unset;
+    left: 0;
+    height: 100%;
 
     > * {
         color: white;
@@ -159,7 +161,7 @@ const StyledFooter = styled.div`
     justify-content: space-evenly;
     height: 60px;
     align-items: center;
-    position: fixed;
+    position: sticky;
     bottom: 0;
     width: 100%;
 
@@ -187,12 +189,8 @@ const StyledContent = styled.div`
 `;
 
 const StyledSubBody = styled.div`
-    padding: 20px 20px 80px 20px;
-    top: 60px;
     box-sizing: border-box;
-    width: calc(82%);
     height: 100%;
-    left: 18%;
     position: relative;
 
     @media (max-width: 550px) {

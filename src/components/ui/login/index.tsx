@@ -70,6 +70,7 @@ const StyledContent = styled.div`
 const StyledOverlay = styled.div`
     display: flex;
     flex: 1;
+    height: 100vh;
     background-color: #20202085;
 
     @media (max-width: 900px) {

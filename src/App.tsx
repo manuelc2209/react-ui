@@ -31,13 +31,17 @@ const StyledContent = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    top: 60px;
-    height: calc(100% - 60px);
+    height: inherit;
 
     @media (max-width: 450px) {
         height: inherit;
         flex-direction: column;
         flex: 1;
+        height: calc(100vh - 60px);
+    }
+
+    @media (max-width: 900px) {
+        height: unset;
     }
 `;
 
