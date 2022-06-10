@@ -114,7 +114,7 @@ export const Card: React.FC<CardProps> = ({
     return (
         <StyledCard className={className} isActionCard={Boolean(isActionCard)}>
             {isActionCard ? (
-                <StyledLinkWrapper>
+                <StyledDivWrapper>
                     <StyledImageWrapper>{hasImage && <StyledImage src={image} />}</StyledImageWrapper>
                     <StyledBodyWrapper hasImage={hasImage}>
                         {title && <StyledTitle>{title}</StyledTitle>}
@@ -140,7 +140,7 @@ export const Card: React.FC<CardProps> = ({
                             </StyledButtonContainer>
                         )}
                     </StyledBodyWrapper>
-                </StyledLinkWrapper>
+                </StyledDivWrapper>
             ) : (
                 <StyledLinkWrapper href={href?.website || href?.github}>
                     <StyledImageWrapper>{hasImage && <StyledImage src={image} />}</StyledImageWrapper>
