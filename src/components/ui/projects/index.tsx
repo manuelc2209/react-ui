@@ -52,7 +52,7 @@ const StyledOverlay = styled.div`
     align-items: center;
     row-gap: 20px;
     column-gap: 20px;
-    padding: 20px;
+    padding: 60px 20px;
 
     @media (max-width: 900px) {
         flex-direction: column;
