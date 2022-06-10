@@ -17,7 +17,10 @@ interface CardType {
     title?: string;
     subtitle?: string;
     image?: string;
-    href?: string;
+    href?: {
+        github: string;
+        website: string;
+    };
 }
 
 interface PortefolioProps {
@@ -40,6 +43,9 @@ const StyledHeadline = styled.span`
 `;
 
 const StyledLabel = styled.span`
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
     color: white;
 `;
 
@@ -51,13 +57,36 @@ const StyledImage = styled.img`
     height: 70%;
     border-radius: 50%;
     margin: auto;
-    border: 1px solid black;
+    border: 2px solid white;
 `;
 
-const StyledLink = styled.a``;
+const StyledLink = styled.a`
+    color: white;
+    text-decoration: underline;
+    padding-left: 16px;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: underline;
+        color: white;
+    }
+
+    &:visited {
+        color: white;
+    }
+
+    &:active {
+        color: white;
+    }
+`;
 
 const StyledTextContainer = styled.div`
     margin-bottom: 50px;
+    font-size: 1.5rem;
+    padding: 20px;
+    * {
+        margin-bottom: 20px;
+    }
 `;
 
 const StyledCardContainer = styled.div`
@@ -73,27 +102,14 @@ const StyledCardContainer = styled.div`
     @media only screen and (min-width: 600px) and (max-width: 900px) {
         flex-direction: row;
     }
-
-    @media only screen and (min-width: 900px) and (max-width: 1325px) {
-        flex-direction: column;
-    }
 `;
 
 const StyledCard = styled(Card)`
-    background: #3d3d3d;
+    background: #344653;
     width: auto;
     width: 100%;
+    max-width: 300px;
     box-sizing: border-box;
-`;
-
-const StyledLinkContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-
-    ${StyledLink} {
-        margin: 15px;
-    }
 `;
 
 const StyledSocialSection = styled.div`
@@ -115,6 +131,7 @@ const StyledWrapper = styled.div`
 
     @media (max-width: 600px) {
         padding: 20px 10px;
+        align-items: center;
     }
 `;
 
@@ -134,8 +151,11 @@ export const Portefolio: React.FC<PortefolioProps> = ({
                 {link && linkLabel
                     ? label && (
                           <StyledLabel>
-                              {label}
-                              <StyledLink href={link}>{linkLabel}</StyledLink>
+                              <span>{label}</span>
+                              <div>
+                                  Working at:
+                                  <StyledLink href={link}>{linkLabel}</StyledLink>
+                              </div>
                           </StyledLabel>
                       )
                     : label && <StyledLabel>{label}</StyledLabel>}
@@ -149,7 +169,6 @@ export const Portefolio: React.FC<PortefolioProps> = ({
                             subtitle={card.subtitle}
                             image={card.image}
                             href={card.href}
-                            newTab
                         />
                     ))}
                 </StyledCardContainer>
