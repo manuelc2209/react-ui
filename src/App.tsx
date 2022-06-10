@@ -23,6 +23,7 @@ const StyledContent = styled.div`
     background-size: cover;
     position: relative;
     height: inherit;
+    overflow: auto;
 
     @media (max-width: 450px) {
         height: inherit;
