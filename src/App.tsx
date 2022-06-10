@@ -6,16 +6,7 @@ import { useNavigate } from 'react-router-dom';
 
 import data from './data/index.json';
 import { COLOR_PRIMARY_2 } from './GlobalStyles';
-import {
-    Button,
-    DashboardUI,
-    Header,
-    LoginUI,
-    Portefolio,
-    RegisterUI,
-    ProjectsUI,
-    Skills
-} from './components';
+import { Button, DashboardUI, Header, Portefolio, ProjectsUI } from './components';
 
 const StyledContainer = styled.div`
     height: inherit;
@@ -41,14 +32,14 @@ const StyledContent = styled.div`
     }
 
     @media (max-width: 900px) {
-        height: unset;
+        height: 100%;
     }
 `;
 
 const StyledOverlay = styled.div`
     display: flex;
     flex: 1;
-    background-color: #20202085;
+    background-color: #1e476c6e;
 
     @media (max-width: 900px) {
         flex-direction: column;
@@ -60,6 +51,7 @@ const StyledColumn = styled.div`
     height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     flex: 1;
 
     @media (max-width: 450px) {
@@ -86,41 +78,15 @@ const StyledHeader = styled(Header)`
 
 export const App: React.FC = () => {
     const [disabled, setDisabled] = useState(false);
-    const [login, setLogin] = useState(false);
-    const [register, setRegister] = useState(false);
     const navigate = useNavigate();
-    const { profile, skills } = data;
-
-    function resetState() {
-        setRegister(false);
-        setLogin(false);
-    }
-
-    const handleOnClick = () => {
-        setDisabled(true);
-        // Fake timeout to simmulate a request while api is not ready
-        setTimeout(() => setDisabled(false), 2500);
-    };
+    const { profile } = data;
 
     const handleProjects = () => {
-        resetState();
         navigate('/projects');
     };
 
-    const handleLogin = () => {
-        setLogin(true);
-        navigate(login ? '/' : '/login');
-    };
-
     const handleBack = () => {
-        setLogin(false);
-        setRegister(false);
         navigate('/');
-    };
-
-    const handleRegister = () => {
-        setRegister(true);
-        navigate(register ? '/' : '/register');
     };
 
     // REFACTOR THIS INTO UI
@@ -128,23 +94,7 @@ export const App: React.FC = () => {
     const App = (
         <StyledContainer>
             <StyledHeader>
-                {login ? (
-                    <Button size="large" label="Log out" onClick={() => handleBack && handleBack()} />
-                ) : (
-                    <>
-                        <Button size="large" label="Log in" onClick={() => handleLogin && handleLogin()} />
-                        <Button
-                            size="large"
-                            label="Sign up"
-                            onClick={() => handleRegister && handleRegister()}
-                        />
-                        <Button
-                            size="large"
-                            label="Projects"
-                            onClick={() => handleProjects && handleProjects()}
-                        />
-                    </>
-                )}
+                <Button size="large" label="Projects" onClick={() => handleProjects && handleProjects()} />
             </StyledHeader>
             <StyledContent>
                 <StyledOverlay>
@@ -158,52 +108,11 @@ export const App: React.FC = () => {
                             cards={profile.cards}
                         />
                     </StyledColumn>
-                    <StyledColumn>
-                        <Skills skills={skills} />
-                    </StyledColumn>
                 </StyledOverlay>
             </StyledContent>
         </StyledContainer>
     );
 
-    const loginButtonProps = {
-        label: 'Go back',
-        size: 'large',
-        disabled: false,
-        onClick: () => handleBack()
-    };
-
-    const loginFormProps = {
-        nameLabel: 'Username:',
-        nicknamePlaceholder: 'Please type in your Nickname here:',
-        passwordLabel: 'Password:',
-        passwordPlaceholder: 'Please type in your password here:',
-        disabled: false,
-        onClick: () => handleOnClick()
-    };
-
-    const Login = <LoginUI buttonProperties={loginButtonProps} formProperties={loginFormProps} />;
-
-    const registerButtonProps = {
-        label: 'Go back',
-        size: 'large',
-        disabled: false,
-        onClick: () => handleBack()
-    };
-
-    const formProps = {
-        name: 'Username',
-        disabled: false,
-        validatePassword: true,
-        doubleValidation: true,
-        passwordLabel: 'Password:',
-        nicknamePlaceholder: 'Username Placeholder',
-        passwordPlaceholder: 'Password Placeholder',
-        repeatPasswordPlaceholder: 'Repeat your password here',
-        onClick: () => handleOnClick()
-    };
-
-    const Register = <RegisterUI buttonProperties={registerButtonProps} formProperties={formProps} />;
     const Dashboard = <DashboardUI />;
 
     const buttonProps = {
@@ -218,8 +127,6 @@ export const App: React.FC = () => {
     return (
         <Routes>
             <Route path="/" element={App} />
-            <Route path="register" element={Register} />
-            <Route path="login" element={Login} />
             <Route path="projects" element={Projects} />
             <Route path="dashboard" element={Dashboard} />
             <Route path="*" element={App} />

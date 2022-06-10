@@ -32,7 +32,7 @@ const StyledHeader = styled.div<StyledHeaderProps>`
     align-items: center;
 
     > * {
-        padding: 0 16px;
+        padding: 0 13px;
     }
 `;
 

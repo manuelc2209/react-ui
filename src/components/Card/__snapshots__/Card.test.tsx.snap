@@ -2,18 +2,17 @@
 
 exports[`renders snapshot correctly 1`] = `
 <div
-  className="sc-dkPtRN eGWjTe"
+  className="sc-dkPtRN fbREkk"
 >
   <a
-    href="/"
-    onClick={[Function]}
+    className="sc-furwcr kAKVlc"
   >
     <div
       className="sc-hKwDye"
     />
+    <div
+      className="sc-eCImPb gowWbJ"
+    />
   </a>
-  <div
-    className="sc-eCImPb jbNsEY"
-  />
 </div>
 `;
