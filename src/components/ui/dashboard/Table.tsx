@@ -122,6 +122,18 @@ function days_passed(date: Date) {
     return Math.ceil((Number(current) - Number(previous) + 1) / 86400000);
 }
 
+const getValues = (coins: { price_change_percentage_24h: number } | undefined): string => {
+    const price = coins?.price_change_percentage_24h?.toFixed(2);
+
+    return price ? `${price}%` : 'N/A';
+};
+
+const getChange = (coins: { market_cap_change_percentage_24h: number } | undefined): string => {
+    const price = coins?.market_cap_change_percentage_24h?.toFixed(2);
+
+    return price ? `${price}%` : 'N/A';
+};
+
 export const Table: React.FC<TableProps> = ({ data, contentLoading, currency }) => {
     return (
         <StyledSubHeader>
@@ -150,9 +162,9 @@ export const Table: React.FC<TableProps> = ({ data, contentLoading, currency }) 
                                 {currency.symbol}
                             </StyledTd>
                             <StyledPriceTd isNegative={Math.sign(coins.price_change_percentage_24h) === -1}>
-                                {`${coins?.price_change_percentage_24h?.toFixed(2)}%`}
+                                {getValues(coins)}
                             </StyledPriceTd>
-                            <StyledTd>{`${coins?.market_cap_change_percentage_24h?.toFixed(2)}%`}</StyledTd>
+                            <StyledTd>{getChange(coins)}</StyledTd>
                             <StyledTd>{days_passed(new Date(coins.ath_date))}</StyledTd>
                         </StyledCurrency>
                     ))}

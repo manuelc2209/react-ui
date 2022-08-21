@@ -131,30 +131,6 @@ const StyledBody = styled.div`
     overflow: overlay;
 `;
 
-const StyledSidebar = styled.div`
-    width: 18%;
-    top: 60px;
-    background: #101010;
-    position: unset;
-    left: 0;
-    height: 100%;
-
-    > * {
-        color: white;
-        padding: 20px;
-        height: 25px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        user-select: none;
-
-        :hover {
-            background: #3f3f3fac;
-        }
-    }
-`;
-
 const StyledFooter = styled.div`
     background: #101010;
     display: flex;
@@ -336,11 +312,6 @@ export const DashboardUI: React.FC = () => {
                 </StyledHeaderRight>
             </StyledHeader>
             <StyledBody>
-                <StyledSidebar>
-                    <div onClick={() => !contentLoading && navigate('/dashboard')}>Home</div>
-                    <div onClick={() => !contentLoading && navigate('/wallet')}>Wallet</div>
-                    <div onClick={() => !contentLoading && navigate('/settings')}>Settings</div>
-                </StyledSidebar>
                 <StyledContent>
                     <StyledSubBody>
                         {loading ? (
