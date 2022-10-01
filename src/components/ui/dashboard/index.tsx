@@ -288,7 +288,7 @@ export const DashboardUI: React.FC = () => {
                                 styles={customStyles}
                                 isDisabled={contentLoading || loading}
                             />
-                            <StyledButton size="large" label="Back" onClick={() => navigate('/')} />
+                            <StyledButton size="large" label="Back" onClick={() => navigate(-1)} />
                         </StyledHorizontalScroll>
                     ) : (
                         <>
@@ -306,7 +306,7 @@ export const DashboardUI: React.FC = () => {
                                 styles={customStyles}
                                 isDisabled={contentLoading || loading}
                             />
-                            <StyledButton size="large" label="Back" onClick={() => navigate('/')} />
+                            <StyledButton size="large" label="Back" onClick={() => navigate(-1)} />
                         </>
                     )}
                 </StyledHeaderRight>

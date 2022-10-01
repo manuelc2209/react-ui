@@ -113,8 +113,6 @@ export const App: React.FC = () => {
         </StyledContainer>
     );
 
-    const Dashboard = <DashboardUI />;
-
     const buttonProps = {
         label: 'Go back',
         size: 'large',
@@ -122,14 +120,11 @@ export const App: React.FC = () => {
         onClick: () => handleBack()
     };
 
-    const Projects = <ProjectsUI buttonProperties={buttonProps} />;
-
     return (
         <Routes>
             <Route path="/" element={App} />
-            <Route path="projects" element={Projects} />
-            <Route path="dashboard" element={Dashboard} />
-            <Route path="*" element={App} />
+            <Route path="/projects" element={<ProjectsUI buttonProperties={buttonProps} />} />
+            <Route path="/dashboard" element={<DashboardUI />} />
         </Routes>
     );
 };

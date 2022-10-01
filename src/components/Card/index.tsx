@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Navigate, useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 
 import { COLOR_PRIMARY_1 } from '../../GlobalStyles';
@@ -108,8 +108,14 @@ export const Card: React.FC<CardProps> = ({
     isActionCard,
     className
 }: CardProps) => {
+    const navigate = useNavigate();
     const hasImage = image;
     const hasHref = href;
+
+    const isOutsideHref = () =>
+        href?.website.startsWith('/')
+            ? navigate(href?.website)
+            : (window.location = href?.website as (string | Location) & Location);
 
     return (
         <StyledCard className={className} isActionCard={Boolean(isActionCard)}>
@@ -126,9 +132,9 @@ export const Card: React.FC<CardProps> = ({
                                 <Button
                                     label="Live"
                                     disabled={!href?.website}
-                                    onClick={() =>
-                                        (window.location = href?.website as (string | Location) & Location)
-                                    }
+                                    onClick={() => {
+                                        isOutsideHref();
+                                    }}
                                 />
                                 <Button
                                     label="Code"
