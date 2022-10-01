@@ -88,7 +88,7 @@ const projects = [
         path: '',
         github: '',
         newTab: true,
-        subtitle: 'A collection of stateless components built using React & Typescript.'
+        subtitle: 'A Component Library built using React & Typescript.'
     },
     {
         title: 'Crypto Dashboard',
@@ -102,7 +102,7 @@ const projects = [
         title: 'Github Search',
         image: '/images/github-search.jpg',
         path: 'https://github-search.manuelcorreia.org/',
-        github: '',
+        github: 'https://github.com/manuelc2209/github-search-react',
         newTab: true,
         subtitle: "A simple search for Github's repositories"
     }
