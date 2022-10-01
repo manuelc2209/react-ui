@@ -2,13 +2,15 @@
 
 exports[`renders snapshot correctly 1`] = `
 <div
-  className="sc-khQegj cMZhuy"
+  className="sc-khsqcC kflzcU"
 >
   <div
-    className="sc-kDTinF ldgdUZ sc-lbhJGD bJHfCD"
+    className="sc-kDvujY htEEKl sc-lbVpMG dkinon"
   >
     <button
-      className="sc-gsDKAQ dWwrqJ"
+      aria-label="Button"
+      className="sc-gswNZR fjtDGi"
+      data-testid="button"
       disabled={false}
       onClick={[Function]}
       onMouseDown={[Function]}
@@ -16,38 +18,38 @@ exports[`renders snapshot correctly 1`] = `
       size="large"
     >
       <span
-        className="sc-bdvvtL bBtbgR"
+        className="sc-bcXHqe jeMYyn"
       >
         Projects
       </span>
     </button>
   </div>
   <div
-    className="sc-hUpaCq bLAvgS"
+    className="sc-hTBuwn hDzzpb"
   >
     <div
-      className="sc-jgrJph cAFptD"
+      className="sc-jfTVlA enfvqY"
     >
       <div
-        className="sc-gSQFLo heyYeb"
+        className="sc-gScZFl fcdiOt"
       >
         <div
-          className="sc-hGPBjI byrrBT"
+          className="sc-hHTYSt cXlgDK"
         >
           <img
-            className="sc-hBUSln fnBayr"
+            className="sc-hBxehG jKmbGY"
             src="/images/me.jpg"
           />
           <span
-            className="sc-bqiRlB bXavAW"
+            className="sc-bqWxrE jFgBe"
           >
             Frontend Web Developer
           </span>
           <div
-            className="sc-fFeiMQ bYMnry"
+            className="sc-fEXmlR hRrSOb"
           >
             <span
-              className="sc-ksdxgE irVacH"
+              className="sc-ksBlkl bOpCiB"
             >
               <span>
                 Hi! I use React & Typescript to build a lot of cool things.
@@ -55,7 +57,7 @@ exports[`renders snapshot correctly 1`] = `
               <div>
                 Working at:
                 <a
-                  className="sc-fotOHu cGBxXN"
+                  className="sc-fnGiBr LZhWN"
                   href="https://boost-it.pt/pt/"
                 >
                   Boost-IT
@@ -64,61 +66,184 @@ exports[`renders snapshot correctly 1`] = `
             </span>
           </div>
           <div
-            className="sc-bkkeKt jenwIc"
+            className="sc-bjfHbI jJMIbg"
           >
             <div
-              className="sc-dkPtRN fbREkk sc-ieecCq dJa-Drv"
+              className="sc-dkrFOg cctvnF sc-idXgbr gGEryw"
             >
               <a
-                className="sc-furwcr kAKVlc"
+                className="sc-ftTHYK PBCua"
                 href="https://www.linkedin.com/in/manuel-correia2209/"
               >
                 <div
-                  className="sc-hKwDye"
+                  className="sc-hLBbgP"
                 >
                   <img
-                    className="sc-jRQBWg iJpBIl"
+                    className="sc-jSUZER hTCUaC"
                     src="https://hermes.digitalinnovation.one/articles/cover/669b63fe-912d-484c-b313-95a46a8ee25e.png"
                   />
                 </div>
                 <div
-                  className="sc-eCImPb gowWbJ"
+                  className="sc-eDvSVe kMbAsn"
                 >
                   <span
-                    className="sc-gKclnd hiMkCC"
+                    className="sc-gKPRtg hcEIrj"
                   >
                     LinkedIn
                   </span>
-                  
                 </div>
               </a>
             </div>
             <div
-              className="sc-dkPtRN fbREkk sc-ieecCq dJa-Drv"
+              className="sc-dkrFOg cctvnF sc-idXgbr gGEryw"
             >
               <a
-                className="sc-furwcr kAKVlc"
+                className="sc-ftTHYK PBCua"
                 href="https://github.com/manuelc2209/react-ui"
               >
                 <div
-                  className="sc-hKwDye"
+                  className="sc-hLBbgP"
                 >
                   <img
-                    className="sc-jRQBWg iJpBIl"
+                    className="sc-jSUZER hTCUaC"
                     src="https://hermes.digitalinnovation.one/articles/cover/7b4fbb1d-f57a-4420-9209-ee976b171bdf.jpg"
                   />
                 </div>
                 <div
-                  className="sc-eCImPb gowWbJ"
+                  className="sc-eDvSVe kMbAsn"
                 >
                   <span
-                    className="sc-gKclnd hiMkCC"
+                    className="sc-gKPRtg hcEIrj"
                   >
                     Github
                   </span>
-                  
                 </div>
               </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders without crashing 1`] = `
+<div>
+  <div
+    class="sc-khsqcC kflzcU"
+  >
+    <div
+      class="sc-kDvujY htEEKl sc-lbVpMG dkinon"
+    >
+      <button
+        aria-label="Button"
+        class="sc-gswNZR fjtDGi"
+        data-testid="button"
+      >
+        <span
+          class="sc-bcXHqe jeMYyn"
+        >
+          Projects
+        </span>
+      </button>
+    </div>
+    <div
+      class="sc-hTBuwn hDzzpb"
+    >
+      <div
+        class="sc-jfTVlA enfvqY"
+      >
+        <div
+          class="sc-gScZFl fcdiOt"
+        >
+          <div
+            class="sc-hHTYSt cXlgDK"
+          >
+            <img
+              class="sc-hBxehG jKmbGY"
+              src="/images/me.jpg"
+            />
+            <span
+              class="sc-bqWxrE jFgBe"
+            >
+              Frontend Web Developer
+            </span>
+            <div
+              class="sc-fEXmlR hRrSOb"
+            >
+              <span
+                class="sc-ksBlkl bOpCiB"
+              >
+                <span>
+                  Hi! I use React & Typescript to build a lot of cool things.
+                </span>
+                <div>
+                  Working at:
+                  <a
+                    class="sc-fnGiBr LZhWN"
+                    href="https://boost-it.pt/pt/"
+                  >
+                    Boost-IT
+                  </a>
+                </div>
+              </span>
+            </div>
+            <div
+              class="sc-bjfHbI jJMIbg"
+            >
+              <div
+                class="sc-dkrFOg cctvnF sc-idXgbr gGEryw"
+              >
+                <a
+                  class="sc-ftTHYK PBCua"
+                  href="https://www.linkedin.com/in/manuel-correia2209/"
+                >
+                  <div
+                    class="sc-hLBbgP"
+                  >
+                    <img
+                      class="sc-jSUZER hTCUaC"
+                      src="https://hermes.digitalinnovation.one/articles/cover/669b63fe-912d-484c-b313-95a46a8ee25e.png"
+                    />
+                  </div>
+                  <div
+                    class="sc-eDvSVe kMbAsn"
+                  >
+                    <span
+                      class="sc-gKPRtg hcEIrj"
+                    >
+                      LinkedIn
+                    </span>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="sc-dkrFOg cctvnF sc-idXgbr gGEryw"
+              >
+                <a
+                  class="sc-ftTHYK PBCua"
+                  href="https://github.com/manuelc2209/react-ui"
+                >
+                  <div
+                    class="sc-hLBbgP"
+                  >
+                    <img
+                      class="sc-jSUZER hTCUaC"
+                      src="https://hermes.digitalinnovation.one/articles/cover/7b4fbb1d-f57a-4420-9209-ee976b171bdf.jpg"
+                    />
+                  </div>
+                  <div
+                    class="sc-eDvSVe kMbAsn"
+                  >
+                    <span
+                      class="sc-gKPRtg hcEIrj"
+                    >
+                      Github
+                    </span>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
         </div>

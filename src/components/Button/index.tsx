@@ -145,6 +145,8 @@ export const Button: React.FC<ButtonProps> = ({
             buttonType={buttonType}
             buttonSize={buttonSize}
             disabled={Boolean(disabled)}
+            aria-label="Button"
+            data-testid="button"
             className={className}
             onClick={() => onClick && onClick()}
             onMouseDown={() => onMouseDown && onMouseDown()}

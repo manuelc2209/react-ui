@@ -1,29 +1,24 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import renderer from 'react-test-renderer';
-import { fireEvent } from '@testing-library/react';
+import { fireEvent, render, screen } from '@testing-library/react';
 
 import { Button } from '..';
 
 it('renders snapshot correctly', () => {
-    const tree = renderer.create(<Button />).toJSON();
+    const tree = render(<Button />);
     expect(tree).toMatchSnapshot();
 });
 
 it('renders without crashing', () => {
-    const div = document.createElement('div');
-    ReactDOM.render(<Button />, div);
-    ReactDOM.unmountComponentAtNode(div);
+    const tree = render(<Button />);
+    expect(tree).toMatchSnapshot();
 });
 
 it('renders component with two types', () => {
-    const div = document.createElement('div');
-
     const buttonTypes = ['default', 'border'] as const;
 
     buttonTypes.map((type) => {
-        ReactDOM.render(<Button buttonType={type} />, div);
-        ReactDOM.unmountComponentAtNode(div);
+        const el = render(<Button buttonType={type} />);
+        expect(el).toMatchSnapshot();
     });
 });
 
@@ -33,31 +28,25 @@ it('renders component with all sizes', () => {
     const buttonSizes = ['small', 'medium', 'large'] as const;
 
     buttonSizes.map((size) => {
-        ReactDOM.render(<Button size={size} />, div);
-        ReactDOM.unmountComponentAtNode(div);
+        const el = render(<Button size={size} />);
+        expect(el).toMatchSnapshot();
     });
 });
 
-it('renders component with callbacks', () => {
-    const div = document.createElement('div');
+it('renders component with callbacks', async () => {
     const mockedClick = jest.fn();
     const mockedMouseDown = jest.fn();
     const mockedMouseUp = jest.fn();
 
-    ReactDOM.render(
-        <Button onClick={mockedClick} onMouseDown={mockedMouseDown} onMouseUp={mockedMouseUp} />,
-        div
+    render(
+        <Button onClick={mockedClick} onMouseDown={mockedMouseDown} onMouseUp={mockedMouseUp} />
     );
 
-    const button = div.querySelector('button');
-
-    fireEvent.click(button as Element);
-    fireEvent.mouseDown(button as Element);
-    fireEvent.mouseUp(button as Element);
+    fireEvent.click(await screen.getByTestId('button'));
+    fireEvent.mouseDown(await screen.getByTestId('button'));
+    fireEvent.mouseUp(await screen.getByTestId('button'));
 
     expect(mockedClick).toHaveBeenCalledTimes(1);
     expect(mockedMouseDown).toHaveBeenCalledTimes(1);
     expect(mockedMouseUp).toHaveBeenCalledTimes(1);
-
-    ReactDOM.unmountComponentAtNode(div);
 });
