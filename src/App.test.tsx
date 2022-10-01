@@ -1,15 +1,27 @@
+import { render } from '@testing-library/react';
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import renderer from 'react-test-renderer';
 
 import { App } from './App';
 
 const AppComponent = (
-    <BrowserRouter>
+    <HashRouter>
         <App />
-    </BrowserRouter>
+    </HashRouter>
 );
+
+const mockedUsedNavigate = jest.fn();
+
+jest.mock('react-router-dom', () => ({
+    ...jest.requireActual('react-router-dom') as any,
+    useNavigate: () => mockedUsedNavigate,
+}));
+
+jest.mock('react-router', () => ({
+    ...jest.requireActual('react-router') as any,
+    useRoutes: () => mockedUsedNavigate,
+}));
 
 it('renders snapshot correctly', () => {
     const tree = renderer.create(AppComponent).toJSON();
@@ -17,7 +29,6 @@ it('renders snapshot correctly', () => {
 });
 
 it('renders without crashing', () => {
-    const div = document.createElement('div');
-    ReactDOM.render(AppComponent, div);
-    ReactDOM.unmountComponentAtNode(div);
+    const { container } = render(AppComponent);
+    expect(container).toMatchSnapshot();
 });

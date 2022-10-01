@@ -1,16 +1,14 @@
+import { render } from '@testing-library/react';
 import React from 'react';
-import ReactDOM from 'react-dom';
-import renderer from 'react-test-renderer';
 
 import { Header } from '..';
 
 it('renders snapshot correctly', () => {
-    const tree = renderer.create(<Header />).toJSON();
+    const tree = render(<Header />);
     expect(tree).toMatchSnapshot();
 });
 
 it('renders without crashing', () => {
-    const div = document.createElement('div');
-    ReactDOM.render(<Header />, div);
-    ReactDOM.unmountComponentAtNode(div);
+    const el = render(<Header />);
+    expect(el).toMatchSnapshot();
 });

@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import './index.css';
-import { Routes, Route } from 'react-router';
-import { useNavigate } from 'react-router-dom';
+import { Route, Routes, useNavigate } from 'react-router-dom';
 
 import data from './data/index.json';
 import { COLOR_PRIMARY_2 } from './GlobalStyles';
