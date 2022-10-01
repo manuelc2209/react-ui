@@ -1,17 +1,18 @@
 import React, { StrictMode } from 'react';
-import ReactDOM from 'react-dom';
 import { HashRouter } from 'react-router-dom';
+import { createRoot } from 'react-dom/client';
 
 import { App } from './App';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(
+const container = document.getElementById('root');
+const root = createRoot(container!);
+root.render(
     <StrictMode>
         <HashRouter>
             <App />
         </HashRouter>
-    </StrictMode>,
-    document.getElementById('root')
+    </StrictMode>
 );
 
 // If you want your app to work offline and load faster, you can change
