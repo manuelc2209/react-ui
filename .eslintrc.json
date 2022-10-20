@@ -16,9 +16,15 @@
     "parserOptions": {
         "project": "tsconfig.json"
     },
+    "env": {
+        "node": true,
+        "commonjs": true
+    },
     "rules": {
         "@typescript-eslint/naming-convention": "off",
         "@typescript-eslint/no-unnecessary-condition": "off",
+        "@shopify/binary-assignment-parens": "off",
+        "no-process-env": "off",
         "no-console": 1,
         "prettier/prettier": 2,
         "jest/no-disabled-tests": "warn",
