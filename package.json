@@ -34,8 +34,8 @@
     },
     "scripts": {
         "postinstall": "husky install",
-        "start": "SET NODE_ENV=development && react-scripts start",
-        "build": "SET NODE_ENV=production && react-scripts build",
+        "start": "NODE_ENV=development && react-scripts start",
+        "build": "NODE_ENV=production && react-scripts build",
         "test": "jest --coverage --runInBand",
         "test:nowatch": "jest --coverage --runInBand --watchAll=false",
         "eject": "react-scripts eject",
