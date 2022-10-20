@@ -14,13 +14,13 @@ const AppComponent = (
 const mockedUsedNavigate = jest.fn();
 
 jest.mock('react-router-dom', () => ({
-    ...jest.requireActual('react-router-dom') as any,
-    useNavigate: () => mockedUsedNavigate,
+    ...(jest.requireActual('react-router-dom') as any),
+    useNavigate: () => mockedUsedNavigate
 }));
 
 jest.mock('react-router', () => ({
-    ...jest.requireActual('react-router') as any,
-    useRoutes: () => mockedUsedNavigate,
+    ...(jest.requireActual('react-router') as any),
+    useRoutes: () => mockedUsedNavigate
 }));
 
 it('renders snapshot correctly', () => {

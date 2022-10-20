@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders component with all sizes 1`] = `
-Object {
+{
   "asFragment": [Function],
   "baseElement": <body>
     <div>
@@ -86,7 +86,7 @@ Object {
 `;
 
 exports[`renders component with all sizes 2`] = `
-Object {
+{
   "asFragment": [Function],
   "baseElement": <body>
     <div>
@@ -184,7 +184,7 @@ Object {
 `;
 
 exports[`renders component with all sizes 3`] = `
-Object {
+{
   "asFragment": [Function],
   "baseElement": <body>
     <div>
@@ -295,7 +295,7 @@ Object {
 `;
 
 exports[`renders component with two types 1`] = `
-Object {
+{
   "asFragment": [Function],
   "baseElement": <body>
     <div>
@@ -380,7 +380,7 @@ Object {
 `;
 
 exports[`renders component with two types 2`] = `
-Object {
+{
   "asFragment": [Function],
   "baseElement": <body>
     <div>
@@ -478,7 +478,7 @@ Object {
 `;
 
 exports[`renders snapshot correctly 1`] = `
-Object {
+{
   "asFragment": [Function],
   "baseElement": <body>
     <div>
@@ -563,7 +563,7 @@ Object {
 `;
 
 exports[`renders without crashing 1`] = `
-Object {
+{
   "asFragment": [Function],
   "baseElement": <body>
     <div>

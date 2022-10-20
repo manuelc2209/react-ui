@@ -11,7 +11,7 @@ exports[`renders snapshot correctly 1`] = `
 `;
 
 exports[`renders without crashing 1`] = `
-Object {
+{
   "asFragment": [Function],
   "baseElement": <body>
     <div>
