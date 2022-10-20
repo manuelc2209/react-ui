@@ -1,7 +1,7 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 
-import { CurrencyType } from './shared';
+import { CurrencyType } from '../shared';
 
 interface TableProps {
     currency: CurrencyType;

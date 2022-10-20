@@ -33,18 +33,16 @@ it('renders component with all sizes', () => {
     });
 });
 
-it('renders component with callbacks', async () => {
+it('renders component with callbacks', () => {
     const mockedClick = jest.fn();
     const mockedMouseDown = jest.fn();
     const mockedMouseUp = jest.fn();
 
-    render(
-        <Button onClick={mockedClick} onMouseDown={mockedMouseDown} onMouseUp={mockedMouseUp} />
-    );
+    render(<Button onClick={mockedClick} onMouseDown={mockedMouseDown} onMouseUp={mockedMouseUp} />);
 
-    fireEvent.click(await screen.getByTestId('button'));
-    fireEvent.mouseDown(await screen.getByTestId('button'));
-    fireEvent.mouseUp(await screen.getByTestId('button'));
+    fireEvent.click(screen.getByTestId('button'));
+    fireEvent.mouseDown(screen.getByTestId('button'));
+    fireEvent.mouseUp(screen.getByTestId('button'));
 
     expect(mockedClick).toHaveBeenCalledTimes(1);
     expect(mockedMouseDown).toHaveBeenCalledTimes(1);
