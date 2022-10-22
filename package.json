@@ -25,7 +25,7 @@
         "react-redux": "^8.0.4",
         "react-router-dom": "6.2.1",
         "react-scripts": "5.0.1",
-        "react-select": "5.4.0",
+        "react-select": "5.5.4",
         "react-test-renderer": "18.2.0",
         "storybook": "6.5.12",
         "styled-components": "5.3.6",
