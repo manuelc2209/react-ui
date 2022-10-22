@@ -34,8 +34,8 @@
     },
     "scripts": {
         "postinstall": "husky install",
-        "start": "NODE_ENV=development && react-scripts start",
-        "build": "NODE_ENV=production && react-scripts build",
+        "start": "cross-env NODE_ENV=development && react-scripts start",
+        "build": "cross-env NODE_ENV=production && react-scripts build",
         "test": "jest --coverage --runInBand",
         "test:nowatch": "jest --coverage --runInBand --watchAll=false",
         "eject": "react-scripts eject",
@@ -89,6 +89,7 @@
         "@types/styled-components": "5.1.26",
         "@typescript-eslint/eslint-plugin": "^5.0.0",
         "@typescript-eslint/parser": "^5.0.0",
+        "cross-env": "7.0.3",
         "eslint": "8.24.0",
         "husky": "^7.0.4",
         "identity-obj-proxy": "^3.0.0",
