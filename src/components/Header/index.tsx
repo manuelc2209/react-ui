@@ -20,7 +20,7 @@ const setColor = ({ backgroundColor }: { backgroundColor?: string }) => {
 };
 
 const StyledHeader = styled.div<StyledHeaderProps>`
-    position: sticky;
+    position: relative;
     top: 0;
     width: 100%;
     display: flex;

@@ -54,7 +54,11 @@ export const customStyles = {
 };
 
 export const StyledContainer = styled.div`
+    display: flex;
+    flex-direction: column;
     user-select: none;
+    overflow: hidden;
+    height: 100%;
 `;
 
 export const StyledText = styled.span`
@@ -108,7 +112,7 @@ export const StyledFooter = styled.div`
     justify-content: space-evenly;
     height: 60px;
     align-items: center;
-    position: sticky;
+    position: relative;
     bottom: 0;
     width: 100%;
 
@@ -155,6 +159,7 @@ export const StyledLoading = styled.div`
     width: 100%;
     align-items: center;
     font-weight: 600;
+    color: lightgray;
 `;
 
 export const StyledSelect = styled(Select)``;

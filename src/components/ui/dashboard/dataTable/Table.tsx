@@ -48,14 +48,14 @@ interface StyledPriceTdProps {
 
 const loadingTheme = css`
     background-color: #ebebebca;
-    color: #222222cf;
+    color: #646262cf;
 `;
 
 const defaultTheme = css`
     background-color: white;
 `;
 
-const setTheme = ({ isLoading }: { isLoading?: boolean }) => (isLoading ? loadingTheme : defaultTheme);
+const setLoading = ({ isLoading }: { isLoading?: boolean }) => (isLoading ? loadingTheme : defaultTheme);
 const setPriceChangeValue = ({ isNegative }: { isNegative?: boolean }) => (isNegative ? 'red' : 'green');
 
 const StyledSubHeader = styled.table`
@@ -72,7 +72,7 @@ const StyledCurrency = styled.tr<StyledCurrencyProps>`
     height: 60px;
     padding: 24px;
     align-items: center;
-    ${setTheme}
+    ${setLoading}
 
     :hover {
         background-color: #ebebeb;
