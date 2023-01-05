@@ -142,7 +142,7 @@ export const DashboardUI: React.FC = () => {
                 <StyledContent>
                     <StyledSubBody>
                         {isLoadingData || !coinList.length ? (
-                            <StyledLoading>Loading</StyledLoading>
+                            <StyledLoading>Loading...</StyledLoading>
                         ) : (
                             <Table data={coinList} contentLoading={isLoadingData} currency={currency} />
                         )}

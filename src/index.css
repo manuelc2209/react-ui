@@ -25,6 +25,10 @@ body {
     --large: 1440px;
 }
 
+* {
+    font: 1rem brandon-grotesque, Helvetica, sans-serif;
+}
+
 table,
 th,
 td {
@@ -34,5 +38,36 @@ td {
 th,
 td {
     border-width: 0;
-    min-width: 190px;
+}
+
+table {
+    width: 100%;
+}
+
+thead {
+    width: 100%;
+    color: white;
+    background: rgb(27, 27, 27);
+    font-size: 14px;
+}
+
+tr {
+    width: 100%;
+}
+
+td,
+.header__item {
+    flex: 1 1 20%;
+    text-align: center;
+}
+
+.header__item {
+    text-transform: uppercase;
+}
+
+.filter__link {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
 }

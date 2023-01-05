@@ -5,7 +5,7 @@ exports[`renders snapshot correctly 1`] = `
   className="sc-khsqcC kflzcU"
 >
   <div
-    className="sc-kDvujY htEEKl sc-lbVpMG dkinon"
+    className="sc-kDvujY koyayW sc-lbVpMG dkinon"
   >
     <button
       aria-label="Button"
@@ -134,7 +134,7 @@ exports[`renders without crashing 1`] = `
     class="sc-khsqcC kflzcU"
   >
     <div
-      class="sc-kDvujY htEEKl sc-lbVpMG dkinon"
+      class="sc-kDvujY koyayW sc-lbVpMG dkinon"
     >
       <button
         aria-label="Button"
