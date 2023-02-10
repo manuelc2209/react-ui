@@ -4,7 +4,7 @@ import { Header } from './components';
 import { COLOR_PRIMARY_2 } from './GlobalStyles';
 
 export const StyledContainer = styled.div`
-    height: inherit;
+    height: 100%;
     display: flex;
     flex-direction: column;
 `;
@@ -21,10 +21,9 @@ export const StyledContent = styled.div`
     overflow: auto;
 
     @media (max-width: 450px) {
-        height: inherit;
+        height: 100%;
         flex-direction: column;
         flex: 1;
-        height: calc(100vh - 60px);
     }
 
     @media (max-width: 900px) {

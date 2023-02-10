@@ -16,12 +16,20 @@ export const projects = [
         subtitle: 'A collection of stateless components built using React & Typescript.'
     },
     {
-        title: 'Crypto Dashboard',
+        title: 'Crypto Dashboard - [Deprecated]',
         image: '/images/dashboard.jpg',
-        path: '/dashboard',
+        path: '',
         github: '',
         newTab: false,
         subtitle: 'A dashboard for crypto currencies'
+    },
+    {
+        title: 'Forum - [WIP]',
+        image: '/images/react.jpg',
+        path: '/forum',
+        github: '',
+        newTab: true,
+        subtitle: 'Forum built with React & React Query'
     },
     {
         title: 'Github Search',

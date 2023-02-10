@@ -59,11 +59,12 @@ const disabledTheme = css`
 
 const defaultTheme = css`
     ${baseTheme};
-    border: 1px solid ${lightgrey1};
+    border: 2px solid ${lightgrey1};
     background-color: ${COLOR_PRIMARY_1};
 
     > * {
         color: white;
+        font-weight: 600;
     }
 
     :hover {
@@ -77,16 +78,17 @@ const defaultTheme = css`
 
 const borderTheme = css`
     ${baseTheme};
-    border: 1px solid ${COLOR_PRIMARY_1};
+    border: 2px solid ${COLOR_PRIMARY_1};
     background-color: transparent;
 
     > * {
-        color: #5a5757;
+        color: #0a0a0a;
+        font-weight: 600;
     }
 
     :hover {
         > * {
-            color: #494747;
+            color: #292929;
         }
     }
 

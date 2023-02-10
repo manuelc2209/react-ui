@@ -1,2 +1,2 @@
-export { DashboardUI } from './dashboard';
 export { ProjectsUI } from './projects';
+export { ForumUI, ForumBody } from './forum';

@@ -1,2 +1,4 @@
-/src/components/Icon/
 /src/serviceWorker.ts
+build
+coverage
+node_modules

@@ -7,7 +7,7 @@ exports[`renders component with all sizes 1`] = `
     <div>
       <button
         aria-label="Button"
-        class="sc-gswNZR kHzHrv"
+        class="sc-gswNZR dHWAMH"
         data-testid="button"
       >
         <span
@@ -21,7 +21,7 @@ exports[`renders component with all sizes 1`] = `
   "container": <div>
     <button
       aria-label="Button"
-      class="sc-gswNZR kHzHrv"
+      class="sc-gswNZR dHWAMH"
       data-testid="button"
     >
       <span
@@ -92,7 +92,7 @@ exports[`renders component with all sizes 2`] = `
     <div>
       <button
         aria-label="Button"
-        class="sc-gswNZR kHzHrv"
+        class="sc-gswNZR dHWAMH"
         data-testid="button"
       >
         <span
@@ -105,7 +105,7 @@ exports[`renders component with all sizes 2`] = `
     <div>
       <button
         aria-label="Button"
-        class="sc-gswNZR fiJnGh"
+        class="sc-gswNZR iwLBTJ"
         data-testid="button"
       >
         <span
@@ -119,7 +119,7 @@ exports[`renders component with all sizes 2`] = `
   "container": <div>
     <button
       aria-label="Button"
-      class="sc-gswNZR fiJnGh"
+      class="sc-gswNZR iwLBTJ"
       data-testid="button"
     >
       <span
@@ -190,7 +190,7 @@ exports[`renders component with all sizes 3`] = `
     <div>
       <button
         aria-label="Button"
-        class="sc-gswNZR kHzHrv"
+        class="sc-gswNZR dHWAMH"
         data-testid="button"
       >
         <span
@@ -203,7 +203,7 @@ exports[`renders component with all sizes 3`] = `
     <div>
       <button
         aria-label="Button"
-        class="sc-gswNZR fiJnGh"
+        class="sc-gswNZR iwLBTJ"
         data-testid="button"
       >
         <span
@@ -216,7 +216,7 @@ exports[`renders component with all sizes 3`] = `
     <div>
       <button
         aria-label="Button"
-        class="sc-gswNZR fjtDGi"
+        class="sc-gswNZR eAAEbK"
         data-testid="button"
       >
         <span
@@ -230,7 +230,7 @@ exports[`renders component with all sizes 3`] = `
   "container": <div>
     <button
       aria-label="Button"
-      class="sc-gswNZR fjtDGi"
+      class="sc-gswNZR eAAEbK"
       data-testid="button"
     >
       <span
@@ -301,7 +301,7 @@ exports[`renders component with two types 1`] = `
     <div>
       <button
         aria-label="Button"
-        class="sc-gswNZR kHzHrv"
+        class="sc-gswNZR dHWAMH"
         data-testid="button"
       >
         <span
@@ -315,7 +315,7 @@ exports[`renders component with two types 1`] = `
   "container": <div>
     <button
       aria-label="Button"
-      class="sc-gswNZR kHzHrv"
+      class="sc-gswNZR dHWAMH"
       data-testid="button"
     >
       <span
@@ -386,7 +386,7 @@ exports[`renders component with two types 2`] = `
     <div>
       <button
         aria-label="Button"
-        class="sc-gswNZR kHzHrv"
+        class="sc-gswNZR dHWAMH"
         data-testid="button"
       >
         <span
@@ -399,7 +399,7 @@ exports[`renders component with two types 2`] = `
     <div>
       <button
         aria-label="Button"
-        class="sc-gswNZR huUsPU"
+        class="sc-gswNZR zWocz"
         data-testid="button"
       >
         <span
@@ -413,7 +413,7 @@ exports[`renders component with two types 2`] = `
   "container": <div>
     <button
       aria-label="Button"
-      class="sc-gswNZR huUsPU"
+      class="sc-gswNZR zWocz"
       data-testid="button"
     >
       <span
@@ -484,7 +484,7 @@ exports[`renders snapshot correctly 1`] = `
     <div>
       <button
         aria-label="Button"
-        class="sc-gswNZR kHzHrv"
+        class="sc-gswNZR dHWAMH"
         data-testid="button"
       >
         <span
@@ -498,7 +498,7 @@ exports[`renders snapshot correctly 1`] = `
   "container": <div>
     <button
       aria-label="Button"
-      class="sc-gswNZR kHzHrv"
+      class="sc-gswNZR dHWAMH"
       data-testid="button"
     >
       <span
@@ -569,7 +569,7 @@ exports[`renders without crashing 1`] = `
     <div>
       <button
         aria-label="Button"
-        class="sc-gswNZR kHzHrv"
+        class="sc-gswNZR dHWAMH"
         data-testid="button"
       >
         <span
@@ -583,7 +583,7 @@ exports[`renders without crashing 1`] = `
   "container": <div>
     <button
       aria-label="Button"
-      class="sc-gswNZR kHzHrv"
+      class="sc-gswNZR dHWAMH"
       data-testid="button"
     >
       <span
