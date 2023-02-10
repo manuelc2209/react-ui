@@ -1,13 +1,14 @@
 import { render } from '@testing-library/react';
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
+
 import { Card } from '..';
 
 it('renders snapshot correctly', () => {
-    const tree = render(
+    const { container } = render(
         <BrowserRouter>
             <Card />
         </BrowserRouter>
     );
-    expect(tree).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
 });

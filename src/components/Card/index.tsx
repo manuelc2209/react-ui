@@ -25,14 +25,13 @@ interface StyledSubtitleProps {
     isActionCard?: boolean;
 }
 
-const getCardSize = ({ isActionCard }: { isActionCard?: boolean }) => (isActionCard ? '300px' : '200px');
-
 const StyledCard = styled.div`
     display: flex;
     flex-direction: column;
     border: 1px solid ${COLOR_PRIMARY_1};
     border-radius: 7px;
-    height: ${getCardSize};
+    max-height: 310px;
+    height: 100%;
     user-select: none;
 `;
 
@@ -41,8 +40,10 @@ const StyledImageWrapper = styled.div``;
 const StyledBodyWrapper = styled.div<StyledBodyWrapperProps>`
     display: flex;
     flex-direction: column;
-    padding: 0 10px;
-    gap: 20px;
+    justify-content: space-between;
+    flex: 1;
+    padding: 10px;
+    gap: 8px;
 `;
 
 const StyledImage = styled.img`
@@ -58,7 +59,7 @@ const StyledTitle = styled.span`
     font-weight: 600;
 `;
 
-const isActionCard = ({ isActionCard }: { isActionCard?: boolean }) => (isActionCard ? '51px' : '20px');
+const isActionCard = ({ isActionCard }: { isActionCard?: boolean }) => (isActionCard ? '40px' : '20px');
 
 const StyledSubtitle = styled.span<StyledSubtitleProps>`
     font-size: 14px;
@@ -85,6 +86,8 @@ const StyledLinkWrapper = styled.a`
 `;
 
 const StyledDivWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
     height: 100%;
 `;
 
@@ -118,7 +121,7 @@ export const Card: React.FC<CardProps> = ({
             : (window.location = href?.website as (string | Location) & Location);
 
     return (
-        <StyledCard className={className} isActionCard={Boolean(isActionCard)}>
+        <StyledCard className={className}>
             {isActionCard ? (
                 <StyledDivWrapper>
                     <StyledImageWrapper>{hasImage && <StyledImage src={image} />}</StyledImageWrapper>
