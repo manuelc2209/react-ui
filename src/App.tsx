@@ -5,6 +5,7 @@ import { Route, Routes, useNavigate } from 'react-router-dom';
 import { StyledColumn, StyledContainer, StyledContent, StyledHeader, StyledOverlay } from './AppStyles';
 import data from './data/index.json';
 import { Button, ForumUI, Portefolio, ProjectsUI } from './components';
+import { ForumBody } from './components/ui';
 
 export const App: React.FC = () => {
     const navigate = useNavigate();
@@ -53,7 +54,11 @@ export const App: React.FC = () => {
         <Routes>
             <Route path="/" element={App} />
             <Route path="/projects" element={<ProjectsUI buttonProperties={buttonProps} />} />
-            <Route path="/forum" element={<ForumUI />} />
+            <Route path="/forum" element={<ForumUI />}>
+                <Route path="/forum" element={<ForumBody />} />
+                <Route path="/forum/login" element={<div>wip</div>} />
+                <Route path="/forum/signup" element={<div>wip</div>} />
+            </Route>
         </Routes>
     );
 };

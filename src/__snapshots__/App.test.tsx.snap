@@ -2,14 +2,14 @@
 
 exports[`renders snapshot correctly 1`] = `
 <div
-  className="sc-gikAfH iXJzYe"
+  className="sc-ilhmMj iYnNNv"
 >
   <div
-    className="sc-kDvujY koyayW sc-ilhmMj crcfoi"
+    className="sc-kDvujY koyayW sc-cCjUiG gTZwbs"
   >
     <button
       aria-label="Button"
-      className="sc-gswNZR fjtDGi"
+      className="sc-gswNZR eAAEbK"
       data-testid="button"
       disabled={false}
       onClick={[Function]}
@@ -25,13 +25,13 @@ exports[`renders snapshot correctly 1`] = `
     </button>
   </div>
   <div
-    className="sc-ezOQGI jpHbKf"
+    className="sc-jIRcFI dHMFjt"
   >
     <div
-      className="sc-bYMpWt bCMNja"
+      className="sc-hhOBVt iFuzkw"
     >
       <div
-        className="sc-kMjNwy laLxCy"
+        className="sc-gYbzsP lbNYSb"
       >
         <div
           className="sc-hHTYSt cXlgDK"
@@ -131,14 +131,14 @@ exports[`renders snapshot correctly 1`] = `
 exports[`renders without crashing 1`] = `
 <div>
   <div
-    class="sc-gikAfH iXJzYe"
+    class="sc-ilhmMj iYnNNv"
   >
     <div
-      class="sc-kDvujY koyayW sc-ilhmMj crcfoi"
+      class="sc-kDvujY koyayW sc-cCjUiG gTZwbs"
     >
       <button
         aria-label="Button"
-        class="sc-gswNZR fjtDGi"
+        class="sc-gswNZR eAAEbK"
         data-testid="button"
       >
         <span
@@ -149,13 +149,13 @@ exports[`renders without crashing 1`] = `
       </button>
     </div>
     <div
-      class="sc-ezOQGI jpHbKf"
+      class="sc-jIRcFI dHMFjt"
     >
       <div
-        class="sc-bYMpWt bCMNja"
+        class="sc-hhOBVt iFuzkw"
       >
         <div
-          class="sc-kMjNwy laLxCy"
+          class="sc-gYbzsP lbNYSb"
         >
           <div
             class="sc-hHTYSt cXlgDK"
