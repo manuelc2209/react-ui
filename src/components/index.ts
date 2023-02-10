@@ -6,4 +6,4 @@ export { Portefolio } from './Portefolio';
 export { Textarea } from './Textarea';
 
 // UI Modules
-export { ForumUI, ProjectsUI } from './ui';
+export { ForumUI, ForumBody, ProjectsUI } from './ui';

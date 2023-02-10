@@ -1,7 +1,6 @@
 import React from 'react';
 
 import { Button } from '../..';
-import { StyledCardContainer } from '../../Portefolio/styles';
 
 import { projects } from './data';
 import { StyledContainer, StyledHeader, StyledContent, StyledOverlay, StyledCard } from './styles';

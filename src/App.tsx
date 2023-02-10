@@ -4,8 +4,7 @@ import { Route, Routes, useNavigate } from 'react-router-dom';
 
 import { StyledColumn, StyledContainer, StyledContent, StyledHeader, StyledOverlay } from './AppStyles';
 import data from './data/index.json';
-import { Button, ForumUI, Portefolio, ProjectsUI } from './components';
-import { ForumBody } from './components/ui';
+import { Button, ForumUI, ForumBody, Portefolio, ProjectsUI } from './components';
 
 export const App: React.FC = () => {
     const navigate = useNavigate();

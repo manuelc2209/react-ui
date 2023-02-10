@@ -1,7 +1,2 @@
-import React from 'react';
-
-import { Layout } from './layout';
-
-export const ForumUI = () => {
-    return <Layout />;
-};
+export * from './pages';
+export { ForumBody } from './layout';
