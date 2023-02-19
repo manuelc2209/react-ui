@@ -4,7 +4,8 @@ import { Route, Routes, useNavigate } from 'react-router-dom';
 
 import { StyledColumn, StyledContainer, StyledContent, StyledHeader, StyledOverlay } from './AppStyles';
 import data from './data/index.json';
-import { Button, ForumUI, ForumBody, Portefolio, ProjectsUI } from './components';
+import { Button, Portefolio } from './components';
+import { ProjectsUI, ForumUI, ForumBody } from './pages';
 
 export const App: React.FC = () => {
     const navigate = useNavigate();
@@ -55,8 +56,8 @@ export const App: React.FC = () => {
             <Route path="/projects" element={<ProjectsUI buttonProperties={buttonProps} />} />
             <Route path="/forum" element={<ForumUI />}>
                 <Route path="/forum" element={<ForumBody />} />
-                <Route path="/forum/login" element={<div>wip</div>} />
-                <Route path="/forum/signup" element={<div>wip</div>} />
+                <Route path="/forum/login" element={<div>login wip</div>} />
+                <Route path="/forum/register" element={<div>register wip</div>} />
             </Route>
         </Routes>
     );

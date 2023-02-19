@@ -20,7 +20,12 @@ export const Header = () => {
                         label="Login"
                         onClick={() => navigate('/forum/login')}
                     />
-                    <StyledButton size="large" buttonType="border" label="Sign Up" />
+                    <StyledButton
+                        size="large"
+                        buttonType="border"
+                        label="Sign Up"
+                        onClick={() => navigate('/forum/register')}
+                    />
                 </StyledCTAEnd>
             </StyledHeaderWrapper>
         </>
