@@ -4,7 +4,7 @@ import { Header } from '../../components';
 
 import { StyledLayoutWrapper, StyledBody } from './styles';
 
-export const Layout = () => {
+export const Container = () => {
     return (
         <StyledLayoutWrapper>
             <Header />

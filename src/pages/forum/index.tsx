@@ -1,2 +1,2 @@
-export * from './pages';
-export { ForumBody } from './layout';
+export * from './pages/Outlet';
+export { Threads } from './pages/Threads';

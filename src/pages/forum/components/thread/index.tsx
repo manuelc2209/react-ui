@@ -1,7 +1,11 @@
+import dayjs from 'dayjs';
 import React from 'react';
+import relativeTime from 'dayjs/plugin/relativeTime';
 
 import { StyledContainer, StyledEnd, StyledMiddle, StyledStart } from './styles';
 import { ThreadProps } from './types';
+
+dayjs.extend(relativeTime);
 
 export const Thread: React.FC<ThreadProps> = ({ avatar, title, subtitle, sideSection }: ThreadProps) => {
     return (
@@ -14,7 +18,7 @@ export const Thread: React.FC<ThreadProps> = ({ avatar, title, subtitle, sideSec
             <StyledEnd>
                 <div>{sideSection.replies}</div>
                 <div>{sideSection.views}</div>
-                <div>{new Date(sideSection.postTimeTracker).toLocaleDateString()}</div>
+                <div>{dayjs(sideSection.postTimeTracker).fromNow()}</div>
             </StyledEnd>
         </StyledContainer>
     );
