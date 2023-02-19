@@ -15,13 +15,12 @@ export const ForumContextWrapper: React.FC<ForumContextWrapperProps> = ({ childr
 
     const value = useMemo(
         () => ({
-            children,
             isLoggedIn,
             threads,
             setIsLoggedIn,
             setThreads
         }),
-        [children, isLoggedIn, threads, setThreads, setIsLoggedIn]
+        [isLoggedIn, threads, setThreads, setIsLoggedIn]
     );
 
     return <ForumContext.Provider value={value}>{children}</ForumContext.Provider>;

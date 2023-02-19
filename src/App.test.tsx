@@ -11,6 +11,10 @@ const AppComponent = (
     </HashRouter>
 );
 
+jest.mock('nanoid', () => {
+    return { nanoid: () => '' };
+});
+
 const mockedUsedNavigate = jest.fn();
 
 jest.mock('react-router-dom', () => ({
