@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Button } from '../..';
+import { Button } from '../../components';
 
 import { projects } from './data';
 import { StyledContainer, StyledHeader, StyledContent, StyledOverlay, StyledCard } from './styles';

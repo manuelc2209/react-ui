@@ -2,10 +2,10 @@
 
 exports[`renders snapshot correctly 1`] = `
 <div
-  className="sc-hHTYSt cXlgDK"
+  className="sc-fEXmlR fQntTm"
 >
   <div
-    className="sc-fEXmlR hRrSOb"
+    className="sc-bqWxrE lmeLXE"
   />
 </div>
 `;
@@ -16,20 +16,20 @@ exports[`renders without crashing 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="sc-hHTYSt cXlgDK"
+        class="sc-fEXmlR fQntTm"
       >
         <div
-          class="sc-fEXmlR hRrSOb"
+          class="sc-bqWxrE lmeLXE"
         />
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="sc-hHTYSt cXlgDK"
+      class="sc-fEXmlR fQntTm"
     >
       <div
-        class="sc-fEXmlR hRrSOb"
+        class="sc-bqWxrE lmeLXE"
       />
     </div>
   </div>,

@@ -2,10 +2,10 @@
 
 exports[`renders snapshot correctly 1`] = `
 <div
-  className="sc-eDWCr kSNgxl"
+  className="sc-dkrFOg iqMwQi"
 >
   <input
-    className="sc-ipEyDJ lnqVHC"
+    className="sc-bcXHqe lnLHyE"
     onChange={[Function]}
   />
 </div>
@@ -17,20 +17,20 @@ exports[`renders without crashing 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="sc-eDWCr kSNgxl"
+        class="sc-dkrFOg iqMwQi"
       >
         <input
-          class="sc-ipEyDJ lnqVHC"
+          class="sc-bcXHqe lnLHyE"
         />
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="sc-eDWCr kSNgxl"
+      class="sc-dkrFOg iqMwQi"
     >
       <input
-        class="sc-ipEyDJ lnqVHC"
+        class="sc-bcXHqe lnLHyE"
       />
     </div>
   </div>,

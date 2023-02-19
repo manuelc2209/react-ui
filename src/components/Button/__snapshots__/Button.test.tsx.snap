@@ -7,11 +7,11 @@ exports[`renders component with all sizes 1`] = `
     <div>
       <button
         aria-label="Button"
-        class="sc-gswNZR dHWAMH"
+        class="sc-bcXHqe llBbij"
         data-testid="button"
       >
         <span
-          class="sc-bcXHqe jeMYyn"
+          class="sc-gswNZR gnrOlr"
         >
           Button Label
         </span>
@@ -21,11 +21,11 @@ exports[`renders component with all sizes 1`] = `
   "container": <div>
     <button
       aria-label="Button"
-      class="sc-gswNZR dHWAMH"
+      class="sc-bcXHqe llBbij"
       data-testid="button"
     >
       <span
-        class="sc-bcXHqe jeMYyn"
+        class="sc-gswNZR gnrOlr"
       >
         Button Label
       </span>
@@ -92,11 +92,11 @@ exports[`renders component with all sizes 2`] = `
     <div>
       <button
         aria-label="Button"
-        class="sc-gswNZR dHWAMH"
+        class="sc-bcXHqe llBbij"
         data-testid="button"
       >
         <span
-          class="sc-bcXHqe jeMYyn"
+          class="sc-gswNZR gnrOlr"
         >
           Button Label
         </span>
@@ -105,11 +105,11 @@ exports[`renders component with all sizes 2`] = `
     <div>
       <button
         aria-label="Button"
-        class="sc-gswNZR iwLBTJ"
+        class="sc-bcXHqe eKUsQp"
         data-testid="button"
       >
         <span
-          class="sc-bcXHqe jeMYyn"
+          class="sc-gswNZR gnrOlr"
         >
           Button Label
         </span>
@@ -119,11 +119,11 @@ exports[`renders component with all sizes 2`] = `
   "container": <div>
     <button
       aria-label="Button"
-      class="sc-gswNZR iwLBTJ"
+      class="sc-bcXHqe eKUsQp"
       data-testid="button"
     >
       <span
-        class="sc-bcXHqe jeMYyn"
+        class="sc-gswNZR gnrOlr"
       >
         Button Label
       </span>
@@ -190,11 +190,11 @@ exports[`renders component with all sizes 3`] = `
     <div>
       <button
         aria-label="Button"
-        class="sc-gswNZR dHWAMH"
+        class="sc-bcXHqe llBbij"
         data-testid="button"
       >
         <span
-          class="sc-bcXHqe jeMYyn"
+          class="sc-gswNZR gnrOlr"
         >
           Button Label
         </span>
@@ -203,11 +203,11 @@ exports[`renders component with all sizes 3`] = `
     <div>
       <button
         aria-label="Button"
-        class="sc-gswNZR iwLBTJ"
+        class="sc-bcXHqe eKUsQp"
         data-testid="button"
       >
         <span
-          class="sc-bcXHqe jeMYyn"
+          class="sc-gswNZR gnrOlr"
         >
           Button Label
         </span>
@@ -216,11 +216,11 @@ exports[`renders component with all sizes 3`] = `
     <div>
       <button
         aria-label="Button"
-        class="sc-gswNZR eAAEbK"
+        class="sc-bcXHqe OJuYq"
         data-testid="button"
       >
         <span
-          class="sc-bcXHqe jeMYyn"
+          class="sc-gswNZR gnrOlr"
         >
           Button Label
         </span>
@@ -230,11 +230,11 @@ exports[`renders component with all sizes 3`] = `
   "container": <div>
     <button
       aria-label="Button"
-      class="sc-gswNZR eAAEbK"
+      class="sc-bcXHqe OJuYq"
       data-testid="button"
     >
       <span
-        class="sc-bcXHqe jeMYyn"
+        class="sc-gswNZR gnrOlr"
       >
         Button Label
       </span>
@@ -301,11 +301,11 @@ exports[`renders component with two types 1`] = `
     <div>
       <button
         aria-label="Button"
-        class="sc-gswNZR dHWAMH"
+        class="sc-bcXHqe llBbij"
         data-testid="button"
       >
         <span
-          class="sc-bcXHqe jeMYyn"
+          class="sc-gswNZR gnrOlr"
         >
           Button Label
         </span>
@@ -315,11 +315,11 @@ exports[`renders component with two types 1`] = `
   "container": <div>
     <button
       aria-label="Button"
-      class="sc-gswNZR dHWAMH"
+      class="sc-bcXHqe llBbij"
       data-testid="button"
     >
       <span
-        class="sc-bcXHqe jeMYyn"
+        class="sc-gswNZR gnrOlr"
       >
         Button Label
       </span>
@@ -386,11 +386,11 @@ exports[`renders component with two types 2`] = `
     <div>
       <button
         aria-label="Button"
-        class="sc-gswNZR dHWAMH"
+        class="sc-bcXHqe llBbij"
         data-testid="button"
       >
         <span
-          class="sc-bcXHqe jeMYyn"
+          class="sc-gswNZR gnrOlr"
         >
           Button Label
         </span>
@@ -399,11 +399,11 @@ exports[`renders component with two types 2`] = `
     <div>
       <button
         aria-label="Button"
-        class="sc-gswNZR zWocz"
+        class="sc-bcXHqe bwSxoz"
         data-testid="button"
       >
         <span
-          class="sc-bcXHqe jeMYyn"
+          class="sc-gswNZR gnrOlr"
         >
           Button Label
         </span>
@@ -413,11 +413,11 @@ exports[`renders component with two types 2`] = `
   "container": <div>
     <button
       aria-label="Button"
-      class="sc-gswNZR zWocz"
+      class="sc-bcXHqe bwSxoz"
       data-testid="button"
     >
       <span
-        class="sc-bcXHqe jeMYyn"
+        class="sc-gswNZR gnrOlr"
       >
         Button Label
       </span>
@@ -484,11 +484,11 @@ exports[`renders snapshot correctly 1`] = `
     <div>
       <button
         aria-label="Button"
-        class="sc-gswNZR dHWAMH"
+        class="sc-bcXHqe llBbij"
         data-testid="button"
       >
         <span
-          class="sc-bcXHqe jeMYyn"
+          class="sc-gswNZR gnrOlr"
         >
           Button Label
         </span>
@@ -498,11 +498,11 @@ exports[`renders snapshot correctly 1`] = `
   "container": <div>
     <button
       aria-label="Button"
-      class="sc-gswNZR dHWAMH"
+      class="sc-bcXHqe llBbij"
       data-testid="button"
     >
       <span
-        class="sc-bcXHqe jeMYyn"
+        class="sc-gswNZR gnrOlr"
       >
         Button Label
       </span>
@@ -569,11 +569,11 @@ exports[`renders without crashing 1`] = `
     <div>
       <button
         aria-label="Button"
-        class="sc-gswNZR dHWAMH"
+        class="sc-bcXHqe llBbij"
         data-testid="button"
       >
         <span
-          class="sc-bcXHqe jeMYyn"
+          class="sc-gswNZR gnrOlr"
         >
           Button Label
         </span>
@@ -583,11 +583,11 @@ exports[`renders without crashing 1`] = `
   "container": <div>
     <button
       aria-label="Button"
-      class="sc-gswNZR dHWAMH"
+      class="sc-bcXHqe llBbij"
       data-testid="button"
     >
       <span
-        class="sc-bcXHqe jeMYyn"
+        class="sc-gswNZR gnrOlr"
       >
         Button Label
       </span>

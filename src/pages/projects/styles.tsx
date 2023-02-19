@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 
-import { COLOR_PRIMARY_2 } from '../../../GlobalStyles';
-import { Card } from '../../Card';
-import { Header } from '../../Header';
+import { Card, Header } from '../../components';
+import { COLOR_PRIMARY_2 } from '../../GlobalStyles';
 
 export const StyledContainer = styled.div`
     display: block;

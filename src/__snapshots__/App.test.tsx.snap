@@ -2,14 +2,14 @@
 
 exports[`renders snapshot correctly 1`] = `
 <div
-  className="sc-ilhmMj iYnNNv"
+  className="sc-kgTSHT cKdTSH"
 >
   <div
-    className="sc-kDvujY koyayW sc-cCjUiG gTZwbs"
+    className="sc-kDvujY koyayW sc-cwSeag hgPOZx"
   >
     <button
       aria-label="Button"
-      className="sc-gswNZR eAAEbK"
+      className="sc-bcXHqe OJuYq"
       data-testid="button"
       disabled={false}
       onClick={[Function]}
@@ -18,20 +18,20 @@ exports[`renders snapshot correctly 1`] = `
       size="large"
     >
       <span
-        className="sc-bcXHqe jeMYyn"
+        className="sc-gswNZR gnrOlr"
       >
         Projects
       </span>
     </button>
   </div>
   <div
-    className="sc-jIRcFI dHMFjt"
+    className="sc-fLcnxK eHLQPQ"
   >
     <div
-      className="sc-hhOBVt iFuzkw"
+      className="sc-bBABsx fODJzf"
     >
       <div
-        className="sc-gYbzsP lbNYSb"
+        className="sc-iveFHk fnClSR"
       >
         <div
           className="sc-hHTYSt cXlgDK"
@@ -131,31 +131,31 @@ exports[`renders snapshot correctly 1`] = `
 exports[`renders without crashing 1`] = `
 <div>
   <div
-    class="sc-ilhmMj iYnNNv"
+    class="sc-kgTSHT cKdTSH"
   >
     <div
-      class="sc-kDvujY koyayW sc-cCjUiG gTZwbs"
+      class="sc-kDvujY koyayW sc-cwSeag hgPOZx"
     >
       <button
         aria-label="Button"
-        class="sc-gswNZR eAAEbK"
+        class="sc-bcXHqe OJuYq"
         data-testid="button"
       >
         <span
-          class="sc-bcXHqe jeMYyn"
+          class="sc-gswNZR gnrOlr"
         >
           Projects
         </span>
       </button>
     </div>
     <div
-      class="sc-jIRcFI dHMFjt"
+      class="sc-fLcnxK eHLQPQ"
     >
       <div
-        class="sc-hhOBVt iFuzkw"
+        class="sc-bBABsx fODJzf"
       >
         <div
-          class="sc-gYbzsP lbNYSb"
+          class="sc-iveFHk fnClSR"
         >
           <div
             class="sc-hHTYSt cXlgDK"
