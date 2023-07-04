@@ -12,7 +12,7 @@ export const StyledContainer = styled.div`
     min-height: 100px;
 `;
 
-export const StyledStart = styled.div`
+export const StyledStart = styled.img`
     flex-direction: column;
 `;
 
@@ -23,5 +23,8 @@ export const StyledMiddle = styled.div`
 `;
 
 export const StyledEnd = styled.div`
+    width: 100px;
+    white-space: nowrap;
     flex-direction: column;
+    overflow: hidden;
 `;

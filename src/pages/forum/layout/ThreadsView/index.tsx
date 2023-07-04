@@ -16,6 +16,7 @@ export const ThreadsView = () => {
                     <Thread
                         key={nanoid()}
                         avatar={thread.avatar}
+                        user={thread.user}
                         sideSection={thread.sideSection}
                         title={thread.title}
                         subtitle={thread.subtitle}
@@ -23,7 +24,7 @@ export const ThreadsView = () => {
                 ))}
             </StyledThreadContainer>
             <StyledSideSection>
-                <div>sample</div>
+                <div>Sample Side Section</div>
             </StyledSideSection>
         </StyledContainer>
     );
