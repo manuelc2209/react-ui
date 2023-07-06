@@ -7,10 +7,10 @@ import { ThreadProps } from './types';
 
 dayjs.extend(relativeTime);
 
-export const Thread: React.FC<ThreadProps> = ({ avatar, title, subtitle, sideSection }: ThreadProps) => {
+export const Thread: React.FC<ThreadProps> = ({ avatar, title, subtitle, sideSection, user }) => {
     return (
         <StyledContainer>
-            <StyledStart>{avatar}</StyledStart>
+            <StyledStart src={avatar} />
             <StyledMiddle>
                 <div>{title}</div>
                 <div>{subtitle}</div>
