@@ -10,6 +10,6 @@ export interface ThreadProps {
     sideSection: {
         replies: number;
         views: number;
-        postTimeTracker: Date;
+        postTimeTracker: number;
     };
 }

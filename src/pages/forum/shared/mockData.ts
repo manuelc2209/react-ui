@@ -13,7 +13,7 @@ export const mockedThreads: IThread[] = [
             lastName: 'Doe'
         },
         sideSection: {
-            postTimeTracker: new Date(1674153241555),
+            postTimeTracker: new Date('2020-05-15T10:30:00.000Z').getTime(),
             replies: Math.floor(Math.random() * 10000) + 1,
             views: Math.floor(Math.random() * 10000) + 1
         }
@@ -28,7 +28,7 @@ export const mockedThreads: IThread[] = [
             lastName: 'Smith'
         },
         sideSection: {
-            postTimeTracker: new Date(1674153241555),
+            postTimeTracker: new Date(1674153241555).getTime(),
             replies: Math.floor(Math.random() * 10000) + 1,
             views: Math.floor(Math.random() * 10000) + 1
         }
@@ -43,7 +43,7 @@ export const mockedThreads: IThread[] = [
             lastName: 'Smith'
         },
         sideSection: {
-            postTimeTracker: new Date(1624151241525),
+            postTimeTracker: new Date(1624151241525).getTime(),
             replies: Math.floor(Math.random() * 10000) + 1,
             views: Math.floor(Math.random() * 10000) + 1
         }
@@ -58,7 +58,7 @@ export const mockedThreads: IThread[] = [
             lastName: 'Johnson'
         },
         sideSection: {
-            postTimeTracker: new Date('2022-05-15T10:30:00.000Z'),
+            postTimeTracker: new Date('2022-05-15T10:30:00.000Z').getTime(),
             replies: Math.floor(Math.random() * 10000) + 1,
             views: Math.floor(Math.random() * 10000) + 1
         }
@@ -73,7 +73,7 @@ export const mockedThreads: IThread[] = [
             lastName: 'Garcia'
         },
         sideSection: {
-            postTimeTracker: new Date('2022-11-30T08:15:00.000Z'),
+            postTimeTracker: new Date('2022-11-30T08:15:00.000Z').getTime(),
             replies: Math.floor(Math.random() * 10000) + 1,
             views: Math.floor(Math.random() * 10000) + 1
         }
@@ -88,7 +88,7 @@ export const mockedThreads: IThread[] = [
             lastName: 'Lee'
         },
         sideSection: {
-            postTimeTracker: new Date('2022-07-10T16:20:00.000Z'),
+            postTimeTracker: new Date('2022-07-10T16:20:00.000Z').getTime(),
             replies: Math.floor(Math.random() * 10000) + 1,
             views: Math.floor(Math.random() * 10000) + 1
         }
@@ -103,7 +103,7 @@ export const mockedThreads: IThread[] = [
             lastName: 'Wilson'
         },
         sideSection: {
-            postTimeTracker: new Date('2022-12-05T11:55:00.000Z'),
+            postTimeTracker: new Date('2022-12-05T11:55:00.000Z').getTime(),
             replies: 932,
             views: 4620
         }
@@ -111,14 +111,104 @@ export const mockedThreads: IThread[] = [
     {
         avatar: faker.image.avatarGitHub(),
         title: 'JavaScript Frameworks Comparison',
-        subtitle: 'Analyzing the pros and cons of popular JS frameworks',
+        subtitle: 'Analyzing the pros and cons of JS frameworks',
         user: {
             id: 'userxyz',
             firstName: 'David',
             lastName: 'Thompson'
         },
         sideSection: {
-            postTimeTracker: new Date('2022-08-18T09:10:00.000Z'),
+            postTimeTracker: new Date('2022-08-18T09:10:00.000Z').getTime(),
+            replies: 1537,
+            views: 6241
+        }
+    },
+    {
+        avatar: faker.image.avatarGitHub(),
+        title: 'Typescript Comparison',
+        subtitle: 'Analyzing the pros and cons of TS',
+        user: {
+            id: 'userxyz',
+            firstName: 'David',
+            lastName: 'Thompson'
+        },
+        sideSection: {
+            postTimeTracker: new Date('2022-08-18T09:10:00.000Z').getTime(),
+            replies: 1537,
+            views: 6241
+        }
+    },
+    {
+        avatar: faker.image.avatarGitHub(),
+        title: 'Some Random Comparison',
+        subtitle: 'Analyzing the pros and cons of Randomness',
+        user: {
+            id: 'userxyz',
+            firstName: 'David',
+            lastName: 'Thompson'
+        },
+        sideSection: {
+            postTimeTracker: new Date('2022-08-18T09:10:00.000Z').getTime(),
+            replies: 1537,
+            views: 6241
+        }
+    },
+    {
+        avatar: faker.image.avatarGitHub(),
+        title: 'Artificial Intelligence in Healthcare',
+        subtitle: 'Applications of AI in the medical field',
+        user: {
+            id: 'userdef',
+            firstName: 'Olivia',
+            lastName: 'Wilson'
+        },
+        sideSection: {
+            postTimeTracker: new Date('2022-12-05T11:55:00.000Z').getTime(),
+            replies: 932,
+            views: 4620
+        }
+    },
+    {
+        avatar: faker.image.avatarGitHub(),
+        title: 'JavaScript Frameworks Comparison',
+        subtitle: 'Analyzing the pros and cons of JS frameworks',
+        user: {
+            id: 'userxyz',
+            firstName: 'David',
+            lastName: 'Thompson'
+        },
+        sideSection: {
+            postTimeTracker: new Date('2022-08-18T09:10:00.000Z').getTime(),
+            replies: 1537,
+            views: 6241
+        }
+    },
+    {
+        avatar: faker.image.avatarGitHub(),
+        title: 'Typescript Comparison',
+        subtitle: 'Analyzing the pros and cons of TS',
+        user: {
+            id: 'userxyz',
+            firstName: 'David',
+            lastName: 'Thompson'
+        },
+        sideSection: {
+            postTimeTracker: new Date('2022-08-18T09:10:00.000Z').getTime(),
+            replies: 1537,
+            views: 6241
+        }
+    },
+    {
+        avatar: faker.image.avatarGitHub(),
+        title: 'Some Random Comparison',
+        subtitle: 'Analyzing the pros and cons of Randomness',
+        user: {
+            id: 'userxyz',
+            firstName: 'David',
+            lastName: 'Thompson'
+        },
+        sideSection: {
+            postTimeTracker: new Date('2022-08-18T09:10:00.000Z').getTime(),
             replies: 1537,
             views: 6241
         }
