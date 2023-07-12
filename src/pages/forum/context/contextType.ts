@@ -10,7 +10,7 @@ export interface IThread {
     sideSection: {
         replies: number;
         views: number;
-        postTimeTracker: Date;
+        postTimeTracker: number;
     };
 }
 

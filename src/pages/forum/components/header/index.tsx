@@ -10,7 +10,6 @@ export const Header = () => {
 
     return (
         <>
-            <Banner />
             <StyledHeaderWrapper>
                 <StyledButton size="large" buttonType="border" label="Back" onClick={() => navigate(-1)} />
                 <StyledCTAEnd>
