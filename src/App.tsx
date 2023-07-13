@@ -5,7 +5,7 @@ import { Route, Routes, useNavigate } from 'react-router-dom';
 import { StyledColumn, StyledContainer, StyledContent, StyledHeader, StyledOverlay } from './AppStyles';
 import data from './data/index.json';
 import { Button, Portefolio } from './components';
-import { ProjectsUI, ForumOutlet, Threads } from './pages';
+import { ProjectsUI, ForumOutlet, Threads, Register } from './pages';
 import { ForumContextWrapper } from './pages/forum/context/forumContext';
 
 export const App: React.FC = () => {
@@ -65,7 +65,14 @@ export const App: React.FC = () => {
                     }
                 />
                 <Route path="/forum/login" element={<div>login wip</div>} />
-                <Route path="/forum/register" element={<div>register wip</div>} />
+                <Route
+                    path="/forum/register"
+                    element={
+                        <ForumContextWrapper>
+                            <Register />
+                        </ForumContextWrapper>
+                    }
+                />
             </Route>
         </Routes>
     );

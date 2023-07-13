@@ -1,2 +1,2 @@
 export { ProjectsUI } from './projects';
-export { ForumOutlet, Threads } from './forum';
+export { ForumOutlet, Threads, Register } from './forum';

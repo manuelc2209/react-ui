@@ -12,12 +12,14 @@ export const Button: React.FC<ButtonProps> = ({
     className,
     onClick,
     onMouseUp,
-    onMouseDown
+    onMouseDown,
+    ...props
 }: ButtonProps) => {
     const buttonSize = getSizeInPx(size);
 
     return (
         <StyledButton
+            {...props}
             size={size}
             buttonType={buttonType}
             buttonSize={buttonSize}
