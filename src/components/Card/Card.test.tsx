@@ -2,7 +2,7 @@ import { render } from '@testing-library/react';
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 
-import { Card } from './Card';
+import { Card } from '.';
 
 it('renders snapshot correctly', () => {
     const { container } = render(
