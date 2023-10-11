@@ -6,10 +6,31 @@ export const alignCenter = css`
     text-align: center;
 `;
 
-export const StyledHeadline = styled.span`
+export const StyledHeadline = styled.h1`
     margin: 20px 0 15px 0;
     font-size: 30px;
     color: white;
+`;
+
+export const StyledSubtitle = styled.h2`
+    margin: 20px 0 15px 0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: initial;
+    color: white;
+    max-width: 600px;
+    text-align: justify;
+
+    @media (max-width: 600px) {
+        text-align: center;
+    }
+`;
+
+export const StyledLabelHeader = styled.span`
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-bottom: 1rem;
 `;
 
 export const StyledLabel = styled.span`
@@ -19,6 +40,39 @@ export const StyledLabel = styled.span`
     color: white;
 `;
 
+export const StyledStackItemLabel = styled.span`
+    font-weight: 500;
+    font-size: 1.2rem;
+    position: relative;
+    z-index: 1;
+    user-select: none;
+`;
+
+export const StyledHeaderLabelContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+`;
+
+export const StyledFlexContainer = styled.div`
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    @media (max-width: 600px) {
+        flex-direction: column;
+        padding: 20px;
+    }
+`;
+
+export const StyledImageStack = styled.img`
+    height: 50px;
+    top: 3px;
+    right: 3px;
+    position: absolute;
+    object-fit: contain;
+`;
+
 export const StyledImage = styled.img`
     max-height: 178px;
     max-width: 178px;
@@ -26,7 +80,7 @@ export const StyledImage = styled.img`
     width: 50%;
     height: 70%;
     border-radius: 50%;
-    margin: auto;
+    margin: 0;
     border: 2px solid white;
 `;
 
@@ -51,11 +105,37 @@ export const StyledLink = styled.a`
 `;
 
 export const StyledTextContainer = styled.div`
-    margin-bottom: 50px;
     font-size: 1.5rem;
+    padding: 20px 0;
+`;
+
+export const StyledStackList = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow-y: auto;
+`;
+
+export const StyledItemStack = styled.div`
+    display: flex;
+    position: relative;
+    background-color: #3332321f;
+    border-bottom: 1px solid #ccc;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+    flex-basis: calc(33% - 10px);
+    margin-bottom: 10px;
     padding: 20px;
-    * {
-        margin-bottom: 20px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    @media screen and (max-width: 767px) {
+        flex-basis: calc(100% - 20px);
+    }
+
+    :hover {
+        background-color: #e3e3e336;
     }
 `;
 
@@ -89,8 +169,11 @@ export const StyledSocialSection = styled.div`
 export const StyledWrapper = styled.div`
     display: flex;
     flex-direction: column;
+    height: 100%;
     padding: 50px;
     color: white;
+    justify-content: space-between;
+    overflow-y: auto;
 
     ${StyledHeadline},
     ${StyledLabel},

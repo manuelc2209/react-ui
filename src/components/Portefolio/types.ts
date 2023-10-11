@@ -1,13 +1,3 @@
-export interface PubLinksData {
-    link?: string;
-    linkLabel?: string;
-}
-
-export interface PubLinks {
-    label?: string;
-    data?: PubLinksData[];
-}
-
 export interface CardType {
     title?: string;
     subtitle?: string;
@@ -18,11 +8,16 @@ export interface CardType {
     };
 }
 
+export interface StackType {
+    name: string;
+    logoUrl: string;
+}
+
 export interface PortefolioProps {
     img?: string;
     headline?: string;
     label?: string;
-    link?: string;
-    linkLabel?: string;
+    currentStack?: StackType[];
+    otherStack?: StackType[];
     cards?: CardType[];
 }

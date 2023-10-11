@@ -5,12 +5,14 @@ import { BrowserRouter } from 'react-router-dom';
 import { App } from './App';
 import { disableReactDevTools } from './disableReactDevTools';
 import * as serviceWorker from './serviceWorker';
+import { GlobalStyle } from './GlobalStyles';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 
 root.render(
     <React.StrictMode>
         <BrowserRouter>
+            <GlobalStyle />
             <App />
         </BrowserRouter>
     </React.StrictMode>

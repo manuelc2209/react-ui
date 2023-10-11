@@ -1,7 +1,6 @@
 // disableReactDevTools.ts
 
 // Declare the types if you're using TypeScript
-// Ignore this block if you're using JavaScript
 declare global {
     interface Window {
         __REACT_DEVTOOLS_GLOBAL_HOOK__: any;
