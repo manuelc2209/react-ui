@@ -4,11 +4,9 @@ import { Card, Header } from '../../components';
 import { COLOR_PRIMARY_2 } from '../../GlobalStyles';
 
 export const StyledContainer = styled.div`
-    display: block;
     height: 100%;
-    width: 100%;
-    box-sizing: border-box;
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 `;
 
 export const StyledContent = styled.div`
@@ -40,7 +38,7 @@ export const StyledOverlay = styled.div`
     gap: 20px;
     -webkit-column-gap: 20px;
     column-gap: 20px;
-    justify-content: center;
+    justify-content: space-evenly;
     align-content: center;
     align-items: center;
     overflow-y: auto;
@@ -63,6 +61,11 @@ export const StyledCard = styled(Card)`
 
 export const StyledHeader = styled(Header)`
     border-bottom: 1px solid ${COLOR_PRIMARY_2};
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 60px;
+    align-items: center;
 
     > * {
         margin: 10px;

@@ -1,10 +1,106 @@
 {
     "profile": {
-        "label": "Hi! I use React & Typescript to build a lot of cool things.",
+        "label": "Hey there! 👋 I'm passionate about crafting seamless user experiences using the power of HTML, CSS, and JavaScript/Typescript. With a knack for creative problem-solving, I specialize in Frontend development. My toolkit includes popular frameworks like React and technologies like TypeScript.",
         "headline": "Frontend Web Developer",
         "img": "/images/me.jpg",
-        "link": "https://boost-it.pt/pt/",
-        "linkLabel": "Boost-IT",
+        "currentTechStack": [
+            {
+                "name": "Typescript",
+                "logoUrl": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg"
+            },
+            {
+                "name": "Javascript",
+                "logoUrl": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg"
+            },
+            {
+                "name": "React",
+                "logoUrl": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg"
+            },
+            {
+                "name": "Nextjs",
+                "logoUrl": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nextjs-colored.svg"
+            },
+            {
+                "name": "React Query",
+                "logoUrl": ""
+            },
+            {
+                "name": "React Hook Form",
+                "logoUrl": ""
+            },
+            {
+                "name": "React Router",
+                "logoUrl": ""
+            },
+            {
+                "name": "Jotai",
+                "logoUrl": ""
+            },
+            {
+                "name": "Module-Federation",
+                "logoUrl": ""
+            },
+            {
+                "name": "MicroFrontends",
+                "logoUrl": ""
+            },
+            {
+                "name": "Component Libraries",
+                "logoUrl": ""
+            },
+            {
+                "name": "Storybook",
+                "logoUrl": ""
+            },
+            {
+                "name": "GraphQL",
+                "logoUrl": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/graphql-colored.svg"
+            },
+            {
+                "name": "Webpack",
+                "logoUrl": "https://raw.githubusercontent.com/devicons/devicon/d00d0969292a6569d45b06d3f350f463a0107b0d/icons/webpack/webpack-original-wordmark.svg"
+            },
+            {
+                "name": "Docker",
+                "logoUrl": "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg"
+            },
+            { "name": "Bash", "logoUrl": "https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" },
+            { "name": "Babel", "logoUrl": "https://www.vectorlogo.zone/logos/babeljs/babeljs-icon.svg" },
+            {
+                "name": "GIT",
+                "logoUrl": "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"
+            },
+            {
+                "name": "CI/CD",
+                "logoUrl": ""
+            },
+            {
+                "name": "Jest",
+                "logoUrl": "https://www.vectorlogo.zone/logos/jestjsio/jestjsio-icon.svg"
+            },
+            {
+                "name": "Styled-Components",
+                "logoUrl": ""
+            }
+        ],
+        "otherToolsFrameworks": [
+            {
+                "name": "Angular",
+                "logoUrl": "https://angular.io/assets/images/logos/angular/angular.svg"
+            },
+            {
+                "name": "AngularJS",
+                "logoUrl": "https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-original-wordmark.svg"
+            },
+            {
+                "name": "Vuejs",
+                "logoUrl": "https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg"
+            },
+            {
+                "name": "Redux",
+                "logoUrl": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/graphql-colored.svg"
+            }
+        ],
         "cards": [
             {
                 "title": "LinkedIn",

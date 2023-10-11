@@ -2,10 +2,10 @@
 
 exports[`renders snapshot correctly 1`] = `
 <div
-  className="sc-kgTSHT cKdTSH"
+  className="sc-ezOQGI jLXQH"
 >
   <div
-    className="sc-kDvujY koyayW sc-cwSeag hgPOZx"
+    className="sc-kDvujY lGomR sc-jIRcFI efuAGQ"
   >
     <button
       aria-label="Button"
@@ -18,58 +18,316 @@ exports[`renders snapshot correctly 1`] = `
       size="large"
     >
       <span
-        className="sc-gswNZR gnrOlr"
+        className="sc-gswNZR eXLoRM"
       >
         Projects
       </span>
     </button>
   </div>
   <div
-    className="sc-fLcnxK eHLQPQ"
+    className="sc-bYMpWt gOxeEx"
   >
     <div
-      className="sc-bBABsx fODJzf"
+      className="sc-kMjNwy fGowAf"
     >
       <div
-        className="sc-iveFHk fnClSR"
+        className="sc-ilhmMj pojUl"
       >
         <div
-          className="sc-hHTYSt cXlgDK"
+          className="sc-iJnaPW dFTIFI"
         >
-          <img
-            className="sc-hBxehG jKmbGY"
-            src="/images/me.jpg"
-          />
-          <span
-            className="sc-bqWxrE jFgBe"
-          >
-            Frontend Web Developer
-          </span>
-          <div
-            className="sc-fEXmlR hRrSOb"
-          >
-            <span
-              className="sc-ksBlkl bOpCiB"
+          <div>
+            <div
+              className="sc-idXgbr fZkMoO"
             >
-              <span>
-                Hi! I use React & Typescript to build a lot of cool things.
-              </span>
-              <div>
-                Working at:
-                <a
-                  className="sc-fnGiBr LZhWN"
-                  href="https://boost-it.pt/pt/"
+              <img
+                className="sc-hHTYSt duBETl"
+                src="/images/me.jpg"
+              />
+              <div
+                className="sc-bjfHbI fXoFTy"
+              >
+                <h1
+                  className="sc-bqWxrE jFgBe"
                 >
-                  Boost-IT
-                </a>
+                  Frontend Web Developer
+                </h1>
+                <h2
+                  className="sc-ksBlkl gHLbBE"
+                >
+                  Hey there! 👋 I'm passionate about crafting seamless user experiences using the power of HTML, CSS, and JavaScript/Typescript. With a knack for creative problem-solving, I specialize in Frontend development. My toolkit includes popular frameworks like React and technologies like TypeScript.
+                </h2>
               </div>
-            </span>
+            </div>
+            <div
+              className="sc-kgTSHT fapVhj"
+            >
+              <span
+                className="sc-fnGiBr gTgcKS"
+              >
+                <div>
+                  <span
+                    className="sc-hBxehG efYgmC"
+                  >
+                    Working with the following technologies:
+                  </span>
+                  <div
+                    className="sc-fLcnxK cHeipZ"
+                  >
+                    <div
+                      className="sc-bBABsx fLGBsx"
+                    >
+                      <span
+                        className="sc-fEXmlR dmBgmn"
+                      >
+                        Typescript
+                      </span>
+                      <img
+                        alt="Typescript"
+                        className="sc-dIfARi gqTHQu"
+                        src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg"
+                      />
+                    </div>
+                    <div
+                      className="sc-bBABsx fLGBsx"
+                    >
+                      <span
+                        className="sc-fEXmlR dmBgmn"
+                      >
+                        Javascript
+                      </span>
+                      <img
+                        alt="Javascript"
+                        className="sc-dIfARi gqTHQu"
+                        src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg"
+                      />
+                    </div>
+                    <div
+                      className="sc-bBABsx fLGBsx"
+                    >
+                      <span
+                        className="sc-fEXmlR dmBgmn"
+                      >
+                        React
+                      </span>
+                      <img
+                        alt="React"
+                        className="sc-dIfARi gqTHQu"
+                        src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg"
+                      />
+                    </div>
+                    <div
+                      className="sc-bBABsx fLGBsx"
+                    >
+                      <span
+                        className="sc-fEXmlR dmBgmn"
+                      >
+                        Nextjs
+                      </span>
+                      <img
+                        alt="Nextjs"
+                        className="sc-dIfARi gqTHQu"
+                        src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nextjs-colored.svg"
+                      />
+                    </div>
+                    <div
+                      className="sc-bBABsx fLGBsx"
+                    >
+                      <span
+                        className="sc-fEXmlR dmBgmn"
+                      >
+                        React Query
+                      </span>
+                    </div>
+                    <div
+                      className="sc-bBABsx fLGBsx"
+                    >
+                      <span
+                        className="sc-fEXmlR dmBgmn"
+                      >
+                        React Hook Form
+                      </span>
+                    </div>
+                    <div
+                      className="sc-bBABsx fLGBsx"
+                    >
+                      <span
+                        className="sc-fEXmlR dmBgmn"
+                      >
+                        React Router
+                      </span>
+                    </div>
+                    <div
+                      className="sc-bBABsx fLGBsx"
+                    >
+                      <span
+                        className="sc-fEXmlR dmBgmn"
+                      >
+                        Jotai
+                      </span>
+                    </div>
+                    <div
+                      className="sc-bBABsx fLGBsx"
+                    >
+                      <span
+                        className="sc-fEXmlR dmBgmn"
+                      >
+                        Module-Federation
+                      </span>
+                    </div>
+                    <div
+                      className="sc-bBABsx fLGBsx"
+                    >
+                      <span
+                        className="sc-fEXmlR dmBgmn"
+                      >
+                        MicroFrontends
+                      </span>
+                    </div>
+                    <div
+                      className="sc-bBABsx fLGBsx"
+                    >
+                      <span
+                        className="sc-fEXmlR dmBgmn"
+                      >
+                        Component Libraries
+                      </span>
+                    </div>
+                    <div
+                      className="sc-bBABsx fLGBsx"
+                    >
+                      <span
+                        className="sc-fEXmlR dmBgmn"
+                      >
+                        Storybook
+                      </span>
+                    </div>
+                    <div
+                      className="sc-bBABsx fLGBsx"
+                    >
+                      <span
+                        className="sc-fEXmlR dmBgmn"
+                      >
+                        GraphQL
+                      </span>
+                      <img
+                        alt="GraphQL"
+                        className="sc-dIfARi gqTHQu"
+                        src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/graphql-colored.svg"
+                      />
+                    </div>
+                    <div
+                      className="sc-bBABsx fLGBsx"
+                    >
+                      <span
+                        className="sc-fEXmlR dmBgmn"
+                      >
+                        Webpack
+                      </span>
+                      <img
+                        alt="Webpack"
+                        className="sc-dIfARi gqTHQu"
+                        src="https://raw.githubusercontent.com/devicons/devicon/d00d0969292a6569d45b06d3f350f463a0107b0d/icons/webpack/webpack-original-wordmark.svg"
+                      />
+                    </div>
+                    <div
+                      className="sc-bBABsx fLGBsx"
+                    >
+                      <span
+                        className="sc-fEXmlR dmBgmn"
+                      >
+                        Docker
+                      </span>
+                      <img
+                        alt="Docker"
+                        className="sc-dIfARi gqTHQu"
+                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg"
+                      />
+                    </div>
+                    <div
+                      className="sc-bBABsx fLGBsx"
+                    >
+                      <span
+                        className="sc-fEXmlR dmBgmn"
+                      >
+                        Bash
+                      </span>
+                      <img
+                        alt="Bash"
+                        className="sc-dIfARi gqTHQu"
+                        src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg"
+                      />
+                    </div>
+                    <div
+                      className="sc-bBABsx fLGBsx"
+                    >
+                      <span
+                        className="sc-fEXmlR dmBgmn"
+                      >
+                        Babel
+                      </span>
+                      <img
+                        alt="Babel"
+                        className="sc-dIfARi gqTHQu"
+                        src="https://www.vectorlogo.zone/logos/babeljs/babeljs-icon.svg"
+                      />
+                    </div>
+                    <div
+                      className="sc-bBABsx fLGBsx"
+                    >
+                      <span
+                        className="sc-fEXmlR dmBgmn"
+                      >
+                        GIT
+                      </span>
+                      <img
+                        alt="GIT"
+                        className="sc-dIfARi gqTHQu"
+                        src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"
+                      />
+                    </div>
+                    <div
+                      className="sc-bBABsx fLGBsx"
+                    >
+                      <span
+                        className="sc-fEXmlR dmBgmn"
+                      >
+                        CI/CD
+                      </span>
+                    </div>
+                    <div
+                      className="sc-bBABsx fLGBsx"
+                    >
+                      <span
+                        className="sc-fEXmlR dmBgmn"
+                      >
+                        Jest
+                      </span>
+                      <img
+                        alt="Jest"
+                        className="sc-dIfARi gqTHQu"
+                        src="https://www.vectorlogo.zone/logos/jestjsio/jestjsio-icon.svg"
+                      />
+                    </div>
+                    <div
+                      className="sc-bBABsx fLGBsx"
+                    >
+                      <span
+                        className="sc-fEXmlR dmBgmn"
+                      >
+                        Styled-Components
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </span>
+            </div>
           </div>
           <div
-            className="sc-bjfHbI jJMIbg"
+            className="sc-iveFHk csPWnK"
           >
             <div
-              className="sc-dkrFOg hmHHOD sc-idXgbr gGEryw"
+              className="sc-dkrFOg hmHHOD sc-cwSeag ffPXVK"
             >
               <a
                 className="sc-ftTHYK PBCua"
@@ -95,7 +353,7 @@ exports[`renders snapshot correctly 1`] = `
               </a>
             </div>
             <div
-              className="sc-dkrFOg hmHHOD sc-idXgbr gGEryw"
+              className="sc-dkrFOg hmHHOD sc-cwSeag ffPXVK"
             >
               <a
                 className="sc-ftTHYK PBCua"
@@ -131,10 +389,10 @@ exports[`renders snapshot correctly 1`] = `
 exports[`renders without crashing 1`] = `
 <div>
   <div
-    class="sc-kgTSHT cKdTSH"
+    class="sc-ezOQGI jLXQH"
   >
     <div
-      class="sc-kDvujY koyayW sc-cwSeag hgPOZx"
+      class="sc-kDvujY lGomR sc-jIRcFI efuAGQ"
     >
       <button
         aria-label="Button"
@@ -142,58 +400,316 @@ exports[`renders without crashing 1`] = `
         data-testid="button"
       >
         <span
-          class="sc-gswNZR gnrOlr"
+          class="sc-gswNZR eXLoRM"
         >
           Projects
         </span>
       </button>
     </div>
     <div
-      class="sc-fLcnxK eHLQPQ"
+      class="sc-bYMpWt gOxeEx"
     >
       <div
-        class="sc-bBABsx fODJzf"
+        class="sc-kMjNwy fGowAf"
       >
         <div
-          class="sc-iveFHk fnClSR"
+          class="sc-ilhmMj pojUl"
         >
           <div
-            class="sc-hHTYSt cXlgDK"
+            class="sc-iJnaPW dFTIFI"
           >
-            <img
-              class="sc-hBxehG jKmbGY"
-              src="/images/me.jpg"
-            />
-            <span
-              class="sc-bqWxrE jFgBe"
-            >
-              Frontend Web Developer
-            </span>
-            <div
-              class="sc-fEXmlR hRrSOb"
-            >
-              <span
-                class="sc-ksBlkl bOpCiB"
+            <div>
+              <div
+                class="sc-idXgbr fZkMoO"
               >
-                <span>
-                  Hi! I use React & Typescript to build a lot of cool things.
-                </span>
-                <div>
-                  Working at:
-                  <a
-                    class="sc-fnGiBr LZhWN"
-                    href="https://boost-it.pt/pt/"
+                <img
+                  class="sc-hHTYSt duBETl"
+                  src="/images/me.jpg"
+                />
+                <div
+                  class="sc-bjfHbI fXoFTy"
+                >
+                  <h1
+                    class="sc-bqWxrE jFgBe"
                   >
-                    Boost-IT
-                  </a>
+                    Frontend Web Developer
+                  </h1>
+                  <h2
+                    class="sc-ksBlkl gHLbBE"
+                  >
+                    Hey there! 👋 I'm passionate about crafting seamless user experiences using the power of HTML, CSS, and JavaScript/Typescript. With a knack for creative problem-solving, I specialize in Frontend development. My toolkit includes popular frameworks like React and technologies like TypeScript.
+                  </h2>
                 </div>
-              </span>
+              </div>
+              <div
+                class="sc-kgTSHT fapVhj"
+              >
+                <span
+                  class="sc-fnGiBr gTgcKS"
+                >
+                  <div>
+                    <span
+                      class="sc-hBxehG efYgmC"
+                    >
+                      Working with the following technologies:
+                    </span>
+                    <div
+                      class="sc-fLcnxK cHeipZ"
+                    >
+                      <div
+                        class="sc-bBABsx fLGBsx"
+                      >
+                        <span
+                          class="sc-fEXmlR dmBgmn"
+                        >
+                          Typescript
+                        </span>
+                        <img
+                          alt="Typescript"
+                          class="sc-dIfARi gqTHQu"
+                          src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg"
+                        />
+                      </div>
+                      <div
+                        class="sc-bBABsx fLGBsx"
+                      >
+                        <span
+                          class="sc-fEXmlR dmBgmn"
+                        >
+                          Javascript
+                        </span>
+                        <img
+                          alt="Javascript"
+                          class="sc-dIfARi gqTHQu"
+                          src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg"
+                        />
+                      </div>
+                      <div
+                        class="sc-bBABsx fLGBsx"
+                      >
+                        <span
+                          class="sc-fEXmlR dmBgmn"
+                        >
+                          React
+                        </span>
+                        <img
+                          alt="React"
+                          class="sc-dIfARi gqTHQu"
+                          src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg"
+                        />
+                      </div>
+                      <div
+                        class="sc-bBABsx fLGBsx"
+                      >
+                        <span
+                          class="sc-fEXmlR dmBgmn"
+                        >
+                          Nextjs
+                        </span>
+                        <img
+                          alt="Nextjs"
+                          class="sc-dIfARi gqTHQu"
+                          src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nextjs-colored.svg"
+                        />
+                      </div>
+                      <div
+                        class="sc-bBABsx fLGBsx"
+                      >
+                        <span
+                          class="sc-fEXmlR dmBgmn"
+                        >
+                          React Query
+                        </span>
+                      </div>
+                      <div
+                        class="sc-bBABsx fLGBsx"
+                      >
+                        <span
+                          class="sc-fEXmlR dmBgmn"
+                        >
+                          React Hook Form
+                        </span>
+                      </div>
+                      <div
+                        class="sc-bBABsx fLGBsx"
+                      >
+                        <span
+                          class="sc-fEXmlR dmBgmn"
+                        >
+                          React Router
+                        </span>
+                      </div>
+                      <div
+                        class="sc-bBABsx fLGBsx"
+                      >
+                        <span
+                          class="sc-fEXmlR dmBgmn"
+                        >
+                          Jotai
+                        </span>
+                      </div>
+                      <div
+                        class="sc-bBABsx fLGBsx"
+                      >
+                        <span
+                          class="sc-fEXmlR dmBgmn"
+                        >
+                          Module-Federation
+                        </span>
+                      </div>
+                      <div
+                        class="sc-bBABsx fLGBsx"
+                      >
+                        <span
+                          class="sc-fEXmlR dmBgmn"
+                        >
+                          MicroFrontends
+                        </span>
+                      </div>
+                      <div
+                        class="sc-bBABsx fLGBsx"
+                      >
+                        <span
+                          class="sc-fEXmlR dmBgmn"
+                        >
+                          Component Libraries
+                        </span>
+                      </div>
+                      <div
+                        class="sc-bBABsx fLGBsx"
+                      >
+                        <span
+                          class="sc-fEXmlR dmBgmn"
+                        >
+                          Storybook
+                        </span>
+                      </div>
+                      <div
+                        class="sc-bBABsx fLGBsx"
+                      >
+                        <span
+                          class="sc-fEXmlR dmBgmn"
+                        >
+                          GraphQL
+                        </span>
+                        <img
+                          alt="GraphQL"
+                          class="sc-dIfARi gqTHQu"
+                          src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/graphql-colored.svg"
+                        />
+                      </div>
+                      <div
+                        class="sc-bBABsx fLGBsx"
+                      >
+                        <span
+                          class="sc-fEXmlR dmBgmn"
+                        >
+                          Webpack
+                        </span>
+                        <img
+                          alt="Webpack"
+                          class="sc-dIfARi gqTHQu"
+                          src="https://raw.githubusercontent.com/devicons/devicon/d00d0969292a6569d45b06d3f350f463a0107b0d/icons/webpack/webpack-original-wordmark.svg"
+                        />
+                      </div>
+                      <div
+                        class="sc-bBABsx fLGBsx"
+                      >
+                        <span
+                          class="sc-fEXmlR dmBgmn"
+                        >
+                          Docker
+                        </span>
+                        <img
+                          alt="Docker"
+                          class="sc-dIfARi gqTHQu"
+                          src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg"
+                        />
+                      </div>
+                      <div
+                        class="sc-bBABsx fLGBsx"
+                      >
+                        <span
+                          class="sc-fEXmlR dmBgmn"
+                        >
+                          Bash
+                        </span>
+                        <img
+                          alt="Bash"
+                          class="sc-dIfARi gqTHQu"
+                          src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg"
+                        />
+                      </div>
+                      <div
+                        class="sc-bBABsx fLGBsx"
+                      >
+                        <span
+                          class="sc-fEXmlR dmBgmn"
+                        >
+                          Babel
+                        </span>
+                        <img
+                          alt="Babel"
+                          class="sc-dIfARi gqTHQu"
+                          src="https://www.vectorlogo.zone/logos/babeljs/babeljs-icon.svg"
+                        />
+                      </div>
+                      <div
+                        class="sc-bBABsx fLGBsx"
+                      >
+                        <span
+                          class="sc-fEXmlR dmBgmn"
+                        >
+                          GIT
+                        </span>
+                        <img
+                          alt="GIT"
+                          class="sc-dIfARi gqTHQu"
+                          src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"
+                        />
+                      </div>
+                      <div
+                        class="sc-bBABsx fLGBsx"
+                      >
+                        <span
+                          class="sc-fEXmlR dmBgmn"
+                        >
+                          CI/CD
+                        </span>
+                      </div>
+                      <div
+                        class="sc-bBABsx fLGBsx"
+                      >
+                        <span
+                          class="sc-fEXmlR dmBgmn"
+                        >
+                          Jest
+                        </span>
+                        <img
+                          alt="Jest"
+                          class="sc-dIfARi gqTHQu"
+                          src="https://www.vectorlogo.zone/logos/jestjsio/jestjsio-icon.svg"
+                        />
+                      </div>
+                      <div
+                        class="sc-bBABsx fLGBsx"
+                      >
+                        <span
+                          class="sc-fEXmlR dmBgmn"
+                        >
+                          Styled-Components
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </span>
+              </div>
             </div>
             <div
-              class="sc-bjfHbI jJMIbg"
+              class="sc-iveFHk csPWnK"
             >
               <div
-                class="sc-dkrFOg hmHHOD sc-idXgbr gGEryw"
+                class="sc-dkrFOg hmHHOD sc-cwSeag ffPXVK"
               >
                 <a
                   class="sc-ftTHYK PBCua"
@@ -219,7 +735,7 @@ exports[`renders without crashing 1`] = `
                 </a>
               </div>
               <div
-                class="sc-dkrFOg hmHHOD sc-idXgbr gGEryw"
+                class="sc-dkrFOg hmHHOD sc-cwSeag ffPXVK"
               >
                 <a
                   class="sc-ftTHYK PBCua"

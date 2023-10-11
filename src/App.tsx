@@ -1,8 +1,7 @@
 import React from 'react';
-import './index.css';
 import { Route, Routes, useNavigate } from 'react-router-dom';
 
-import { StyledColumn, StyledContainer, StyledContent, StyledHeader, StyledOverlay } from './AppStyles';
+import { StyledColumn, StyledContainer, StyledContent, StyledHeader, StyledOverlay } from './styles';
 import data from './data/index.json';
 import { Button, Portefolio } from './components';
 import { ProjectsUI, ForumOutlet, Threads } from './pages';
@@ -20,8 +19,6 @@ export const App: React.FC = () => {
         navigate('/');
     };
 
-    // REFACTOR THIS INTO UI
-
     const App = (
         <StyledContainer>
             <StyledHeader>
@@ -34,8 +31,8 @@ export const App: React.FC = () => {
                             label={profile.label}
                             img={profile.img}
                             headline={profile.headline}
-                            link={profile.link}
-                            linkLabel={profile.linkLabel}
+                            currentStack={profile.currentTechStack}
+                            otherStack={profile.otherToolsFrameworks}
                             cards={profile.cards}
                         />
                     </StyledColumn>

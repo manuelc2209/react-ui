@@ -3,10 +3,17 @@ import React from 'react';
 import {
     StyledCard,
     StyledCardContainer,
+    StyledFlexContainer,
+    StyledHeaderLabelContainer,
     StyledHeadline,
     StyledImage,
+    StyledImageStack,
+    StyledItemStack,
     StyledLabel,
-    StyledLink,
+    StyledLabelHeader,
+    StyledStackItemLabel,
+    StyledStackList,
+    StyledSubtitle,
     StyledTextContainer,
     StyledWrapper
 } from './styles';
@@ -16,27 +23,38 @@ export const Portefolio: React.FC<PortefolioProps> = ({
     img,
     headline,
     label,
-    link,
-    linkLabel,
+    currentStack,
+    otherStack,
     cards
 }: PortefolioProps) => {
     return (
         <StyledWrapper>
-            {img && <StyledImage src={img} />}
-            {headline && <StyledHeadline>{headline}</StyledHeadline>}
-            <StyledTextContainer>
-                {link && linkLabel
-                    ? label && (
-                          <StyledLabel>
-                              <span>{label}</span>
-                              <div>
-                                  Working at:
-                                  <StyledLink href={link}>{linkLabel}</StyledLink>
-                              </div>
-                          </StyledLabel>
-                      )
-                    : label && <StyledLabel>{label}</StyledLabel>}
-            </StyledTextContainer>
+            <div>
+                <StyledFlexContainer>
+                    {img && <StyledImage src={img} />}
+                    <StyledHeaderLabelContainer>
+                        {headline && <StyledHeadline>{headline}</StyledHeadline>}
+                        {label && <StyledSubtitle>{label}</StyledSubtitle>}
+                    </StyledHeaderLabelContainer>
+                </StyledFlexContainer>
+                <StyledTextContainer>
+                    <StyledLabel>
+                        <div>
+                            <StyledLabelHeader>Working with the following technologies:</StyledLabelHeader>
+                            <StyledStackList>
+                                {currentStack?.map((stack) => (
+                                    <StyledItemStack key={stack.name}>
+                                        <StyledStackItemLabel>{stack.name}</StyledStackItemLabel>
+                                        {stack.logoUrl && (
+                                            <StyledImageStack src={stack.logoUrl} alt={stack.name} />
+                                        )}
+                                    </StyledItemStack>
+                                ))}
+                            </StyledStackList>
+                        </div>
+                    </StyledLabel>
+                </StyledTextContainer>
+            </div>
             {cards && (
                 <StyledCardContainer>
                     {cards.map((card, i) => (
