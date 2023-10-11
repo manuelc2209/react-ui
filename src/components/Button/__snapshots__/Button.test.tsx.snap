@@ -11,7 +11,7 @@ exports[`renders component with all sizes 1`] = `
         data-testid="button"
       >
         <span
-          class="sc-gswNZR gnrOlr"
+          class="sc-gswNZR eXLoRM"
         >
           Button Label
         </span>
@@ -25,7 +25,7 @@ exports[`renders component with all sizes 1`] = `
       data-testid="button"
     >
       <span
-        class="sc-gswNZR gnrOlr"
+        class="sc-gswNZR eXLoRM"
       >
         Button Label
       </span>
@@ -96,7 +96,7 @@ exports[`renders component with all sizes 2`] = `
         data-testid="button"
       >
         <span
-          class="sc-gswNZR gnrOlr"
+          class="sc-gswNZR eXLoRM"
         >
           Button Label
         </span>
@@ -109,7 +109,7 @@ exports[`renders component with all sizes 2`] = `
         data-testid="button"
       >
         <span
-          class="sc-gswNZR gnrOlr"
+          class="sc-gswNZR eXLoRM"
         >
           Button Label
         </span>
@@ -123,7 +123,7 @@ exports[`renders component with all sizes 2`] = `
       data-testid="button"
     >
       <span
-        class="sc-gswNZR gnrOlr"
+        class="sc-gswNZR eXLoRM"
       >
         Button Label
       </span>
@@ -194,7 +194,7 @@ exports[`renders component with all sizes 3`] = `
         data-testid="button"
       >
         <span
-          class="sc-gswNZR gnrOlr"
+          class="sc-gswNZR eXLoRM"
         >
           Button Label
         </span>
@@ -207,7 +207,7 @@ exports[`renders component with all sizes 3`] = `
         data-testid="button"
       >
         <span
-          class="sc-gswNZR gnrOlr"
+          class="sc-gswNZR eXLoRM"
         >
           Button Label
         </span>
@@ -220,7 +220,7 @@ exports[`renders component with all sizes 3`] = `
         data-testid="button"
       >
         <span
-          class="sc-gswNZR gnrOlr"
+          class="sc-gswNZR eXLoRM"
         >
           Button Label
         </span>
@@ -234,7 +234,7 @@ exports[`renders component with all sizes 3`] = `
       data-testid="button"
     >
       <span
-        class="sc-gswNZR gnrOlr"
+        class="sc-gswNZR eXLoRM"
       >
         Button Label
       </span>
@@ -305,7 +305,7 @@ exports[`renders component with two types 1`] = `
         data-testid="button"
       >
         <span
-          class="sc-gswNZR gnrOlr"
+          class="sc-gswNZR eXLoRM"
         >
           Button Label
         </span>
@@ -319,7 +319,7 @@ exports[`renders component with two types 1`] = `
       data-testid="button"
     >
       <span
-        class="sc-gswNZR gnrOlr"
+        class="sc-gswNZR eXLoRM"
       >
         Button Label
       </span>
@@ -390,7 +390,7 @@ exports[`renders component with two types 2`] = `
         data-testid="button"
       >
         <span
-          class="sc-gswNZR gnrOlr"
+          class="sc-gswNZR eXLoRM"
         >
           Button Label
         </span>
@@ -403,7 +403,7 @@ exports[`renders component with two types 2`] = `
         data-testid="button"
       >
         <span
-          class="sc-gswNZR gnrOlr"
+          class="sc-gswNZR eXLoRM"
         >
           Button Label
         </span>
@@ -417,7 +417,7 @@ exports[`renders component with two types 2`] = `
       data-testid="button"
     >
       <span
-        class="sc-gswNZR gnrOlr"
+        class="sc-gswNZR eXLoRM"
       >
         Button Label
       </span>
@@ -488,7 +488,7 @@ exports[`renders snapshot correctly 1`] = `
         data-testid="button"
       >
         <span
-          class="sc-gswNZR gnrOlr"
+          class="sc-gswNZR eXLoRM"
         >
           Button Label
         </span>
@@ -502,7 +502,7 @@ exports[`renders snapshot correctly 1`] = `
       data-testid="button"
     >
       <span
-        class="sc-gswNZR gnrOlr"
+        class="sc-gswNZR eXLoRM"
       >
         Button Label
       </span>
@@ -573,7 +573,7 @@ exports[`renders without crashing 1`] = `
         data-testid="button"
       >
         <span
-          class="sc-gswNZR gnrOlr"
+          class="sc-gswNZR eXLoRM"
         >
           Button Label
         </span>
@@ -587,7 +587,7 @@ exports[`renders without crashing 1`] = `
       data-testid="button"
     >
       <span
-        class="sc-gswNZR gnrOlr"
+        class="sc-gswNZR eXLoRM"
       >
         Button Label
       </span>

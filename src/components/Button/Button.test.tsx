@@ -1,7 +1,7 @@
 import React from 'react';
 import { fireEvent, render, screen } from '@testing-library/react';
 
-import { Button } from './Button';
+import { Button } from '.';
 
 it('renders snapshot correctly', () => {
     const tree = render(<Button />);

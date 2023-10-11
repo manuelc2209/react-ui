@@ -2,11 +2,35 @@
 
 exports[`renders snapshot correctly 1`] = `
 <div
-  className="sc-fEXmlR fQntTm"
+  className="sc-bBABsx kkchgb"
 >
-  <div
-    className="sc-bqWxrE lmeLXE"
-  />
+  <div>
+    <div
+      className="sc-hBxehG kesgI"
+    >
+      <div
+        className="sc-ksBlkl jjOdde"
+      />
+    </div>
+    <div
+      className="sc-idXgbr jNHMWW"
+    >
+      <span
+        className="sc-eDWCr kpbSzz"
+      >
+        <div>
+          <span
+            className="sc-csuSiG eGNmmC"
+          >
+            Working with the following technologies:
+          </span>
+          <div
+            className="sc-dIfARi fcSabg"
+          />
+        </div>
+      </span>
+    </div>
+  </div>
 </div>
 `;
 
@@ -16,21 +40,69 @@ exports[`renders without crashing 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="sc-fEXmlR fQntTm"
+        class="sc-bBABsx kkchgb"
       >
-        <div
-          class="sc-bqWxrE lmeLXE"
-        />
+        <div>
+          <div
+            class="sc-hBxehG kesgI"
+          >
+            <div
+              class="sc-ksBlkl jjOdde"
+            />
+          </div>
+          <div
+            class="sc-idXgbr jNHMWW"
+          >
+            <span
+              class="sc-eDWCr kpbSzz"
+            >
+              <div>
+                <span
+                  class="sc-csuSiG eGNmmC"
+                >
+                  Working with the following technologies:
+                </span>
+                <div
+                  class="sc-dIfARi fcSabg"
+                />
+              </div>
+            </span>
+          </div>
+        </div>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="sc-fEXmlR fQntTm"
+      class="sc-bBABsx kkchgb"
     >
-      <div
-        class="sc-bqWxrE lmeLXE"
-      />
+      <div>
+        <div
+          class="sc-hBxehG kesgI"
+        >
+          <div
+            class="sc-ksBlkl jjOdde"
+          />
+        </div>
+        <div
+          class="sc-idXgbr jNHMWW"
+        >
+          <span
+            class="sc-eDWCr kpbSzz"
+          >
+            <div>
+              <span
+                class="sc-csuSiG eGNmmC"
+              >
+                Working with the following technologies:
+              </span>
+              <div
+                class="sc-dIfARi fcSabg"
+              />
+            </div>
+          </span>
+        </div>
+      </div>
     </div>
   </div>,
   "debug": [Function],
