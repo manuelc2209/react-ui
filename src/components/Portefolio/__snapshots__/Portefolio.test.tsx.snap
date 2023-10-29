@@ -25,7 +25,7 @@ exports[`renders snapshot correctly 1`] = `
             Working with the following technologies:
           </span>
           <div
-            className="sc-dIfARi fcSabg"
+            className="sc-dIfARi chuKZs"
           />
         </div>
       </span>
@@ -63,7 +63,7 @@ exports[`renders without crashing 1`] = `
                   Working with the following technologies:
                 </span>
                 <div
-                  class="sc-dIfARi fcSabg"
+                  class="sc-dIfARi chuKZs"
                 />
               </div>
             </span>
@@ -97,7 +97,7 @@ exports[`renders without crashing 1`] = `
                 Working with the following technologies:
               </span>
               <div
-                class="sc-dIfARi fcSabg"
+                class="sc-dIfARi chuKZs"
               />
             </div>
           </span>

@@ -114,6 +114,7 @@ export const StyledStackList = styled.div`
     flex-wrap: wrap;
     justify-content: space-between;
     overflow-y: auto;
+    gap: 10px;
 `;
 
 export const StyledItemStack = styled.div`
@@ -123,7 +124,7 @@ export const StyledItemStack = styled.div`
     border-bottom: 1px solid #ccc;
     transition: background-color 0.3s ease;
     margin-bottom: 10px;
-    flex-basis: calc(33% - 10px);
+    flex-basis: calc(33% - 20px);
     margin-bottom: 10px;
     padding: 20px;
     font-size: 1rem;
@@ -131,7 +132,7 @@ export const StyledItemStack = styled.div`
     overflow: hidden;
 
     @media screen and (max-width: 767px) {
-        flex-basis: calc(100% - 20px);
+        flex-basis: 100%;
     }
 
     :hover {
