@@ -27,7 +27,7 @@ export const projects = [
         title: 'Forum - [WIP]',
         image: '/images/react.jpg',
         path: '/forum',
-        github: '',
+        github: '/code/forum',
         newTab: true,
         subtitle: 'Forum built with React & React Query'
     },
