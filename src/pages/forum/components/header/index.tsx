@@ -9,24 +9,12 @@ export const Header = () => {
     const navigate = useNavigate();
 
     return (
-        <>
-            <StyledHeaderWrapper>
-                <StyledButton size="large" buttonType="border" label="Back" onClick={() => navigate(-1)} />
-                <StyledCTAEnd>
-                    <StyledButton
-                        size="large"
-                        buttonType="border"
-                        label="Login"
-                        onClick={() => navigate('/forum/login')}
-                    />
-                    <StyledButton
-                        size="large"
-                        buttonType="border"
-                        label="Sign Up"
-                        onClick={() => navigate('/forum/register')}
-                    />
-                </StyledCTAEnd>
-            </StyledHeaderWrapper>
-        </>
+        <StyledHeaderWrapper>
+            <StyledCTAEnd>
+                <StyledButton size="large" label="Login" onClick={() => navigate('/forum/login')} />
+                <StyledButton size="large" label="Sign Up" onClick={() => navigate('/forum/register')} />
+            </StyledCTAEnd>
+            <StyledButton size="large" label="Back" onClick={() => navigate(-1)} />
+        </StyledHeaderWrapper>
     );
 };

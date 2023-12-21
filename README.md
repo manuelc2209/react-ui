@@ -1,12 +1,13 @@
 # React-ui
+
 ![build](https://github.com/manuelc2209/react-login/actions/workflows/main.yml/badge.svg)
-![codeQL](https://github.com/manuelc2209/react-login/actions/workflows/codeql-analysis.yml/badge.svg)
 
 <br/>
 
 ##### This is my sandbox playground working with React, i have some small features that i develop when i have some free time,
 
 ##### Feel free to see it deployed on: [react-ui.manuelcorreia.org](https://react-ui.manuelcorreia.org)
+
 ##### Everytime a new feature gets merged to master, it will be available on the link above. 💎
 
 <br/>
@@ -49,10 +50,10 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 <br>
 
 ##### `Pre-commit rules`
+
 Pre-commit runs tests and this validates if the current snapshot of that component matches the previously saved snapshot
 <br>
 If there are changes to the component that are valid don't forget to run yarn test -u to update those snapshots.
-
 
 <br>
 <br>

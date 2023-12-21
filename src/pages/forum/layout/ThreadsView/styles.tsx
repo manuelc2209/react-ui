@@ -16,11 +16,15 @@ export const StyledThreadContainer = styled.div`
 `;
 
 export const StyledSideSection = styled.div`
+    width: 300px;
+    position: relative;
+`;
+
+export const StyledFixedContainer = styled.div`
+    position: fixed;
     display: flex;
     flex-direction: column;
-    min-width: 300px;
     padding: 16px;
     gap: 16px;
     background-color: #f7f7f7;
-    border: 1px solid #dddddd;
 `;

@@ -12,13 +12,11 @@ export const StyledHeader = styled.div<StyledHeaderProps>`
     position: relative;
     width: 100%;
     display: flex;
+    flex: 1 0 auto;
     background: ${setColor};
     flex-direction: row;
     justify-content: flex-end;
     height: 60px;
     align-items: center;
-
-    > * {
-        padding: 0 13px;
-    }
+    padding: 0 16px;
 `;

@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
-import { Card, Header } from '../../components';
-import { COLOR_PRIMARY_2 } from '../../GlobalStyles';
+import { Card } from '../../components';
 
 export const StyledContainer = styled.div`
     height: 100%;
@@ -9,22 +8,36 @@ export const StyledContainer = styled.div`
     flex-direction: column;
 `;
 
-export const StyledContent = styled.div`
-    display: block;
+export const StyledVideoContainer = styled.div`
     position: relative;
-    background-image: url('https://64.media.tumblr.com/2df67fe7bdbba84c88cdbbdf84fd2743/tumblr_nqgvxz92HC1s85u2fo1_500.gif');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
-    height: 100%;
+    object-fit: cover;
     width: 100%;
+    height: 100%;
+    overflow: hidden;
+    left: 0;
+`;
 
-    box-sizing: border-box;
+export const StyledVideo = styled.video`
+    display: flex;
+    flex-direction: row;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    position: relative;
+    height: inherit;
+    overflow: auto;
 
-    @media (max-width: 750px) {
+    @media (max-width: 450px) {
+        height: 100%;
         flex-direction: column;
         flex: 1;
+    }
+
+    @media (max-width: 900px) {
+        height: 100%;
     }
 `;
 
@@ -45,6 +58,9 @@ export const StyledOverlay = styled.div`
     height: 100%;
     width: 100%;
 
+    position: absolute;
+    top: 0;
+
     @media (max-width: 900px) {
         padding: 20px 20px 80px 20px;
         flex-direction: column;
@@ -57,17 +73,4 @@ export const StyledCard = styled(Card)`
     width: 250px;
     background: #2b2b2b;
     color: white;
-`;
-
-export const StyledHeader = styled(Header)`
-    border-bottom: 1px solid ${COLOR_PRIMARY_2};
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    height: 60px;
-    align-items: center;
-
-    > * {
-        margin: 10px;
-    }
 `;
