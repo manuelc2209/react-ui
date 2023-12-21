@@ -6,6 +6,15 @@ export const StyledContainer = styled.div`
     flex-direction: column;
 `;
 
+export const StyledVideoContainer = styled.div`
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    left: 0;
+`;
+
 export const StyledVideo = styled.video`
     display: flex;
     flex-direction: row;
@@ -30,15 +39,6 @@ export const StyledVideo = styled.video`
     }
 `;
 
-export const StyledVideoContainer = styled.div`
-    position: relative;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    left: 0;
-`;
-
 export const StyledOverlay = styled.div`
     position: absolute;
     top: 0;
@@ -53,19 +53,12 @@ export const StyledOverlay = styled.div`
     }
 `;
 
-export const StyledColumn = styled.div`
-    width: 50%;
-    height: 100%;
+export const StyledCodeContainer = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    flex: 1;
+    width: 100%;
+`;
 
-    @media (max-width: 450px) {
-        width: 100%;
-    }
-
-    @media (max-width: 900px) {
-        width: 100%;
-    }
+export const StyledHighlighter = styled.div`
+    padding: 2rem;
 `;
