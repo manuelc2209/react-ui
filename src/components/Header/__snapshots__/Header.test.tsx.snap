@@ -6,13 +6,13 @@ exports[`renders snapshot correctly 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="sc-bcXHqe fMdByr"
+        class="sc-bcXHqe jwMHZI"
       />
     </div>
   </body>,
   "container": <div>
     <div
-      class="sc-bcXHqe fMdByr"
+      class="sc-bcXHqe jwMHZI"
     />
   </div>,
   "debug": [Function],
@@ -75,13 +75,13 @@ exports[`renders without crashing 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="sc-bcXHqe fMdByr"
+        class="sc-bcXHqe jwMHZI"
       />
     </div>
   </body>,
   "container": <div>
     <div
-      class="sc-bcXHqe fMdByr"
+      class="sc-bcXHqe jwMHZI"
     />
   </div>,
   "debug": [Function],
