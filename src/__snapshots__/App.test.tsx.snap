@@ -2,7 +2,7 @@
 
 exports[`renders snapshot correctly 1`] = `
 <div
-  className="sc-iOeugr cwWscn"
+  className="sc-jfvxQR jUcDZl"
 >
   <div
     className="sc-kDvujY hEHKHG"
@@ -25,21 +25,21 @@ exports[`renders snapshot correctly 1`] = `
     </button>
   </div>
   <div
-    className="sc-eJDSGI jVUePp"
+    className="sc-oZIhv gVfgFR"
   >
     <video
       autoPlay={true}
-      className="sc-jfvxQR bzJkDq"
+      className="sc-eJDSGI jApSOJ"
       loop={true}
       muted={true}
       playsInline={true}
       src="/blurred_video.mp4"
     />
     <div
-      className="sc-oZIhv bsuQeo"
+      className="sc-hiDMwi chHlVo"
     >
       <div
-        className="sc-hiDMwi hcOhYQ"
+        className="sc-ehvNnt bmdNFF"
       >
         <div
           className="sc-iJnaPW dFTIFI"
@@ -397,7 +397,7 @@ exports[`renders snapshot correctly 1`] = `
 exports[`renders without crashing 1`] = `
 <div>
   <div
-    class="sc-iOeugr cwWscn"
+    class="sc-jfvxQR jUcDZl"
   >
     <div
       class="sc-kDvujY hEHKHG"
@@ -415,20 +415,20 @@ exports[`renders without crashing 1`] = `
       </button>
     </div>
     <div
-      class="sc-eJDSGI jVUePp"
+      class="sc-oZIhv gVfgFR"
     >
       <video
         autoplay=""
-        class="sc-jfvxQR bzJkDq"
+        class="sc-eJDSGI jApSOJ"
         loop=""
         playsinline=""
         src="/blurred_video.mp4"
       />
       <div
-        class="sc-oZIhv bsuQeo"
+        class="sc-hiDMwi chHlVo"
       >
         <div
-          class="sc-hiDMwi hcOhYQ"
+          class="sc-ehvNnt bmdNFF"
         >
           <div
             class="sc-iJnaPW dFTIFI"

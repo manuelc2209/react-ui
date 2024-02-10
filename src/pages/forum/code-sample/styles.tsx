@@ -15,6 +15,11 @@ export const StyledVideoContainer = styled.div`
     left: 0;
 `;
 
+export const StyleNode = styled.div<{ hasCursor: boolean }>`
+    color: white;
+    cursor: ${({ hasCursor }) => (hasCursor ? 'pointer' : 'default')};
+`;
+
 export const StyledVideo = styled.video`
     display: flex;
     flex-direction: row;
@@ -56,6 +61,7 @@ export const StyledOverlay = styled.div`
 export const StyledCodeContainer = styled.div`
     display: flex;
     flex-direction: column;
+    overflow: auto;
     width: 100%;
 `;
 

@@ -1,4 +1,26 @@
-export const ForumContextString = `
+import { nanoid } from 'nanoid';
+
+const threadsLabel = 'Threads';
+const contextLabel = 'Context';
+
+const threadsId = nanoid();
+const contextId = nanoid();
+
+export const tree = [
+    {
+        id: nanoid(),
+        name: 'Components',
+        children: [
+            { id: contextId, name: contextLabel },
+            { id: threadsId, name: threadsLabel }
+        ]
+    }
+];
+
+export const ForumContextString = {
+    id: contextId,
+    name: contextLabel,
+    sample: `
     import React, { useMemo, useState } from 'react';
 
     import { ForumContextProps, ForumContextWrapperProps, IThread } from './contextType';
@@ -26,9 +48,13 @@ export const ForumContextString = `
     
         return <ForumContext.Provider value={value}>{children}</ForumContext.Provider>;
     };    
-`;
+`
+};
 
-export const ForumThreadsString = `
+export const ForumThreadsString = {
+    id: threadsId,
+    name: threadsLabel,
+    sample: `
 import { nanoid } from 'nanoid';
 import React, { useContext } from 'react';
 
@@ -60,6 +86,7 @@ export const ThreadsView = () => {
         </StyledContainer>
     );
 };
-`;
+`
+};
 
 export const AvailableCodeSamples = [ForumContextString, ForumThreadsString];

@@ -1,3 +1,3 @@
 export { ProjectsUI } from './projects';
 export { ForumOutlet, Threads } from './forum';
-export { CodeSample } from './code-sample';
+export { CodeSample } from './forum/code-sample';
