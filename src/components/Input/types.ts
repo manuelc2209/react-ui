@@ -1,8 +1,6 @@
-export interface InputProps {
+export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
     type?: string;
     label?: string;
-    disabled?: boolean;
-    className?: string;
     placeholder?: string;
     onChange?: (event: React.FocusEvent<HTMLInputElement>) => void;
 }

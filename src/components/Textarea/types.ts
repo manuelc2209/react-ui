@@ -1,9 +1,5 @@
-export interface TextareaProps {
+export interface TextareaProps extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {
     placeholder?: string;
-    value: string | '';
-    resizable?: boolean;
-    onChange?: (value: string) => void;
-    disabled?: boolean;
     error?: string;
 }
 

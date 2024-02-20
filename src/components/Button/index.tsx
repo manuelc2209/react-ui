@@ -8,11 +8,10 @@ export const Button: React.FC<ButtonProps> = ({
     size = 'small',
     label = 'Button Label',
     buttonType = 'default',
-    disabled,
     className,
     onClick,
-    onMouseUp,
-    onMouseDown
+    onMouseDown,
+    ...props
 }: ButtonProps) => {
     const buttonSize = getSizeInPx(size);
 
@@ -21,15 +20,14 @@ export const Button: React.FC<ButtonProps> = ({
             size={size}
             buttonType={buttonType}
             buttonSize={buttonSize}
-            disabled={Boolean(disabled)}
             aria-label="Button"
             data-testid="button"
-            className={className}
+            disabled={props.disabled}
             onClick={() => onClick && onClick()}
             onMouseDown={() => onMouseDown && onMouseDown()}
-            onMouseUp={() => onMouseUp && onMouseUp()}
+            {...props}
         >
-            <StyledLabel disabled={disabled}>{label}</StyledLabel>
+            <StyledLabel disabled={props.disabled}>{label}</StyledLabel>
         </StyledButton>
     );
 };

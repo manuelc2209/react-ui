@@ -1,14 +1,11 @@
 export type ButtonSize = 'small' | 'medium' | 'large';
 export type ButtonType = 'default' | 'border';
 
-export interface ButtonProps {
+export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     size?: ButtonSize;
     buttonType?: ButtonType;
     label?: string;
-    disabled?: boolean;
-    className?: string;
     onClick?: () => void;
-    onMouseUp?: () => void;
     onMouseDown?: () => void;
 }
 

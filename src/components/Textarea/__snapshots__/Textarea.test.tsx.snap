@@ -2,12 +2,11 @@
 
 exports[`renders without crashing 1`] = `
 <div>
-  <div
-    class="sc-dkrFOg iqMwQi"
+  <textarea
+    aria-label="Textarea"
+    class="sc-bcXHqe cbnZNR"
   >
-    <input
-      class="sc-bcXHqe lnLHyE"
-    />
-  </div>
+    Test
+  </textarea>
 </div>
 `;
