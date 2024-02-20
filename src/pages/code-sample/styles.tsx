@@ -57,6 +57,7 @@ export const StyledCodeContainer = styled.div`
     display: flex;
     flex-direction: column;
     width: 100%;
+    overflow-y: auto;
 `;
 
 export const StyledHighlighter = styled.div`
