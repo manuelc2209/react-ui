@@ -34,7 +34,7 @@ export const setCursor = ({ disabled }: { disabled?: boolean }) => {
     return disabled ? 'not-allowed' : 'pointer';
 };
 
-export const GlobalStyle = createGlobalStyle`
+export const GlobalStyle: any = createGlobalStyle`
 html {
     height: 100%;
     min-height: 100%;

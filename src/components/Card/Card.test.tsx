@@ -1,14 +1,13 @@
 import { render } from '@testing-library/react';
-import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
 
 import { Card } from '.';
 
+vi.mock('react-router-dom', () => ({
+    useNavigate: () => vi.fn()
+}));
+
 it('renders snapshot correctly', () => {
-    const { container } = render(
-        <BrowserRouter>
-            <Card />
-        </BrowserRouter>
-    );
+    const { container } = render(<Card />);
+
     expect(container).toMatchSnapshot();
 });

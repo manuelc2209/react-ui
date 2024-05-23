@@ -6,7 +6,7 @@ import { ProjectsUI, ForumOutlet, Threads, CodeSample } from './pages';
 import { ForumContextWrapper } from './pages/forum/context/forumContext';
 import { Home } from './pages/home';
 
-export const App: React.FC = () => {
+export const App = () => {
     const { profile } = data;
 
     return (

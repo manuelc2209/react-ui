@@ -14,6 +14,7 @@ export const Primary = Template.bind({});
 Primary.args = {
     placeholder: 'Please write some text here',
     value: '',
+    // eslint-disable-next-line no-console
     onChange: (value) => console.log(value),
     disabled: false,
     error: ''

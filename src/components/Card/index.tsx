@@ -16,14 +16,7 @@ import {
 } from './styles';
 import { CardProps } from './types';
 
-export const Card: React.FC<CardProps> = ({
-    title,
-    subtitle,
-    image,
-    href,
-    isActionCard,
-    className
-}: CardProps) => {
+export const Card = ({ title, subtitle, image, href, isActionCard, className }: CardProps) => {
     const navigate = useNavigate();
     const hasImage = image;
     const hasHref = href;
