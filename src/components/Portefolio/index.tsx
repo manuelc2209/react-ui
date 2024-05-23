@@ -19,14 +19,7 @@ import {
 } from './styles';
 import { PortefolioProps } from './types';
 
-export const Portefolio: React.FC<PortefolioProps> = ({
-    img,
-    headline,
-    label,
-    currentStack,
-    otherStack,
-    cards
-}: PortefolioProps) => {
+export const Portefolio = ({ img, headline, label, currentStack, otherStack, cards }: PortefolioProps) => {
     return (
         <StyledWrapper>
             <div>

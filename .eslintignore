@@ -1,4 +1,6 @@
 /src/serviceWorker.ts
 build
+/dist
 coverage
 node_modules
+vite.config.ts

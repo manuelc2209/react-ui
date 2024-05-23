@@ -3,7 +3,7 @@ import React from 'react';
 import { StyledContainer, StyledInput, StyledLabel } from './styles';
 import { InputProps } from './types';
 
-export const Input: React.FC<InputProps> = ({ type, label, placeholder, onChange, ...props }) => {
+export const Input = ({ type, label, placeholder, onChange, ...props }: InputProps) => {
     return (
         <StyledContainer className={props.className}>
             {label && <StyledLabel>{label}</StyledLabel>}

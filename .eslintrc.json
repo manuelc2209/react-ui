@@ -1,7 +1,7 @@
 {
     "root": true,
     "parser": "@typescript-eslint/parser",
-    "plugins": ["@typescript-eslint", "prettier", "jest"],
+    "plugins": ["@typescript-eslint", "prettier"],
     "extends": [
         "eslint:recommended",
         "plugin:@typescript-eslint/eslint-recommended",
@@ -11,7 +11,8 @@
         "plugin:@shopify/prettier",
         "plugin:@shopify/typescript",
         "plugin:@shopify/typescript-type-checking",
-        "prettier"
+        "plugin:prettier/recommended",
+        "plugin:react/jsx-runtime"
     ],
     "parserOptions": {
         "project": "tsconfig.json"
@@ -26,12 +27,9 @@
         "@shopify/binary-assignment-parens": "off",
         "no-process-env": "off",
         "no-console": 1,
-        "prettier/prettier": 2,
-        "jest/no-disabled-tests": "warn",
-        "jest/no-focused-tests": "error",
-        "jest/no-identical-title": "error",
-        "jest/prefer-to-have-length": "warn",
-        "jest/valid-expect": "error",
-        "jsx-a11y/click-events-have-key-events": "off"
+        "prettier/prettier": 2
+    },
+    "globals": {
+        "vi": true
     }
 }

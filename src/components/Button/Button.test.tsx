@@ -1,4 +1,3 @@
-import React from 'react';
 import { fireEvent, render, screen } from '@testing-library/react';
 
 import { Button } from '.';
@@ -32,7 +31,7 @@ it('renders component with all sizes', () => {
 });
 
 it('renders component with callbacks', () => {
-    const mockedClick = jest.fn();
+    const mockedClick = vi.fn();
 
     render(<Button onClick={mockedClick} />);
 
