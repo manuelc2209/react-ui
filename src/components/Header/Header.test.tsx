@@ -4,11 +4,7 @@ import React from 'react';
 import { Header } from '.';
 
 it('renders snapshot correctly', () => {
-    const tree = render(<Header />);
-    expect(tree).toMatchSnapshot();
-});
+    const { container } = render(<Header />);
 
-it('renders without crashing', () => {
-    const el = render(<Header />);
-    expect(el).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
 });

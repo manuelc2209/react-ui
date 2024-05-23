@@ -13,7 +13,10 @@ export const StyledContainer = styled.div`
 `;
 
 export const StyledStart = styled.img`
-    flex-direction: column;
+    display: block;
+    max-height: 95px;
+    width: auto;
+    height: auto;
 `;
 
 export const StyledMiddle = styled.div`

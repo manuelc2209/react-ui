@@ -15,7 +15,6 @@ Primary.args = {
     placeholder: 'Please write some text here',
     value: '',
     onChange: (value) => console.log(value),
-    resizable: true,
     disabled: false,
     error: ''
 };
