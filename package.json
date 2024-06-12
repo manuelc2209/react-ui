@@ -52,7 +52,7 @@
         "not op_mini all"
     ],
     "devDependencies": {
-        "@babel/plugin-transform-typescript": "^7.16.8",
+        "@babel/plugin-transform-typescript": "^7.24.7",
         "@faker-js/faker": "^8.0.2",
         "@shopify/eslint-plugin": "^45.0.0",
         "@storybook/addon-actions": "^6.4.18",
