@@ -56,7 +56,7 @@
         "@faker-js/faker": "^8.0.2",
         "@shopify/eslint-plugin": "^45.0.0",
         "@storybook/addon-actions": "^6.4.18",
-        "@storybook/addon-essentials": "^6.4.18",
+        "@storybook/addon-essentials": "^8.1.9",
         "@storybook/addon-links": "^6.4.18",
         "@storybook/builder-webpack5": "^6.4.19",
         "@storybook/manager-webpack5": "^6.4.19",
