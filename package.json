@@ -20,7 +20,7 @@
         "react-syntax-highlighter": "^15.5.0",
         "react-test-renderer": "18.3.0",
         "storybook": "6.5.12",
-        "styled-components": "5.3.6"
+        "styled-components": "6.1.12"
     },
     "scripts": {
         "postinstall": "husky install",
