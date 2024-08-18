@@ -14,12 +14,11 @@
         "axios": "^1.7.4",
         "dayjs": "^1.11.7",
         "nanoid": "^4.0.1",
-        "react": "18.3.0",
+        "react": "18.3.1",
         "react-router-dom": "6.23.1",
         "react-select": "5.7.0",
         "react-syntax-highlighter": "^15.5.0",
-        "react-test-renderer": "18.3.0",
-        "storybook": "6.5.12",
+        "react-test-renderer": "18.3.1",
         "styled-components": "5.3.6"
     },
     "scripts": {
@@ -28,9 +27,7 @@
         "build": "tsc && vite build",
         "serve": "vite preview",
         "test": "vitest --coverage --run",
-        "test:nowatch": "vitest --coverage --run",
-        "storybook": "start-storybook -p 6006 -s public",
-        "build-storybook": "build-storybook -s public"
+        "test:nowatch": "vitest --coverage --run"
     },
     "eslintConfig": {
         "extends": "react-app",
@@ -55,17 +52,10 @@
         "@babel/plugin-transform-typescript": "^7.25.2",
         "@faker-js/faker": "^8.0.2",
         "@shopify/eslint-plugin": "^45.0.0",
-        "@storybook/addon-actions": "^6.4.18",
-        "@storybook/addon-essentials": "^6.4.18",
-        "@storybook/addon-links": "^6.4.18",
-        "@storybook/builder-webpack5": "^6.4.19",
-        "@storybook/manager-webpack5": "^6.4.19",
-        "@storybook/node-logger": "^7.6.17",
-        "@storybook/preset-create-react-app": "^4.0.0",
-        "@storybook/react": "6.5.12",
-        "@testing-library/jest-dom": "^6.4.5",
-        "@testing-library/react": "15.0.5",
-        "@testing-library/user-event": "^14.5.2",
+        "@testing-library/dom": "^10.4.0",
+        "@testing-library/jest-dom": "6.4.8",
+        "@testing-library/react": "16.0.0",
+        "@testing-library/user-event": "14.5.2",
         "@types/node": "^20.4.2",
         "@types/react": "^18.3.0",
         "@types/react-dom": "^18.3.0",
@@ -82,7 +72,7 @@
         "husky": "^9.1.4",
         "jsdom": "^22.1.0",
         "prettier": "^3.2.5",
-        "react-dom": "^18.2.0",
+        "react-dom": "18.3.1",
         "typescript": "5.4.5",
         "vite": "^5.2.11",
         "vite-plugin-pwa": "^0.20.0",
@@ -90,11 +80,5 @@
         "vite-tsconfig-paths": "^4.3.2",
         "vitest": "^1.6.0",
         "webpack": "^5.90.3"
-    },
-    "resolutions": {
-        "react": "18.3.0",
-        "react-dom": "18.3.0",
-        "@types/react": "18.3.0",
-        "@types/react-dom": "18.3.0"
     }
 }
