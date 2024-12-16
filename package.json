@@ -32,7 +32,7 @@
         "vite-plugin-pwa": "^0.20.5"
     },
     "devDependencies": {
-        "@babel/plugin-transform-typescript": "^7.25.2",
+        "@babel/plugin-transform-typescript": "^7.26.3",
         "@faker-js/faker": "^9.3.0",
         "@shopify/eslint-plugin": "^45.0.0",
         "@testing-library/dom": "^10.4.0",
