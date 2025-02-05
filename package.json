@@ -60,7 +60,7 @@
         "vite-plugin-svgr": "^4.2.0",
         "vite-tsconfig-paths": "^4.3.2",
         "vitest": "^1.6.1",
-        "webpack": "^5.90.3"
+        "webpack": "^5.97.1"
     },
     "eslintConfig": {
         "extends": "react-app",
