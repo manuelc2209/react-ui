@@ -1,0 +1,4 @@
+/.github/*
+/public/*
+*/spec/*
+*.lock
