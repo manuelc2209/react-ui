@@ -28,7 +28,7 @@ export function SkillCard({ skill }: SkillCardProps) {
                             <span className="text-muted-foreground">Proficiency</span>
                             <span className="font-medium">{skill.proficiency}%</span>
                         </div>
-                        <Progress value={skill.proficiency} className="h-2" />
+                        <Progress value={skill.proficiency} />
                     </div>
 
                     {skill.yearsOfExperience && (

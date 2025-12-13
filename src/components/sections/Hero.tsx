@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
 import { ArrowDown, Github, Linkedin } from 'lucide-react';
-import { Button } from '@/components/ui/button';
 import { fadeInUp, fadeInLeft, fadeInRight } from '@/utils/animations';
 import { scrollToSection } from '@/utils/helpers';
 import { personalInfo } from '@/data/portfolio';
+import { Button } from '@/components/ui/button';
 
 export function Hero() {
     // const handleDownloadResume = () => {

@@ -51,7 +51,7 @@ export function Projects() {
                     {/* All Projects with Filters */}
                     <Tabs
                         value={selectedFilter}
-                        onValueChange={(value) => setSelectedFilter(value as ProjectFilter)}
+                        onValueChange={(value: string) => setSelectedFilter(value as ProjectFilter)}
                         className="w-full"
                     >
                         {/* Filter Tabs */}

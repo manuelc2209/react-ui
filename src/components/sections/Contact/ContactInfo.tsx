@@ -1,10 +1,9 @@
-import * as React from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Github, Linkedin, ExternalLink } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
 import { fadeInLeft } from '@/utils/animations';
 import { personalInfo } from '@/data/portfolio';
+import { Button } from '@/components/ui/button';
 
 export function ContactInfo() {
     const contactMethods = [

@@ -1,9 +1,6 @@
 // @ts-nocheck
-'use client';
-
+import { cn } from '@/lib/utils';
 import * as SeparatorPrimitive from '@radix-ui/react-separator';
-
-import { cn } from '@/utils/helpers';
 
 function Separator({ className, orientation = 'horizontal', decorative = true, ...props }) {
     return (

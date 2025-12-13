@@ -1,11 +1,10 @@
-import * as React from 'react';
 import { motion } from 'framer-motion';
 import { ExternalLink, Github, Calendar, Star } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
 import { scaleIn } from '@/utils/animations';
 import { projects } from '@/data/portfolio';
+import { Button } from '@/components/ui/button';
 
 interface ProjectCardProps {
     project: (typeof projects)[0];

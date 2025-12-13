@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion';
 import { MapPin, Download, ExternalLink } from 'lucide-react';
-import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
 import { fadeInLeft } from '@/utils/animations';
 import { personalInfo } from '@/data/portfolio';
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
 
 export function PersonalInfoCard() {
     return (

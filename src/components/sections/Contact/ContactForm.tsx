@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Send } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { Label } from '@/components/ui/label';
 import { useToast } from '@/hooks/use-toast';
 import { fadeInRight } from '@/utils/animations';
 import { validateEmail } from '@/utils/helpers';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { Label } from '@radix-ui/react-label';
+import { Textarea } from '@/components/ui/textarea';
 
 interface ContactFormData {
     name: string;
@@ -101,7 +101,9 @@ export function ContactForm() {
                                     type="text"
                                     placeholder="Your name"
                                     value={form.name}
-                                    onChange={(e) => handleInputChange('name', e.target.value)}
+                                    onChange={(e: { target: { value: string } }) =>
+                                        handleInputChange('name', e.target.value)
+                                    }
                                     required
                                 />
                             </div>
@@ -115,7 +117,9 @@ export function ContactForm() {
                                     type="email"
                                     placeholder="your.email@example.com"
                                     value={form.email}
-                                    onChange={(e) => handleInputChange('email', e.target.value)}
+                                    onChange={(e: { target: { value: string } }) =>
+                                        handleInputChange('email', e.target.value)
+                                    }
                                     required
                                 />
                             </div>
@@ -131,7 +135,9 @@ export function ContactForm() {
                                 type="text"
                                 placeholder="What's this about?"
                                 value={form.subject}
-                                onChange={(e) => handleInputChange('subject', e.target.value)}
+                                onChange={(e: { target: { value: string } }) =>
+                                    handleInputChange('subject', e.target.value)
+                                }
                             />
                         </div>
 
@@ -145,7 +151,9 @@ export function ContactForm() {
                                 placeholder="Tell me about your project or just say hello..."
                                 rows={6}
                                 value={form.message}
-                                onChange={(e) => handleInputChange('message', e.target.value)}
+                                onChange={(e: { target: { value: string } }) =>
+                                    handleInputChange('message', e.target.value)
+                                }
                                 required
                             />
                         </div>

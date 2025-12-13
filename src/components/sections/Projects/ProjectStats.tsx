@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
 import { Github } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
 import { fadeInUp } from '@/utils/animations';
 import { projects } from '@/data/portfolio';
+import { Button } from '@/components/ui/button';
 
 export function ProjectStats() {
     return (

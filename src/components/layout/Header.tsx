@@ -2,11 +2,11 @@ import { useState, useEffect } from 'react';
 import { useAtom } from 'jotai';
 import { motion } from 'framer-motion';
 import { Menu, X, Sun, Moon } from 'lucide-react';
-import { Button } from '@/components/ui/button';
 import { themeAtom, activeNavAtom } from '@/store/atoms';
 import { scrollToSection } from '@/utils/helpers';
 import { personalInfo } from '@/data/portfolio';
 import type { NavSection } from '@/types';
+import { Button } from '@/components/ui/button';
 
 const navItems: { id: NavSection; label: string }[] = [
     { id: 'home', label: 'Home' },
