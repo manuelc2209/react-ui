@@ -1,21 +1,21 @@
 import '@testing-library/jest-dom';
 import { vi } from 'vitest';
 
-// Mock IntersectionObserver
-global.IntersectionObserver = vi.fn().mockImplementation(() => ({
-    observe: vi.fn(),
-    unobserve: vi.fn(),
-    disconnect: vi.fn()
-}));
+class IntersectionObserverMock {
+    observe = vi.fn();
+    unobserve = vi.fn();
+    disconnect = vi.fn();
+}
 
-// Mock ResizeObserver
-global.ResizeObserver = vi.fn().mockImplementation(() => ({
-    observe: vi.fn(),
-    unobserve: vi.fn(),
-    disconnect: vi.fn()
-}));
+global.IntersectionObserver = IntersectionObserverMock as any;
+class ResizeObserverMock {
+    observe = vi.fn();
+    unobserve = vi.fn();
+    disconnect = vi.fn();
+}
 
-// Mock matchMedia
+global.ResizeObserver = ResizeObserverMock as any;
+
 Object.defineProperty(window, 'matchMedia', {
     writable: true,
     value: vi.fn().mockImplementation((query) => ({
@@ -30,7 +30,6 @@ Object.defineProperty(window, 'matchMedia', {
     }))
 });
 
-// Mock scrollTo
 Object.defineProperty(window, 'scrollTo', {
     writable: true,
     value: vi.fn()
