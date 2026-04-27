@@ -2,7 +2,6 @@ import { describe, it, expect, vi } from 'vitest';
 import { render, screen, fireEvent } from '@/test/test-utils';
 import { Hero } from '../Hero';
 
-// Mock framer-motion
 vi.mock('framer-motion', () => ({
     motion: {
         div: ({ children, ...props }: any) => <div {...props}>{children}</div>,
@@ -10,12 +9,10 @@ vi.mock('framer-motion', () => ({
     }
 }));
 
-// Mock scrollToSection
 vi.mock('@/utils/helpers', () => ({
     scrollToSection: vi.fn()
 }));
 
-// Mock window.open
 Object.defineProperty(window, 'open', {
     writable: true,
     value: vi.fn()
