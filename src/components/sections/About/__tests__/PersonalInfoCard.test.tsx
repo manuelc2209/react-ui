@@ -14,7 +14,7 @@ describe('PersonalInfoCard', () => {
     it('renders contact links', () => {
         render(<PersonalInfoCard />);
 
-        const resumeLink = screen.getByRole('link', { name: /resume/i });
+        const resumeLink = screen.getByRole('button', { name: /resume/i });
         const linkedinLink = screen.getByRole('link', { name: /linkedin/i });
 
         expect(resumeLink).toBeInTheDocument();

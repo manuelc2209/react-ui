@@ -56,11 +56,9 @@ export function PersonalInfoCard() {
                     </div>
 
                     <div className="flex gap-3">
-                        <Button size="sm" asChild>
-                            <a href={personalInfo.resumeUrl} target="_blank" rel="noopener noreferrer">
-                                <Download className="h-4 w-4 mr-2" />
-                                Resume
-                            </a>
+                        <Button size="sm" disabled onClick={(e) => e.preventDefault()}>
+                            <Download className="h-4 w-4 mr-2" />
+                            Resume
                         </Button>
                         <Button variant="outline" size="sm" asChild>
                             <a href={personalInfo.linkedin} target="_blank" rel="noopener noreferrer">
